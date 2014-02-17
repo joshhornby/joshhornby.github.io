@@ -46,26 +46,31 @@
 	
 	</head>
 <body>
+<span itemscope itemtype="http://schema.org/Person">
 
 	<header class="header">
 		<div class="container">
 			<!-- <img class="profile_image" src="blank.gif" /> -->
-			<h1>Josh Hornby</h1>
-			<p>iOS & web developer</p>
+			<span itemprop="name"><h1>Josh Hornby</h1></span>
+			<span itemprop="jobTitle"><p>iOS & web developer</p></span>
 		</div>
 	</header>
 	
 	<div class="content">
+		<span itemprop="description">
 		<p>I am a software developer from Manchester in the United Kingdom. I have a passion for building iOS apps and websites. You can find me on <a href="http://twitter.co.uk/joshua_hornby">Twitter</a>, or send me an <a href="mailto:hello@joshhornby.co.uk">email</a>, also check out my <a href="https://github.com/joshhornby">GitHub</a>. </p>
-		
+		</span>
+
+</span>		
+<span itemscope itemtype="http://schema.org/CreativeWork">	
 		<div id="apps" class="apps">
 			<h2>Work</h2>
-			<p>A selection of my portfolio, if you like what you see I'd love to <a href="mailto:hello@joshhornby.co.uk">work together</a>.</p>
+			<span itemprop="about"><p>A selection of my portfolio, if you like what you see I'd love to <a href="mailto:hello@joshhornby.co.uk">work together</a>.</p></span>
 			<ul>
 				<li>
 					<a href="#">
-						<img class="icon ios" src="img/weatherstar.png">
-						<span>Weatherstar</span>
+						<span itemprop="image"><img class="icon ios" src="img/weatherstar.png"></span>
+						<span itemprop="name"><span>Weatherstar</span></span>
 					</a>
 				</li>
 			</ul>
@@ -77,6 +82,7 @@
 		</footer>
 		
 	</div>
+	
 	
 </body>
 </html>
