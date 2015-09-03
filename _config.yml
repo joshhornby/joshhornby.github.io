@@ -11,11 +11,11 @@ paginate: 20
 baseurl: /
 domain_name: 'http://joshhornby.co.uk'
 google_analytics: 'UA-29844067-2'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+disqus: true
+disqus_shortname: 'joshhornbyblog'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
+url:            'http://joshhornby.co.uk'
 author:         'Josh Hornby'
 authorTwitter:  'joshua_hornby'
 
