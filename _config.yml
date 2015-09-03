@@ -19,7 +19,7 @@ url:            'http://joshhornby.co.uk'
 author:         'Josh Hornby'
 authorTwitter:  'joshua_hornby'
 
-permalink:       /:year/:title/
+permalink:       /blog/:title/
 
 defaults:
     -
