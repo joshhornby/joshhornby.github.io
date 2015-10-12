@@ -5,6 +5,8 @@ meta_description: "Josh Hornby talks web development"
 aboutPage: false
 
 markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
 highlighter: pygments
 
 paginate: 20
