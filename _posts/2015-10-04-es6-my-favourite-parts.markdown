@@ -2,6 +2,10 @@
 title:  "ES6 - My favourite parts"
 date:   2015-10-04 10:18:00
 description: A look at some of the new features of ES6
+sitemap:
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: 2015-10-04T12:00:30+00:00
 ---
 
 ## Destructuring

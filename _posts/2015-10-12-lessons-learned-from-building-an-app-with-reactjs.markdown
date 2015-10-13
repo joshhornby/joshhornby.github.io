@@ -2,6 +2,10 @@
 title:  "Lessons learned from building an app with React.js"
 date:   2015-10-12 11:50:00
 description: An in depth look at flux, React.js and data fetching.
+sitemap:
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: 2015-10-12T23:49:00+00:00
 ---
 
 ![JavaScript Everywhere](https://media.licdn.com/mpr/mpr/shrinknp_800_800/p/5/005/0b6/1c4/199aff3.jpg)
