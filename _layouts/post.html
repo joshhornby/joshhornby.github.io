@@ -3,13 +3,13 @@ layout: default
 archive: true
 ---
 
-<article class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        <h1>{{ page.title }}</h1>
-        <h2 class="headline">{{ page.date | date:"%B %-d, %Y" }}</h2>
+        <h1 itemprop="name">{{ page.title }}</h1>
+        <h2 class="headline" itemprop="datePublished">{{ page.date | date:"%B %-d, %Y" }}</h2>
         - {% include read-time.html %}
     </header>
-    <section id="post-body">
+    <section id="post-body" itemprop="articleBody">
         {{content}}
     </section>
 </article>
@@ -17,8 +17,8 @@ archive: true
     <a href="http://twitter.com/{{ site.authorTwitter }}">
         <img class="avatar" src="{{ site.baseurl }}assets/images/avatar.png">
         <div>
-            <span class="dark">{{ site.author }}</span>
-            <span>{{ site.description }}</span>
+            <span itemprop="author"> class="dark">{{ site.author }}</span>
+            <span itemprop="about">>{{ site.description }}</span>
         </div>
     </a>
 

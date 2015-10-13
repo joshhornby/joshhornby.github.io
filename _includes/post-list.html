@@ -1,8 +1,8 @@
-<ul id="post-list">
+<ul id="post-list" itemscope itemtype="http://schema.org/Blog">
     {% for post in paginator.posts %}
-        <li>
-            <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}"><aside class="dates">{{ post.date | date:"%b %d" }}</aside></a>
-            <a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">{{ post.title }} <h2>{{ post.description }}</h2></a>
+        <li itemscope itemtype="http://schema.org/BlogPosting">
+            <a itemprop="url" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}"><aside class="dates" itemprop="datePublished">{{ post.date | date:"%b %d" }}</aside></a>
+            <span itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">{{ post.title }}</span> <h2 itemprop="description">{{ post.description }}</h2></a>
         </li>
     {% endfor %}
 </ul>
