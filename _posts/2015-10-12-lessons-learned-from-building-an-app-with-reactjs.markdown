@@ -8,7 +8,7 @@ sitemap:
     lastmod: 2015-10-12T23:49:00+00:00
 ---
 
-![JavaScript Everywhere](https://media.licdn.com/mpr/mpr/shrinknp_800_800/p/5/005/0b6/1c4/199aff3.jpg)
+A brief overview of what I have learnt when using React.js on a modern web applciation.
 
 ## The Stack
 
@@ -17,6 +17,8 @@ sitemap:
 -   [Node.js](https://nodejs.org/en/)
 -   [ES6 JavaScript](https://github.com/lukehoban/es6features)
 -   [Webpack](https://webpack.github.io/)
+
+![JavaScript Everywhere](https://media.licdn.com/mpr/mpr/shrinknp_800_800/p/5/005/0b6/1c4/199aff3.jpg)
 
 I'd also like to extend thanks to [Ken Ding](https://github.com/choonkending) and his [brilliant boilerplate](https://github.com/choonkending/react-webpack-node) application.
 

@@ -1,44 +1,47 @@
-name: Josh Hornby
-description: Talking about web development
-meta_description: "Josh Hornby talks web development"
+# # # # # # # #
+#   K i k o   #
+# # # # # # # #
 
-aboutPage: false
+# Basic
+name:               "Joshua Hornby"
 
-markdown: redcarpet
+# URL
+baseurl:            ""
+#baseurl:            "" #For Root Domain
+permalink:          /blog/:title
+
+# Markdown
+markdown:           redcarpet
 redcarpet:
   extensions: ["strikethrough"]
-highlighter: pygments
 
-paginate: 20
-baseurl: /
-domain_name: 'http://joshhornby.co.uk'
+# Navigation
+#nav:
+#  - name:           "About"
+#    href:           "/about"
+
+# Sass
+sass:
+  style:            :compressed
+
+# GA
 google_analytics: 'UA-29844067-2'
+
+# Disqus
 disqus: true
 disqus_shortname: 'joshhornbyblog'
 
-# Details for the RSS feed generator
-url:            'http://joshhornby.co.uk'
-author:         'Josh Hornby'
-authorTwitter:  'joshua_hornby'
-
-permalink:       /blog/:title/
-
+# Scopes
 defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"

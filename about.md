@@ -1,9 +1,6 @@
 ---
 title: About
-permalink: about/
-profile: true
+permalink: /about/
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
-
-{% include footer.html %}
+Currently a full stack developer at [Fast Web Media](fastwebmedia.com), mainly working in PHP but more recently React.js & Node.js has been the go to language.

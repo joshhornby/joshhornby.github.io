@@ -1,6 +1,33 @@
 ---
-profile: true
+layout: default
 ---
-
-{% include post-list.html %}
-{% include footer.html %}
+<header class="masthead">
+  <h1 class="masthead-title">
+    <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+  </h1>
+  <nav class="masthead-nav">
+    {% for nav in site.nav %}
+    <a href="{{ nav.href }}">{{ nav.name }}</a>
+    {% endfor %}
+  </nav>
+</header>
+<div class="content list">
+  {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h1 class="year" id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h1>
+      <ul>
+      {% assign date = currentdate %}
+    {% endif %}
+    <div class="list-item">
+      <div class="list-post-date">
+        <time>{{ post.date | date_to_long_string }}</time>
+      </div>
+      <h2 class="list-post-title">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h2>
+    </div>
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>
