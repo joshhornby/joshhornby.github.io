@@ -7,7 +7,7 @@ name:               "Joshua Hornby"
 
 # URL
 baseurl:            ""
-#baseurl:            "" #For Root Domain
+siteUrl:            "http://joshhornby.co.uk"
 permalink:          /blog/:title
 
 # Markdown
