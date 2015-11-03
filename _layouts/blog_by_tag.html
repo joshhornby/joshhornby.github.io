@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<header class="masthead">
+  <h1 class="masthead-title--small">
+    <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+  </h1>
+</header>
+<div class="content list">
+  <h2><span style="color: #ccc">Articles by tag:</span> {{ page.tag }}</h2>
+
+  {% if site.tags[page.tag] %}
+  {% for post in site.tags[page.tag] %}
+      <div class="list-item">
+        <div class="list-post-date">
+          <time>{{ post.date | date_to_long_string }}</time>
+        </div>
+        <h2 class="list-post-title">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+      </div>
+  {% endfor %}
+  {% else %}
+      <p>There are no posts for this tag.</p>
+  {% endif %}
+
+</div>

@@ -12,6 +12,10 @@ layout: default
     <time>{{ page.date | date_to_long_string }}</time>
   </div>
 
+  {% include tags.html %}
+
+  <p id="post-meta">{{ tags_content }}</p>
+
   {% include twitter.html %}
 
   {{ content }}
