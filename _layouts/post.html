@@ -6,11 +6,17 @@ layout: default
     <a href="{{ site.baseurl }}/">{{ site.name }}</a>
   </h1>
 </header>
-<div class="content post">
-  <h1 class="post-title">{{ page.title }}</h1>
+<div class="content post" itemtype="http://schema.org/BlogPosting">
+  <h1 itemprop="name headline" class="post-title">{{ page.title }}</h1>
   <div class="post-date">
-    <time>{{ page.date | date_to_long_string }}</time>
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
   </div>
+
+<span class="hidden" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span itemprop="name">
+        <a href="https://plus.google.com/103205414489201613804" itemprop="url" rel="author">Joshua Hornby</a>
+    </span>
+</span>
 
   {% include tags.html %}
 
@@ -18,7 +24,7 @@ layout: default
 
   {% include twitter.html %}
 
-  {{ content }}
+  <span itemprop="articleBody">{{ content }}</span>
 
   {% include disqus.html %}
 
