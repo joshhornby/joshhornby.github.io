@@ -27,3 +27,7 @@ WebKit framework, provided that such scripts and code do not change the primary 
 Which means that there is no reason for these types of applications to be rejected by Apple.
 
 For more information take a look at [Joe's GitHub repository](https://github.com/JoeStanton/london-react).
+
+### Update
+
+![Github Issue showing that the app was allowed in the app store](https://s3-eu-west-1.amazonaws.com/joshuahornby/Screenshot+2015-11-12+21.36.05.png "GH Issue")
