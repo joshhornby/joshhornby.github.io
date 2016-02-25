@@ -11,9 +11,10 @@ siteUrl:            "http://joshhornby.co.uk"
 permalink:          /blog/:title
 
 # Markdown
-markdown:           redcarpet
-redcarpet:
-  extensions: ["strikethrough"]
+markdown:           kramdown
+kramdown:
+  input: GFM
+  coderay_line_numbers: ''
 
 # Navigation
 #nav:

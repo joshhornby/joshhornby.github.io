@@ -25,7 +25,7 @@ I'd also like to extend thanks to [Ken Ding](https://github.com/choonkending) an
 
 ## Why React?
 
-This is a very good question, after some failed experiments using [ember.js](http://emberjs.com/) React seemed the next logical choice. A major  plus point was the fact that we could render both the client and server in JavaScript, something which is kown as ~~isomorphic~~ [universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) JavaScript.
+This is a very good question, after some failed experiments using [ember.js](http://emberjs.com/) React seemed the next logical choice. A major  plus point was the fact that we could render both the client and server in JavaScript, something which is kown as [universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) JavaScript.
 
 ## Thinking dumb
 

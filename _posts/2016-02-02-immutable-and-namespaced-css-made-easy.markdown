@@ -12,7 +12,7 @@ Two of my favourite CSS blog posts are written by Harry Roberts, [More Transpare
 
 A little package called [bem-constructor](https://github.com/danielguillan/bem-constructor) takes both ideas from Harry's blogs and includes them in a fantastic mixin. Bem-constructor makes writing [object oriented css](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/) much simpler and wraps the logic in an elegant syntax. Take a look at this rather contrived example:
 
-```scss
+```sass
 @include object('media') {
   display: block;
   @include element('image') {
