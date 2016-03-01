@@ -1,11 +1,11 @@
 ---
 title:  "Immutable and namespaced CSS made easy"
 date:   2016-02-02 20:00:00
-description: todo
+description: Using the ideas of immutable data and namespacing to increase productivity when writing CSS.
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2016-02-02GMT20:00:00+00:00
+    lastmod: 2016-03-01GMT21:00:00+00:00
 ---
 
 Two of my favourite CSS blog posts are written by Harry Roberts, [More Transparent UI Code with Namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) and [Immutable CSS](http://csswizardry.com/2015/03/immutable-css/).
