@@ -30,6 +30,9 @@ $this->app->bind('Dingo\Api\Transformer\Adapter\Fractal', function($app) {
 });
 ```
 
+Next add `JSONApiServiceProvider` to the providers array in `config/app.php`.
+
+
 This will use the built in `JsonApiSerializer` from [Fractal](http://fractal.thephpleague.com). This makes makes using the JSON API Spec as simple as calling a transformer.
 
 In a controller add the following:
