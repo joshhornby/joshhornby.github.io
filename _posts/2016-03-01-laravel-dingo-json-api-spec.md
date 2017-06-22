@@ -1,7 +1,11 @@
 ---
 title:  "Using the JSON API spec in a Laravel API"
 date:   2016-03-01 11:50:00
-description: Foo.
+description: Using Laravel to build an API that is compliant with the JSON API spec.   
+image:
+  url: https://cdn.auth0.com/blog/laravel-auth/logo.png
+  height: 280
+  width: 280
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
