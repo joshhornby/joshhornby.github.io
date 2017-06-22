@@ -2,6 +2,10 @@
 title:  "Global query parameters with Ember"
 date:   2017-06-10 19:00:00
 description: Using Ember computed properties to handle global query parameters
+image:
+  url: https://www.emberjs.com/images/logos/ember-logo-54c216ce.png
+  height: 227
+  width: 596
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
