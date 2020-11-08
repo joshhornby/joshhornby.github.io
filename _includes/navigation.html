@@ -5,6 +5,18 @@
             {% for item in site.data.navigation.links %}
             <li><a href="{{ item.url }}" {% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a></li>
             {% endfor %}
+            <li>
+                <a href="https://twitter.com/joshua_hornby" target="_blank">
+                    <img src="/assets/images/twitter.svg" alt="Twitter Logo" />
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/joshua-hornby-3a01621b5" target="_blank">
+                    <img src="/assets/images/linkedin.svg" alt="Linkedin Logo" />
+                    Linkedin
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
