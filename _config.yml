@@ -1,47 +1,29 @@
-# # # # # # # #
-#   K i k o   #
-# # # # # # # #
-
-# Basic
 name:               "Joshua Hornby"
 
-# URL
+author:
+  name: "Josh Hornby"
+  avatar:
+  email: "hello@joshhornby.co.uk"
+  url: #yoururl
+
 baseurl:            ""
 siteUrl:            "http://joshhornby.co.uk"
 permalink:          /blog/:title
 
-# Markdown
 markdown:           kramdown
 kramdown:
   input: GFM
   coderay_line_numbers: ''
 
-# Navigation
-#nav:
-#  - name:           "About"
-#    href:           "/about"
-
-# Sass
-sass:
-  style:            :compressed
-
-# GA
 google_analytics: 'UA-29844067-2'
 
-# Disqus
-disqus: true
-disqus_shortname: 'joshhornbyblog'
-
-# Scopes
 defaults:
-  -
-    scope:
+  - scope:
       path:         ""
       type:         "pages"
     values:
       layout:       "page"
-  -
-    scope:
+  - scope:
       path:         ""
       type:         "posts"
     values:

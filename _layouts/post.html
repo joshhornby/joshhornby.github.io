@@ -1,51 +1,17 @@
 ---
 layout: default
 ---
-<header class="masthead">
-  <h1 class="masthead-title--small">
-    <a href="{{ site.baseurl }}/">{{ site.name }}</a>
-  </h1>
-</header>
-<div class="content post" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <h1 itemprop="name headline" class="post-title">{{ page.title }}</h1>
-  <div class="post-date">
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date_to_long_string }}</time>
-    <meta itemprop="dateModified" content="{{ page.date | date_to_xmlschema }}">
-  </div>
-
-
-  <div style="display:none" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-    <img itemprop="url" src="{{page.image.url}}">
-    <meta itemprop="width" content="{{page.image.width}}">
-    <meta itemprop="height" content="{{page.image.height}}">
-  </div>
-
-  <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-      <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-        <img style="display:none" src="https://joshhornby.co.uk/assets/logo.png"/>
-        <meta itemprop="url" content="https://joshhornby.co.uk/assets/logo.png">
-        <meta itemprop="width" content="400">
-        <meta itemprop="height" content="60">
-      </div>
-      <meta itemprop="name" content="Josh Hornby">
-  </div>
-
-<span class="hidden" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-    <span itemprop="name">
-        <a href="https://plus.google.com/103205414489201613804" itemprop="url" rel="author">Joshua Hornby</a>
+<section class="post">
+    <h1>{{ page.title }}</h1>
+    <span class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}.</time>
+        <span>
+            Tags:
+            {% for tag in page.tags %}
+                {% capture tag_name %}{{ tag }}{% endcapture %}
+                    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+                {% endfor %}
+        </span>
     </span>
-</span>
-
-  {% include tags.html %}
-
-  <p id="post-meta">{{ tags_content }}</p>
-
-  {% include twitter.html %}
-
-  <span itemprop="articleBody">{{ content }}</span>
-
-  {% include signup.html %}
-
-  {% include disqus.html %}
-
-</div>
+    {{ content }}
+</section>

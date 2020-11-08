@@ -2,6 +2,7 @@
 title:  "Immutable and namespaced CSS made easy"
 date:   2016-02-02 20:00:00
 description: Using the ideas of immutable data and namespacing to increase productivity when writing CSS.
+tags: css
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
