@@ -72,8 +72,9 @@ img {
 }
 
 hr {
-    background: #000;
+    background: #ececec;
     height: 1px;
+    margin: 20px 0;
     border: 0;
 }
 
@@ -175,9 +176,14 @@ main {
 
 
 @media screen and (max-width: 45rem ) {
+    main {
+        margin: 0 auto;
+    }
+
     header li {
         display: inline;
         margin-right: 1rem;
+        padding-top: 0;
     }
 
     .logo {
