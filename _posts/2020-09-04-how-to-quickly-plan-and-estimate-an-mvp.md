@@ -8,7 +8,7 @@ sitemap:
     lastmod: 2020-09-19 T19:00:00+01:00
 ---
 
-This post outlines a tried & tested playbook for quickly planning and estimating MVP projects.
+This post outlines a tried & tested strategy for quickly planning and estimating MVP projects.
 
 ## Gather Requirements
 In order to plan you need to know what you should be building.
@@ -23,8 +23,8 @@ Some questions to ask are:
 
 ## Break down the work
 
-Know you have asked the questions and have a better understanding of what needs
-to be build it's time to start breaking down the work
+Now you have gathered some requirements and have a better understanding of what needs
+to be build it's time to start breaking down the work.
 
 I like to split the work into **Epics** & **User Stories**.
 
@@ -32,7 +32,7 @@ I like to split the work into **Epics** & **User Stories**.
 
 **User Stories** = Short requirements or requests written from the perspective of an end user
 
-Normally I start with the CRUD *(Create, Read, Update, Delete)* stories, for example: Create User, View User, Update User Marketing Preferences 
+Normally I start with the CRUD *(Create, Read, Update, Delete)* stories, for example: Create User, View User, Update User Marketing Preferences. 
 
 | Epic   | Story |
 |---------|-------|
