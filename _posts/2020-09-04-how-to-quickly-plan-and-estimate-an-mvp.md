@@ -8,7 +8,7 @@ sitemap:
     lastmod: 2020-09-19 T19:00:00+01:00
 ---
 
-This post outlines a tried & tested strategy for quickly planning and estimating MVP projects.
+This post outlines my tried & tested strategy for quickly planning and estimating MVP projects.
 This process departs a little from Agile/Scrum best practices. There are no guarantees on estimation quality which I believe is impossible to do for software projects, but it helps to provide a rough guide for new projects.
 
 ## Gather Requirements
