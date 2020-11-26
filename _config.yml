@@ -6,8 +6,8 @@ author:
   email: "hello@joshhornby.co.uk"
   url: #yoururl
 
-baseurl: /
-url: http://joshhornby.github.io
+baseurl:            ""
+siteUrl:            "https://joshhornby.co.uk"
 permalink:          /blog/:title
 
 markdown:           kramdown
