@@ -9,6 +9,7 @@ sitemap:
 ---
 
 This post outlines a tried & tested strategy for quickly planning and estimating MVP projects.
+This process departs a little from Agile/Scrum best practices. There are no guarantees on estimation quality which I believe is impossible to do for software projects, but it helps to provide a rough guide for new projects.
 
 ## Gather Requirements
 In order to plan you need to know what you should be building.
@@ -112,7 +113,3 @@ Your velocity will likely be variable at the beginning of a project and will smo
 | Favourite    | User can add a product to their favourites   | 2 | 2
 | Favourite    | User can remove a product from their favourites   | 3 | 2
 | Favourite    | User can view a product in their favourites   | 2 | 2
-
----
-
-*This process departs a little from Agile/Scrum best practices. No guarantees on estimation quality which I believe is impossible to do for software projects, but it helps to provide a rough guide for new projects.*
