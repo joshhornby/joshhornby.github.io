@@ -149,14 +149,17 @@ strong, b {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-bottom: .5rem;
 }
 
 .posts li a, .posts li div, .projects li a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-weight: bold;
   text-decoration: none;
+}
+
+.posts time {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .posts li time, .projects li time {
