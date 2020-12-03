@@ -2,6 +2,7 @@
 title:  "Managing Software Projects"
 date:   2020-12-01 16:00:00
 tags: project-management
+image: /assets/images/managing_software_projects.jpg
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
