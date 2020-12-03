@@ -1,46 +1,37 @@
-name:               "Josh Hornby"
-
+name: Josh Hornby
 author:
-  name: "Josh Hornby"
-  avatar:
-  email: "hello@joshhornby.co.uk"
-  url: #yoururl
-
-baseurl:            ""
-siteUrl:            "https://joshhornby.co.uk"
-permalink:          /blog/:title
-
-markdown:           kramdown
+  name: Josh Hornby
+  avatar: null
+  email: hello@joshhornby.co.uk
+  url: null
+baseurl: ''
+siteUrl: 'https://joshhornby.co.uk'
+permalink: '/blog/:title'
+markdown: kramdown
 kramdown:
   input: GFM
   coderay_line_numbers: ''
-
-google_analytics: 'UA-29844067-2'
-
+google_analytics: UA-29844067-2
 locale: en_GB
-
 social:
   name: Josh Hornby
   links:
-    - https://twitter.com/joshua_hornby
-    - https://www.linkedin.com/in/joshua-hornby-3a01621b5/
-    - https://github.com/joshhornby
-
+    - 'https://twitter.com/joshua_hornby'
+    - 'https://www.linkedin.com/in/joshua-hornby-3a01621b5/'
+    - 'https://github.com/joshhornby'
 twitter:
   username: joshua_hornby
   card: summary
-
 defaults:
   - scope:
-      path:         ""
-      type:         "pages"
+      path: ''
+      type: pages
     values:
-      layout:       "page"
+      layout: page
   - scope:
-      path:         ""
-      type:         "posts"
+      path: ''
+      type: posts
     values:
-      layout:       "post"
-
+      layout: post
 plugins:
   - jekyll-seo-tag
