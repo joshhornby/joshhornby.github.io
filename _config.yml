@@ -1,4 +1,4 @@
-name:               "Joshua Hornby"
+name:               "Josh Hornby"
 
 author:
   name: "Josh Hornby"
@@ -17,6 +17,19 @@ kramdown:
 
 google_analytics: 'UA-29844067-2'
 
+locale: en_GB
+
+social:
+  name: Josh Hornby
+  links:
+    - https://twitter.com/joshua_hornby
+    - https://www.linkedin.com/in/joshua-hornby-3a01621b5/
+    - https://github.com/joshhornby
+
+twitter:
+  username: joshua_hornby
+  card: summary
+
 defaults:
   - scope:
       path:         ""
@@ -28,3 +41,6 @@ defaults:
       type:         "posts"
     values:
       layout:       "post"
+
+plugins:
+  - jekyll-seo-tag
