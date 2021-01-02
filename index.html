@@ -1,13 +1,33 @@
 ---
 layout: default
+description: Head of Software Development based out of Manchester, UK.
 ---
-<section class="posts">
-  <ul>
-    {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-    {% endfor %}
-  </ul>
-</section>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <h1 class="h1">
+                Head of Software Development based out of Manchester, UK.
+            </h1>
+            <section class="mt-5">
+                <h5 class="h5 mb-4">Background</h5>
+                <p class="p-intro">Hi. I'm Josh Hornby, a <a href="{{ site.url }}/blog/the-product-minded-engineer">product-minded software developer</a>. I enjoy building software and managing development teams. With over 10 years of software development, I
+                    understand the connections between strategy, development teams, and business goals.
+                    <br>
+                    <br>
+                    Currently, I am working as the Head of Development at <a
+                            href="https://choosemycar.com" target="_blank">ChooseMyCar</a>, a car
+                    finance start-up based in the UK.
+                    <br>
+                    I also host the <a href="#">Six Minute Software Engineering Podcast</a>, a weekly 6 minute
+                    snapshot of everything software development.
+                    <br>
+                    <br>
+                    You can also find me on <a target="_blank" href="https://twitter.com/joshua_hornby">Twitter</a> where I talk
+                    about software development & management.
+                </p>
+            </section>
+        </div>
+        {% include navigation.html %}
+    </div>
+</div>

@@ -3,6 +3,7 @@ title:  "How to quickly plan and estimate an MVP"
 date:   2020-09-19 19:00:00
 tags: project-management
 image: /assets/images/how-to-quickly-plan-and-estimate-an-mvp.jpg
+description: A strategy for quickly planning MVP projects
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
@@ -36,6 +37,7 @@ I like to split the work into **Epics** & **User Stories**.
 
 Normally I start with the CRUD *(Create, Read, Update, Delete)* stories, for example: Create User, View User, Update User Marketing Preferences. 
 
+{: .table .table-striped}
 | Epic   | Story |
 |---------|-------|
 | Favourite    | User can add a product to their favourites   |
@@ -106,6 +108,7 @@ Your velocity will likely be variable at the beginning of a project and will smo
 
 **Once all the steps are complete you will end up with:**
 
+{: .table .table-striped}
 | Epic   | Story | Points | Sprint
 |---------|-------|---------|-------| 
 | Account    | User can view their account details   | 2 | 1

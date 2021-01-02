@@ -1,5 +1,10 @@
 links:
-  - title: Writing
+  - title: Home
     url: /
+    sitemap: true
+  - title: Writing
+    url: /blog
+    sitemap: true
   - title: Rss
     url: /atom.xml
+    sitemap: false

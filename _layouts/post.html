@@ -1,17 +1,49 @@
 ---
 layout: default
 ---
-<section class="post">
-    <h1>{{ page.title }}</h1>
-    <span class="meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}.</time>
-        <span>
-            Tags:
-            {% for tag in page.tags %}
-                {% capture tag_name %}{{ tag }}{% endcapture %}
-                    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><span>{{ tag_name }}</span></code> </a>
-                {% endfor %}
-        </span>
-    </span>
-    {{ content }}
-</section>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <ol class="list-unstyled list-inline breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{ site.url }}">
+                        <span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{ site.url }}/blog">
+                        <span itemprop="name">Writing</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{ site.url }}{{ page.url }}">
+                        <span itemprop="name">{{ page.title }}</span></a>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+            <h1 class="h1 mb-3">
+                {{ page.title }}
+            </h1>
+            <div class="meta mb-3">
+                <span>
+                    Tags:
+                    {% for tag in page.tags %}
+                        {% capture tag_name %}{{ tag }}{% endcapture %}
+                            <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><span>{{ tag_name }}</span></code> </a>
+                        {% endfor %}
+                </span>
+            </div>
+            <section class="post-content">
+                {{ content }}
+                <hr />
+                <span class="mb-3 d-block font-italic">
+                    Published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}.</time>
+                </span>
+            </section>
+        </div>
+        {% include navigation.html %}
+    </div>
+</div>
