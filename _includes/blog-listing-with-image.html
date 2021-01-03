@@ -1,0 +1,8 @@
+<li class="media mb-3 position-relative">
+    <img loading="lazy" width="120" class="align-self-start mr-3 rounded-lg" src="{{ post.image }}" alt="{{ post.title }}">
+    <div class="media-body">
+        <a class="stretched-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <p class="my-2">{{ post.description }}</p>
+        <time class="small d-block text-muted" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+    </div>
+</li>

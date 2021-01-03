@@ -2,9 +2,9 @@ links:
   - title: Home
     url: /
     sitemap: true
-  - title: Writing
+  - title: Blog
     url: /blog
     sitemap: true
-  - title: Rss
-    url: /atom.xml
-    sitemap: false
+  - title: Newsletter
+    url: /newsletter
+    sitemap: true

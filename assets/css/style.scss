@@ -1,6 +1,9 @@
 ---
 ---
 
+$primary: #8b54ff;
+$secondary: #edf2f7;
+
 @import "./node_modules/bootstrap/scss/bootstrap";
 
 body {
@@ -12,6 +15,7 @@ body {
   letter-spacing: -0.02em;
 }
 
+button,
 h1,
 h2,
 h3,
@@ -34,7 +38,6 @@ h5 {
     line-height: 130%;
   }
 }
-
 
 .h5 {
   overflow: visible;
@@ -71,6 +74,25 @@ a {
     li {
       margin-bottom: 6px;
     }
+  }
+}
+
+.with-footer {
+  border-bottom: #EBF2F6 1px solid;
+
+  &:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
   }
 }
 
@@ -417,3 +439,24 @@ a {
 }
 
 /* Literal.Number.Integer.Long */
+
+$_form_height: 45px;
+
+#mc_embed_signup input.email {
+  height: $_form_height !important;
+  padding: 10px !important;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+#mc_embed_signup .button {
+  font-size: 14px !important;
+  height: $_form_height !important;
+  background: $primary !important;
+
+  &:hover {
+    background: lighten($primary, 5%) !important;
+  }
+}

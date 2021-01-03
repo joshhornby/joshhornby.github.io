@@ -3,11 +3,8 @@ title:  "How to quickly plan and estimate an MVP"
 date:   2020-09-19 19:00:00
 tags: project-management
 image: /assets/images/how-to-quickly-plan-and-estimate-an-mvp.jpg
-description: A strategy for quickly planning MVP projects
-sitemap:
-    priority: 0.7
-    changefreq: 'monthly'
-    lastmod: 2020-09-19 T19:00:00+01:00
+description: A strategy for quickly planning & delivering MVPs
+featured: true
 ---
 
 This post outlines my tried & tested strategy for quickly planning and estimating MVP projects.
