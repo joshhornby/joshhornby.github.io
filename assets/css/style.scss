@@ -70,6 +70,10 @@ a {
 }
 
 .post-content {
+  img {
+    max-width: 100%;
+  }
+
   ul {
     li {
       margin-bottom: 6px;
