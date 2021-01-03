@@ -26,7 +26,7 @@ This can be as simple as a quick status update email where you ask for complete 
 
 ## Over communicate all the time
 
-> Let’s clear one thing up, over communication is not micro managing.
+<mark>Let’s clear one thing up, over communication is not micro managing.</mark>
 
 In my opinion over communication is a great tool in helping developers retain key information, whilst ensuring that everyone heard and understands the message. 
 
