@@ -6,13 +6,13 @@ layout: null
   {% for page in site.data.navigation.links %}
     {% if page.sitemap %}
       <url>
-        <loc>{{ site.siteUrl }}{{ page.url }}</loc>
+        <loc>{{ site.url }}{{ page.url }}</loc>
       </url>
     {% endif %}
   {% endfor %}
   {% for post in site.posts %}
     <url>
-      <loc>{{ site.siteUrl }}{{ post.url }}</loc>
+      <loc>{{ site.url }}{{ post.url }}</loc>
     </url>
   {% endfor %}
 </urlset>
