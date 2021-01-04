@@ -5,7 +5,7 @@ author:
   email: hello@joshhornby.co.uk
   url: null
 baseurl: ''
-siteUrl: 'https://joshhornby.co.uk'
+siteUrl: 'https://joshhornby.com'
 permalink: '/blog/:title'
 markdown: kramdown
 kramdown:
