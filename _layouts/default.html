@@ -13,6 +13,9 @@
     {% if site.tags != "" %}
     {% include collecttags.html %}
     {% endif %}
+    {% if page.noindex %}
+        <meta name="robots" content="noindex">
+    {% endif %}
 </head>
 <body>
 <main role="main">

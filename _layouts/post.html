@@ -47,10 +47,10 @@ layout: default
                 </span>
                 {% include newsletter.html %}
 
-                <div class="w-100 mb-3 d-block d-xl-flex justify-content-between">
+                <div class="w-100 mb-3 d-block justify-content-between">
                     {% if page.previous.url %}
-                    <div class="position-relative text-center text-xl-left">
-                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none d-xl-inline-block align-bottom"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    <div class="position-relative text-center">
+                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none align-bottom"><polyline points="15 18 9 12 15 6"></polyline></svg>
                         <div class="d-inline-block">
                             <small class="text-muted d-block">
                                 Previous Post
@@ -62,16 +62,16 @@ layout: default
                     </div>
                     {% endif %}
                     {% if page.next.url %}
-                    <div class="position-relative text-center text-xl-left mt-3 mt-xl-0">
+                    <div class="position-relative text-center mt-3">
                         <div class="d-inline-block">
                             <small class="text-muted d-block">
                                 Next Post
                             </small>
-                            <a class="stretched-link" href="{{page.previous.url}}">
+                            <a class="stretched-link" href="{{page.next.url}}">
                                 {{page.next.title}}
                             </a>
                         </div>
-                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none d-xl-inline-block align-bottom"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none align-bottom"><polyline points="9 18 15 12 9 6"></polyline></svg>
                     </div>
                     {% endif %}
                 </div>
