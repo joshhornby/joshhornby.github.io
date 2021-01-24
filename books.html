@@ -21,10 +21,11 @@ title: Books
                 </li>
             </ol>
             <h1 class="h1 mb-3">
-                Blog
+                Book Reviews
             </h1>
             <ul class="list-unstyled">
-                {% for post in site.books %}
+                {% assign ordered_pages = site.books | reverse %}
+                {% for post in ordered_pages %}
                     {% include blog-listing-with-image.html %}
                 {% endfor %}
             </ul>
