@@ -5,6 +5,9 @@ links:
   - title: Blog
     url: /blog
     sitemap: true
+  - title: Book Reviews
+    url: /books
+    sitemap: true
   - title: Newsletter
     url: /newsletter
     sitemap: true
