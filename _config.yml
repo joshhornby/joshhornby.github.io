@@ -23,6 +23,10 @@ social:
 twitter:
   username: joshua_hornby
   card: summary
+collections:
+  books:
+    permalink: '/books/:title'
+    output: true
 defaults:
   - scope:
       path: ''

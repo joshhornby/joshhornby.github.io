@@ -79,9 +79,14 @@ a {
     max-width: 100%;
   }
 
-  ul {
+  ol, ul {
     li {
-      margin-bottom: 6px;
+      margin-bottom: 10px;
+      line-height: 22px;
+
+      strong {
+        color: #8b54ff;
+      }
     }
   }
 }
