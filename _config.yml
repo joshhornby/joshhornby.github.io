@@ -24,6 +24,9 @@ twitter:
   username: joshua_hornby
   card: summary
 collections:
+  newsletters:
+    permalink: '/newsletters/:title'
+    output: true
   books:
     permalink: '/books/:title'
     output: true

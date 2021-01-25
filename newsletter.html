@@ -30,18 +30,26 @@ title: Newsletter
                     No matter what, I promise that each edition will be fresh and worthy of your attention.
                 </p>
 
-                <div class="mb-3">
-                    <div class="text-center">
-                        <img width="50" class="rounded-circle" src="/assets/images/jeff_guel.jpg" alt="Jeff Guel Headshot">
-                        <p class="mb-0">"I really enjoyed this week's newsletter, lots insightful topics."</p>
-                        <small>Jeff Guel - Head of Developemnt</small>
-                    </div>
-                </div>
+<!--                <div class="mb-3">-->
+<!--                    <div class="text-center">-->
+<!--                        <img width="50" class="rounded-circle" src="/assets/images/jeff_guel.jpg" alt="Jeff Guel Headshot">-->
+<!--                        <p class="mb-0">"I really enjoyed this week's newsletter, lots insightful topics."</p>-->
+<!--                        <small>Jeff Guel - Head of Developemnt</small>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 {% include newsletter.html %}
-                <small class="mb-2 d-block text-center">This information will only be used to send the newsletter. You can unsubscribe any time.</small>
             </section>
-
+            <section class="mb-3">
+                <h5 class="h5">Previous issue</h5>
+                {% assign ordered_pages = site.newsletters | reverse %}
+                {% for post in ordered_pages %}
+                    <small>{{ post.date | date: "%b %d, %Y" }}</small>
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                {% endfor %}
+            </section>
         </div>
         {% include navigation.html %}
     </div>
