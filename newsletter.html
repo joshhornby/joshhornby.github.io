@@ -41,7 +41,7 @@ title: Newsletter
                 {% include newsletter.html %}
             </section>
             <section class="mb-3">
-                <h5 class="h5">Previous issue</h5>
+                <h5 class="h5">Previous issues</h5>
                 {% assign ordered_pages = site.newsletters | reverse %}
                 {% for post in ordered_pages %}
                     <small>{{ post.date | date: "%b %d, %Y" }}</small>
