@@ -11,6 +11,8 @@ markdown: kramdown
 kramdown:
   input: GFM
   coderay_line_numbers: ''
+sass:
+  style: compressed
 google_analytics: UA-29844067-2
 locale: en_GB
 logo: 'https://joshhornby.com/assets/images/logo.png'
