@@ -1,13 +1,42 @@
 ---
 layout: default
+description: Head of Software Development based out of Manchester, UK.
 ---
-<section class="posts">
-  <ul>
-    {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-    {% endfor %}
-  </ul>
-</section>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <h1 class="h1">
+                Head of Software Development based out of Manchester, UK.
+            </h1>
+            <section class="mt-5 with-footer">
+                <h5 class="h5 mb-4">Background</h5>
+                <p>Hi. I'm Josh Hornby, a product-minded software developer. I enjoy building software and managing development teams. With nearly a decade of software development experience, I
+                    understand the connections between strategy, development teams, and business goals.
+                    <br>
+                    <br>
+                    Currently, I am working as the Head of Development at <a
+                            href="https://choosemycar.com" target="_blank">ChooseMyCar</a>, a car
+                    finance start-up based in the UK.
+                    <br>
+                    I also host the <a href="https://6minutesoftwaredevelopment.com" target="_blank">6 Minute Software Development Podcast</a>, weekly 6 minute
+                    episodes aimed at helping you improve your day-to-day work as software developer or tech leader.
+                    <br>
+                    <br>
+                    You can also find me on <a target="_blank" href="https://twitter.com/joshua_hornby">Twitter</a> where I talk
+                    about software development & management.
+                </p>
+                {% include newsletter.html %}
+                <h5 class="h5 my-4">Popular Posts</h5>
+                <ul class="list-unstyled">
+                    {% for post in site.posts %}
+                        {% if post.featured and post.image %}
+                            {% include blog-listing-with-image.html %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+        {% include navigation.html %}
+    </div>
+</div>

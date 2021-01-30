@@ -1,5 +1,13 @@
 links:
-  - title: Writing
+  - title: Home
     url: /
-  - title: Rss
-    url: /atom.xml
+    sitemap: true
+  - title: Blog
+    url: /blog
+    sitemap: true
+  - title: Book Reviews
+    url: /books
+    sitemap: true
+  - title: Newsletter
+    url: /newsletter
+    sitemap: true

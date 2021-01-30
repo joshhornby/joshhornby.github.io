@@ -1,0 +1,56 @@
+---
+layout: default
+description: Head of Software Development based out of Manchester, UK.
+title: Newsletter
+---
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8 with-footer">
+            <ol class="list-unstyled list-inline breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{ site.url }}">
+                        <span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="{{ site.url }}/newsletter">
+                        <span itemprop="name">Newsletter</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+            </ol>
+            <h1 class="h1">
+                Weekly Newsletter
+            </h1>
+            <section class="mt-3 post-content">
+                <p>
+                    Every Monday I send out a newsletter containing some thoughts, life lessons and interesting content I discovered on the internet that week.
+                    No matter what, I promise that each edition will be fresh and worthy of your attention.
+                </p>
+
+<!--                <div class="mb-3">-->
+<!--                    <div class="text-center">-->
+<!--                        <img width="50" class="rounded-circle" src="/assets/images/jeff_guel.jpg" alt="Jeff Guel Headshot">-->
+<!--                        <p class="mb-0">"I really enjoyed this week's newsletter, lots insightful topics."</p>-->
+<!--                        <small>Jeff Guel - Head of Developemnt</small>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+                {% include newsletter.html %}
+            </section>
+            <section class="mb-3">
+                <h5 class="h5">Previous issues</h5>
+                {% assign ordered_pages = site.newsletters | reverse %}
+                {% for post in ordered_pages %}
+                    <small>{{ post.date | date: "%b %d, %Y" }}</small>
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                {% endfor %}
+            </section>
+        </div>
+        {% include navigation.html %}
+    </div>
+</div>

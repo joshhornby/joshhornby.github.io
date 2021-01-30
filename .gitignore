@@ -2,3 +2,4 @@ _site/
 .DS_Store
 .idea
 .jekyll-cache
+node_modules

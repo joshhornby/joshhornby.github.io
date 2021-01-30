@@ -5,14 +5,17 @@ author:
   email: hello@joshhornby.co.uk
   url: null
 baseurl: ''
-siteUrl: 'https://joshhornby.co.uk'
+url: 'https://joshhornby.com'
 permalink: '/blog/:title'
 markdown: kramdown
 kramdown:
   input: GFM
   coderay_line_numbers: ''
+sass:
+  style: compressed
 google_analytics: UA-29844067-2
 locale: en_GB
+logo: 'https://joshhornby.com/assets/images/logo.png'
 social:
   name: Josh Hornby
   links:
@@ -22,6 +25,13 @@ social:
 twitter:
   username: joshua_hornby
   card: summary
+collections:
+  newsletters:
+    permalink: '/newsletters/:title'
+    output: true
+  books:
+    permalink: '/books/:title'
+    output: true
 defaults:
   - scope:
       path: ''
