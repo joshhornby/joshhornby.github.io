@@ -3,7 +3,8 @@ title:  "How to quickly plan and estimate an MVP"
 date:   2020-09-19 19:00:00
 tags: project-management
 image: /assets/images/how-to-quickly-plan-and-estimate-an-mvp.jpg
-description: A strategy for quickly planning & delivering MVPs
+description: This post outlines my tried & tested strategy for quickly planning and estimating MVP projects.
+             This process departs a little from Agile/Scrum best practices. There are no guarantees on estimation quality which I believe is impossible to do for software projects, but it helps to provide a rough guide for new projects.
 featured: true
 ---
 
