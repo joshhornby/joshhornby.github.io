@@ -43,7 +43,9 @@ layout: default
             </div>
             <section class="post-content">
                 {% if page.image %}
-                    <img alt="{{ page.title }}" class="img-fluid rounded-xl mb-3" src="{{ page.image }}"/>
+                    {% unless page.hide_image  %}
+                        <img alt="{{ page.title }}" class="img-fluid rounded-xl mb-3" src="{{ page.image }}"/>
+                    {% endunless %}
                 {% endif %}
                 {{ content }}
                 <hr />
