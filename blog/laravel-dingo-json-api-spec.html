@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="29nMS88wbHFM-PFNgK9AAfQojw367FNb3p74HvPq1Mw"/>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Using the JSON API spec in a Laravel API | Josh Hornby</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Using the JSON API spec in a Laravel API" />
+<meta name="author" content="Josh Hornby" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Using Laravel to build an API that is compliant with the JSON API spec." />
+<meta property="og:description" content="Using Laravel to build an API that is compliant with the JSON API spec." />
+<link rel="canonical" href="https://joshhornby.com/blog/laravel-dingo-json-api-spec" />
+<meta property="og:url" content="https://joshhornby.com/blog/laravel-dingo-json-api-spec" />
+<meta property="og:site_name" content="Josh Hornby" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-03-01T11:50:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Using the JSON API spec in a Laravel API" />
+<meta name="twitter:site" content="@joshua_hornby" />
+<meta name="twitter:creator" content="@Josh Hornby" />
+<script type="application/ld+json">
+{"description":"Using Laravel to build an API that is compliant with the JSON API spec.","url":"https://joshhornby.com/blog/laravel-dingo-json-api-spec","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://joshhornby.com/assets/images/logo.png"},"name":"Josh Hornby"},"headline":"Using the JSON API spec in a Laravel API","dateModified":"2016-03-01T11:50:00+00:00","datePublished":"2016-03-01T11:50:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://joshhornby.com/blog/laravel-dingo-json-api-spec"},"author":{"@type":"Person","name":"Josh Hornby"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter:300,regular,500%7CIBM+Plex+Sans:300,regular,600"
+          media="all">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    
+
+
+
+
+
+    
+    
+</head>
+<body>
+<main role="main">
+    <nav class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-md-8 col-md-4 text-right text-md-left">
+                    <ul class="list-inline list-unstyled">
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/">Home</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/blog">Blog</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/books">Book Reviews</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/newsletter">Newsletter</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8 with-footer">
+            <ol class="list-unstyled list-inline breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com">
+                        <span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com/blog">
+                        <span itemprop="name">Blog</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com/blog/laravel-dingo-json-api-spec">
+                        <span itemprop="name">Using the JSON API spec in a Laravel API</span></a>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+            <h1 class="h1 my-3">
+                Using the JSON API spec in a Laravel API
+            </h1>
+            
+            <div class="meta mb-3">
+                <span>
+                    Tags:
+                    
+                        
+                            <a href="/tag/php"><code class="highligher-rouge"><span>php</span></code> </a>
+                        
+                        
+                            <a href="/tag/laravel"><code class="highligher-rouge"><span>laravel</span></code> </a>
+                        
+                </span>
+            </div>
+            <section class="post-content">
+                
+                <p><em>This blog post assumes you are using <a href="http://laravel.com">Laravel</a> &amp; <a href="https://github.com/dingo/api">Dingo API</a>.</em></p>
+
+<p>The <a href="http://jsonapi.org/">JSON API spec</a> is a set of rules which can increase productivity, take advantage of generalized tooling, and focus on what matters: your application.</p>
+
+<p>In order to add the JSON API spec to your API create a service provider called <code class="language-plaintext highlighter-rouge">JSONApiServiceProvider</code> and add the following in your register function:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$this</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="nf">bind</span><span class="p">(</span><span class="s1">'League\Fractal\Manager'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$app</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$fractal</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Manager</span><span class="p">();</span>
+    <span class="nv">$serializer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">JsonApiSerializer</span><span class="p">();</span>
+    <span class="nv">$fractal</span><span class="o">-&gt;</span><span class="nf">setSerializer</span><span class="p">(</span><span class="nv">$serializer</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="nv">$fractal</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="n">app</span><span class="o">-&gt;</span><span class="nf">bind</span><span class="p">(</span><span class="s1">'Dingo\Api\Transformer\Adapter\Fractal'</span><span class="p">,</span> <span class="k">function</span><span class="p">(</span><span class="nv">$app</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$fractal</span> <span class="o">=</span> <span class="nv">$app</span><span class="o">-&gt;</span><span class="nf">make</span><span class="p">(</span><span class="s1">'\League\Fractal\Manager'</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="k">new</span> <span class="nc">Fractal</span><span class="p">(</span><span class="nv">$fractal</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Next add <code class="language-plaintext highlighter-rouge">JSONApiServiceProvider</code> to the providers array in <code class="language-plaintext highlighter-rouge">config/app.php</code>.</p>
+
+<p>This will use the built in <code class="language-plaintext highlighter-rouge">JsonApiSerializer</code> from <a href="http://fractal.thephpleague.com">Fractal</a>. This makes makes using the JSON API Spec as simple as calling a transformer.</p>
+
+<p>In a controller add the following:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">public</span> <span class="k">function</span> <span class="n">index</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nv">$posts</span> <span class="o">=</span> <span class="nc">Post</span><span class="o">::</span><span class="nf">all</span><span class="p">();</span>
+
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="n">response</span><span class="o">-&gt;</span><span class="nf">collection</span><span class="p">(</span><span class="nv">$posts</span><span class="p">,</span> <span class="k">new</span> <span class="nc">PostTransformer</span><span class="p">(),</span> <span class="p">[</span> <span class="s1">'key'</span> <span class="o">=&gt;</span> <span class="s2">"posts"</span> <span class="p">]);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>The final step is to create a Transformer, in a nut shell a transformer takes the data in one format and outputs it to another. It provides an abstraction layer over the database which allows you to map the data to any output, in our case the JSON API Spec.</p>
+
+<blockquote>
+  <p>Transformers are classes, or anonymous functions, which are responsible for taking one instance of the resource data and converting it to a basic array. This process is done to obfuscate your data store, avoiding Object-relational impedance mismatch and allowing you to even glue various elements together from different data stores if you wish. The data is taken from these complex data store(s) and made into a format that is more manageable, and ready to be Serialized.</p>
+</blockquote>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">PostTransformer</span> <span class="k">extends</span> <span class="err">\</span><span class="nc">Fractal\TransformerAbstract</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">function</span> <span class="n">transform</span><span class="p">(</span><span class="kt">Post</span> <span class="nv">$post</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="p">[</span>
+            <span class="s1">'id'</span> <span class="o">=&gt;</span> <span class="nv">$post</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">,</span>
+            <span class="s1">'title'</span> <span class="o">=&gt;</span> <span class="nv">$post</span><span class="o">-&gt;</span><span class="n">title</span><span class="p">,</span>
+            <span class="s1">'body'</span> <span class="o">=&gt;</span> <span class="nv">$post</span><span class="o">-&gt;</span><span class="n">body</span><span class="p">,</span>
+        <span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The code above will provide the JSON you can see below, perfectly formed JSON API spec valid JSON!</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"posts"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a title"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a body"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+                <hr />
+                <span class="mb-3 d-block font-italic">
+                    Published on <time datetime="2016-03-01T11:50:00+00:00">March 1, 2016.</time>
+                </span>
+                <div class="bg-secondary rounded-lg p-3 shadow-sm my-3">
+    <h4>Join the newsletter</h4>
+    <p class="pt-2 mb-0">Join my weekly newsletter containing some thoughts, life lessons and interesting content I discovered on the internet that week.</p>
+
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <div id="mc_embed_signup">
+        <form action="https://joshhornby.us7.list-manage.com/subscribe/post?u=3749c15a8759f402eb64ab3d0&amp;id=4e67495a84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" class="email rounded-lg border-0" id="mce-EMAIL" placeholder="Enter your email" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3749c15a8759f402eb64ab3d0_4e67495a84" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+                <div class="w-100 mb-3 d-block justify-content-between">
+                    
+                    <div class="position-relative text-center">
+                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none align-bottom"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        <div class="d-inline-block">
+                            <small class="text-muted d-block">
+                                Previous Post
+                            </small>
+                            <a class="stretched-link" href="/blog/immutable-and-namespaced-css-made-easy">
+                                Immutable and namespaced CSS made easy
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="position-relative text-center mt-3">
+                        <div class="d-inline-block">
+                            <small class="text-muted d-block">
+                                Next Post
+                            </small>
+                            <a class="stretched-link" href="/blog/ember-and-global-query-parameters">
+                                Global query parameters with Ember
+                            </a>
+                        </div>
+                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none align-bottom"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </div>
+        <aside class="col-4">
+    <h5 class="h5 my-3">Links</h5>
+    <nav>
+        <ul class="list-unstyled d-block">
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://6minutesoftwaredevelopment.com" target="_blank">
+                    Podcast
+                </a>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://twitter.com/joshua_hornby" target="_blank">
+                    Twitter
+                </a>
+                <img class="d-inline-block" src="/assets/images/twitter.svg" alt="Twitter Logo"/>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://www.linkedin.com/in/joshhornby" target="_blank">
+                    Linkedin
+                </a>
+                <img class="d-inline-block" src="/assets/images/linkedin.svg" alt="Linkedin Logo"/>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0 d-inline-block d-block">
+                <a href="https://joshhornby.com/atom.xml" target="_blank">
+                    Rss
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+
+    </div>
+</div>
+
+
+    <footer class="mt-5">
+
+    </footer>
+</main>
+</body>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] = i[r] ||
+            function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }), (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-29844067-2', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</html>

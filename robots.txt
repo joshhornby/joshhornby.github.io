@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://joshhornby.com/sitemap.xml

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
+      <url>
+        <loc>https://joshhornby.com/</loc>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://joshhornby.com/blog</loc>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://joshhornby.com/books</loc>
+      </url>
+    
+  
+    
+      <url>
+        <loc>https://joshhornby.com/newsletter</loc>
+      </url>
+    
+  
+  
+    <url>
+      <loc>https://joshhornby.com/blog/advice-to-my-younger-software-developer-self</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/blog/managing-software-projects</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/blog/how-to-quickly-plan-and-estimate-an-mvp</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/blog/terraform-and-twilio</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/blog/ember-and-global-query-parameters</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/blog/laravel-dingo-json-api-spec</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/blog/immutable-and-namespaced-css-made-easy</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/blog/react-native-and-continuous-deployment</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/blog/lessons-learned-from-building-an-app-with-reactjs</loc>
+    </url>
+  
+  
+    <url>
+      <loc>https://joshhornby.com/books/a-managers-path</loc>
+    </url>
+  
+    <url>
+      <loc>https://joshhornby.com/books/an-elegant-puzzle</loc>
+    </url>
+  
+</urlset>

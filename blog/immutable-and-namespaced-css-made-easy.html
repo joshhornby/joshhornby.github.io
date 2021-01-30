@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="29nMS88wbHFM-PFNgK9AAfQojw367FNb3p74HvPq1Mw"/>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Immutable and namespaced CSS made easy | Josh Hornby</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Immutable and namespaced CSS made easy" />
+<meta name="author" content="Josh Hornby" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Using the ideas of immutable data and namespacing to increase productivity when writing CSS." />
+<meta property="og:description" content="Using the ideas of immutable data and namespacing to increase productivity when writing CSS." />
+<link rel="canonical" href="https://joshhornby.com/blog/immutable-and-namespaced-css-made-easy" />
+<meta property="og:url" content="https://joshhornby.com/blog/immutable-and-namespaced-css-made-easy" />
+<meta property="og:site_name" content="Josh Hornby" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2016-02-02T20:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Immutable and namespaced CSS made easy" />
+<meta name="twitter:site" content="@joshua_hornby" />
+<meta name="twitter:creator" content="@Josh Hornby" />
+<script type="application/ld+json">
+{"description":"Using the ideas of immutable data and namespacing to increase productivity when writing CSS.","url":"https://joshhornby.com/blog/immutable-and-namespaced-css-made-easy","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://joshhornby.com/assets/images/logo.png"},"name":"Josh Hornby"},"headline":"Immutable and namespaced CSS made easy","dateModified":"2016-02-02T20:00:00+00:00","datePublished":"2016-02-02T20:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://joshhornby.com/blog/immutable-and-namespaced-css-made-easy"},"author":{"@type":"Person","name":"Josh Hornby"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter:300,regular,500%7CIBM+Plex+Sans:300,regular,600"
+          media="all">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    
+
+
+
+
+
+    
+    
+</head>
+<body>
+<main role="main">
+    <nav class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-md-8 col-md-4 text-right text-md-left">
+                    <ul class="list-inline list-unstyled">
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/">Home</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/blog">Blog</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/books">Book Reviews</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/newsletter">Newsletter</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8 with-footer">
+            <ol class="list-unstyled list-inline breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com">
+                        <span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com/blog">
+                        <span itemprop="name">Blog</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com/blog/immutable-and-namespaced-css-made-easy">
+                        <span itemprop="name">Immutable and namespaced CSS made easy</span></a>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+            <h1 class="h1 my-3">
+                Immutable and namespaced CSS made easy
+            </h1>
+            
+            <div class="meta mb-3">
+                <span>
+                    Tags:
+                    
+                        
+                            <a href="/tag/css"><code class="highligher-rouge"><span>css</span></code> </a>
+                        
+                </span>
+            </div>
+            <section class="post-content">
+                
+                <p>Two of my favourite CSS blog posts are written by Harry Roberts, <a href="http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/">More Transparent UI Code with Namespaces</a> and <a href="http://csswizardry.com/2015/03/immutable-css/">Immutable CSS</a>.</p>
+
+<p>A little package called <a href="https://github.com/danielguillan/bem-constructor">bem-constructor</a> takes both ideas from Harry’s blogs and includes them in a fantastic mixin. Bem-constructor makes writing <a href="https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/">object oriented css</a> much simpler and wraps the logic in an elegant syntax. Take a look at this rather contrived example:</p>
+
+<div class="language-sass highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@include</span> <span class="nd">object</span><span class="p">(</span><span class="s1">'media'</span><span class="p">)</span> <span class="err">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="err">;</span>
+  <span class="k">@include</span> <span class="nd">element</span><span class="p">(</span><span class="s1">'image'</span><span class="p">)</span> <span class="err">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="err">;</span>
+    <span class="k">@include</span> <span class="nd">modifier</span><span class="p">(</span><span class="s1">'rounded-corners'</span><span class="p">)</span> <span class="err">{</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="err">;</span>
+    <span class="err">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div></div>
+
+<p>This will generate the following CSS:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.o-media</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="p">}</span>
+  <span class="nc">.o-media__image</span> <span class="p">{</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span> <span class="p">}</span>
+    <span class="nc">.o-media__image--rounded-corners</span> <span class="p">{</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span> <span class="p">}</span>
+</code></pre></div></div>
+<p>By enforcing a consistent and programatic way of defining objects it ensures a more structured, robust and secure object codebase that is easy to understand and maintain. Objects defined using <a href="https://github.com/danielguillan/bem-constructor">bem-constructor</a> are impossible to modify and reassign by mistake or omission.</p>
+
+                <hr />
+                <span class="mb-3 d-block font-italic">
+                    Published on <time datetime="2016-02-02T20:00:00+00:00">February 2, 2016.</time>
+                </span>
+                <div class="bg-secondary rounded-lg p-3 shadow-sm my-3">
+    <h4>Join the newsletter</h4>
+    <p class="pt-2 mb-0">Join my weekly newsletter containing some thoughts, life lessons and interesting content I discovered on the internet that week.</p>
+
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <div id="mc_embed_signup">
+        <form action="https://joshhornby.us7.list-manage.com/subscribe/post?u=3749c15a8759f402eb64ab3d0&amp;id=4e67495a84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" class="email rounded-lg border-0" id="mce-EMAIL" placeholder="Enter your email" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3749c15a8759f402eb64ab3d0_4e67495a84" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+                <div class="w-100 mb-3 d-block justify-content-between">
+                    
+                    <div class="position-relative text-center">
+                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none align-bottom"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        <div class="d-inline-block">
+                            <small class="text-muted d-block">
+                                Previous Post
+                            </small>
+                            <a class="stretched-link" href="/blog/react-native-and-continuous-deployment">
+                                React Native & continuous deployment
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="position-relative text-center mt-3">
+                        <div class="d-inline-block">
+                            <small class="text-muted d-block">
+                                Next Post
+                            </small>
+                            <a class="stretched-link" href="/blog/laravel-dingo-json-api-spec">
+                                Using the JSON API spec in a Laravel API
+                            </a>
+                        </div>
+                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none align-bottom"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </div>
+        <aside class="col-4">
+    <h5 class="h5 my-3">Links</h5>
+    <nav>
+        <ul class="list-unstyled d-block">
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://6minutesoftwaredevelopment.com" target="_blank">
+                    Podcast
+                </a>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://twitter.com/joshua_hornby" target="_blank">
+                    Twitter
+                </a>
+                <img class="d-inline-block" src="/assets/images/twitter.svg" alt="Twitter Logo"/>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://www.linkedin.com/in/joshhornby" target="_blank">
+                    Linkedin
+                </a>
+                <img class="d-inline-block" src="/assets/images/linkedin.svg" alt="Linkedin Logo"/>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0 d-inline-block d-block">
+                <a href="https://joshhornby.com/atom.xml" target="_blank">
+                    Rss
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+
+    </div>
+</div>
+
+
+    <footer class="mt-5">
+
+    </footer>
+</main>
+</body>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] = i[r] ||
+            function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }), (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-29844067-2', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</html>

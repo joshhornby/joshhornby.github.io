@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="29nMS88wbHFM-PFNgK9AAfQojw367FNb3p74HvPq1Mw"/>
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Global query parameters with Ember | Josh Hornby</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Global query parameters with Ember" />
+<meta name="author" content="Josh Hornby" />
+<meta property="og:locale" content="en_GB" />
+<meta name="description" content="Using Ember computed properties to handle global query parameters" />
+<meta property="og:description" content="Using Ember computed properties to handle global query parameters" />
+<link rel="canonical" href="https://joshhornby.com/blog/ember-and-global-query-parameters" />
+<meta property="og:url" content="https://joshhornby.com/blog/ember-and-global-query-parameters" />
+<meta property="og:site_name" content="Josh Hornby" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-06-10T19:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Global query parameters with Ember" />
+<meta name="twitter:site" content="@joshua_hornby" />
+<meta name="twitter:creator" content="@Josh Hornby" />
+<script type="application/ld+json">
+{"description":"Using Ember computed properties to handle global query parameters","url":"https://joshhornby.com/blog/ember-and-global-query-parameters","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://joshhornby.com/assets/images/logo.png"},"name":"Josh Hornby"},"headline":"Global query parameters with Ember","dateModified":"2017-06-10T19:00:00+00:00","datePublished":"2017-06-10T19:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://joshhornby.com/blog/ember-and-global-query-parameters"},"author":{"@type":"Person","name":"Josh Hornby"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter:300,regular,500%7CIBM+Plex+Sans:300,regular,600"
+          media="all">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    
+
+
+
+
+
+    
+    
+</head>
+<body>
+<main role="main">
+    <nav class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-md-8 col-md-4 text-right text-md-left">
+                    <ul class="list-inline list-unstyled">
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/">Home</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/blog">Blog</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/books">Book Reviews</a>
+                        </li>
+                        
+                        <li class="list-inline-item">
+                            <a href="https://joshhornby.com/newsletter">Newsletter</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8 with-footer">
+            <ol class="list-unstyled list-inline breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com">
+                        <span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com/blog">
+                        <span itemprop="name">Blog</span></a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li class="list-inline-item" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="https://joshhornby.com/blog/ember-and-global-query-parameters">
+                        <span itemprop="name">Global query parameters with Ember</span></a>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ol>
+            <h1 class="h1 my-3">
+                Global query parameters with Ember
+            </h1>
+            
+            <div class="meta mb-3">
+                <span>
+                    Tags:
+                    
+                        
+                            <a href="/tag/javascript"><code class="highligher-rouge"><span>javascript</span></code> </a>
+                        
+                        
+                            <a href="/tag/ember"><code class="highligher-rouge"><span>ember</span></code> </a>
+                        
+                </span>
+            </div>
+            <section class="post-content">
+                
+                <p>Recently while using <a href="https://www.emberjs.com/">Ember.js</a> I needed to use global query parameters across routes. For example, navigating from <code class="language-plaintext highlighter-rouge">/users?start=2017-01-01</code> to <code class="language-plaintext highlighter-rouge">/users/1?start=2017-01-01</code> I wanted to make sure the <code class="language-plaintext highlighter-rouge">start</code> filter was applied across routes.</p>
+
+<p>This can be achieved by using <a href="https://guides.emberjs.com/v2.13.0/applications/services/">services</a> and computed properties.</p>
+
+<p>As you can see in the example below, the <code class="language-plaintext highlighter-rouge">date.js</code> service will handle the state across the lifetime of the application.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// app/services/date.js</span>
+<span class="k">import</span> <span class="nx">Ember</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">ember</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">moment</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">moment</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">Service</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+  <span class="na">start</span><span class="p">:</span> <span class="nx">moment</span><span class="p">().</span><span class="nx">startOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">day</span><span class="dl">'</span><span class="p">).</span><span class="nx">format</span><span class="p">(</span><span class="dl">'</span><span class="s1">YYYY-MM-DD</span><span class="dl">'</span><span class="p">),</span>
+  <span class="na">end</span><span class="p">:</span> <span class="nx">moment</span><span class="p">().</span><span class="nx">endOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">day</span><span class="dl">'</span><span class="p">).</span><span class="nx">format</span><span class="p">(</span><span class="dl">'</span><span class="s1">YYYY-MM-DD</span><span class="dl">'</span><span class="p">),</span>
+
+  <span class="nx">setDates</span><span class="p">(</span><span class="nx">dates</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">start</span><span class="dl">'</span><span class="p">,</span> <span class="nx">dates</span><span class="p">.</span><span class="nx">dateFrom</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="dl">'</span><span class="s1">end</span><span class="dl">'</span><span class="p">,</span> <span class="nx">dates</span><span class="p">.</span><span class="nx">dateTo</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Then in any controller where you wish to consume the query parameters, you can inject the service and use the <code class="language-plaintext highlighter-rouge">alias</code> computed property. This will create a new property that is an alias for in this the <code class="language-plaintext highlighter-rouge">date.start</code> property.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// app/controller/users.js</span>
+<span class="k">import</span> <span class="nx">Ember</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">ember</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">Controller</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+  <span class="na">date</span><span class="p">:</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">inject</span><span class="p">.</span><span class="nx">service</span><span class="p">(),</span>
+
+  <span class="na">dateFrom</span><span class="p">:</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">computed</span><span class="p">.</span><span class="nx">alias</span><span class="p">(</span><span class="dl">'</span><span class="s1">date.start</span><span class="dl">'</span><span class="p">),</span>
+  <span class="na">dateTo</span><span class="p">:</span> <span class="nx">Ember</span><span class="p">.</span><span class="nx">computed</span><span class="p">.</span><span class="nx">alias</span><span class="p">(</span><span class="dl">'</span><span class="s1">date.from</span><span class="dl">'</span><span class="p">),</span>
+
+  <span class="na">actions</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nx">update</span><span class="p">(</span><span class="nx">dateFrom</span><span class="p">,</span> <span class="nx">dateTo</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">date</span><span class="dl">'</span><span class="p">).</span><span class="nx">setDates</span><span class="p">({</span> <span class="nx">dateFrom</span><span class="p">,</span> <span class="nx">dateTo</span> <span class="p">});</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+
+  <span class="na">queryParams</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">dateFrom</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">dateTo</span><span class="dl">"</span><span class="p">]</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>When the <code class="language-plaintext highlighter-rouge">update</code> action is called, the service updates the properties on the date service.</p>
+
+                <hr />
+                <span class="mb-3 d-block font-italic">
+                    Published on <time datetime="2017-06-10T19:00:00+00:00">June 10, 2017.</time>
+                </span>
+                <div class="bg-secondary rounded-lg p-3 shadow-sm my-3">
+    <h4>Join the newsletter</h4>
+    <p class="pt-2 mb-0">Join my weekly newsletter containing some thoughts, life lessons and interesting content I discovered on the internet that week.</p>
+
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <div id="mc_embed_signup">
+        <form action="https://joshhornby.us7.list-manage.com/subscribe/post?u=3749c15a8759f402eb64ab3d0&amp;id=4e67495a84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" class="email rounded-lg border-0" id="mce-EMAIL" placeholder="Enter your email" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3749c15a8759f402eb64ab3d0_4e67495a84" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+                <div class="w-100 mb-3 d-block justify-content-between">
+                    
+                    <div class="position-relative text-center">
+                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none align-bottom"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        <div class="d-inline-block">
+                            <small class="text-muted d-block">
+                                Previous Post
+                            </small>
+                            <a class="stretched-link" href="/blog/laravel-dingo-json-api-spec">
+                                Using the JSON API spec in a Laravel API
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="position-relative text-center mt-3">
+                        <div class="d-inline-block">
+                            <small class="text-muted d-block">
+                                Next Post
+                            </small>
+                            <a class="stretched-link" href="/blog/terraform-and-twilio">
+                                Using Terraform to build Twilio TaskRouter Infrastructure
+                            </a>
+                        </div>
+                        <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="d-none align-bottom"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    
+                </div>
+
+            </section>
+        </div>
+        <aside class="col-4">
+    <h5 class="h5 my-3">Links</h5>
+    <nav>
+        <ul class="list-unstyled d-block">
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://6minutesoftwaredevelopment.com" target="_blank">
+                    Podcast
+                </a>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://twitter.com/joshua_hornby" target="_blank">
+                    Twitter
+                </a>
+                <img class="d-inline-block" src="/assets/images/twitter.svg" alt="Twitter Logo"/>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0">
+                <a href="https://www.linkedin.com/in/joshhornby" target="_blank">
+                    Linkedin
+                </a>
+                <img class="d-inline-block" src="/assets/images/linkedin.svg" alt="Linkedin Logo"/>
+            </li>
+            <li class="mb-3 mr-2 mr-md-0 d-inline-block d-block">
+                <a href="https://joshhornby.com/atom.xml" target="_blank">
+                    Rss
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+
+    </div>
+</div>
+
+
+    <footer class="mt-5">
+
+    </footer>
+</main>
+</body>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] = i[r] ||
+            function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }), (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-29844067-2', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</html>
