@@ -3,7 +3,7 @@
     <title></title>
     <link href="https://joshhornby.com/atom.xml" rel="self"/>
     <link href="https://joshhornby.com/"/>
-    <updated>2021-01-30T12:18:59+00:00</updated>
+    <updated>2021-01-30T12:46:30+00:00</updated>
     <id>https://joshhornby.com</id>
     <author>
         <name>Josh Hornby</name>
@@ -47,8 +47,6 @@
 &lt;div class=&quot;bg-secondary rounded-lg p-3 shadow-sm my-3&quot;&gt;
     &lt;h4&gt;Join the newsletter&lt;/h4&gt;
     &lt;p class=&quot;pt-2 mb-0&quot;&gt;Join my weekly newsletter containing some thoughts, life lessons and interesting content I discovered on the internet that week.&lt;/p&gt;
-
-    &lt;link href=&quot;//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
     &lt;div id=&quot;mc_embed_signup&quot;&gt;
         &lt;form action=&quot;https://joshhornby.us7.list-manage.com/subscribe/post?u=3749c15a8759f402eb64ab3d0&amp;amp;id=4e67495a84&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate=&quot;&quot;&gt;
             &lt;div id=&quot;mc_embed_signup_scroll&quot;&gt;
