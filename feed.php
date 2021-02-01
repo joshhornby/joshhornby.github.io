@@ -9,7 +9,6 @@ foreach ($data as $key => $element) {
     $unix = strtotime($element->pubDate);
     $date = (new DateTime())->setTimestamp($unix);
 
-
     $html = str_replace('<!doctype html>', '', $element->description);
 
     $myfile = fopen('_newsletters/' . $key + 1 . '.md', 'wb') or die('Unable to create file!');
@@ -20,10 +19,8 @@ date: " . $date->format('Y-m-d H:i:s') . "
 number: " . $key + 1 . "
 ---
 " . $html . "
-"
-    ;
+";
+
     fwrite($myfile, $txt);
     fclose($myfile);
-
-    echo $element->title;
 }
