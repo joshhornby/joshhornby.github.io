@@ -14,7 +14,7 @@ As I look back over what's almost a decade in software development, there are so
 
 When ever I took the time to properly read a book (by properly I mean taking notes, consolidating my thoughts and re-reading) I leveled up.
 
-I wish I had read more software related book at the start of my career as a developer. I'd recommend reading language agnostic books such as [Clean Code: A Handbook of Agile Software Craftsmanship](https://amzn.to/3ox1hOg){:target="_blank"}, [Design Principles and Design Patterns](https://fi.ort.edu.uy/innovaportal/file/2032/1/design_principles.pdf){:target="_blank"}, [Soft Skills: The software developer's life manual](https://amzn.to/3ac7UR2){:target="_blank"}. The ideas you will learn in these books translate to the majority of programming languages you will use through out your career. 
+I wish I had read more software related books at the start of my career as a developer. I'd recommend reading language agnostic books such as [Clean Code: A Handbook of Agile Software Craftsmanship](https://amzn.to/3ox1hOg){:target="_blank"}, [Design Principles and Design Patterns](https://fi.ort.edu.uy/innovaportal/file/2032/1/design_principles.pdf){:target="_blank"}, [Soft Skills: The software developer's life manual](https://amzn.to/3ac7UR2){:target="_blank"}. The ideas you will learn in these books translate to the majority of programming languages you will use through out your career. 
 
 It took me a long time to understand the value of taking notes whilst reading, it's taken me even longer to start [publishing these notes online](https://joshhornby.com/books).
 
@@ -34,7 +34,7 @@ I understand it can be daunting to pair with another developer, especially one w
 
 A pairing session can be as simple as sending someone a PR to review, and then sitting down with them to discuss their comments. In my experience you'll gain more from discussing code with someone verbally than you would through comments on a screen.
 
-A pleasant side effect of pairing is you form relationships with the developers you pair with. This can be useful when your new at a company, so don't be afraid to ask to pair with someone.
+A pleasant side effect of pairing is you form relationships with the developers you pair with. This can be useful when you're new at a company, so don't be afraid to ask to pair with someone.
 
 {% include newsletter.html %}
 
