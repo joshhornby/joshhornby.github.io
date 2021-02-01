@@ -36,12 +36,16 @@ image: /assets/images/social-newsletter.jpg
             <section class="mb-3">
                 <h5 class="h5">Previous issues</h5>
                 {% assign ordered_pages = site.newsletters | reverse %}
+                <ul class="list-unstyled">
                 {% for post in ordered_pages %}
-                    <small>{{ post.date | date: "%b %d, %Y" }}</small>
-                    <a href="{{ site.baseurl }}{{ post.url }}">
-                        {{ post.title }}
-                    </a>
+                    <li>
+                        <small>{{ post.date | date: "%b %d, %Y" }}</small>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                            {{ post.title }}
+                        </a>
+                    </li>
                 {% endfor %}
+                </ul>
             </section>
         </div>
         {% include navigation.html %}
