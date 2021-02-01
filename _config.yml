@@ -24,7 +24,7 @@ social:
     - 'https://github.com/joshhornby'
 twitter:
   username: joshua_hornby
-  card: summary
+  card: summary_large_image
 collections:
   newsletters:
     permalink: '/newsletters/:title'
