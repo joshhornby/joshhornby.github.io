@@ -5,6 +5,7 @@ tags: personal-development
 featured: true
 image: /assets/images/Social-Advice-to-My-Younger-Software-Developer-Self.jpg
 hide_image: true
+podcast: https://share.transistor.fm/e/7b09e5c3
 description: "As I look back over what's almost a decade in software development, there are some things I wish I'd started doing sooner. This is the advice I'd give my younger self, who has just landed their first professional software development job."
 ---
 
