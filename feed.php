@@ -5,7 +5,7 @@ $xml = simplexml_load_file('https://us7.campaign-archive.com/feed?u=3749c15a8759
 
 $data = $xml->xpath("//item");
 
-foreach ($data as $key => $element) {
+foreach (array_reverse($data) as $key => $element) {
     $unix = strtotime($element->pubDate);
     $date = (new DateTime())->setTimestamp($unix);
 
