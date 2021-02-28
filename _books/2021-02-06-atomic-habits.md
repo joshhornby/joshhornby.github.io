@@ -1,7 +1,7 @@
 ---
 layout: books
 title:  "Atomic Habits (James Clear)"
-date:   2021-01-30 11:30:00
+date:   2021-02-06 11:30:00
 image: /assets/images/books/atomic-habits.jpg
 ---
 
