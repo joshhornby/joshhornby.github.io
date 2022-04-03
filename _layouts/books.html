@@ -39,7 +39,6 @@ layout: default
                 <span class="mb-3 d-block font-italic">
                     Published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}.</time>
                 </span>
-                {% include newsletter.html %}
 
                 <div class="w-100 mb-3 d-block justify-content-between">
                     {% if page.previous.url %}

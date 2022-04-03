@@ -3,7 +3,6 @@ layout: books
 title:  "An Elegant Puzzle - Systems of Engineering Management (Will Larson)"
 date:   2021-01-24 14:30:00
 image: /assets/images/books/an-elegant-puzzle.jpg
-podcast: https://share.transistor.fm/e/3d9b820e/dark
 ---
 
 An Elegant Puzzle, deep dives into pretty much every aspect of being a tech leader at modern software companies. The Author, [Will Larson](https://lethain.com) has worked at Yahoo and Digg, moving on to being an engineering manager for two years at Uber before leaving for Stripe. He's currently left Stripe and is CTO at Calm. Quite the CV.

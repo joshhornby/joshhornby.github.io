@@ -5,7 +5,6 @@ tags: personal-development
 featured: true
 image: /assets/images/Social-Advice-to-My-Younger-Software-Developer-Self.jpg
 hide_image: true
-podcast: https://share.transistor.fm/e/7b09e5c3
 description: "As I look back over what's almost a decade in software development, there are some things I wish I'd started doing sooner. This is the advice I'd give my younger self, who has just landed their first professional software development job."
 ---
 
@@ -36,8 +35,6 @@ I understand it can be daunting to pair with another developer, especially one w
 A pairing session can be as simple as sending someone a PR to review, and then sitting down with them to discuss their comments. In my experience you'll gain more from discussing code with someone verbally than you would through comments on a screen.
 
 A pleasant side effect of pairing is you form relationships with the developers you pair with. This can be useful when you're new at a company, so don't be afraid to ask to pair with someone.
-
-{% include newsletter.html %}
 
 ## 4. Spend less time worrying
 
