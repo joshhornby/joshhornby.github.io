@@ -5,33 +5,32 @@ description: Head of Software Development based out of Manchester, UK.
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-12 col-md-8">
-            <h1 class="h1">
-                Josh Hornby
+        <div class="col-12 col-md-8 mx-auto">
+            <h1 class="h2 font-weight-bold">
+                Hello, my name is Josh
             </h1>
             <section class="mt-5 with-footer">
-                <h5 class="h5 mb-4">Background</h5>
-                <p>Hi. I'm Josh Hornby, a product-minded software developer. I enjoy building software and managing development teams. With nearly a decade of software development experience, I
-                    understand the connections between strategy, development teams, and business goals.
-                    <br>
-                    <br>
-                    Currently, I am working as a Tech Lead at <a
-                            href="https://cinch.co.uk" target="_blank">cinch</a>, a scale-up based in the UK.
-                    <br>
-                    <br>
-                    You can also find me on <a target="_blank" href="https://twitter.com/joshua_hornby">Twitter</a> where I talk
-                    about software development & management.
+                <p>A versatile and adaptable engineering leader with experience rooted in software as a product focused engineer.</p>
+                <p>Striving to build teams with high levels of alignment, trust & autonomy</p>
+                <p>Currently, I am working as a Tech Lead at <a href="https://cinch.co.uk" target="_blank">cinch</a>, a scale-up based in the UK.
+                    My role is coaching and supporting a team of engineers with architecture design, creating and sharing a technical vision, and guiding on implementation.
+                <p>
+                Previously, I was at <a href="https://housemates.io" target="_blank">Housemates</a> & <a href="https://choosemycar.com" target="_blank">ChooseMyCar</a>
+                where I was leading their engineering teams.
+            </p>
+
+                <p>You can also find me on <a target="_blank" href="https://twitter.com/joshua_hornby">Twitter</a> or <a href="mailto:hello@joshhornby.co.uk">send me an email</a>.</p>
                 </p>
-                <h5 class="h5 my-4">Popular Posts</h5>
+                <h2 class="h3 mt-5 mb-3">Blog</h2>
                 <ul class="list-unstyled">
                     {% for post in site.posts %}
                         {% if post.featured and post.image %}
-                            {% include blog-listing-with-image.html %}
+                            {% include blog-listing.html %}
                         {% endif %}
                     {% endfor %}
                 </ul>
             </section>
         </div>
-        {% include navigation.html %}
+
     </div>
 </div>
