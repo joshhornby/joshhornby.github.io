@@ -22,14 +22,6 @@ description: Head of Software Development based out of Manchester, UK.
 
                 <p>You can also find me on <a target="_blank" href="https://twitter.com/joshua_hornby">Twitter</a> or <a href="mailto:hello@joshhornby.co.uk">send me an email</a>.</p>
                 </p>
-                <h2 class="h3 mt-5 mb-3">Blog</h2>
-                <ul class="list-unstyled">
-                    {% for post in site.posts %}
-                        {% if post.featured and post.image %}
-                            {% include blog-listing.html %}
-                        {% endif %}
-                    {% endfor %}
-                </ul>
             </section>
         </div>
 
