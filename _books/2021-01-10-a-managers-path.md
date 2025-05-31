@@ -3,6 +3,7 @@ layout: books
 title:  "A Manager's Path (Camille Fournier)"
 date:   2021-01-10 14:30:00
 image: /assets/images/books/a-managers-path.jpg
+published: false
 ---
 
 ## Overview
