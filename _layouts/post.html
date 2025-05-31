@@ -14,7 +14,6 @@ layout: default
             {% endif %}
             <div class="meta mb-3">
                 <span>
-                    Tags:
                     {% for tag in page.tags %}
                         {% capture tag_name %}{{ tag }}{% endcapture %}
                             <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><span>{{ tag_name }}</span></code> </a>

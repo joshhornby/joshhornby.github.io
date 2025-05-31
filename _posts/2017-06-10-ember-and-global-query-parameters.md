@@ -2,7 +2,7 @@
 title:  "Global query parameters with Ember"
 date:   2017-06-10 19:00:00
 description: Using Ember computed properties to handle global query parameters
-tags: javascript ember
+tags: code
 sitemap:
     priority: 0.7
     changefreq: 'monthly'

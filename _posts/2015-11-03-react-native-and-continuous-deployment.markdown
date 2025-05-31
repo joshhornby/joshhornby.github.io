@@ -2,7 +2,7 @@
 title:  "React Native & continuous deployment"
 date:   2015-11-03 22:00:00
 description: Exploring the idea of React Native and Amazon S3 to allow for a web style continuous deployment mobile application.
-tags: javascript react
+tags: code
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
