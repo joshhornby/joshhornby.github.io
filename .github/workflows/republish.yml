@@ -3,6 +3,7 @@ name: Republish
 on:
   schedule:
     - cron: '1 9 * * *'  # Run at 9:01 am every day.
+  workflow_dispatch:
 jobs:
   refresh:
     runs-on: ubuntu-latest
