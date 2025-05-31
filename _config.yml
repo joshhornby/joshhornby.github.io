@@ -6,7 +6,7 @@ author:
   url: null
 baseurl: ''
 url: 'https://joshhornby.com'
-permalink: '/blog/:title'
+permalink: '/:title'
 markdown: kramdown
 kramdown:
   input: GFM
