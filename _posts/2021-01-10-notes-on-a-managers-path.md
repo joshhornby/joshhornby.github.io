@@ -8,8 +8,6 @@ changefreq: 'monthly'
 lastmod: 2021-01-10 T19:00:00+01:00
 ---
 
-## Overview
-
 The book's main goal is to describe the steps in the career ladder of a technical manager and I believe it fully lives up to this promise. It starts with discussing mentoring and finishes describing roles of CTOs and VP Engineering.
 
 The main value proposition of the book is a complete description of a “manager's path”, this book can almost be used as a journal guiding you through out each stage of your career in software.
