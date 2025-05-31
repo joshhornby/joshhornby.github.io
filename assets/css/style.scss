@@ -123,7 +123,7 @@ a {
     }
   }
 }
-/* 1) TABLE STRUCTURE & BORDER */
+
 table {
   width: 100%;
   margin-bottom: 1rem;
@@ -134,7 +134,6 @@ table {
   Arial, sans-serif;
 }
 
-/* 2) HEADER STYLING (dark background, white text) */
 thead th {
   background-color: #343a40;
   color: #fff;
@@ -146,7 +145,6 @@ thead th {
   white-space: nowrap;
 }
 
-/* 3) BODY CELLS (padding + top border) */
 tbody td {
   padding: 0.75rem;
   vertical-align: middle;
@@ -155,19 +153,16 @@ tbody td {
   word-wrap: break-word;
 }
 
-/* 4) STRIPED ROWS */
 tbody tr:nth-of-type(even) {
   background-color: #f2f2f2;
 }
 
-/* 5) HOVER EFFECT */
 tbody tr:hover {
   background-color: #f5f5f5;
   cursor: pointer;
   transition: background-color 0.15s ease-in-out;
 }
 
-/* 6) FOOTER CELLS (if you use <tfoot>) */
 tfoot td {
   background-color: #f1f3f5;
   color: #212529;
@@ -176,9 +171,6 @@ tfoot td {
   border-top: 2px solid #dee2e6;
 }
 
-/* 7) COLUMN ALIGNMENT */
-/*    • 4th column (e.g. “Balance”) = right-aligned */
-/*    • 5th column (e.g. “Status”) = centre-aligned */
 thead th:nth-child(4),
 tbody td:nth-child(4),
 tfoot td:nth-child(4) {
@@ -191,7 +183,6 @@ tfoot td:nth-child(5) {
   text-align: center;
 }
 
-/* 8) BADGE STYLING (span[data-status="…"]) */
 tbody td:nth-child(5) span[data-status] {
   display: inline-block;
   padding: 0.25em 0.4em;
@@ -205,7 +196,6 @@ tbody td:nth-child(5) span[data-status] {
   color: #fff;
 }
 
-/*    • “Active” = green; “Pending” = gold; “Inactive” = red */
 tbody td:nth-child(5) span[data-status="Active"] {
   background-color: #28a745;
 }
@@ -217,13 +207,11 @@ tbody td:nth-child(5) span[data-status="Inactive"] {
   background-color: #dc3545;
 }
 
-/* 9) RESPONSIVE: allow horizontal scroll on small screens */
 @media (max-width: 576px) {
   table {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    /* remove outer border radius, if any: */
     border-radius: 0;
     box-shadow: none;
   }
