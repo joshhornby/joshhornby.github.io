@@ -4,7 +4,7 @@ date:   2020-12-01 16:00:00
 tags: project-management
 image: /assets/images/managing_software_projects.jpg
 description: During my time working on software projects, I’ve began to spot trends in what makes a successful project. The most common trait I’ve observed in successful projects is great communication between teams, seemingly the software methodology used has little to do with if a project is a success.
-featured: true
+published: false
 ---
 
 During my time working on software projects, I’ve began to spot trends in what makes a successful project. The most common trait I've observed in successful projects is great communication between teams, seemingly the software methodology used has little to do with if a project is a success.
