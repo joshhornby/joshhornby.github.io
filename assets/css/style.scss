@@ -59,6 +59,10 @@ p {
   line-height: 170%;
 }
 
+p strong {
+  font-weight: bold;
+}
+
 a {
   font-weight: 400;
   text-decoration: none;
@@ -223,6 +227,10 @@ tbody td:nth-child(5) span[data-status="Inactive"] {
   }
 }
 
+.highlight {
+  padding: 10px 10px;
+  background: #f0f0f0;
+}
 
 .highlight .hll {
   background-color: #ffffcc
