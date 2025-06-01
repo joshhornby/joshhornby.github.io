@@ -2,6 +2,3 @@ links:
   - title: Home
     url: /
     sitemap: true
-  - title: Blog
-    url: /blog
-    sitemap: true
