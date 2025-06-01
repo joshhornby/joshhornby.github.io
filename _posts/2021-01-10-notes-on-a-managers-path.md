@@ -13,13 +13,13 @@ The book's main goal is to describe the steps in the career ladder of a technica
 The main value proposition of the book is a complete description of a “manager's path”, this book can almost be used as a journal guiding you through out each stage of your career in software.
 
 
-### "Feedback works best when you, as a manager, pair that feedback with coaching."
+## "Feedback works best when you, as a manager, pair that feedback with coaching."
 
 One of the most important things you do as a manager is give feedback to your team. It helps them improve, fixes problems, and sets a clear standard of the work you want to see. Fournier writes: “When they believe that their manger sees the good things they do, they'll be more open to hearing about the areas where they might improve.”
 
 When you are an individual contributor, you can largely focus on just yourself. When you become a leader, you have to start thinking about others. Providing great feedback and praise is one of the most important things you can do.
 
-### “One-on-one meetings with your manager are an essential feature of a good working relationship.”
+## “One-on-one meetings with your manager are an essential feature of a good working relationship.”
 
 From very early on in the book, Fournier starts preaching about the essential value of one on ones.
 
@@ -34,7 +34,7 @@ Fournier also shares a great piece of wisdom:
 
 “Skipping 1-1s because you're too busy with other things is a great way to miss the warning signs of an employee who is going to quit.”
 
-### “It's unrealistic to think you can or should shield your team from everything.”
+## “It's unrealistic to think you can or should shield your team from everything.”
 
 A common piece of advice for manager's is to shield their team. To some extent, this is very good advice. Letting everything pass you and dump on your team creates a lot of unneeded stress and distraction for your team.
 
@@ -48,7 +48,7 @@ However, helping them understand key situations can be a time when you should no
 
 We're reminded, “you are not their parent.” Treat your team like adults and include them in key decisions and challenges, and you'll strike a much better balance for when to shield them.
 
-### "Starting new reporting relationships off right"
+## "Starting new reporting relationships off right"
 
 Fournier outlines the concept of a 30/60/90 day plan. She goes on to say:
 
@@ -58,6 +58,6 @@ Having a 90 plan of achievable goals will also help you catch mis-hires quickly,
 
 The key with this plan is to create a set of realistic milestones based on your prior hires, the current state of your tech and projects and the level of the person coming in.
 
-### Summary
+## Summary
 
 In summary, I believe the book is a great read for everyone who is thinking about getting on the engineering manager's path or is already there but didn't get to CTO or VP Engineering role yet and hasn't spent years in it.
