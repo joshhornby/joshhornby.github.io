@@ -25,13 +25,6 @@ social:
 twitter:
   username: joshua_hornby
   card: summary_large_image
-collections:
-  newsletters:
-    permalink: '/newsletters/:title'
-    output: true
-  books:
-    permalink: '/books/:title'
-    output: true
 defaults:
   - scope:
       path: ''
