@@ -36,4 +36,4 @@ Below are some concrete examples of leveraged work:
 - **Incident-retrospective programme** - a lightweight 5-Whys process that looks at systemic fixes
 - **Service-bootstrap template** - a generator that spins up a production-ready app in minutes
 
-Leveraged work is the Staff+ engineer’s force-multiplier: durable, non-linear in impact, and contagious by design. 
+Leveraged work is how Staff & Principal engineers multiply impact as it's durable, scales beyond the individual, and spreads by design. 
