@@ -1,43 +1,51 @@
 ---
 title: Optimising teams through the Theory of Constraints
-date: 2025-05-02 13:00:00
-tags: management
+date: 2025-06-09 08:00:00
+tags: [management, systems-thinking]
+description: "When I first started in engineering leadership, I figured the best teams ran like well-oiled machines, every engineer flat out, every hour accounted for. It made sense on paper: 100% utilisation must mean maximum output, right? What I learned (mostly the hard way) is that teams pushed to the limit don't run like clocks—they jam up like motorways. One small delay, and everything grinds to a halt."
 sitemap:
-priority: 0.7
-changefreq: 'monthly'
-lastmod: 2025-05-02 T19:00:00+01:00
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: 2025-06-09 T19:00:00+01:00
 ---
+When I first started in engineering leadership, I figured the best teams ran like well-oiled machines, every engineer flat out, every hour accounted for. It made sense on paper: 100% utilisation must mean maximum output, right? What I learned (mostly the hard way) is that teams pushed to the limit don't run smoothly. One small delay, and everything grinds to a halt.
 
-A productive team means everyone must be busy at all times, right? 100% team utilisation is the goal and is the best way for us to hit our deadline.
+-- Add something here to link these two paragraphs together
 
-The Theory of Constraints (TOC) is a methodology for identifying the most important limiting factor (ie, constraint) that stands in the way of achieving a goal.
+The Theory of Constraints (TOC) offers a simple insight: your throughput is governed by a single constraint, not by the sum of everyone's individual effort. When you index on personal productivity, story points completed, hours logged—you merely accumulate invisible queues in front of that constraint. Lead times increase, frustration mounts, and the illusion that "everyone's working" masks the reality that value isn't moving.
 
-TOC tells us that attempting to keep everyone working at 100% creates hidden queues, excessive work-in-process, and longer lead times because non blocked work pules up in front of the actual constraint. 
+## Surfacing the constraint
+A lot of engineering leadership is just good detective work. Before you can improve how work flows, you need to make the constraint obvious:
+
+- **Value-stream mapping** gives you a clear picture of where things actually slow down.
+- **Kanban boards with explicit WIP limits** make queues visible, so you can't ignore them.
+- **Flow based metrics such as lead time and throughput** turn gut feel into something you can act on.
+
+Once you know where the real bottleneck is, you can protect it, and eventually remove it.
 
 ![Abstract image of engineering workflow and using Theory of Constraints ![img.png](img.png)](/assets/images/optimising-teams-theory-of-constraints.png)
 
-By contrast, system optimisation asks, "Does this action increase the team's overall throughput?" even if that means some people are temporarily idle.
+-- Add something here to link these two paragraphs together
 
-Why individual "efficiency" can harm the whole
+## Designing healthy habits
+Too much work piles up and everything slows down. Too little, and the bottleneck sits idle. You want just enough of a buffer to handle the usual bumps, without hiding real problems. It's a bit like keeping a few tables free in a busy restaurant, just enough to keep things moving, but not so much that the place grinds to a halt.
 
-Practical techniques to optimise the team
+When someone on the team has capacity, point it at the bottleneck:
 
-- Make the constraint visible – value-stream mapping, Kanban boards with explicit WIP limits, flow-based metrics (lead time, throughput).
+- Pair a backend engineer with a tester to automate flaky scenarios.
+- Have product managers dogfood the feature earlier, compressing feedback loops.
+- Encourage cross-skilling so the team flexes where the system needs.
 
-- Buffer intelligently – keep a small, controlled queue before the constraint to absorb variation, never a mountain of work.
+-- Add something here to link these two paragraphs together
 
-- Cross-skill and pair – shift spare capacity to assist the bottleneck (e.g. developers help with automated tests).
+## Shortening feedback loops
+Working in small batches allows you to fail early, and often. Continuous integration, feature flags, and trunk-based development shrink the blast radius when something goes wrong, reducing pressure on the constraint and keeping flow predictable.
 
-- Short feedback loops – continuous integration and small batch sizes reduce variability hitting the constraint.
+## Cultural scaffolding
+Process tweaks are brittle unless the culture holds them up
 
-- Throughput-based KPIs – measure value delivered per sprint or per week, not hours booked.
+- **Psychological safety** - people must feel authorised to pause work rather than pile it on.
+- **Shared responsibility** - the feature isn't done until it's in production and customers succeed.
+- **Managerial coaching** - celebrate queue reduction and flow improvement, not personal velocity.
 
-Cultural implications
-
-- Psychological safety to slow down: Team members must feel safe to stop starting and start finishing.
-- Shared responsibility: Work is “done” only when the whole stream is complete; bragging about personal velocity becomes irrelevant.
-
-- Leadership focus: Managers coach the team to protect and elevate the bottleneck instead of rewarding individual utilisation.
-
-In summary, TOC reframes optimisation from "keeping everyone busy" to maximising the flow of value through the one place that governs throughput. A team that thinks and acts this way outperforms any collection of hyper-optimised individuals.
-
+Optimising a team isn't about keeping everyone busy, it's about making sure the right work moves at the right time. Focus on throughput, not utilisation, and you get steady, predictable progress instead of constant scramble. The paradox is simple: the team that's OK with waiting now and then is the one that ends up delivering more.
