@@ -11,6 +11,7 @@ sitemap:
 think about composability to think about reusability
 
 ---
+Thesis: Reusability isn’t something you build directly; it’s the dividend you collect when you deliberately optimise your systems — code, teams, and process — for composability.
 
 Open with the paradox – many teams chase “reusable code” yet end up with rigid frameworks; argue that genuine reusability is an emergent property that springs from designing for composability first.
 
@@ -96,3 +97,13 @@ Playbook and tooling guide for leaders
 Real-world mini-case study (internal or anonymised)
 
 Actionable takeaway and next-quarter checklist
+
+---
+
+Three levers for maximising composability
+   Surface Area First – Publish the contract early, even if the internals are a stub. Stripe’s “API-first, implementation-second” habit is the single most effective forcing function I’ve encountered.
+   First Round Review
+
+Decouple the People – Assign change control to the team that carries the pager, but let usage belong to everyone. This mirrors Amazon’s “you build it, you run it” memoisation of ownership boundaries.
+
+Version Aggressively – Semantic versioning is a release strategy and a social contract. Move fast, break your major version, not downstream users.
