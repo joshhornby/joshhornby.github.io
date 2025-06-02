@@ -25,8 +25,6 @@ A lot of engineering leadership is just good detective work. Before you can impr
 
 Once you know where the real bottleneck is, you can protect it and eventually remove it. But seeing the constraint is only the first step, how you manage work around it is what really determines whether things speed up or stay stuck.
 
-![Abstract image of engineering workflow and using Theory of Constraints](/assets/images/optimising-teams-theory-of-constraints.png)
-
 ## Designing healthy habits
 Too much work piles up and everything slows down. Too little, and the bottleneck sits idle. You want just enough of a buffer to handle the usual bumps without hiding real problems. It's a bit like keeping a few tables free in a busy restaurant, just enough to keep things moving, but not so much that the place grinds to a halt.
 
@@ -52,4 +50,4 @@ It takes deliberate cultural foundations to make these practices meaningful, thi
 - **Shared responsibility** - the feature isn't done until it's in production and customers succeed.
 - **Managerial coaching** - celebrate queue reduction and flow improvement, not personal velocity.
 
-Optimising a team isn't about keeping everyone busy, it's about making sure the right work moves at the right time. Focus on throughput, not utilisation, and you get steady, predictable progress instead of constant scramble. The paradox is simple: the team that's OK with waiting now and then is the one that ends up delivering more.
+Optimising a team isn't about keeping everyone busy, it's about making sure the right work moves at the right time. Focus on throughput, not utilisation, and you get steady, predictable progress instead of a mad dash. The paradox is simple: the team that's OK with waiting now and then is the one that ends up delivering more.
