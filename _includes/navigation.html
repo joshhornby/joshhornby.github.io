@@ -1,24 +1,11 @@
-<aside class="col-4">
-    <h5 class="h5 my-3">Links</h5>
-    <nav>
-        <ul class="list-unstyled d-block">
-            <li class="mb-3 mr-2 mr-md-0">
-                <a href="https://twitter.com/joshua_hornby" target="_blank">
-                    Twitter
-                </a>
-                <img loading="lazy" width="14" class="d-inline-block" src="/assets/images/twitter.svg" alt="Twitter Logo"/>
-            </li>
-            <li class="mb-3 mr-2 mr-md-0">
-                <a href="https://www.linkedin.com/in/joshhornby" target="_blank">
-                    Linkedin
-                </a>
-                <img loading="lazy" width="14" class="d-inline-block" src="/assets/images/linkedin.svg" alt="Linkedin Logo"/>
-            </li>
-            <li class="mb-3 mr-2 mr-md-0 d-inline-block d-block">
-                <a href="{{ site.url }}/atom.xml" target="_blank">
-                    Rss
-                </a>
-            </li>
-        </ul>
-    </nav>
-</aside>
+<nav class="navbar">
+    {% unless page.url == "/" %}
+        <a class="navbar-brand" href="/">Josh Hornby</a>
+    {% endunless %}
+
+    <ul class="navbar-nav ml-auto flex-row">
+        <li class="nav-item mx-2">
+            <a class="nav-link" href="{{ site.url }}/feed.xml">RSS</a>
+        </li>
+    </ul>
+</nav>
