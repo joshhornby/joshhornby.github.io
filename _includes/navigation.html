@@ -1,11 +1,13 @@
-<nav class="navbar">
-    {% unless page.url == "/" %}
-        <a class="navbar-brand" href="/">Josh Hornby</a>
-    {% endunless %}
+<nav class="navbar py-2">
+    <div class="container px-0 px-md-3">
+        {% unless page.url == "/" %}
+            <a class="navbar-brand" href="/">Josh Hornby</a>
+        {% endunless %}
 
-    <ul class="navbar-nav ml-auto flex-row">
-        <li class="nav-item mx-2">
-            <a class="nav-link" href="{{ site.url }}/feed.xml">RSS</a>
-        </li>
-    </ul>
+        <ul class="navbar-nav ml-auto flex-row">
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="{{ site.url }}/feed.xml">RSS</a>
+            </li>
+        </ul>
+    </div>
 </nav>
