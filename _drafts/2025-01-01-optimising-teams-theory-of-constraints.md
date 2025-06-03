@@ -44,7 +44,7 @@ Working in small batches allows you to fail early, and often. Continuous integra
 But fast feedback doesn't just come from tooling, and it relies on the team's ability to act on it. That's where culture comes in.
 
 ## Cultural scaffolding
-Process tweaks are pointless unless the culture backs them up. You can introduce all the right tools: WIP limits, standups, metrics, automation, but if the underlying team culture doesn't support how and why they're used, then it won't stick. Worse, they'll become theatre: rules followed on paper but ignored in spirit.
+Process tweaks are pointless unless your culture backs them up. You can introduce all the right tools: WIP limits, standups, metrics, automation, but if the underlying team culture doesn't support how and why they're used, then it won't stick. Worse, they'll become theatre: rules followed on paper but ignored in spirit.
 
 It takes deliberate cultural foundations to make these practices meaningful, things that shape how the team behaves when no one's watching:
 

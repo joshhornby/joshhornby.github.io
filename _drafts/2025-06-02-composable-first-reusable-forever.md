@@ -1,20 +1,20 @@
 ---
 title: Composable First, Reusable Forever
-date: 2025-05-02 13:00:00
-tags: code
+date: 2025-06-17 08:00:00
+tags: [management, systems-thinking]
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: 2020-09-19 T19:00:00+01:00
+  lastmod: 2025-06-17 T19:00:00+01:00
 ---
 
 think about composability to think about reusability
 
 ---
-Thesis: Reusability isn’t something you build directly; it’s the dividend you collect when you deliberately optimise
+Thesis: Reusability isn't something you build directly; it's the dividend you collect when you deliberately optimise
 your systems — code, teams, and process — for composability.
 
-Open with the paradox – many teams chase “reusable code” yet end up with rigid frameworks; argue that genuine
+Open with the paradox – many teams chase "reusable code" yet end up with rigid frameworks; argue that genuine
 reusability is an emergent property that springs from designing for composability first.
 
 Define the two terms crisply – show how composability (ability to combine small, orthogonal pieces) naturally breeds
@@ -23,11 +23,11 @@ reusability (ease of applying pieces in new contexts). Use LEGO vs. pre-glued mo
 Historical detour – trace composability from UNIX pipes → object composition → functional programming (higher-order
 functions) → micro-services and cloud functions. Each epoch reveals the same pattern: small contracts, clear interfaces.
 
-The mathematics behind it – briefly introduce category theory’s “composition” and “morphisms” to give intellectual heft
+The mathematics behind it – briefly introduce category theory's "composition" and "morphisms" to give intellectual heft
 without scaring novices.
 
-Design heuristics – SOLID’s Single Responsibility and Interface Segregation as composability levers; show how “do one
-thing well” leads to easier remixing.
+Design heuristics – SOLID's Single Responsibility and Interface Segregation as composability levers; show how "do one
+thing well" leads to easier remixing.
 
 Case study carousel –
 
@@ -38,7 +38,7 @@ Terraform modules vs. mega cloud templates
 Data-engineering DAGs vs. one-off ETL scripts
 Summarise time saved when pieces snap together.
 
-Pitfalls & misconceptions – premature abstraction, YAGNI violations, and the “god helper” utility library that nobody
+Pitfalls & misconceptions – premature abstraction, YAGNI violations, and the "god helper" utility library that nobody
 dares touch. Offer litmus tests to decide when to extract a component.
 
 Tooling spotlight – discuss how package managers, semantic versioning, and contract tests (Pact, consumer-driven
@@ -53,7 +53,7 @@ effects, then blog their outcomes.
 ---
 
 Lead with the business case – frame composability as a strategic multiplier: faster time-to-market, lower total cost of
-ownership, and easier alignment with shifting product strategy. Highlight the financial drag of “not-quite-reusable”
+ownership, and easier alignment with shifting product strategy. Highlight the financial drag of "not-quite-reusable"
 monoliths across multiple teams.
 
 Define terms in leadership language –
@@ -63,8 +63,8 @@ Reusability: the observable result—components finding second and third lives a
 adaptation.
 Emphasise that reusability emerges; it cannot be decreed.
 
-Historical proof points – show how companies that championed composability (e.g., Amazon’s service-oriented mandate,
-Spotify’s “Backstage” platform) unlocked organisational agility. Counter-example: costly “shared” frameworks that
+Historical proof points – show how companies that championed composability (e.g., Amazon's service-oriented mandate,
+Spotify's "Backstage" platform) unlocked organisational agility. Counter-example: costly "shared" frameworks that
 stagnated because they were never composable first.
 
 Strategic principles –
@@ -91,22 +91,22 @@ Cross-team dependency latency (request-to-merge days).
 
 Reuse ratio per component (downloads vs. contributors).
 
-Cultural levers – cultivate a “buy before build” mindset; celebrate internal open-source merges in town-halls; rotate
+Cultural levers – cultivate a "buy before build" mindset; celebrate internal open-source merges in town-halls; rotate
 engineers through platform teams to seed empathy.
 
 Governance without friction – lightweight Architectural Decision Records (ADRs), automated contract testing in CI, and
-sunset policies for obsolete components to prevent “zombie” reuse.
+sunset policies for obsolete components to prevent "zombie" reuse.
 
 Common leadership antipatterns –
 
-Declaring a “reusable core” without budget for ongoing stewardship.
+Declaring a "reusable core" without budget for ongoing stewardship.
 
 Incentivising velocity metrics that punish teams for upstream contributions.
 
 Allowing platform backlogs to be ticket-swamped without a product manager.
 
-Executive call to action – set a quarterly objective: “Increase composable component adoption by 30% while reducing
-average integration time by 20%.” Offer a playbook: audit → prioritise → staff → measure → amplify successes in exec
+Executive call to action – set a quarterly objective: "Increase composable component adoption by 30% while reducing
+average integration time by 20%." Offer a playbook: audit → prioritise → staff → measure → amplify successes in exec
 reviews.
 
 Suggested narrative arc
@@ -123,12 +123,63 @@ Actionable takeaway and next-quarter checklist
 ---
 
 Three levers for maximising composability
-Surface Area First – Publish the contract early, even if the internals are a stub. Stripe’s “API-first,
-implementation-second” habit is the single most effective forcing function I’ve encountered.
+Surface Area First – Publish the contract early, even if the internals are a stub. Stripe's "API-first,
+implementation-second" habit is the single most effective forcing function I've encountered.
 First Round Review
 
 Decouple the People – Assign change control to the team that carries the pager, but let usage belong to everyone. This
-mirrors Amazon’s “you build it, you run it” memoisation of ownership boundaries.
+mirrors Amazon's "you build it, you run it" memoisation of ownership boundaries.
 
 Version Aggressively – Semantic versioning is a release strategy and a social contract. Move fast, break your major
 version, not downstream users.
+
+---
+
+I still remember the afternoon the Payments team asked if we could "just reuse" their monolithic billing system for the new subscriptions product. The code worked, it had processed millions of transactions, but every consumer came away with a different fork, each stitched together with carefully guarded "just for us" flags.
+
+That failure pushed me to revisit something Jeff Bezos wrote in 2002, the now-legendary API Mandate. Bezos didn't beg teams to share code; he forced them to expose contracts, promising career-limiting consequences for anyone who bypassed the boundary. By optimising Amazon for *composition* services interacting only through stable APIs he let reuse emerge as a happy side effect.
+
+## Composition Is a Cause; Reuse Is an Effect
+
+Reuse behaves like compound interest: you can't demand it on day one, but if you invest in composability the dividends accrue. Three ingredients show up in every system that compounds this way:
+
+1. **Stable contracts** — the surface outlives the implementation.
+2. **Independent ownership** — the team that changes a component also carries its pager.
+3. **Observable adoption** — you measure who consumes what so you can decide where to invest next.
+
+When any element goes missing, you get the payments-library horror show: code built once, copied forever, and maintained by no-one.
+
+## Enter Event-Driven Architecture
+
+If APIs define *what* can be composed, Event-Driven Architecture (EDA) defines *how fast* compositions form. An immutable stream like **OrderPlaced** turns into connective tissue: publish once, and a dozen teams can subscribe without a calendar invite. EDA lets new capabilities assemble at the speed of configuration, not negotiation, and that's the purest real-world expression of composability I've seen.
+
+In practice, the durability of an event's *name* does more for reuse than the durability of its *schema*. When we renamed `invoice_generated` to `InvoiceGenerated`, the subscriptions doubled within a sprint. Folks trusted a domain-centric noun; no one trusted a pointer to Finance's internal model.
+
+## Funding the Backbone
+
+Composability rarely dies in code; it dies in budgets. Brokers need SLOs, schema registries need upgrades, and somebody has to run the dashboards that prove adoption. At one company we resisted a platform charter for months. After four production incidents originated from DIY Kafka clusters, the finance team asked why we hadn't centralised the spend. The moment a single team owned the backbone, incident counts halved and integration time fell from five days to two.
+
+Funding also buys **discoverability**. A Backstage plug-in that lists canonical events, shows sample payloads, and tracks live subscribers pays for itself the first time a product manager says, "Wait—​we already emit *UserVerified*? Ship the loyalty perk today."
+
+## The Metrics That Matter
+
+Reusable systems feel great, but feelings don't survive budget season. I use three numbers:
+
+* **Median integration time** for a new consumer on an existing event.
+* **Consumers per canonical event**, trended quarterly.
+* **Change-coupling** between repos—​if two services change together more than 20 % of the time, they're not truly independent.
+
+The first metric captures friction, the second demonstrates leverage, the third catches hidden entanglements that will stall the flywheel.
+
+## Anti-Patterns on the Road to Reuse
+
+* **Event Soup** — a thousand topics, zero owners, paging through Grafana to guess which one matters. Governance is boring until you ship PII into the void.
+* **Synchronous Backdoors** — an event fires, then a consumer calls the producer for state because the payload was empty. Now you have two systems and neither scales.
+* **Platform as Ticket Queue** — if the shared-infra team becomes an intake form, you've created a dependency, not a platform. Guard their roadmap or lose the flywheel.
+
+## Closing the Loop
+
+When the subscriptions product finally launched, we reused exactly zero lines of the old payments library. Instead, we subscribed to **PaymentSettled**, emitted **SubscriptionActivated**, and let downstream teams wire themselves up. Six months later a finance audit revealed the happiest accident: customer lifetime value rose seven percent, mainly because Marketing had built three new campaigns *we didn't even know about*. That's the quiet magic of composability—​you invest once, and reuse keeps happening while you sleep.
+
+Reuse is strategic; composability is tactical. Lead with the tactic, measure the strategy, and the next time someone asks to "just reuse" a monolith, you'll offer them an event instead.
+
