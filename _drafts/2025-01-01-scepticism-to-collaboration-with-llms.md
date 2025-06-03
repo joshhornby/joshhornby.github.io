@@ -30,12 +30,12 @@ That shift transformed the tool from a novelty toy to a partner.
 
 ## 3 · Practices that compound value
 
-| Practice | Why it matters | How I apply it                                                          |
-| --- | --- |-------------------------------------------------------------------------|
-| **Structured prompts** | LLMs anchor on explicit structure | "Write a three-sentence intent, then a function signature, then tests." |
-| **Granular commits** | Smaller changes shorten the feedback loop | Each prompt covers one behaviour or refactor.                           |
-| **Vocabulary alignment** | Consistent terminology reduces drift | I maintain a glossary in `CONTRIBUTING.md` and reference it in prompts. |
-| **Metric tracking** | Outcome over anecdote | I log model authored LOC, test coverage, and review comments weekly.    |
+| Practice                 | Why it matters                            | How I apply it                                                          |
+|--------------------------|-------------------------------------------|-------------------------------------------------------------------------|
+| **Structured prompts**   | LLMs anchor on explicit structure         | "Write a three-sentence intent, then a function signature, then tests." |
+| **Granular commits**     | Smaller changes shorten the feedback loop | Each prompt covers one behaviour or refactor.                           |
+| **Vocabulary alignment** | Consistent terminology reduces drift      | I maintain a glossary in `CONTRIBUTING.md` and reference it in prompts. |
+| **Metric tracking**      | Outcome over anecdote                     | I log model authored LOC, test coverage, and review comments weekly.    |
 
 ## What LLMs change and what they don’t
 
