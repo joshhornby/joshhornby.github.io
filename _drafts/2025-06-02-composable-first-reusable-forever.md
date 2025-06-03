@@ -135,9 +135,9 @@ version, not downstream users.
 
 ---
 
-I still remember the afternoon the Payments team asked if we could "just reuse" their monolithic billing system for the new subscriptions product. The code worked, it had processed millions of transactions, but every consumer came away with a different fork, each stitched together with carefully guarded "just for us" flags.
+I still remember the afternoon the Payments team at a previous company asked whether we could "just reuse" their monolithic billing system for the new subscriptions product. The code had indeed processed millions of transactions, but every squad that touched it walked away with its own bespoke fork, propped up by a mess of "just-for-us" flags. Reuse had morphed into copy-and-paste debt before the quarter was out.
 
-That failure pushed me to revisit something Jeff Bezos wrote in 2002, the now-legendary API Mandate. Bezos didn't beg teams to share code; he forced them to expose contracts, promising career-limiting consequences for anyone who bypassed the boundary. By optimising Amazon for *composition* services interacting only through stable APIs he let reuse emerge as a happy side effect.
+Watching that facade crack sent me back to Jeff Bezos’s 2002 API Mandate—the memo in which he didn't politely ask teams to share code; he required them to expose contracts, warning of career limiting repercussions for anyone who crossed the boundary. By optimising Amazon for composition—services interacting only through stable APIs, he let genuine reuse emerge as a happy side effect.
 
 ## Composition Is a Cause; Reuse Is an Effect
 
@@ -151,9 +151,7 @@ When any element goes missing, you get the payments-library horror show: code bu
 
 ## Enter Event-Driven Architecture
 
-If APIs define *what* can be composed, Event-Driven Architecture (EDA) defines *how fast* compositions form. An immutable stream like **OrderPlaced** turns into connective tissue: publish once, and a dozen teams can subscribe without a calendar invite. EDA lets new capabilities assemble at the speed of configuration, not negotiation, and that's the purest real-world expression of composability I've seen.
-
-In practice, the durability of an event's *name* does more for reuse than the durability of its *schema*. When we renamed `invoice_generated` to `InvoiceGenerated`, the subscriptions doubled within a sprint. Folks trusted a domain-centric noun; no one trusted a pointer to Finance's internal model.
+If APIs define *what* can be composed, Event-Driven Architecture (EDA) defines *how fast* compositions form. An immutable stream like **OrderCreated** turns into connective tissue: publish once, and a dozen teams can subscribe without a calendar invite. EDA lets new capabilities assemble at the speed of configuration, not negotiation, and that's the purest real-world expression of composability I've seen.
 
 ## Funding the Backbone
 
@@ -173,13 +171,12 @@ The first metric captures friction, the second demonstrates leverage, the third 
 
 ## Anti-Patterns on the Road to Reuse
 
-* **Event Soup** — a thousand topics, zero owners, paging through Grafana to guess which one matters. Governance is boring until you ship PII into the void.
-* **Synchronous Backdoors** — an event fires, then a consumer calls the producer for state because the payload was empty. Now you have two systems and neither scales.
+* **Event Soup** - a thousand topics, zero owners, paging through EventBridge to guess which one matters. Governance is boring until you ship PII into the void.
+* **Synchronous Backdoors** — an event fires, then a consumer calls the producer for state because the payload was empty. Now you have two systems and neither scale.
 * **Platform as Ticket Queue** — if the shared-infra team becomes an intake form, you've created a dependency, not a platform. Guard their roadmap or lose the flywheel.
 
 ## Closing the Loop
 
-When the subscriptions product finally launched, we reused exactly zero lines of the old payments library. Instead, we subscribed to **PaymentSettled**, emitted **SubscriptionActivated**, and let downstream teams wire themselves up. Six months later a finance audit revealed the happiest accident: customer lifetime value rose seven percent, mainly because Marketing had built three new campaigns *we didn't even know about*. That's the quiet magic of composability—​you invest once, and reuse keeps happening while you sleep.
+When the subscriptions product finally launched, we reused exactly zero lines of the old payments library. Instead, we subscribed to **PaymentSettled**, emitted **SubscriptionActivated**, and let downstream teams wire themselves up. Six months later, a finance audit revealed the happiest accident: customer lifetime value rose, mainly because Marketing had built three new campaigns *we didn't even know about*. That's the quiet magic of composability, you invest once, and reuse keeps happening for you.
 
-Reuse is strategic; composability is tactical. Lead with the tactic, measure the strategy, and the next time someone asks to "just reuse" a monolith, you'll offer them an event instead.
-
+Reuse is strategic; composability is tactical. Lead with the tactic, measure the strategy, and the next time someone asks "just reuse" a monolith, you'll offer them an event instead.
