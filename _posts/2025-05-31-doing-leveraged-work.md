@@ -9,11 +9,11 @@ changefreq: 'monthly'
 lastmod: 2025-05-31 T15:00:00+01:00
 ---
 
-For Staff and Principal Engineers the goal is to identify and deliver leveraged work, efforts that multiply both throughput and quality across the organisation.
+For Staff and Principal Engineers, the goal is to identify and deliver leveraged work, efforts that multiply both throughput and quality across the organisation.
 
 ![Two-axis graph plotting impact and longevity in relation to Leveraged work](/assets/images/leveraged-work-chart.png)
 
-Think of leverage as a two-axis graph: **longevity** runs left-to-right; **impact curve** climbs bottom-to-top. The sweet-spot is the top-right, ideas that stick around *and* push the output curve upwards.
+Picture leverage as a simple chart: time on the x-axis, impact on the y. The real win is top right contributions that endure and change the trajectory. Not just a quick boost or flashy result, but work that compounds. It becomes part of the foundation others build on, shifts the baseline, and raises the bar for everything that follows.
 
 | If it...                                                  | ...then it probably belongs in that sweet-spot |
 |-----------------------------------------------------------|------------------------------------------------|
@@ -22,9 +22,7 @@ Think of leverage as a two-axis graph: **longevity** runs left-to-right; **impac
 | lets teams build *on* it rather than *around* it          | clear Enablement                               |
 | leaves a template, script, or doc that’s easy to copy     | strong Teachability                            |
 
-When an idea lands two or more of those signals, odds are it’s worth chasing.
-
-The art of leveraged work if finding where the opportunities lie, the majority of the time these can be found through conversations with team members and the wider business. 
+The art of leveraged work is finding where the opportunities lie, the majority of the time these can be found through conversations with team members and the wider business. 
 
 - **Pain-point mapping** - sit with on-call, read incident reviews, notice recurring toil
 - **Road-map stress-tests** - ask, “What single failure would torpedo next year’s plan?” and front-load the fix
