@@ -1,12 +1,12 @@
 ---
 title: From Scepticism to Collaboration with LLMs
-date: 2025-06-11 08:00:00
+date: 2025-06-16 08:00:00
 tags: [ai]
 description: "Modern LLMs are already reshaping software practice, whether we like it or not. I began wary of the promise of instant productivity, yet have arrived at a somewhat surprising conclusion: LLMs are most valuable when we treat them as colleagues and require the same discipline we expect of ourselves."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-06-11 T19:00:00+01:00
+    lastmod: 2025-06-16 T19:00:00+01:00
 ---
 
 Modern LLMs are already reshaping software practice, whether we like it or not. I began wary of the promise of instant productivity, yet have arrived at a somewhat surprising conclusion: LLMs are most valuable when we treat them as colleagues and require the same discipline we expect of ourselves.

@@ -1,5 +1,5 @@
 ---
-title: Systems Thinking for Someone Who Doesn’t Naturally Think in Systems
+title: Systems Thinking for Someone Who Doesn't Naturally Think in Systems
 date: 2025-05-02 13:00:00
 tags: systems-thinking
 sitemap:

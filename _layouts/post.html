@@ -14,10 +14,13 @@ layout: default
             {% endif %}
             <div class="meta mb-3">
                 <span>
-                    {% for tag in page.tags %}
-                        {% capture tag_name %}{{ tag }}{% endcapture %}
-                            <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><span>{{ tag_name }}</span></code> </a>
-                        {% endfor %}
+                  {% for tag in page.tags %}
+                    {% assign tag_name = tag %}
+                    {% assign tag_count = site.tags[tag_name] | size %}
+                    <a href="/tag/{{ tag_name }}">
+                        <span>{{ tag_name }} ({{ tag_count }})</span>
+                    </a>{% unless forloop.last %}<span>, </span>{% endunless %}
+                  {% endfor %}
                 </span>
             </div>
             <section class="post-content">
