@@ -1,7 +1,7 @@
 ---
 title: Composable First, Reusable Forever
 date: 2025-06-02 08:00:00
-tags: [management, systems-thinking]
+tags: [software-engineering, architecture]
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
@@ -11,18 +11,18 @@ sitemap:
 There's a certain romance to reusability. Ask any engineering leader what they want from their systems, and the word *reusability* will float up within minutes - right alongside "maintainable" and "scalable". It's a moth to the flame that lures us into abstraction, grand refactors, and ever-larger piles of shared code. But after a decade leading teams, I've found reusability is almost always the wrong thing to chase directly.  
 If you want systems you can reuse, you have to start somewhere else: composability.
 
-## The Reusability Mirage
+## The Reusability Fallacy
 
 The "reuse" mindset goes something like this: if I build the perfect library or the universal service, teams will stop repeating themselves, and we'll be faster, cheaper, better forever.  
 In reality, direct attempts at reusability tend to calcify into monoliths. Teams are forced to bend to a common pattern, and the code becomes a monument to decisions no one can quite remember making. "Reusable" code ends up as a graveyard of abandoned entry points and TODOs about missing features. I've lost count of the times I've inherited a "shared" library that, in practice, no one actually wanted to share.
 
 What gets missed is that true reusability is *emergent*. It's not decreed by a principal engineer's architectural document. **It's the dividend you collect when you deliberately optimise your systems, code, teams, and process for composability**.
 
-## Composability as First Principle
+## Composability from First Principles
 
 Composability, by contrast, is about boundaries and contracts. Instead of building a single thing to do everything, you build smaller things that snap together. You resist the urge to predict all future use-cases, and instead focus on making each part simple to understand, reason about, and connect.
 
-Amazon's famous API Mandate wasn't about reusability for its own sake; it was about enforcing boundaries so that everything had to be composed via stable contracts. The teams got to keep their autonomy, but the business unlocked a surface area for innovation that no monolith could provide.
+[Amazon's famous API Mandate](https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization) wasn't about reusability for its own sake; it was about enforcing boundaries so that everything had to be composed via stable contracts. The teams got to keep their autonomy, but the business unlocked a surface area for innovation that no monolith could provide.
 
 When you focus on composability:
 
