@@ -2,6 +2,8 @@
 title: Composable First, Reusable Forever
 date: 2025-06-02 08:00:00
 tags: [software-engineering, architecture]
+description: "There's a certain romance to reusability. Ask any engineering leader what they want from their systems, and the word reusability will float up within minutes - right alongside "maintainable" and "scalable". It's a moth to the flame that lures us into abstraction, grand refactors, and ever-larger piles of shared code. But after a decade leading teams, I've found reusability is almost always the wrong thing to chase directly.  
+If you want systems you can reuse, you have to start somewhere else: composability."
 sitemap:
   priority: 0.7
   changefreq: 'monthly'

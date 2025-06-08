@@ -9,15 +9,15 @@ sitemap:
     lastmod: 2025-06-16 T19:00:00+01:00
 ---
 
-Modern LLMs are already reshaping software practice, whether we like it or not. I began wary of the promise of instant productivity, yet have arrived at a somewhat surprising conclusion: LLMs are most valuable when we treat them as colleagues and require the same discipline we expect of ourselves.
+Modern LLMs are already influencing software practice, whether we like it or not. I began unsure of the promise of instant productivity, yet have arrived at a somewhat surprising conclusion: LLMs are most valuable when we treat them as partners and require the same discipline we expect of ourselves.
 
 ## The path from doubt to discipline
 
 - **Initial scepticism** - Early outputs were incorrect and sometimes comically wrong. For example, changing the framework source code, or using functions that simply don't exist.
-- **Enchantment phase** - The model felt magical until I inspected the diff. The code compiled, yet violated naming conventions and hid edge-case bugs.
+- **Magic phase** - The model felt magical until I inspected the diff. The code compiled, yet violated naming conventions and hid edge-case bugs.
 - **Reframing** - I stopped issuing commands and started a dialogue. The model became a well-read but inexperienced pair programmer.
 
-That shift transformed the tool from a novelty toy to a partner.
+That shift transformed the tool from a gimmick to a partner.
 
 ## An experimentation loop that works
 
@@ -39,8 +39,8 @@ That shift transformed the tool from a novelty toy to a partner.
 
 ## What LLMs change and what they don’t
 
-- **Change** - Routine scaffolding and repetitive glue shrink dramatically. Investigating new APIs is now minutes, not hours.
-- **Endure** - System design, trade-off decisions, and organisational alignment remain stubbornly human. The model suggests patterns, engineers judge their fit.
+- **Change** - Routine scaffolding and repetitive tasks shrink dramatically. Investigating new APIs is now minutes, not hours.
+- **Endure** - System design, trade-off decisions, and organisational alignment remain human tasks. The model suggests patterns, engineers judge their fit.
 - **Emergent risk** - *Vibe debt*: superficially correct code that erodes readability. Tests, style checks, and code reviews all remain mandatory.
 
 An interesting observation is how sceptics often compare the current LLMs to perfect engineers, while enthusiasts compare them to no tool at all. Reality sits between those view points. The history of software shows that new abstractions seldom remove work, they reallocate it. Terminals displaced punch cards, IDEs displaced editors, and LLMs are displacing a slice of manual implementation while elevating the importance of precise review.
