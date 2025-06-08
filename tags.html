@@ -12,7 +12,7 @@ description: Hey, I'm Josh, a software engineer who likes building and running e
             <a class="tag-title" href="/tags/{{ tag[0] | slugify }}" id="{{ tag[0] | slugify }}">{{ tag[0] }}</a>
             <ul class="list-unstyled">
                 {% for post in tag[1] %}
-                <li class="d-flex justify-content-between align-items-center flex-nowrap my-2">
+                <li class="d-flex justify-content-between align-items-center flex-nowrap my-2 mb-3">
                     <a href="{{ site.baseurl }}{{ post.url }}"
                        class="flex-grow-1 text-truncate pr-3">
                         {{ post.title }}
