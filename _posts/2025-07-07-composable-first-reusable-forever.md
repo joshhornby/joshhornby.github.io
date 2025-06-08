@@ -11,20 +11,17 @@ sitemap:
 
 There's a certain romance to reusability. Ask any engineering leader what they want from their systems, and the word *reusability* will float up within minutes, right alongside "maintainable" and "scalable".
 
-It's a moth to the flame that lures us into abstraction, big refactors, and ever-larger piles of shared code. But I've found reusability is almost always the wrong thing to chase directly.  
-If you want systems you can reuse, you have to start somewhere else: composability.
+It's a moth to the flame that lures us into abstraction, big refactors, and large piles of shared code. But I've found reusability is almost always the wrong thing to chase directly. If you want systems you can reuse, you have to start somewhere else: composability.
 
 ## The Reusability Fallacy
 
-The "reuse" mindset goes something like this: if I build the perfect library or the universal service, teams will stop repeating themselves, and we’ll be faster, cheaper, better forever.
+The "reuse" mindset goes something like this: if I build the perfect library or the global service, teams will stop repeating themselves, and we'll be faster, cheaper, better forever.
 
-In reality, direct attempts at reusability tend to calcify into monoliths. Teams are forced to bend to a common pattern, and the code becomes a monument to decisions no one can quite remember making. "Reusable" code ends up as a graveyard of abandoned entry points and TODOs about missing features. I’ve lost count of the times I’ve inherited a "shared" library that, in practice, no one actually wanted to share.
+In reality, direct attempts at reusability tend to calcify into monoliths. Teams are forced to bend to a common pattern, and the code becomes a monument to decisions no one can quite remember making. "Reusable" code ends up as a graveyard of abandoned entry points and TODOs about missing features. I've lost count of the times I've inherited a "shared" library that, in practice, no one actually wanted to share.
 
 What gets missed is that true reusability is *emergent*. It's not decreed by a principal engineer's architectural document. It's the dividend you collect when you deliberately optimise your systems, code, teams, and process for composability.
 
-The real trap isn’t just technical, it’s organisational. Every dependency on a "reusable" component couples teams together, sometimes invisibly. When one group needs a small tweak, the change drags through layers of negotiation, code review, and compromise. Instead of accelerating, teams end up queueing for changes, waiting on someone else's roadmap, or tiptoeing around global side effects. Delivery slows. Autonomy shrinks. The promise of speed and consistency quietly becomes a source of friction.
-
-
+The real trap isn't just technical, it's organisational. Every dependency on a "reusable" component couples teams together, sometimes invisibly. When one group needs a small tweak, the change drags through layers of negotiation, code review, and compromise. Instead of accelerating, teams end up queueing for changes, waiting on someone else's roadmap, or tiptoeing around global side effects. Delivery slows. Autonomy shrinks. The promise of speed and consistency quietly becomes a source of friction.
 
 ## Composability from First Principles
 
