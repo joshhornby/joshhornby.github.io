@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Tags
-description: Hey, I'm Josh, a software engineer who likes building and running engineering teams.
 ---
 
 <div class="container mt-2 mt-md-4 tag-page">
@@ -9,21 +8,14 @@ description: Hey, I'm Josh, a software engineer who likes building and running e
         <div class="col-12 col-lg-8 mx-auto">
             {% assign sorted_tags = site.tags | sort %}
             {% for tag in sorted_tags %}
+            <div class="mb-3">
             <a class="tag-title" href="/tags/{{ tag[0] | slugify }}" id="{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-            <ul class="list-unstyled mb-3">
+            <ul class="list-unstyled">
                 {% for post in tag[1] %}
-                <li class="d-flex justify-content-between align-items-center flex-nowrap my-2">
-                    <a href="{{ site.baseurl }}{{ post.url }}"
-                       class="flex-grow-1 text-truncate pr-3">
-                        {{ post.title }}
-                    </a>
-                    <time datetime="{{ post.date | date_to_xmlschema }}"
-                          class="text-muted text-right">
-                        {{ post.date | date: '%B %-d, %Y' }}
-                    </time>
-                </li>
+                    {% include post-link.html %}
                 {% endfor %}
             </ul>
+            </div>
             {% endfor %}
         </div>
     </div>

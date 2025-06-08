@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-between align-items-center flex-nowrap my-4">
+    <a href="{{ site.baseurl }}{{ post.url }}"
+       class="flex-grow-1 text-truncate pr-3">
+        {{ post.title }}
+    </a>
+    <time datetime="{{ post.date | date_to_xmlschema }}"
+          class="text-muted text-right">
+        {{ post.date | date: '%B %-d, %Y' }}
+    </time>
+</div>
