@@ -1,6 +1,7 @@
 ---
 title:  Notes on A Manager's Path
 date:   2021-01-10 14:30:00
+tags: [management, career]
 description: Camille Fournier's "A Manager's Path" is a guide for navigating the technical career ladder
 sitemap:
 priority: 0.7

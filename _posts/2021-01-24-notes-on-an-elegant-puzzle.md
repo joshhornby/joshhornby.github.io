@@ -1,7 +1,7 @@
 ---
 title:  Notes on An Elegant Puzzle
 date:   2021-01-24 14:30:00
-tags: management career
+tags: [management, career]
 description: Will Larson's excellent "An Elegant Puzzle" deep dives into every aspect of being a tech leader at modern software companies
 sitemap:
 priority: 0.7
