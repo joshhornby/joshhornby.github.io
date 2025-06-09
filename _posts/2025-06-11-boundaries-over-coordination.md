@@ -18,9 +18,7 @@ But lately, I've started asking: _What if coordination isn't a sign of organisat
 
 Jess Kerr, in her piece ["Better Coordination, or Better Software?"](https://jessitron.com/2021/08/02/better-coordination-or-better-software/){:target="_blank"}, puts it plainly:
 
-> "The solution isn't better coordination. It's better software, specifically, software that needs less coordination."
-
-That resonated. Because the more I think about it, the more I see that every recurring calendar invite is just deferred work on the interface.
+> "When different parts of an organization need to coordinate, it seems like a good idea to help them coordinate smoothly and frequently. Don’t. Help them coordinate less — more explicitly, less often"
 
 We tell ourselves coordination is necessary to keep the system ticking over. But more often, it's a tax we pay for missing contracts, leaky abstractions, or responsibilities spread across too many teams. Each sync is a signal: there's a boundary that needs reinforcing.
 
