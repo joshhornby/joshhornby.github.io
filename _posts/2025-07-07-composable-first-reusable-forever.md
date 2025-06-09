@@ -15,7 +15,7 @@ It's a moth to the flame that lures us into abstraction, big refactors, and larg
 
 ## The Reusability Fallacy
 
-The "reuse" mindset goes something like this: if I build the perfect library or the global service, teams will stop repeating themselves, and we'll be faster, cheaper, better forever.
+The "reuse" mindset goes something like this: if I build the perfect library or the global service, teams will stop repeating themselves, and we'll be faster, less expensive, better forever.
 
 In reality, direct attempts at reusability tend to calcify into monoliths. Teams are forced to bend to a common pattern, and the code becomes a monument to decisions no one can quite remember making. "Reusable" code ends up as a graveyard of abandoned entry points and TODOs about missing features. I've lost count of the times I've inherited a "shared" library that, in practice, no one actually wanted to share.
 
@@ -41,15 +41,15 @@ This lesson took years to stick. Early in my career, I pushed my teams to "share
 
 The shift came when we flipped the question: "How do we make this reusable?" to "How do we make this composable?" The difference is subtle but fundamental.
 
-- One early push was a universal logging library, tightly coupled to our specific backend. Teams resisted half wanted structured logs, the other half just needed error tracking. When we broke it up into composable middleware, one for output format, one for transport, one for log levels teams picked what fit their context, and contributed back improvements that didn't break everyone else
+- One early push was a universal logging library, tightly coupled to our specific backend. Teams resisted half-wanted structured logs, the other half just needed error tracking. When we broke it up into composable middleware, one for output format, one for transport, one for log levels, teams picked what fit their context and contributed back improvements that didn't break everyone else
 
-- For onboarding flows, we abandoned the master workflow and provided small, composable steps. Teams assembled their flows from these blocks, and when a better approach was found, it was trivial to slot in or swap out.
+- For onboarding flows, we abandoned the primary workflow and provided small, composable steps. Teams assembled their flows from these blocks, and when a better approach was found, it was trivial to slot in or swap out.
 
 ## Reusability as Dividend
 
 Optimising for composability feels slow at first. It means fewer large abstractions, more focus on contracts, and living with duplication a little longer than your inner perfectionist might like.
 
-But over time, the patterns that get used are the ones that are genuinely valuable. Instead of forcing reuse, you observe it in the wild and everyone is composing these three pieces together, maybe they deserve a new abstraction.
+But over time, the patterns that get used are the ones that are genuinely valuable. Instead of forcing reuse, you observe it in the wild, and everyone is composing these three pieces together; maybe they deserve a new abstraction.
 
 Reusable code, processes, and even teams emerge not because you enforced them, but because you made it possible. Real reuse is a signal, not a strategy.
 

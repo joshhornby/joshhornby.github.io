@@ -9,15 +9,15 @@ sitemap:
     lastmod: 2025-06-16 T19:00:00+01:00
 ---
 
-Modern LLMs are already influencing software practice, whether we like it or not. I began unsure of the promise of instant productivity, yet have arrived at a somewhat surprising conclusion: LLMs are most valuable when we treat them as partners and require the same discipline we expect of ourselves.
+Modern LLMs are reshaping software practice, for better or worse. I began doubtful about the promise of instant productivity, but over time, I’ve arrived at a surprising conclusion: LLMs offer the most value when we engage them as partners, holding them to the same standards of discipline we expect of ourselves.
 
 ## The path from doubt to discipline
 
-- **Initial scepticism** - Early outputs were incorrect and sometimes comically wrong. For example, changing the framework source code, or using functions that simply don't exist.
+- **Initial scepticism** - Early outputs were incorrect and sometimes comically wide of the mark. For example, changing the framework source code, or using functions that simply didn't exist.
 - **Magic phase** - The model felt magical until I inspected the diff. The code compiled, yet violated naming conventions and hid edge-case bugs.
 - **Reframing** - I stopped issuing commands and started a dialogue. The model became a well-read but inexperienced pair programmer.
 
-That shift transformed the tool from a gimmick to a partner.
+That shift, from viewing the tool as a shortcut to treating it as a disciplined partner made all the difference.
 
 ## An experimentation loop that works
 
