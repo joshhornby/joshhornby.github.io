@@ -8,7 +8,7 @@ sitemap:
   lastmod: 2025-07-21 T19:00:00+01:00
 ---
 
-Some frameworks stick with you because they just ring true. Years ago, a previous manager Paul Ingham laid out what he called the four pillars of engineering leadership. I keep returning to them because they're straightforward, but never simplistic, and they remind me that leadership is less about authority, more about architecture. Each pillar builds on the last. Miss one, and the whole structure wobbles.
+Some frameworks stick with you because they just ring true. Years ago, a previous manager Paul Ingham laid out what he called the four pillars of engineering leadership. I keep returning to them because they're straightforward, but never simplistic. They remind me that leadership isn't about hierarchy or authority, it’s about how you shape and connect the parts that make a team strong. Each pillar builds on the last; miss one, and the whole structure loses its balance.
 
 ## Engineering Artisanship
 
@@ -42,6 +42,6 @@ It relies on the other pillars: without strong culture, collaboration falls flat
 
 Stakeholder engagement is where you make the invisible visible, and where engineering actually matters.
 
-I owe Paul for this framing, but it's lived experience that brings it to life.
+I owe Paul for this framing, but it's lived experiences that bring it to life.
 
-Each pillar supports the next. Skip one, and you feel it soon enough, quality suffers, priorities drift, teams disengage, and engineering becomes a silo. But stack them, deliberately, and you build something resilient.
+Each pillar supports the next. Skip one, and you feel it soon enough, quality suffers, priorities drift, teams disengage, and engineering becomes a silo. But stack them deliberately, and you build something resilient.
