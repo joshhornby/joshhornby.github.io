@@ -21,7 +21,7 @@ Without artisanship, the rest is theory.
 ## Engineering Strategy
 
 Once you've built your craft, you earn the right to look up to set a direction. Strategy is the layer that gives meaning to the daily work. It's not just picking goals, it's the discipline to connect the work to something larger.
-Here's where you move from “doing things well” to "doing the right things, well."
+Here's where you move from "doing things well" to "doing the right things, well."
 
 But you can't do this credibly without a foundation of artisanship otherwise, strategy is just a wish list.
 
@@ -32,7 +32,7 @@ Culture builds on both craft and strategy. It's how the team moves from "a group
 You need a culture where feedback flows, candour is normal, and standards are shared.
 This isn't an accident; it's the result of a thousand small choices, what you reward, what you tolerate, how you act when things go wrong.
 
-Culture makes the hard bits possible: it's the flywheel that turns good strategy and strong craft into sustained momentum.
+Culture makes the hard bits possible: it's the flywheel that turns good strategy and strong craft into consistent momentum.
 
 ## Stakeholder Engagement
 
@@ -42,6 +42,6 @@ It relies on the other pillars: without strong culture, collaboration falls flat
 
 Stakeholder engagement is where you make the invisible visible, and where engineering actually matters.
 
-I owe Paul for this framing, but it's a lived experience that brings it to life.
+I owe Paul for this framing, but it's lived experience that brings it to life.
 
 Each pillar supports the next. Skip one, and you feel it soon enough, quality suffers, priorities drift, teams disengage, and engineering becomes a silo. But stack them, deliberately, and you build something resilient.
