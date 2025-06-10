@@ -8,7 +8,7 @@ sitemap:
     lastmod: 2025-06-09 T19:00:00+01:00
 ---
 
-If you want to know how healthy your engineering system is, count the meetings on your calendar. Or better yet, count the ones labelled "cross-team sync".
+If you want to know how healthy your engineering org is, count the meetings on your calendar. Or better yet, count the ones labelled "cross-team sync".
 
 As dependencies grow, so does the overhead required to keep them in sync. New shared Slack channels, sprawling Jira boards, a weekly check-in "just to keep us aligned." I've been part of rollouts where the answer to any missed hand-off was to add another layer of coordination, hoping that more meetings might compensate for too many moving parts.
 
@@ -34,7 +34,7 @@ It's easy to reach for a process and meetings as a kind of organisational safety
 
 Rather than battling the same coordination issues week after week, change the underlying system that keeps creating them. Here's how I've learned to turn boundaries from a source of friction into a source of leverage:
 
-- **Code Your Boundaries, Don't Calendar Them** If two teams rely on a recurring hand-off, ask yourself: could a robust contract test or shared automation make that meeting unnecessary? Ship the boundary, not the calendar invite.
+- **Code Your Boundaries, Don't Calendar Them** If two teams rely on a recurring hand-off, ask yourself: could a contract test or shared automation make that meeting unnecessary? Ship the boundary, not the calendar invite.
 
 - **Prioritise Explicit Interfaces, Everywhere** Don't save good API design for the public edge. Every ambiguous, undocumented internal dependency is tomorrow's meeting in disguise. Make contracts explicit.
 
