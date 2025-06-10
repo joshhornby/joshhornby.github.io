@@ -10,7 +10,7 @@ sitemap:
 
 If you want to know how healthy your engineering system is, count the meetings on your calendar. Or better yet, count the ones labelled "cross-team sync".
 
-As dependencies grow, so does the overhead required to keep them in sync. New shared Slack channels, sprawling Jira boards, a weekly check-in "just to keep us aligned." I've been part of rollouts where the answer to any missed hand-off was to add another layer of coordination, hoping that more glue might compensate for too many moving parts.
+As dependencies grow, so does the overhead required to keep them in sync. New shared Slack channels, sprawling Jira boards, a weekly check-in "just to keep us aligned." I've been part of rollouts where the answer to any missed hand-off was to add another layer of coordination, hoping that more meetings might compensate for too many moving parts.
 
 But lately, I've started asking: _What if coordination isn't a sign of organisational maturity, but a sign the boundaries are broken?_
 
@@ -18,7 +18,7 @@ But lately, I've started asking: _What if coordination isn't a sign of organisat
 
 Jess Kerr, in her piece ["Better Coordination, or Better Software?"](https://jessitron.com/2021/08/02/better-coordination-or-better-software/){:target="_blank"}, puts it plainly:
 
-> "When different parts of an organization need to coordinate, it seems like a good idea to help them coordinate smoothly and frequently. Don’t. Help them coordinate less — more explicitly, less often"
+> "When different parts of an organisation need to coordinate, it seems like a good idea to help them coordinate smoothly and frequently. Don't. Help them coordinate less - more explicitly, less often"
 
 We tell ourselves coordination is necessary to keep the system ticking over. But more often, it's a tax we pay for missing contracts, leaky abstractions, or responsibilities spread across too many teams. Each sync is a signal: there's a boundary that needs reinforcing.
 
@@ -26,9 +26,9 @@ When you pay that cost up front by investing in clear APIs, real ownership, and 
 
 ## The Composability Dividend
 
-The more composable our systems, the clearer our boundaries the less coordination we need, and the more real leverage we get.
+The more composable our systems, the clearer our boundaries, the less coordination we need and the more real leverage we get.
 
-It's easy to reach for process and meetings as a kind of organisational safety net. It's harder (and more valuable) to make your systems fit together so that you don't need the safety net in the first place.
+It's easy to reach for a process and meetings as a kind of organisational safety net. It's harder (and more valuable) to make your systems fit together so that you don't need the safety net in the first place.
 
 ## Making Boundaries Work for You
 
