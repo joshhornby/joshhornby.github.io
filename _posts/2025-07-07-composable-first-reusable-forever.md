@@ -11,7 +11,7 @@ sitemap:
 
 There's a certain romance to reusability. Ask any engineering leader what they want from their systems, and the word *reusability* will float up within minutes, right alongside "maintainable" and "scalable".
 
-It's a moth to the flame that lures us into abstraction, big refactors, and large piles of shared code. But I've found reusability is almost always the wrong thing to chase directly. If you want systems you can reuse, you have to start somewhere else: composability.
+Reusability lures us into abstraction, big refactors, and large piles of shared code. But I've found reusability is almost always the wrong thing to chase directly. If you want systems you can reuse, you have to start somewhere else: composability.
 
 ## The Reusability Fallacy
 
