@@ -17,7 +17,7 @@ There's a phrase I've grown wary of over the years: *tech debt*. It shows up in 
 
 The metaphor is sticky, and like most sticky things in engineering, I think it's started to obscure more than it reveals.
 
-## The Debt Analogy: Useful, Until It Isn't
+## The Debt Analogy: Useful Until It Isn't
 
 The core appeal of "tech debt" is its similarities with finance. Debt is familiar: you borrow, accrue interest, pay it back later. It makes prioritising work feel rational, invest now, pay off later, balance the books. The metaphor works for a while. But over time, I've found it gets warped in every direction:
 
@@ -35,7 +35,7 @@ In engineering, the words we use shape how we act. "Tech debt" turns engineering
 
 - The metaphor hides trade-offs. Financial debt is straightforward, money is money. In software, "debt" ranges from an ugly variable name to an entire architecture that can't scale. Bundling these together under one phrase makes prioritisation fuzzier, not clearer.
 
-- It erases history. When we talk about "tech debt," we usually mean "something that should have been done differently." But most "debt" was the right decision *at the time*, made under real constraints. Today's "debt" is yesterday's pragmatic delivery.
+- It erases history. When we talk about "tech debt", we usually mean "something that should have been done differently." But most "debt" was the right decision *at the time*, made under real constraints. Today's "debt" is yesterday's pragmatic delivery.
 
 ## What to Say Instead
 
