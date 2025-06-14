@@ -9,11 +9,12 @@ sitemap:
     lastmod: 2025-06-17 T19:00:00+01:00
 ---
 
-Modern LLMs are reshaping software practice, for better or worse. I began doubtful about the promise of instant productivity, but over time, I've arrived at a surprising conclusion: LLMs offer the most value when we engage them as partners, holding them to the same standards of discipline we expect of ourselves.
+Modern LLMs are reshaping software practice, for better or worse. I began doubtful overthe promise of instant productivity with these tools, but over time I've arrived at a surprising conclusion: LLMs offer the most value when we engage them as partners, holding them to the same standards of discipline we expect of ourselves.
 
 ## The path from doubt to discipline
 
-I started out sceptical, my first attempts at using LLMs to write code were laughable. The model would rewrite a framework source code, invent functions, and ignore naming conventions, all while introducing edge-case bugs. I stopped giving orders and started having a dialogue instead. The model became a well-read but inexperienced pair programmer. That shift from seeing it as a shortcut to treating it as a disciplined partner changed everything.
+I started out sceptical, my first attempts at using LLMs, mainly with Claude 3.7 & 4.0 along side using 
+OpenAI's GPT-4 & o3, to write code were laughable. The model would rewrite a framework source code, invent functions, and ignore naming conventions, all while introducing edge-case bugs. I changed tactics, and stopped giving orders and started having a dialogue instead. The model became a well-read but inexperienced pair programmer. That shift from seeing it as a shortcut to treating it as a disciplined partner changed everything.
 
 ## An experimentation loop that works
 
