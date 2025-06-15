@@ -9,7 +9,7 @@ sitemap:
     lastmod: 2025-06-24 T19:00:00+01:00
 ---
 
-It's easy to admire the peak moments in product engineering teams: shipping features, the incident recovery, the burst of innovation after months of foundational work. But beneath the visible achievements sits something far more ordinary and persistent - *toil*. Toil is the work that keeps systems humming, the low-grade friction that quietly erodes a team's time and energy.
+It’s easy to celebrate the highlights in product engineering: a product launch, pulling together to resolve a critical outage, or watching months of platform investment quietly unlock a wave of customer growth. But beneath the visible achievements sits something far more ordinary and persistent - *toil*. Toil is the work that keeps systems humming, the low-grade friction that quietly erodes a team's time and energy.
 
 In every system I've touched, toil is there silent, repetitive, rarely celebrated. It's the 2am manual restart of a stuck service, the weekly trawl through logs to clear false positives, the ritual of updating an expiring certificate. You won't see "reduce toil" in most sprint goals, but ignore it long enough, and it becomes the defining experience of the team.
 
@@ -22,7 +22,7 @@ A few common examples:
 - **Manual Deployments:** Engineers SSH into boxes, run bespoke scripts, follow checklists. Each step is a chance for human error.
 - **Noisy Alerts:** Pager fatigue from alerts that don't need immediate human intervention.
 - **Repetitive Bug Fixes:** Squashing the same bug class across many microservices because there's no shared solution.
-- **Chronic Admin:** Rotating secrets, expiring tokens, or manually updating dependencies because automation never landed.
+- **Admin Tasks:** Rotating secrets, expiring tokens, or manually updating dependencies because automation never landed.
 
 At its core, toil is the sort of work where, after you've done it, the world isn't really any better off except that you'll need to do it again soon.
 
