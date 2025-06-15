@@ -31,7 +31,7 @@ The core appeal of "tech debt" is its similarities with finance. Debt is familia
 
 In engineering, the words we use shape how we act. "Tech debt" turns engineering problems into financial abstractions. That's comforting, but also misleading.
 
-- If every bit of "tech debt" is just a loan, it implies that paying it off is always virtuous. That's not true. Sometimes, the "debt" is simply the cost of learning what works. Sometimes it's a relic that doesn't matter any more.
+- If every bit of "tech debt" is just a loan, it implies that paying it off is always worth while. That's not true. Sometimes, the "debt" is simply the cost of learning what works. Sometimes it's a relic that doesn't matter any more.
 
 - The metaphor hides trade-offs. Financial debt is straightforward, money is money. In software, "debt" ranges from an ugly variable name to an entire architecture that can't scale. Bundling these together under one phrase makes prioritisation fuzzier, not clearer.
 
@@ -44,8 +44,6 @@ If I could retire the term "tech debt" from engineering meetings, I would. But w
 - **Be precise.** Is the code slow? Hard to read? Impossible to change? Are we blocked from launching a new feature? Describe the pain, not the metaphor.
 - **Tell the story.** How did we get here? What did we learn? Was it a deliberate trade-off, or an accident? The history matters more than the label.
 - **Describe the impact.** What is the cost today? How is it affecting customers, or slowing the team? Specifics drive better prioritisation.
-
-## The Real Problem with "Tech Debt"
 
 Ultimately, my gripe with "tech debt" isn't just about language. It's about discipline. "Tech debt" gives us a shorthand to avoid challenging conversations about architectural drift, team incentives, and the messy path of real world delivery. I'd rather see teams confront the mess head on, with the honesty and clarity it deserves.
 
