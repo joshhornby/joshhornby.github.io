@@ -39,8 +39,6 @@ The problem isn't just anecdotal. The [DORA "State of DevOps" report](https://do
 
 By contrast, high-performing teams invest in automation, standardised tooling, and platform improvements, leading to less than half the operational overhead and wasted work compared to their peers.
 
-The data is clear: if you want speed, resilience, and retention, you have to take toil seriously.
-
 Ignore toil, and you invite steady decay in team morale and system reliability. Address it, and you unlock time, attention, and satisfaction.
 
 ## Leading Teams Through Toil
