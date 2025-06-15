@@ -35,6 +35,12 @@ Toil is a slow poison. The first cost is obvious: it takes up engineering hours 
 - **Operational Risk:** Manual steps mean more opportunities for error. Fatigue and boredom make mistakes more likely, compounding incidents.
 - **Attrition:** Eventually, the best engineers move on to places where their time and energy yield greater impact.
 
+The problem isn't just anecdotal. The [DORA "State of DevOps" report](https://dora.dev/research/2024/dora-report/?utm_source=chatgpt.com), which tracks engineering performance across thousands of organisations worldwide, consistently finds that teams burdened by high levels of toil deliver features more slowly, recover from failures less effectively, and experience higher rates of burnout and attrition.
+
+By contrast, high-performing teams invest in automation, standardised tooling, and platform improvements, leading to less than half the operational overhead and wasted work compared to their peers.
+
+The data is clear: if you want speed, resilience, and retention, you have to take toil seriously.
+
 Ignore toil, and you invite steady decay in team morale and system reliability. Address it, and you unlock time, attention, and satisfaction.
 
 ## Leading Teams Through Toil
