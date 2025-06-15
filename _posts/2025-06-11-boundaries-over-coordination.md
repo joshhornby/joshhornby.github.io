@@ -17,7 +17,7 @@ But lately, I've started asking: _What if coordination isn't a sign of organisat
 
 ## A Better Question
 
-Jess Kerr, in her piece ["Better Coordination, or Better Software?"](https://jessitron.com/2021/08/02/better-coordination-or-better-software/){:target="_blank"}, puts it plainly:
+Jess Kerr, in her piece ["Better Coordination, or Better Software?"](https://jessitron.com/2021/08/02/better-coordination-or-better-software/){:target="_blank"} puts it simply:
 
 > "When different parts of an organisation need to coordinate, it seems like a good idea to help them coordinate smoothly and frequently. Don't. Help them coordinate less - more explicitly, less often"
 
@@ -27,7 +27,7 @@ When you pay that cost up front by investing in clear APIs, real ownership, and 
 
 ## The Composability Dividend
 
-The more composable our systems, the clearer our boundaries, the less coordination we need and the more real leverage we get.
+The more composable our systems, the clearer our boundaries, the less coordination we need and the [more leverage we get](/doing-leveraged-work).
 
 It's easy to reach for a process and meetings as a kind of organisational safety net. It's harder (and more valuable) to make your systems fit together so that you don't need the safety net in the first place.
 
