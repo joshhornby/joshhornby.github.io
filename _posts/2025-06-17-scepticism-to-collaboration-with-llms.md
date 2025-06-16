@@ -50,4 +50,4 @@ Prompting itself often feels like learning a brand-new programming language: you
 
 Agent-style workflows will likely become more popular. The winning teams will not be the first to automate everything, they will be the first to build a repeatable practice that integrates LLMs without surrendering standards. That is a management problem, not a model problem.
 
-I no longer ask whether LLMs will improve engineering. I ask how quickly can refine how we work to turn probabilistic text into reliable systems.
+I no longer wonder if LLMs will improve engineering, only how fast we can adapt to turn probabilistic text into reliable systems.
