@@ -22,7 +22,7 @@ The biggest gains come from working with the model as you would with a junior en
 1. **State intent first**: Ask the model to summarise the problem and sketch a solution outline before it writes a single line. Misalignment surfaces early.
 2. **Write tests up front**: The generated code reveals gaps, I expand the edge cases. A failing test is a fast guard-rail.
 3. **Iterate with review**: I keep the review process identical to human PRs: style, complexity, and clarity all matter.
-4. **Capture rationale**: I ask for a short "why this design" note and save it beside the code. Future contributors—including the model inherit the context.
+4. **Capture rationale**: I ask for a short "why this design" note and save it beside the code. Future contributors, including the model inherit the context.
 
 ## Practices that compound value
 
@@ -40,7 +40,7 @@ Each week log model-authored lines of code, test coverage, and review comments. 
 
 Routine scaffolding and repetitive tasks now take a fraction of the time, what used to take hours is down to minutes. Investigating a new API is no longer an afternoon lost; it's a quick spin-up.
 But not everything changes. System design, trade-off decisions, and organisational alignment still demand human judgment. The model suggests patterns, but it's engineers who decide what fits.
-There's a new risk, though: vibe debt—code that appears fine on the surface, but quietly erodes readability and clarity. That's why tests, style checks, and code reviews are as important as ever.
+There's a new risk, though: vibe debt-code that appears fine on the surface, but quietly erodes readability and clarity. That's why tests, style checks, and code reviews are as important as ever.
 
 An interesting observation is how sceptics often compare the current LLMs to perfect engineers, while enthusiasts compare them to no tool at all. Reality sits between those view points. The history of software shows that new abstractions seldom remove work, they reallocate it. Terminals displaced punch cards, IDEs displaced editors, and LLMs are displacing a slice of manual implementation while elevating the importance of precise review.
 
