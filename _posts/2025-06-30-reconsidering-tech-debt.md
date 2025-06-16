@@ -15,7 +15,7 @@ There's a phrase I've grown wary of over the years: *tech debt*. It shows up in 
 
 "If only we didn't have so much tech debt."
 
-After a while, the phrase stops making things clearer and just becomes a catch-all excuse, something we say out of habit, even when it doesn’t actually help us understand what’s wrong or what to do next.
+After a while, the phrase stops making things clearer and just becomes a catch-all excuse, something we say out of habit, even when it doesn't help us understand what's wrong or what to do next.
 
 ## The Debt Analogy: Useful Until It Isn't
 
@@ -31,7 +31,7 @@ The core appeal of "tech debt" is its similarities with finance. Debt is familia
 
 In engineering, the words we use shape how we act. "Tech debt" turns engineering problems into financial abstractions. That's comforting, but also misleading.
 
-- If every bit of "tech debt" is just a loan, it implies that paying it off is always worth while. That's not true. Sometimes, the "debt" is simply the cost of learning what works. Sometimes it's a relic that doesn't matter any more.
+- If every bit of "tech debt" is just a loan, it implies that paying it off is always worthwhile. That's not true. Sometimes, the "debt" is simply the cost of learning what works. Sometimes it's a relic that doesn't matter any more.
 
 - The metaphor hides trade-offs. Financial debt is straightforward, money is money. In software, "debt" ranges from an ugly variable name to an entire architecture that can't scale. Bundling these together under one phrase makes prioritisation fuzzier, not clearer.
 

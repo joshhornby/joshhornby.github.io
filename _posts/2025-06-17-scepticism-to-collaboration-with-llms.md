@@ -9,7 +9,7 @@ sitemap:
     lastmod: 2025-06-17 T19:00:00+01:00
 ---
 
-_For context: most of my experiments are with Claude 3.7, 4.0, OpenAI's GPT-4, o3 and o4-mini-high. The reflections here are based on hands-on use of those models in day-to-day coding._
+_For context: most of my experiments are with Claude 3.7, OpenAI's GPT-4, o3 and o4-mini-high. The reflections here are based on hands-on use of those models in day-to-day coding._
 
 Modern LLMs are reshaping software practice, for better or worse. I began doubtful over the promise of instant productivity with these tools, but over time I've arrived at a surprising conclusion: LLMs offer the most value when we engage them as partners, holding them to the same standards of discipline we expect of ourselves.
 

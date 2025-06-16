@@ -27,7 +27,7 @@ The real trap isn't just technical, it's organisational. Every dependency on a "
 
 Composability, by contrast, is about boundaries and contracts. Instead of building a single thing to do everything, you build smaller things that snap together. You resist the urge to predict all future use-cases, and instead focus on making each part simple to understand, reason about, and connect.
 
-[Amazon's famous API Mandate](https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization) wasn't about reusability for its own sake; it was about enforcing boundaries so that everything had to be composed via stable contracts. The teams got to keep their autonomy, but the business unlocked a surface area for innovation that no monolith could provide.
+[Amazon's famous API Mandate](https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization) wasn't about reusability for its own sake; it was about [enforcing boundaries so that everything had to be composed via stable contracts](/boundaries-over-coordination). The teams got to keep their autonomy, but the business unlocked a surface area for innovation that no monolith could provide.
 
 When you focus on composability:
 
@@ -41,7 +41,7 @@ This lesson took years to stick. Early in my career, I pushed my teams to "share
 
 The shift came when we flipped the question: "How do we make this reusable?" to "How do we make this composable?" The difference is subtle but fundamental.
 
-- One early push was a universal logging library, tightly coupled to our specific backend. Teams resisted half-wanted structured logs, the other half just needed error tracking. When we broke it up into composable middleware, one for output format, one for transport, one for log levels, teams picked what fit their context and contributed back improvements that didn't break everyone else
+- One early push was a universal logging library, tightly coupled to our specific backend. Teams resisted half-wanted structured logs, the other half just necessary error tracking. When we broke it up into composable middleware, one for output format, one for transport, one for log levels, teams picked what fit their context and contributed back improvements that didn't break everyone else
 
 - For onboarding flows, we abandoned the primary workflow and provided small, composable steps. Teams assembled their flows from these blocks, and when a better approach was found, it was trivial to slot in or swap out.
 
