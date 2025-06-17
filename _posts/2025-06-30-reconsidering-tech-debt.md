@@ -15,7 +15,7 @@ There's a phrase I've grown wary of over the years: *tech debt*. It shows up in 
 
 "If only we didn't have so much tech debt."
 
-After a while, the phrase stops making things clearer and just becomes a catch-all excuse, something we say out of habit, even when it doesn't help us understand what's wrong or what to do next.
+After a while, the phrase stops clarifying things and just becomes a catch-all excuse, something we say out of habit, even when it doesn't help us understand what's wrong or what to do next.
 
 ## The Debt Analogy: Useful Until It Isn't
 

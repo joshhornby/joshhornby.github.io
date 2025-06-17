@@ -1,7 +1,7 @@
 ---
 title: Engineering Toil - Seeing the Unseen Work
 date: 2025-06-24 08:00:00
-tags: [management, software-engineering]
+tags: [management, software-engineering, culture]
 description: "It's easy to admire the peak moments in engineering: shipping features, the incident recovery, the burst of innovation after months of foundational work. But beneath the visible achievements sits something far more ordinary and persistent - *toil*. Toil is the work that keeps systems humming, the low-grade friction that quietly erodes a team's time, energy, and, eventually, spirit."
 sitemap:
     priority: 0.7

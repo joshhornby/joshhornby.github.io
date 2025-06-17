@@ -1,7 +1,7 @@
 ---
 title: The Four Pillars of Engineering Leadership
 date: 2025-07-21 08:00:00
-tags: [management, career]
+tags: [management, career, culture]
 description: "Some frameworks stick with you because they just ring true. Years ago, a previous manager Paul Ingham laid out what he called the four pillars of engineering leadership. I keep returning to them because they're straightforward, but never simplistic. They remind me that leadership isn't about hierarchy or authority, it's about how you shape and connect the parts that make a team strong. Each pillar builds on the last; miss one, and the whole structure loses its balance."
 sitemap:
   priority: 0.7
