@@ -77,8 +77,7 @@ Picture an e-commerce business, call them Acme-Org who specialise in selling spo
 | **Relic**     | Codebase still contains endpoints for a retired payment partner (SportPay), unused for nine months, but never cleaned up. | Identify, archive, and safely delete old endpoints.  |
 | **Bet**       | Fast-tracked “Buy Now, Pay Later” feature shipped behind a toggle, with no refund logic—review before next quarter.       | Reassess, build missing logic or sunset as needed.   |
 
-A one-page liability map like this turns back-room technical complaints into a crisp, shared plan—making the next actions, and their urgency, obvious for both teams and leadership.
-
+A one-page liability map like this turns back-room technical complaints into a crisp, shared plan—making the next actions, and their urgency, obvious to both teams and leadership.
 
 ## Avoiding taxonomy‑rot
 
