@@ -1,4 +1,5 @@
 <li class="mb-3">
     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    <p class="my-2" style="color: #575759; font-size: 15px"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time> - {{ post.description }}</p>
+    <p class="my-2" style="color: #575759; font-size: 15px"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time> - {{ post.description | truncatewords: 150 }}
+    </p>
 </li>
