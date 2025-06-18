@@ -20,8 +20,10 @@ layout: default
     <div class="row">
         <div class="col-12 offset-lg-1 col-lg-8">
             <section class="post-content">
-                {% if page.image and not page.hide_image %}
-                <img alt="{{ page.title }}" class="img-fluid rounded-xl mb-3" src="{{ page.image }}"/>
+                {% if page.image and page.hide_image != true %}
+                <img alt="{{ page.title }}"
+                     class="img-fluid rounded-xl mb-3"
+                     src="{{ page.image }}"/>
                 {% endif %}
                 {{ content }}
                 <hr/>
