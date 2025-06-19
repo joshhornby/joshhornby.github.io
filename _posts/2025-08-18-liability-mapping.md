@@ -39,7 +39,7 @@ After labelling, add a few triage scores. This is less about precise numbers and
 
 Now, with everything tagged and scored, it's time to make the map.
 
-I like to plot each item on a simple 3×3 grid: immediate impact on one axis, longer-term risk on the other. Colour-code by class. Instantly, certain problems will pop out, the "drag" that's actually a ticking time bomb, the relics that are harmless, the liabilities hiding in plain sight. This picture gives everyone a shared, visual sense of what really needs urgent action, and what can safely stay in the backlog for now.
+I like to plot each item on a simple 3×3 grid: immediate impact on one axis, longer-term risk on the other. Colour-code by class. Instantly, certain problems will pop out, the "drag" that's actually a ticking time bomb, the relics that are harmless, the liabilities hiding in plain sight. This picture gives everyone a shared, visual sense of what really needs urgent action and what can safely stay in the backlog for now.
 
 Link the map to how you actually budget and prioritise work. Anything labelled a liability or hazard goes straight into the run-cost or operational budget those are the items that could hit you with fines, customer churn, or outages if left unchecked. Drags, relics, and bets get slotted into your change-cost or innovation work streams.
 
@@ -51,7 +51,7 @@ The real trick is to treat this whole exercise as a living document, not a one-o
 
 Winning over execs starts with translating technical nuance into their priorities; risk, money, and time. Most leadership teams don't care about "refactoring" or "debt" in the abstract. What they want to know is why they should spend actual budget on things that aren't shiny features or new revenue. That means you have to speak their language, connecting every liability to either avoided disaster, increased velocity, or long-term cost reduction.
 
-- Take the classic, "Why fund refactors now?" No need to get defensive. Point directly to liability-class issues and show how leaving them alone risks legal exposure or damaging headlines. It's almost always cheaper to patch the roof now than deal with a flooded office later. This isn't just about code, it's about protecting the business from entirely preventable pain.
+- Take the classic, "Why fund refactoring now?" No need to get defensive. Point directly to liability-class issues and show how leaving them alone risks legal exposure or damaging headlines. It's almost always cheaper to patch the roof now than deal with a flooded office later. This isn't just about code, it's about protecting the business from entirely preventable pain.
 
 - Next up, "Isn't this just 'nice to have'?" Here, data is your ally. Demonstrate how cutting drag led to faster shipping and measurable wins, features delivered sooner, cost per change reduced, or even churn prevented. If you can tie a technical clean-up to a quantifiable boost in throughput, suddenly it moves from "nice to have" to "makes us money."
 
@@ -61,7 +61,7 @@ In the end, liability mapping gives you a story that's both credible and actiona
 
 ## Creating an example map
 
-Picture an e-commerce business, call them Acme-Org who specialise in selling sports equipment online. Their payments system is a key part of their business, but over time, layers of shortcuts and old infrastructure have built up, making it increasingly brittle. Engineers regularly voice frustration about the difficulty of shipping changes, and product teams worry about how outages and how this will impact revenue.
+Picture an e-commerce business, call them Acme-Org, who specialise in selling sports equipment online. Their payments system is a key part of their business, but over time, layers of shortcuts and old infrastructure have built up, making it increasingly brittle. Engineers regularly voice frustration about the difficulty of shipping changes, and product teams worry about how outages and how this will impact revenue.
 
 | Class         | Example                                                                                                                   | Action                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
