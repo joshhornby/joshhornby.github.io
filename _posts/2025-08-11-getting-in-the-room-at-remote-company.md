@@ -21,7 +21,7 @@ It starts with knowing which room you're trying to get into. Remote companies ar
 
 These tend to form around critical projects, not titles. The trick is to notice where blockers are surfacing and where people are spending their energy. That's usually where the real decisions are made.
 
-But here's where remote is different: "the room" is rarely a fixed place. Sometimes it's not a room at all it's a Google Doc that spirals into a decision while you're asleep, or a passing Slack thread that quietly becomes the next project. Sometimes you won't even know you were in the room until later, when your idea circles back to you, filtered through three people and attached to something else.
+But here's where remote is different: "the room" is rarely a fixed place. Sometimes it's not a room at all it's a Google Doc that spirals into a decision while you're asleep, or a passing Slack thread that quietly becomes the next project. Sometimes you won't even know you were in the room until later, when your idea circles back to you, filtered through three people, and attached to something else.
 
 Influence is cumulative and mostly invisible. If you keep showing up, making things clearer, reducing friction for others, the invites start to arrive before you even need to ask.
 
@@ -35,7 +35,7 @@ This is the slow earn being in the room is often about being the person who can 
 
 Building those relationships is more deliberate in a distributed world. In the office, you could rely on bumping into people. Remotely, you need to be intentional: reach out for short catch‑ups, share context, and crucially follow through when you say you will.
 
-Quiet reliability is a better door‑opener than self‑promotion. If you feel on the outside, don't take it personally. Most rooms in remote companies are full of people who started on the outside. The real privilege isn't getting every invite, but shaping how decisions are made when you do get the nod.
+Quiet reliability is a better door‑opener than self‑promotion. If you feel on the outside, don't take it personally. Most rooms in remote companies are full of people who started on the outside. The real privilege isn't getting every invite but shaping how decisions are made when you do get the nod.
 
 There's also a practical side: time zones and overloaded calendars make inclusion costly, so make yourself easy to invite. Work asynchronously by default, keep things brief, and offer [flexible ways to collaborate](/boundaries-over-coordination). If you become someone who lightens the load instead of adding to it, you'll find more rooms opening up.
 

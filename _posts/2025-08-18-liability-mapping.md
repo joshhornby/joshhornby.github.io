@@ -9,7 +9,7 @@ sitemap:
    lastmod: 2025-08-18 T19:00:00+01:00
 ---
 
-I've [written about tech debt and how often it's used as a catch-all term for a range of issues](/reconsidering-tech-debt), some which could sink a company overnight to minor code-style issues. Often no one can say how much debt exists or what the cost of it is, this results in vague discussions and a lack of paying down the debt. I've also covered [engineering toil](/engineering-toil) that quiet, repetitive work that slows teams down and chips away at morale, yet rarely gets counted in any official budget or roadmap.
+I've [written about tech debt and how often it's used as a catch-all term for a range of issues](/reconsidering-tech-debt), some which could sink a company overnight to minor code-style issues. Often no one can say how much debt exists or what the cost of it is; this results in vague discussions and a lack of paying down the debt. I've also covered [engineering toil](/engineering-toil) that quiet, repetitive work that slows teams down and chips away at morale, yet rarely gets counted in any official budget or roadmap.
 
 This post introduces the concept of liability mapping, how it can be used to improve conversations around tech debt, help teams prioritise which areas they should start paying back and when. The aim is to cut through the noise of "debt", "toil" and everything in between, surfacing what actually matters so teams can spend less time debating and more time making clear progress.
 
