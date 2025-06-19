@@ -7,7 +7,7 @@ $secondary: #edf2f7;
 body {
   font-family: 'IBM Plex serif', sans-serif;
   color: #333;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 19px;
   font-weight: 300;
   letter-spacing: -0.02em;
@@ -59,8 +59,8 @@ mark {
 }
 
 p {
-  font-size: 17px;
-  line-height: 170%;
+  font-size: 16px;
+  line-height: 160%;
 }
 
 p strong {
@@ -108,6 +108,15 @@ blockquote p {
       }
     }
   }
+}
+
+.small-link {
+  //font-size: 14px;
+  line-height: 150%;
+}
+
+.list-no-style {
+  list-style: none;
 }
 
 .tag-page .tag-title {
