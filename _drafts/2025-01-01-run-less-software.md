@@ -10,7 +10,7 @@ sitemap:
 
 Looking back, one of the most important periods in my career was [my time at cinch](/stuff-learned-at-cinch). I'd joined a team where the engineering foundation was already built on AWS Serverless and managed services. Coming from roles where patching, scaling, and chasing flaky deployments were the norm, this felt like a step change.
 
-Most teams, myself included, get used to a certain amount of invisible work: the checklist of rituals that keeps production running, from managing scripts to updating certificates and scrambling when the wrong alert fires. It's the kind of [toil that just becomes background noise](/engineering-toil). But at cinch, so much of that friction had simply evaporated. The infrastructure wasn't front of mind. It wasn't our bottleneck, or even much of a conversation. What struck me wasn't just the lack of firefighting, it was how much energy was redirected back into the product, the actual customer experience.
+Most teams, myself included, get used to a certain amount of invisible work: the checklist of rituals that keeps production running, from managing scripts to updating certificates and scrambling when the wrong alert fires. It's the kind of [toil that just becomes background noise](/engineering-toil). But at cinch, so much of that friction had simply evaporated. The infrastructure wasn't front of mind. It wasn't our bottleneck, or even much of a conversation. What struck me wasn't just the lack of firefighting; it was how much energy was redirected back into the product, the actual customer experience.
 
 We could focus on building, shipping, and learning from real users, rather than tending to the plumbing underneath. That shift, more than any framework or process, was what made the difference.
 
