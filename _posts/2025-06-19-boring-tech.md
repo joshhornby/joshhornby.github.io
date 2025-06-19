@@ -9,7 +9,7 @@ sitemap:
     lastmod: 2025-06-24 T19:00:00+01:00
 ---
 
-It's 2025, this isn't new advice. But some reminders deserve another run: choose boring tech if you're in the business of product engineering.
+It's 2025, this isn't new advice. But some reminders should be repeated: choose boring tech if you're in the business of product engineering.
 
 It's easy to get pulled into the latest frameworks or the not-quite-stable libraries. But the real edge, especially for small teams, is pouring every ounce of focus into the product and not the plumbing. Boring tech isn't about being cautious; it's about being deliberate. The stack should fade quietly into the background so you can keep your hands on the work that matters.
 
