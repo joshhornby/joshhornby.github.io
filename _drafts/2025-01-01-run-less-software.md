@@ -1,16 +1,16 @@
 ---
 title: Run Less Software, Build More Value
 date: 2025-01-01 08:00:00
-tags: [systems-thinking]
+tags: [architecture, software-engineering]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
     lastmod: 2025-06-11 T19:00:00+01:00
 ---
 
-Looking back, one of the most important periods in my career was my time at cinch. I'd joined a team where the engineering foundation was already built on AWS Serverless and managed services. Coming from roles where patching, scaling, and chasing flaky deployments were the norm, this felt like a step change.
+Looking back, one of the most important periods in my career was [my time at cinch](/stuff-learned-at-cinch). I'd joined a team where the engineering foundation was already built on AWS Serverless and managed services. Coming from roles where patching, scaling, and chasing flaky deployments were the norm, this felt like a step change.
 
-Most teams, myself included, get used to a certain amount of invisible work: the checklist of rituals that keeps production running, from managing scripts to updating certificates and scrambling when the wrong alert fires. It's the kind of [toil that just becomes background noise](/engineering-toil). But at cinch, so much of that friction had simply evaporated. The infrastructure wasn't front of mind. It wasn't our bottleneck, or even much of a conversation. What struck me wasn't just the lack of firefighting—it was how much energy was redirected back into the product, the actual customer experience.
+Most teams, myself included, get used to a certain amount of invisible work: the checklist of rituals that keeps production running, from managing scripts to updating certificates and scrambling when the wrong alert fires. It's the kind of [toil that just becomes background noise](/engineering-toil). But at cinch, so much of that friction had simply evaporated. The infrastructure wasn't front of mind. It wasn't our bottleneck, or even much of a conversation. What struck me wasn't just the lack of firefighting, it was how much energy was redirected back into the product, the actual customer experience.
 
 We could focus on building, shipping, and learning from real users, rather than tending to the plumbing underneath. That shift, more than any framework or process, was what made the difference.
 
@@ -18,7 +18,7 @@ We could focus on building, shipping, and learning from real users, rather than 
 
 Time-to-customer shrank. Because infra wasn't a bottleneck, we could deliver new features at the speed the business needed. Rolling out a new product flow or updating an integration was usually just a case of writing the code, getting it through review, and hitting deploy. There wasn't a long checklist of ops rituals, no separate infra ticket waiting to be picked up, and no need for cross-team negotiation to get capacity bumped or security updates scheduled.
 
-With infra out of the way, the real conversations became: what does the customer need? How can we solve it? Our time and energy shifted from platform maintenance to product discovery, experimentation, and fast feedback cycles. We could run more frequent A/B tests, iterate quickly on new ideas, and try things, measure the result, and adjust—all without worrying if we'd tip the system over. The team started talking in terms of user journeys, not server health or incident queues.
+With infra out of the way, the real conversations became: what does the customer need? How can we solve it? Our time and energy shifted from platform maintenance to product discovery, experimentation, and fast feedback cycles. We could run more frequent A/B tests, iterate quickly on new ideas, and try things, measure the result, and adjust all without worrying if we'd tip the system over. The team started talking in terms of user journeys, not server health or incident queues.
 
 When most of the repetitive, manual work disappears, so does a surprising amount of team frustration. Jobs like "clear this alert every Friday" or "manually rotate secrets every month" were mostly replaced by automated processes and platform defaults. Less busywork, lower risk of burnout, and a greater sense of progress each sprint. The best engineers want to work where their impact is visible, where they're building, not just maintaining. Serverless made that possible.
 
