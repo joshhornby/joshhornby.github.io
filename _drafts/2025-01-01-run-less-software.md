@@ -10,7 +10,7 @@ sitemap:
 
 One of the biggest lessons I took from [my time at cinch](/stuff-learned-at-cinch) was seeing what happens when you don't have to think about infrastructure. The foundation was built on AWS Serverless and managed services, which meant almost all of our engineering effort could go into solving real product and customer problems, not keeping the plumbing running.
 
-That experience made something clear: most teams quietly accept a [background hum of toil](/engineering-toil), patching, scaling, fixing test flakiness, maintaining scripts, chasing down backup failures. It's rarely a crisis, but it chips away at the team's focus and energy. With serverless, that friction faded into the background.
+While most teams quietly accept a [background hum of toil](/engineering-toil), patching, scaling, fixing test flakiness, maintaining scripts, chasing down backup failures. It's rarely a crisis, but it chips away at the team's focus and energy. With serverless, that friction faded into the background.
 
 Suddenly, infrastructure wasn't the limiting factor or even a topic of daily debate. We could ship, experiment, and iterate with almost all of our attention on what mattered to users.
 
