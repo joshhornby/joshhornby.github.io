@@ -41,7 +41,7 @@ Everything up to this point is wasted if it doesn't connect outward. Stakeholder
 
 It relies on the other pillars: without strong culture, collaboration falls flat; without a clear strategy, your conversations go in circles; without real craft, you lose trust.
 
-Stakeholder engagement is where you make the invisible visible, and where engineering actually matters.
+Stakeholder engagement is where you make the invisible visible and where engineering actually matters.
 
 I owe Paul for this framing, but it's lived experiences that bring it to life.
 

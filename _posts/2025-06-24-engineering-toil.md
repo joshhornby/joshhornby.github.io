@@ -69,4 +69,4 @@ Leaders set the tone, if you automate something annoying, share it. If you see s
 
 Great teams don't just build, they tend to the systems they inherit, they refuse to let drudgery define their days. Over the years, the healthiest engineering cultures I've seen share a bias for automating away the boring bits. They build tooling, refine the process, and keep an eye out for creeping friction. Toil is never eliminated entirely, but it's kept in check an ongoing tax that's regularly audited.
 
-[The real reward is leverage](/doing-leveraged-work): engineers reclaim hours, teams move faster, systems become more reliable, and morale stays high. And, crucially, the team remembers why they joined in the first place.
+The real reward is leverage: engineers reclaim hours, teams move faster, systems become more reliable, and morale stays high. And, crucially, the team remembers why they joined in the first place.
