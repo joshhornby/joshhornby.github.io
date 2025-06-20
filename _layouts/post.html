@@ -84,9 +84,11 @@ layout: default
                 </ul>
 
                 <p class="mb-1"><strong>Recent</strong></p>
+                {% assign recent_posts = site.posts
+                | where_exp: "post", "post.url != page.url"
+                | slice: 0, 5 %}
                 <ul class="list-group">
-                    {% assign recent = site.posts | reject: "url", page.url %}
-                    {% for post in recent limit:5 %}
+                    {% for post in recent_posts %}
                     <li class="mb-2 list-no-style">
                         <a class="small-link" href="{{ post.url }}">{{ post.title }}</a>
                     </li>
