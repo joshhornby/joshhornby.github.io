@@ -8,32 +8,34 @@ sitemap:
     lastmod: 2025-06-11 T19:00:00+01:00
 ---
 
-Looking back, one of the most important periods in my career was [my time at cinch](/stuff-learned-at-cinch). I'd joined a team where the engineering foundation was already built on AWS Serverless and managed services. Coming from roles where patching, scaling, and chasing flaky deployments were the norm, this felt like a step change.
+One of the biggest lessons I took from [my time at cinch](/stuff-learned-at-cinch) was seeing what happens when you don't have to think about infrastructure. The foundation was built on AWS Serverless and managed services, which meant almost all of our engineering effort could go into solving real product and customer problems, not keeping the plumbing running.
 
-Most teams, myself included, get used to a certain amount of invisible work: the checklist of rituals that keeps production running, from managing scripts to updating certificates and scrambling when the wrong alert fires. It's the kind of [toil that just becomes background noise](/engineering-toil). But at cinch, so much of that friction had simply evaporated. The infrastructure wasn't front of mind. It wasn't our bottleneck, or even much of a conversation. What struck me wasn't just the lack of firefighting; it was how much energy was redirected back into the product, the actual customer experience.
+That experience made something clear: most teams quietly accept a [background hum of toil]((/engineering-toil), patching, scaling, fixing test flakiness, maintaining scripts, chasing down backup failures. It's rarely a crisis, but it chips away at the team's focus and energy. With serverless, that friction faded into the background. Suddenly, infrastructure wasn't the limiting factor or even a topic of daily debate. We could ship, experiment, and iterate with almost all of our attention on what mattered to users.
 
-We could focus on building, shipping, and learning from real users, rather than tending to the plumbing underneath. That shift, more than any framework or process, was what made the difference.
+## The Invisible Cost of Running Software
 
-## What Serverless Unlocked
+There's a persistent myth that engineering productivity is mostly about process, tooling, or hiring. But the biggest hidden tax is simply the amount of *stuff* you have to run and maintain. Every script, server, and service creates its own mini-ecosystem of alerts, docs, and habits. Each is a small drag on team velocity. In the aggregate, this background noise becomes the dominant cost of building software.
 
-Time-to-customer shrank. Because infra wasn't a bottleneck, we could deliver new features at the speed the business needed. Rolling out a new product flow or updating an integration was usually just a case of writing the code, getting it through review, and hitting deploy. There wasn't a long checklist of ops rituals, no separate infra ticket waiting to be picked up, and no need for cross-team negotiation to get capacity bumped or security updates scheduled.
+In teams that I've worked with, it's easy to underestimate how much time gets soaked up by maintenance—patching dependencies, wrangling deployments, chasing flaky tests, rotating secrets. These are the sorts of jobs that never make it onto the roadmap, but add up to weeks lost per engineer every year.
 
-With infra out of the way, the real conversations became: what does the customer need? How can we solve it? Our time and energy shifted from platform maintenance to product discovery, experimentation, and fast feedback cycles. We could run more frequent A/B tests, iterate quickly on new ideas, and try things, measure the result, and adjust all without worrying if we'd tip the system over. The team started talking in terms of user journeys, not server health or incident queues.
+## What Happens When You Run Less
 
-When most of the repetitive, manual work disappears, so does a surprising amount of team frustration. Jobs like "clear this alert every Friday" or "manually rotate secrets every month" were mostly replaced by automated processes and platform defaults. Less busywork, lower risk of burnout, and a greater sense of progress each sprint. The best engineers want to work where their impact is visible, where they're building, not just maintaining. Serverless made that possible.
+When you deliberately architect for less software, choosing serverless where it fits, relying on managed services, resisting the urge to roll your own platforms—the payoff compounds:
 
-## Compounding Leverage (and Boring Tech)
+- Teams spend more cycles on customer value, less on invisible ops work.
+- The blast radius of changes shrinks. Fewer things to break, fewer pages at 2am.
+- Onboarding gets faster. New engineers can actually ship code in their first week.
+- You reduce the temptation to chase "interesting problems" that aren't valuable for the business.
+- Most importantly, you create the conditions for sustained, [leveraged impact work](/doing-leveraged-work) that continues to pay dividends long after the initial push.
 
-It wasn't about chasing every new AWS service or the latest framework. The real productivity boost came from [choosing boring](/boring-tech) and sticking to it. Leaning on standard serverless services, Lambda, SQS, DynamoDB, S3, and shared libraries. When new projects started, there was no time lost debating basic tech choices. Most of the answers were already settled, which made onboarding new people or spinning up new squads straightforward. The stack faded into the background, letting product conversations take centre stage.
+## Advice for Engineering Leaders
 
-The biggest payoff from all this: [leverage](/doing-leveraged-work). Every automated process, every bit of managed infra, every shared tool freed up time and attention for more leveraged work. New engineers could ship code in their first week. Cross-team patterns and libraries meant a fix or improvement in one place benefited everyone. Knowledge about "how to get things done" was embedded in the platform and the codebase, not just in people's heads. The cumulative effect was a team that could take on bigger challenges, try more ideas, and not get bogged down in the day-to-day noise of running software.
+- **Audit your surface area.** List every system your team runs that isn't directly tied to customer value. Which ones could be outsourced to a managed service?
+- **Invest in boring tech.** Choose the platform that fades into the background and lets you focus on shipping, not heroics.
+- **Frame toil as a first-class problem.** Make reducing repetitive, low-leverage work part of the team's mission—not an afterthought.
+- **Challenge assumptions.** If the default is "we need a new service" ask why. Push for simplicity and leverage, not technical vanity.
+- **Celebrate time reclaimed.** Make visible the hours or days saved by automating, outsourcing, or killing off unnecessary systems—and redirect that energy to product bets and customer outcomes.
 
-## The Real Value
+Serverless isn't a magic bullet, but it's a powerful example of how to run less. The lesson isn't about the technology itself—it's about intentionally reducing the burden your team carries, so they can do their best, most impactful work.
 
-The best thing about this approach wasn't just speed, it was confidence. We could say yes to customer asks without getting bogged down in "can the platform handle it?" worries. Product teams were free to focus on solving the right problems. Shipping became the default, not the exception.
-
-It's easy to take this for granted, but looking back, it was foundational to the way we worked. The stack faded into the background. What mattered was the work we shipped, not the infrastructure we ran.
-
-That's the lesson I keep with me: the less software you have to run and worry about, the more value you can create.
-
-Choose less, build more.
+In the end, it's not about where you work, it's about what you choose to work on. The less you run, the more you can build.

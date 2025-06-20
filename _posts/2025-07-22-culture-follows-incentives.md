@@ -1,6 +1,6 @@
 ---
 title: Culture Follows Incentives
-date: 2025-01-01 08:00:00
+date: 2025-07-22 08:00:00
 description: "If you want to influence how people act at work, don't spend time on motivational Slack posts or new processes. The real lever is incentives. Most of us like to think we're guided by logic or team spirit, but the truth is our behaviour follows what's rewarded explicitly or quietly in the system we operate in."
 tags: [culture, management]
 sitemap:

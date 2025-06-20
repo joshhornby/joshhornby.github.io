@@ -28,7 +28,7 @@ At its core, toil is the sort of work where, after you've done it, the world isn
 
 ## The Impact of Toil
 
-Toil is a slow poison. The first cost is obvious: it takes up engineering hours that could be spent on higher leverage work, shipping features, fixing fundamental issues, or improving the system. Over time, the costs deepen:
+Toil is a slow poison. The first cost is obvious: it takes up engineering hours that could be spent on [higher leverage work](/doing-leveraged-work), shipping features, fixing fundamental issues, or improving the system. Over time, the costs deepen:
 
 - **Demoralisation:** Talented engineers joined to solve interesting problems, not to babysit pipelines or chase routine tickets. Toil drains motivation.
 - **Reduced Velocity:** When half a sprint is lost to repetitive admin, progress stalls. Product plans slip. Teams spend more time maintaining the status quo than moving it forward.
@@ -37,9 +37,9 @@ Toil is a slow poison. The first cost is obvious: it takes up engineering hours 
 
 The problem isn't just anecdotal. The [DORA "State of DevOps" report](https://dora.dev/research/2024/dora-report), which tracks engineering performance across thousands of organisations worldwide. Consistently finds that teams burdened by high levels of toil deliver features more slowly, recover from failures less effectively, and experience higher rates of burnout and attrition.
 
-By contrast, high-performing teams invest in automation, standardised tooling, and platform improvements, leading to less than half the operational overhead and wasted work compared to their peers.
+By contrast, high-performing teams often pick ["boring technologies"](/boring-tech), invest in automation, standardised their tooling and platform improvements, leading to less than half the operational overhead and wasted work compared to their peers.
 
-Ignore toil, and you invite steady decay in team morale and system reliability. Address it, and you unlock time, attention, and satisfaction.
+Ignore toil, and you invite a steady decline in team morale and system reliability. Address it, and you unlock time, attention, and satisfaction.
 
 ## Leading Teams Through Toil
 

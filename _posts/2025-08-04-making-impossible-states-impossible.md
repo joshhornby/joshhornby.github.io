@@ -17,7 +17,7 @@ Why does this matter?
 
 - You don't need to write checks or handle impossible cases, they're unrepresentable and thus eliminated from your code.
 - Fewer bug fixes, fewer tests, less code, the compiler does the heavy lifting.
-- Your code becomes clearer and more maintainable, because you and your team can instantly see "only these states are allowed here."
+- Your code becomes clearer and more maintainable because you and your team can instantly see "only these states are allowed here."
 
 An example without thinking about impossible states:
 
