@@ -9,7 +9,9 @@ sitemap:
    lastmod: 2025-08-18 T19:00:00+01:00
 ---
 
-I've [written about tech debt and how often it's used as a catch-all term for a range of issues](/reconsidering-tech-debt), some which could sink a company overnight to minor code-style issues. Often no one can say how much debt exists or what the cost of it is; this results in vague discussions and a lack of paying down the debt. I've also covered [engineering toil](/engineering-toil) that quiet, repetitive work that slows teams down and chips away at morale, yet rarely gets counted in any official budget or roadmap.
+I've [written about tech debt and how often it's used as a catch-all term for a range of issues](/reconsidering-tech-debt), some which could sink a company overnight to minor code-style issues. Often no one can say how much debt exists or what the cost of it is; this results in vague discussions and a lack of paying down the debt.
+
+I've also covered [engineering toil](/engineering-toil) that quiet, repetitive work that slows teams down and chips away at morale, yet rarely gets counted in any official budget or roadmap.
 
 This post introduces the concept of liability mapping, how it can be used to improve conversations around tech debt, help teams prioritise which areas they should start paying back and when. The aim is to cut through the noise of "debt", "toil" and everything in between, surfacing what actually matters so teams can spend less time debating and more time making clear progress.
 
@@ -17,7 +19,7 @@ This post introduces the concept of liability mapping, how it can be used to imp
 
 Liability mapping breaks down the messy sprawl of "tech debt" into five practical categories. The goal is to surface what really matters, separate minor annoyances from existential risks, and give each a clear owner action. Here's how I think about it:
 
-| Class         | Definition                                                                                     | Primary signal                                           | Typical owner action                                       |
+| Category      | Definition                                                                                     | Primary signal                                           | Typical owner action                                       |
 |---------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------|------------------------------------------------------------|
 | **Liability** | Clear, externally‑visible risk that violates contractual, security, or compliance obligations. | CVE backlog, failed audits.                              | **Must‑fix** inside cycle time or sprint.                  |
 | **Drag**      | Internal friction that slows feature flow but rarely harms customers directly.                 | Build times, flaky tests, manual deploy steps.           | Schedule & track via *flow‑metrics budget*.                |
@@ -38,6 +40,8 @@ Once you've got your evidence, bring together a cross-functional group, engineer
 After labelling, add a few triage scores. This is less about precise numbers and more about gut-level, back-of-the-envelope assessment. Ask: does this problem bite customers or the business right now, or does it have the potential to blow up later? How badly is it slowing us down? Are we sure we understand it, or is there uncertainty? The answers give you a rough sense of immediacy, potential blast radius, and how much evidence you actually have, as opposed to just vibes.
 
 Now, with everything tagged and scored, it's time to make the map.
+
+![Graph showing a liability map in grid form](/assets/images/liability-mapping-grid.png)
 
 I like to plot each item on a simple 3×3 grid: immediate impact on one axis, longer-term risk on the other. Colour-code by class. Instantly, certain problems will pop out, the "drag" that's actually a ticking time bomb, the relics that are harmless, the liabilities hiding in plain sight. This picture gives everyone a shared, visual sense of what really needs urgent action and what can safely stay in the backlog for now.
 
@@ -61,7 +65,7 @@ In the end, liability mapping gives you a story that's both credible and actiona
 
 ## Creating an example map
 
-Picture an e-commerce business, call them Acme-Org, who specialise in selling sports equipment online. Their payments system is a key part of their business, but over time, layers of shortcuts and old infrastructure have built up, making it increasingly brittle. Engineers regularly voice frustration about the difficulty of shipping changes, and product teams worry about how outages and how this will impact revenue.
+Picture an e-commerce business, call them "SportingGoods", who specialise in selling sports equipment online. Their payments system is a key part of their business, but over time, layers of shortcuts and old infrastructure have built up, making it increasingly brittle. Engineers regularly voice frustration about the difficulty of shipping changes, and product teams worry about how outages and how this will impact revenue.
 
 | Class         | Example                                                                                                                   | Action                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
