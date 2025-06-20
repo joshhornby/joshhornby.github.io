@@ -8,7 +8,7 @@ sitemap:
     lastmod: 2025-08-25 T19:00:00+01:00
 ---
 
-Something I struggle with the most is toggling between ground-level details and the bigger picture. The shift from "in the weeds" problem-solving to true systems thinking is never as clean as it looks in management diagrams. Most days, it feels less like climbing a ladder and more like running up a down escalator; just when you think you're operating at the right altitude, something drags you back to the ground.
+Something I struggle with most is toggling between ground-level details and the bigger picture. The shift from "in the weeds" problem-solving to true systems thinking is never as clean as it looks in management diagrams. Most days, it feels less like climbing a ladder and more like running up a down escalator; just when you think you're operating at the right altitude, something drags you back to the ground.
 
 This is where the *Flight Levels* framework has been especially useful as a mental model. [Flight Levels: Leading Organizations with Business Agility](https://www.flightlevels.io/book) by Klaus Leopold, describes three core "flight levels" in an organisation:
 
