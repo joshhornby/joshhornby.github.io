@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
+
+    <!-- 1) This listener MUST run in the main window (your blog’s /admin) -->
+    <script>
+        window.addEventListener('message', (event) => {
+            console.log('📥 [Admin] Received postMessage:', event);
+            // In prod, uncomment this check so only your popup at CMS_ORIGIN is trusted:
+            // if (event.origin !== 'https://github-oauth-proxy.cool-wood-714a.workers.dev') return;
+
+            const { token, provider } = event.data || {};
+            if (token && provider === 'github') {
+                console.log('✅ [Admin] Calling CMS.authenticate with token', token);
+                window.CMS.authenticate({ token });
+            }
+        });
+    </script>
 </head>
 <body>
-
+<!-- 2) Now load Decap CMS itself -->
 <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
 </body>
 </html>
