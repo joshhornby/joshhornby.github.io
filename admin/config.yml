@@ -1,9 +1,11 @@
 backend:
-  name: github
+  name: git-gateway
+  # Point at your Worker’s authorize endpoint (no trailing slash):
+  oauth_endpoint: https://github-oauth-proxy.cool-wood-714a.workers.dev/auth
   repo: joshhornby/joshhornby.github.io
   branch: main
-  base_url: https://github-oauth-proxy.cool-wood-714a.workers.dev
-  auth_endpoint: /auth
+  #base_url: https://github-oauth-proxy.cool-wood-714a.workers.dev
+  #auth_endpoint: /auth
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
