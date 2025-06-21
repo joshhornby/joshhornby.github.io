@@ -1,15 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
-</head>
-<body>
-<!-- Include the script that builds the page and powers Decap CMS -->
-<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+    <script>
+        console.log('🐿️ [Admin] Page loaded');
+
+        window.addEventListener('message', event => {
+            console.group('🔔 [Admin] postMessage event');
+            console.log('▶️ origin:', event.origin);
+            console.log('▶️ data type:', typeof event.data);
+            console.log('▶️ data:', event.data);
+            console.groupEnd();
+
+            // Detect Decap CMS auth-success format
+            if (typeof event.data === 'string' && event.data.startsWith('authorization:github:success:')) {
+                console.log('✅ [Admin] Detected GitHub auth success message');
+                try {
+                    const payloadJson = event.data.split(':').slice(3).join(':');
+                    const { token, provider } = JSON.parse(payloadJson);
+                    console.log('🔑 [Admin] Parsed token & provider:', { token, provider });
+                    window.CMS.authenticate({ token });
+                } catch (err) {
+                    console.error('❌ [Admin] Failed to parse auth payload:', err);
+                }
+            } else {
+                console.log('🚫 [Admin] Ignoring unrelated message');
+            }
+        });
+    </script>
+</head>
+
+<body>
+<!-- Decap CMS will still auto-listen, but now you’ll see all messages logged -->
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager</title>
+
+    <script>
+        console.log('🐿️ [Admin] Page loaded');
+
+        window.addEventListener('message', event => {
+            console.group('🔔 [Admin] postMessage event');
+            console.log('▶️ origin:', event.origin);
+            console.log('▶️ data type:', typeof event.data);
+            console.log('▶️ data:', event.data);
+            console.groupEnd();
+
+            // Detect Decap CMS auth-success format
+            if (typeof event.data === 'string' && event.data.startsWith('authorization:github:success:')) {
+                console.log('✅ [Admin] Detected GitHub auth success message');
+                try {
+                    const payloadJson = event.data.split(':').slice(3).join(':');
+                    const { token, provider } = JSON.parse(payloadJson);
+                    console.log('🔑 [Admin] Parsed token & provider:', { token, provider });
+                    window.CMS.authenticate({ token });
+                } catch (err) {
+                    console.error('❌ [Admin] Failed to parse auth payload:', err);
+                }
+            } else {
+                console.log('🚫 [Admin] Ignoring unrelated message');
+            }
+        });
+    </script>
+</head>
+
+<body>
+<!-- Decap CMS will still auto-listen, but now you’ll see all messages logged -->
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
