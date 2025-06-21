@@ -6,47 +6,35 @@
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
 
-    <!-- Tell Decap where your config is -->
+    <!-- Point Decap at your config.yml -->
     <link rel="cms-config-url" href="config.yml" type="text/yaml" />
 
     <script>
-        /* ------------------------------------------------------------------
-           1)  Buffer any auth message that arrives before Decap CMS is ready.
-        ------------------------------------------------------------------ */
-        let bufferedAuthMsg = null;
+        /* -----------------------------------------------------------
+           Buffer the first GitHub-auth message until CMS is ready
+        ----------------------------------------------------------- */
+        let pendingAuthString = null;
 
-        window.addEventListener('message', (event) => {
+        window.addEventListener('message', event => {
             if (typeof event.data === 'string' &&
                 event.data.startsWith('authorization:github:success:')) {
-
-                console.log('🟢  Auth message received:', event.data);
-
-                // If CMS is already loaded, hand the message straight to it
-                if (window.CMS && typeof window.CMS.handleAuth === 'function') {
-                    window.CMS.handleAuth(event);
-                    return;
-                }
-
-                // …otherwise store it until CMS is ready
-                bufferedAuthMsg = event;
+                console.log('🟢  Buffered GitHub auth message:', event.data);
+                pendingAuthString = event.data;
             }
         });
 
-        /* ------------------------------------------------------------------
-           2)  Poll until Decap CMS is present, then replay the buffered message
-        ------------------------------------------------------------------ */
-        const cmsReadyInterval = setInterval(() => {
-            if (window.CMS && typeof window.CMS.handleAuth === 'function') {
-                console.log('✅  Decap CMS ready');
-                clearInterval(cmsReadyInterval);
-
-                if (bufferedAuthMsg) {
-                    console.log('🔄  Replaying buffered auth message');
-                    window.CMS.handleAuth(bufferedAuthMsg);
-                    bufferedAuthMsg = null;
-                }
+        /* -----------------------------------------------------------
+           Poll every 100 ms until Decap CMS registers its listener,
+           then re-emit the buffered message from the SAME origin.
+        ----------------------------------------------------------- */
+        const handoff = setInterval(() => {
+            if (pendingAuthString && window.CMS) {
+                console.log('✅  Decap CMS detected, re-dispatching auth message');
+                window.postMessage(pendingAuthString, window.location.origin);
+                pendingAuthString = null;
+                clearInterval(handoff);
             }
-        }, 100);   // check every 100 ms
+        }, 100);
     </script>
 </head>
 

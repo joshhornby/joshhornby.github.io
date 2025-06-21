@@ -4,7 +4,6 @@ backend:
   branch: main
   base_url: https://github-oauth-proxy.cool-wood-714a.workers.dev
   auth_endpoint: auth
-  auth_type: oauth
 
 media_folder: "assets/images"
 public_folder: "/assets/uploads"
