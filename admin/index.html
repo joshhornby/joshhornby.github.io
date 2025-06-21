@@ -2,36 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
 
-    <!-- 1) Point Decap at your config.yml -->
+    <!-- Tell Decap where your config is -->
     <link rel="cms-config-url" href="config.yml" type="text/yaml" />
 
     <script>
-        // 2) Debug: confirm config was loaded
-        window.addEventListener('DOMContentLoaded', () => {
-            console.log('🐿️ [Admin] DOM loaded, checking for Decap CMS');
-            if (!window.CMS) {
-                console.warn('⚠️ [Admin] window.CMS is undefined — did Decap CMS load?');
-            } else {
-                console.log('✅ [Admin] window.CMS is present:', window.CMS);
+        /* ------------------------------------------------------------------
+           1)  Buffer any auth message that arrives before Decap CMS is ready.
+        ------------------------------------------------------------------ */
+        let bufferedAuthMsg = null;
+
+        window.addEventListener('message', (event) => {
+            if (typeof event.data === 'string' &&
+                event.data.startsWith('authorization:github:success:')) {
+
+                console.log('🟢  Auth message received:', event.data);
+
+                // If CMS is already loaded, hand the message straight to it
+                if (window.CMS && typeof window.CMS.handleAuth === 'function') {
+                    window.CMS.handleAuth(event);
+                    return;
+                }
+
+                // …otherwise store it until CMS is ready
+                bufferedAuthMsg = event;
             }
         });
 
-        // 3) Log every postMessage so we see exactly what arrives
-        window.addEventListener('message', event => {
-            console.group('🔔 [Admin] postMessage');
-            console.log('▶️ origin:', event.origin);
-            console.log('▶️ data:', event.data);
-            console.groupEnd();
-        });
+        /* ------------------------------------------------------------------
+           2)  Poll until Decap CMS is present, then replay the buffered message
+        ------------------------------------------------------------------ */
+        const cmsReadyInterval = setInterval(() => {
+            if (window.CMS && typeof window.CMS.handleAuth === 'function') {
+                console.log('✅  Decap CMS ready');
+                clearInterval(cmsReadyInterval);
+
+                if (bufferedAuthMsg) {
+                    console.log('🔄  Replaying buffered auth message');
+                    window.CMS.handleAuth(bufferedAuthMsg);
+                    bufferedAuthMsg = null;
+                }
+            }
+        }, 100);   // check every 100 ms
     </script>
 </head>
 
 <body>
-<!-- 4) Load Decap CMS (v3.x) -->
+<!-- Load Decap CMS v3 -->
 <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
