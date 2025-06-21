@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: joshhornby/joshhornby.github.io
+  branch: main
+  base_url: https://github-oauth-proxy.cool-wood-714a.workers.dev
+  auth_endpoint: /auth
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
