@@ -2,34 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
 
-    <!-- 1) Tell Decap where to load your config.yml -->
-    <link href="config.yml" type="text/yaml" rel="cms-config-url" />
+    <!-- 1) Point Decap at your config.yml -->
+    <link rel="cms-config-url" href="config.yml" type="text/yaml" />
 
-    <!-- 2) Debug listener in the main window -->
     <script>
-        console.log('🐿️ [Admin] Page loaded – ready to catch OAuth messages');
+        // 2) Debug: confirm config was loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('🐿️ [Admin] DOM loaded, checking for Decap CMS');
+            if (!window.CMS) {
+                console.warn('⚠️ [Admin] window.CMS is undefined — did Decap CMS load?');
+            } else {
+                console.log('✅ [Admin] window.CMS is present:', window.CMS);
+            }
+        });
 
+        // 3) Log every postMessage so we see exactly what arrives
         window.addEventListener('message', event => {
             console.group('🔔 [Admin] postMessage');
             console.log('▶️ origin:', event.origin);
             console.log('▶️ data:', event.data);
             console.groupEnd();
-
-            if (typeof event.data === 'string' &&
-                event.data.startsWith('authorization:github:success:')) {
-                console.log('✅ [Admin] Correct auth string received; Decap CMS should now log you in');
-            } else {
-                console.log('🚫 [Admin] Not the auth message; ignoring');
-            }
         });
     </script>
 </head>
+
 <body>
-<!-- 3) Load Decap CMS itself; its built-in listener will fire on the right message -->
+<!-- 4) Load Decap CMS (v3.x) -->
 <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
