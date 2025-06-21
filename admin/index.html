@@ -2,33 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+    <!-- 1) Tell Decap where to load your config.yml -->
+    <link href="config.yml" type="text/yaml" rel="cms-config-url" />
+
+    <!-- 2) Debug listener in the main window -->
     <script>
-        console.log('🐿️ [Admin] Page loaded');
+        console.log('🐿️ [Admin] Page loaded – ready to catch OAuth messages');
 
         window.addEventListener('message', event => {
-            console.group('🔔 [Admin] postMessage event');
+            console.group('🔔 [Admin] postMessage');
             console.log('▶️ origin:', event.origin);
-            console.log('▶️ data type:', typeof event.data);
             console.log('▶️ data:', event.data);
             console.groupEnd();
 
-            // Just log and rely on Decap CMS auto-listener
             if (typeof event.data === 'string' &&
                 event.data.startsWith('authorization:github:success:')) {
-                console.log('✅ [Admin] Decap CMS should now auto-authenticate');
+                console.log('✅ [Admin] Correct auth string received; Decap CMS should now log you in');
             } else {
-                console.log('🚫 [Admin] Ignoring unrelated message');
+                console.log('🚫 [Admin] Not the auth message; ignoring');
             }
         });
     </script>
 </head>
 <body>
-<!-- Decap CMS will see the postMessage and finish login itself -->
+<!-- 3) Load Decap CMS itself; its built-in listener will fire on the right message -->
 <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
