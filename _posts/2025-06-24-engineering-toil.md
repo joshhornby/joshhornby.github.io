@@ -15,7 +15,7 @@ In every system I've touched, toil is there silent, repetitive, rarely celebrate
 
 ## What Is Toil?
 
-[Google SREs gave us a nice definition](https://sre.google/sre-book/eliminating-toil/): toil is manual, repetitive, automatable, and devoid of lasting value. It's distinct from necessary operational work. If deploying a new service is exciting once, doing it by hand a hundred times is toil. If debugging a production issue is an opportunity for learning, fixing the same type of alert every Friday is a pure grind.
+[Google SREs gave us a nice definition](https://sre.google/sre-book/eliminating-toil/): toil is manual, repetitive, automatable, and devoid of lasting value. It's distinct from necessary operational work. Rolling out a new service is fun once. Rolling out a new service is interesting the first time. Doing it by hand again and again is just routine. Debugging a tricky issue can be rewarding, but fixing the same alert every week quickly turns into busywork.
 
 A few common examples:
 
@@ -55,7 +55,7 @@ Make toil reduction an explicit part of engineering priorities. Carve out time f
 
 ### Reduce at the Source
 
-Most toil has a cause upstream, a broken abstraction, a missing tool, a gap in process. Leaders can sponsor efforts to fix these at the root, whether it's investing in better CI/CD, smarter alerting, or shared infrastructure libraries. Sometimes the fix is non-technical: saying "no" to low-value operational requests, or renegotiating expectations with stakeholders.
+Most toil has a cause upstream, a broken abstraction, a missing tool, a gap in process. Leaders can sponsor efforts to fix these at the root, whether it's investing in better CI/CD, smarter alerting, or shared infrastructure libraries. Sometimes the fix is non-technical: saying "no" to low-value operational requests or renegotiating expectations with stakeholders.
 
 ### Protect the Team
 
@@ -67,6 +67,6 @@ Leaders set the tone, if you automate something annoying, share it. If you see s
 
 ## The Payoff
 
-Great teams don't just build, they tend to the systems they inherit, they refuse to let drudgery define their days. Over the years, the healthiest engineering cultures I've seen share a bias for automating away the boring bits. They build tooling, refine the process, and keep an eye out for creeping friction. Toil is never eliminated entirely, but it's kept in check an ongoing tax that's regularly audited.
+Great teams don't just build, they look after the systems they inherit, and they don't let repetitive work take over their days. Over the years, the healthiest engineering cultures I've seen share a bias for automating away the boring bits. They build tooling, refine the process, and keep an eye out for creeping friction. Toil is never eliminated entirely, but it's kept in check by an ongoing tax that's regularly audited.
 
 The real reward is leverage: engineers reclaim hours, teams move faster, systems become more reliable, and morale stays high. And, crucially, the team remembers why they joined in the first place.
