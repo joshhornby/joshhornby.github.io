@@ -15,7 +15,7 @@ In every system I've touched, toil is there silent, repetitive, rarely celebrate
 
 ## What Is Toil?
 
-[Google SREs gave us a nice definition](https://sre.google/sre-book/eliminating-toil/): toil is manual, repetitive, automatable, and devoid of lasting value. It's distinct from necessary operational work. Rolling out a new service is fun once. Rolling out a new service is interesting the first time. Doing it by hand again and again is just routine. Debugging a tricky issue can be rewarding, but fixing the same alert every week quickly turns into busywork.
+[Google SREs gave us a nice definition](https://sre.google/sre-book/eliminating-toil/): toil is manual, repetitive, and devoid of lasting value. It's distinct from necessary operational work. Rolling out a new service is fun once. Rolling out a new service is interesting the first time. Doing it by hand again and again is just routine. Debugging a tricky issue can be rewarding, but fixing the same alert every week quickly turns into busywork.
 
 A few common examples:
 
