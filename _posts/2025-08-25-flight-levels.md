@@ -8,7 +8,9 @@ sitemap:
     lastmod: 2025-08-25 T19:00:00+01:00
 ---
 
-Something I struggle with most is switching between ground-level details and the bigger picture. The shift from "in the weeds" problem-solving to true systems thinking is never as clean as it looks in management diagrams. Most days, it feels less like climbing a ladder and more like running up a down escalator; just when you think you're operating at the right altitude, something drags you back to the ground.
+Most days, the challenge isn't picking the right task to complete, it's moving in and out of the detail. Management diagrams tell a story of clear layers: strategy up top, execution at the bottom, everything flowing neatly between. Reality looks more like a loop: you zoom out to chart a path, then get pulled right back to the ground by the latest fire, awkward hand-off, or invisible bottleneck.
+
+This is the real work of engineering leadership: learning when to stay close or when to step back, and how to keep one eye on the system as a whole while the day-to-day tries to drag you under. Most days, it's about building habits that help you resist gravity, even as it keeps pulling you toward the nearest problem.
 
 This is where the *Flight Levels* framework has been especially useful as a mental model. [Flight Levels: Leading Organizations with Business Agility](https://www.flightlevels.io/book) by Klaus Leopold, describes three core "flight levels" in an organisation:
 
