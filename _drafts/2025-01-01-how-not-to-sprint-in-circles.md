@@ -1,7 +1,7 @@
 ---
-title: TODO
+title: Avoiding the Metrics Trap in Developer Experience
 date: 2025-07-14 08:00:00
-tags: [systems-thinking, management]
+tags: [management]
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
@@ -10,7 +10,9 @@ sitemap:
 
 > "If a measure becomes a target, it ceases to be a good measure." – Goodhart's Law
 
-A few years back, we brought in a Developer Experience dashboard at a previous role. Overnight, my teams "cycle time" metric started blinking red. The message was clear: work faster. So we chopped up tickets, made sure stories were bite-sized, and watched our average cycle time drop. The dashboard lit up, everyone relaxed. But the reality? Customers saw almost no difference. Our output increased on paper, but the features we shipped weren't more valuable, they just arrived in smaller boxes. Releases might have got a touch safer, but nothing fundamental shifted.
+A few years back, we brought in a Developer Experience dashboard at a previous role. Overnight, my teams "cycle time" metric started blinking red. The message was clear: work faster. So we chopped up tickets, made sure stories were bite-sized, and watched our average cycle time drop. The dashboard lit up, everyone relaxed.
+
+But the reality? Customers saw almost no difference. Our output increased on paper, but the features we shipped weren't more valuable, they just arrived in smaller boxes. Releases might have got a touch safer, but nothing fundamental shifted.
 
 This is the trap of DORA: it's a precise set of measurements for delivery speed, but that precision can mask the bigger question, are you even shipping the right thing?
 
@@ -29,6 +31,8 @@ You can improve your DORA dashboard without shipping a single thing that matters
 This is why I rarely look at DORA in isolation. The reality of building software is bigger. Frameworks like SPACE widen the lens to include satisfaction, collaboration, and the actual day-to-day experience of engineering. Flow frameworks take it even further, mapping value from idea to customer, showing where work is getting stuck in ways that DORA alone can't.
 
 For me, good measurement stacks up in layers. At the top, you need business outcomes: retention, customer activation, revenue, something that tells you if the work mattered. Underneath, flow metrics show whether value is getting blocked, not just code. DORA sits below that, still useful as a signal for delivery health. Finally, you need to ask whether the team is thriving: are people able to do their best work, or are they just burning down the board?
+
+![A black-and-white diagram with four stacked boxes labeled: Business Outcomes, Flow Metrics, DORA Metrics, and Team Thriving. Double-headed vertical arrows connect each box, showing two-way influence between the layers](/assets/images/dora-flow-diagram.png)
 
 If you only optimise one layer, you miss the full story. DORA is a great warning light, but you need business metrics to check if you're even driving toward your actual goal.
 
