@@ -3,12 +3,12 @@ title: TODO
 date: 2025-07-14 08:00:00
 tags: [systems-thinking, management]
 sitemap:
-    priority: 0.7
-    changefreq: 'monthly'
-    lastmod: 2025-07-14 T19:00:00+01:00
+  priority: 0.7
+  changefreq: 'monthly'
+  lastmod: 2025-07-14 T19:00:00+01:00
 ---
 
-> "If a measure becomes a target, it ceases to be a good measure." - Goodhart's Law
+> "If a measure becomes a target, it ceases to be a good measure." – Goodhart's Law
 
 A few years back, we brought in a Developer Experience dashboard at a previous role. Overnight, my teams "cycle time" metric started blinking red. The message was clear: work faster. So we chopped up tickets, made sure stories were bite-sized, and watched our average cycle time drop. The dashboard lit up, everyone relaxed. But the reality? Customers saw almost no difference. Our output increased on paper, but the features we shipped weren't more valuable, they just arrived in smaller boxes. Releases might have got a touch safer, but nothing fundamental shifted.
 
@@ -17,7 +17,6 @@ This is the trap of DORA: it's a precise set of measurements for delivery speed,
 ## What DORA Nails
 
 DORA's four metrics: deployment frequency, lead time, change failure rate, and time to restore became the industry standard for a reason. They shine a spotlight on whether your engineering system is healthy. If releases are infrequent, slow, or prone to breaking things, these metrics quickly make the bottlenecks obvious. In teams where deployment still feels risky, DORA can be a game changer, focusing effort on the mechanics of reliable delivery. You also find that teams who improve these numbers tend to improve trust and psychological safety because you can't move faster without letting people experiment and learn.
-
 
 ## Where It Falls Short
 
@@ -33,21 +32,22 @@ For me, good measurement stacks up in layers. At the top, you need business outc
 
 If you only optimise one layer, you miss the full story. DORA is a great warning light, but you need business metrics to check if you're even driving toward your actual goal.
 
-
 ## Avoiding Metric-Driven Thrash
 
-Metrics are at their best as conversation starters. They're there to highlight a possible issue, not declare victory or failure. The real insight comes from digging into the "why" behind a number, not just reacting to it.
+Metrics are at their best as conversation starters. They're there to highlight a possible issue, not declare victory or failure. The real value is in asking why a number moved, not just reacting to it.
 
-The most useful change I've made is treating any metric-driven improvement as an experiment. If you speed up deployments but see no difference in customer engagement or business results after a quarter, it's worth pausing to ask if you're measuring what matters. If a metric starts to feel like busywork, tickets close faster, but nothing valuable happening, kill it or replace it.
+Improvement isn't about just driving a number down for its own sake. It's about having a theory, a clear reason why you think a change will actually make things better for engineers or the business. When you skip that step, you end up chasing whatever's easiest to count, not what really matters.
+
+The most useful shift I've made is to treat any metric-driven change as an experiment. Make a change, watch what happens, and check if there's any actual difference in customer engagement or business results after a quarter. If speeding-up deployments doesn't shift the outcome, it's time to pause and ask if you're measuring what matters. And if a metric just encourages busywork—tickets closing faster but nothing meaningful shipping—ditch it or try something else.
 
 Ultimately, teams don't optimise for what's on a dashboard. They [optimise for whatever gets celebrated and rewarded](/culture-follows-incentives.md). That's why changing the incentives, or making space for narrative and qualitative feedback, always matters more than chasing perfect numbers.
 
-
 ## How I Approach This Now
 
-These days, I always start by anchoring around one customer or business metric. DORA and flow metrics serve as early warning signals if they drift, it's a cue to dig deeper, not a call to panic. I run regular reviews where we look at what's changing and whether it's having any real impact. If code review is lightning fast but product discovery drags on for weeks, it's clear the constraint isn't delivery, it's upstream.
+These days, I always start by anchoring around one customer or business metric. DORA and flow metrics serve as early warning signals—if they drift, it's a cue to dig deeper, not a call to panic. I run regular reviews where we look at what's changing and whether it's having any real impact. If code review is lightning fast but product discovery drags on for weeks, it's clear the constraint isn't delivery, it's upstream.
 
-Measurement should evolve. If a metric is only improving because people have learned to game it, or if it's no longer telling you anything useful, it's time to move on. The most important question isn't "Are the numbers better?" It's "Are we making a difference for customers, or just getting more efficient at running in circles?"
+Over time, I've learned that measurement should evolve with your team. If a metric is only improving because people have figured out how to game it, or if it stops telling you anything useful, it's time to move on. The most important question isn't "Are the numbers better?" It's "Are we actually making a difference for customers, or just getting more efficient at running in circles?"
 
+Benchmarks can help you spot drift, but improvement only really happens locally. Metrics are most useful when they open up a conversation, not when they become the whole conversation. If you don't know the story behind a number, you're not ready to improve it.
 
-DORA is still the quickest way to find pain in software delivery, but it's not a map. Real developer experience is about removing friction from the work that matters, not just moving the needle on whatever's easiest to count. If you want to actually get better, stack your measurements delivery, flow, outcomes, team health and always bring it back to impact, not just activity. Otherwise, you risk sprinting faster and faster but never getting anywhere new.
+DORA is still the quickest way I know to find pain in software delivery, but it's not a map. Real developer experience is about removing friction from the work that matters, not just moving the needle on whatever's easiest to count. If you want to actually get better, stack your measurements—delivery, flow, outcomes, team health—and always bring it back to impact, not just activity. Otherwise, you risk sprinting faster and faster but never getting anywhere new.
