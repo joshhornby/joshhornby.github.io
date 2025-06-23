@@ -8,6 +8,10 @@ sitemap:
     lastmod: 2025-06-11 T19:00:00+01:00
 ---
 
+Reframe this post around making lesson decisions.
+
+Having a golden path, being explicit about your choices in terms of tech.
+
 One of the biggest lessons I took from [my time at cinch](/stuff-learned-at-cinch) was seeing what happens when you don't have to think about infrastructure. The foundation was built on AWS Serverless and managed services, which meant almost all of our engineering effort could go into solving real product and customer problems, not keeping the plumbing running.
 
 While most teams quietly accept a [background hum of toil](/engineering-toil), patching, scaling, fixing test flakiness, maintaining scripts, chasing down backup failures. It's rarely a crisis, but it chips away at the team's focus and energy. With serverless, that friction faded into the background.
