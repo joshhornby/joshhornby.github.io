@@ -39,7 +39,7 @@ When you focus on composability:
 
 ## Composability in Practice
 
-This lesson took years to stick. Early in my career, I pushed my teams to "share more code." Sometimes it worked. More often, it slowed us down, as every small divergence became a negotiation.  
+This lesson took years to stick. Early in my career, I pushed my teams to "share more code". Sometimes it worked. More often, it slowed us down, as every small divergence became a negotiation.  
 
 The shift came when we flipped the question: "How do we make this reusable?" to "How do we make this composable?" The difference is subtle but fundamental.
 
@@ -53,6 +53,4 @@ Optimising for composability feels slow at first. It means fewer large abstracti
 
 But over time, the patterns that get used are the ones that are genuinely valuable. Instead of forcing reuse, you observe it in the wild, and everyone is composing these three pieces together; maybe they deserve a new abstraction.
 
-Reusable code, processes, and even teams emerge not because you enforced them, but because you made it possible. Real reuse is a signal, not a strategy.
-
-If you want to build systems that last and scale, don't make reusability your primary goal. Optimise for composability first. Reusability will follow, and it will be real, earned, and wanted.
+Reusable code, processes, and even teams emerge not because you enforced them, but because you made it possible. Real reuse is a signal, not a strategy. If you want to build systems that last and scale, don't make reusability your primary goal. Optimise for composability first. Reusability will follow, and it will be real, earned, and wanted.

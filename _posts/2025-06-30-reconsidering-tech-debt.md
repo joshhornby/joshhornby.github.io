@@ -13,7 +13,7 @@ There's a phrase I've grown wary of over the years: *tech debt*. It shows up in 
 
 "We need to pay down our tech debt".
 
-"If only we didn't have so much tech debt."
+"If only we didn't have so much tech debt".
 
 After a while, the phrase stops clarifying things and just becomes a catch-all excuse, something we say out of habit, even when it doesn't help us understand what's wrong or what to do next.
 
@@ -35,7 +35,7 @@ In engineering, the words we use shape how we act. "Tech debt" turns engineering
 
 - The metaphor hides trade-offs. Financial debt is straightforward, money is money. In software, "debt" ranges from an ugly variable name to an entire architecture that can't scale. Bundling these together under one phrase makes prioritisation fuzzier, not clearer.
 
-- It erases history. When we talk about "tech debt", we usually mean "something that should have been done differently." But most "debt" was the right decision *at the time*, made under real constraints. Today's "debt" is yesterday's pragmatic delivery.
+- It erases history. When we talk about "tech debt", we usually mean "something that should have been done differently". But most "debt" was the right decision *at the time*, made under real constraints. Today's "debt" is yesterday's pragmatic delivery.
 
 ## What to Say Instead
 

@@ -11,7 +11,7 @@ sitemap:
 
 If you want to know how healthy your engineering org is, count the meetings on your calendar. Or better yet, count the ones labelled "cross-team sync".
 
-As dependencies grow, so does the overhead required to keep them in sync. New shared Slack channels, sprawling Jira boards, a weekly check-in "just to keep us aligned." I've been part of rollouts where the answer to any missed hand-off was to add another layer of coordination, hoping that more meetings might compensate for too many moving parts.
+As dependencies grow, so does the overhead required to keep them in sync. New shared Slack channels, sprawling Jira boards, a weekly check-in "just to keep us aligned". I've been part of rollouts where the answer to any missed hand-off was to add another layer of coordination, hoping that more meetings might compensate for too many moving parts.
 
 But lately, I've started asking: _What if coordination isn't a sign of organisational maturity, but a sign the boundaries are broken?_
 

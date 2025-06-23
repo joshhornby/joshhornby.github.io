@@ -17,7 +17,7 @@ Why does this matter?
 
 - You don't need to write checks or handle impossible cases, they're unrepresentable and thus eliminated from your code.
 - Fewer bug fixes, fewer tests, less code, the compiler does the heavy lifting.
-- Your code becomes clearer and more maintainable because you and your team can instantly see "only these states are allowed here."
+- Your code becomes clearer and more maintainable because you and your team can instantly see "only these states are allowed here".
 
 An example without thinking about impossible states:
 
@@ -81,4 +81,4 @@ The more you lean into this approach, the more you see the benefit compound:
 - **Refactoring with confidence**: Change a type, and the compiler points out everywhere you need to update. You can evolve your codebase without fear of missing some edge-case.
 - **Testing for what matters**: You stop wasting time testing "should never happen" scenarios, and focus on the actual business logic
 
-Most bugs aren't random or wild-edge-cases, they're "shouldn't be possible, but the code allowed it." Making impossible states impossible is the quiet work that prevents entire categories of bugs from existing in the first place. The compiler won't thank you, but your future self (and team) will.
+Most bugs aren't random or wild-edge-cases, they're "shouldn't be possible, but the code allowed it". Making impossible states impossible is the quiet work that prevents entire categories of bugs from existing in the first place. The compiler won't thank you, but your future self (and team) will.

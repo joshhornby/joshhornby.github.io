@@ -22,13 +22,13 @@ Without artisanship, the rest is theory.
 ## Engineering Strategy
 
 Once you've built your craft, you earn the right to look up to set a direction. Strategy is the layer that gives meaning to the daily work. It's not just picking goals, it's the discipline to connect the work to something larger.
-Here's where you move from "doing things well" to "doing the right things, well."
+Here's where you move from "doing things well" to "doing the right things, well".
 
 But you can't do this credibly without a foundation of artisanship otherwise, strategy is just a wish list.
 
 ## Culture
 
-Culture builds on both craft and strategy. It's how the team moves from "a group of skilled individuals" to "a group who achieve together." 
+Culture builds on both craft and strategy. It's how the team moves from "a group of skilled individuals" to "a group who achieve together". 
 
 You need a culture where feedback flows, candour is normal, and standards are shared.
 This isn't an accident; it's the result of a thousand small choices, what you reward, what you tolerate, how you act when things go wrong.

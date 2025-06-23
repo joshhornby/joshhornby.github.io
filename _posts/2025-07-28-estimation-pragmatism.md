@@ -10,7 +10,7 @@ sitemap:
 
 For years, I was an estimation sceptic, closed off to the idea of using it. I saw estimation as a relic of a past era, something best left to Gantt charts and process-heavy project managers. Agile, I thought, had saved us from the shackles of story points, T-shirt sizes, and man-hour breakdowns. Why play the planning poker game at all if the future's always going to surprise us?
 
-It's hard to talk about estimation without baggage. There's the meeting that turns into a three-hour debate over T-shirt sizes, the line manager who weaponises story points, the well-intentioned agile transformation that quietly slides into velocity theatre. It's tempting to swing hard in the other direction, "Estimation is broken, let's just build and see what happens." I've been there. I even believed it for a while.
+It's hard to talk about estimation without baggage. There's the meeting that turns into a three-hour debate over T-shirt sizes, the line manager who weaponises story points, the well-intentioned agile transformation that quietly slides into velocity theatre. It's tempting to swing hard in the other direction, "Estimation is broken, let's just build and see what happens". I've been there. I even believed it for a while.
 
 But the thing is: businesses don't run on blind faith. Budgets exist, customers have deadlines, and the rest of the company isn't waiting around for engineering to reach nirvana. In the absence of any signal, trust erodes fast. So, estimation remains not as a magic trick, but as a tool for alignment.
 

@@ -57,7 +57,7 @@ Winning over execs starts with translating technical nuance into their prioritie
 
 - Take the classic, "Why fund refactoring now?" No need to get defensive. Point directly to liability-class issues and show how leaving them alone risks legal exposure or damaging headlines. It's almost always cheaper to patch the roof now than deal with a flooded office later. This isn't just about code, it's about protecting the business from entirely preventable pain.
 
-- Next up, "Isn't this just 'nice to have'?" Here, data is your ally. Demonstrate how cutting drag led to faster shipping and measurable wins, features delivered sooner, cost per change reduced, or even churn prevented. If you can tie a technical clean-up to a quantifiable boost in throughput, suddenly it moves from "nice to have" to "makes us money."
+- Next up, "Isn't this just 'nice to have'?" Here, data is your ally. Demonstrate how cutting drag led to faster shipping and measurable wins, features delivered sooner, cost per change reduced, or even churn prevented. If you can tie a technical clean-up to a quantifiable boost in throughput, suddenly it moves from "nice to have" to "makes us money".
 
 - And for the old "We can't pause the roadmap", the map itself is your best tool. Show how dedicating a controlled slice of capacity (say, 15% of effort) to relic clean-up or hazard reduction compounds over time. That investment means less firefighting, more predictable launches, and a downward trend in run-cost. Most execs have seen how unchecked tech mess drags on delivery, connecting clean-up work directly to improved flow and lower cost makes it obvious you're not pausing the roadmap, you're clearing the lane for it.
 

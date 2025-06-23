@@ -18,7 +18,7 @@ Linear thinkers want checklists. Systems thinkers look for patterns.
 
 The hardest part: the system isn't just the code, or the org chart, or the quarterly plan. It's the interplay. The bit where a database bottleneck quietly pushes your SLOs off target, so ops jump in with a hotfix, which triggers a wave of new incidents, and suddenly support is firefighting instead of building. Product has to shift priorities to address the fallout, and your beautifully planned roadmap morphs into something unrecognisable.
 
-A few years ago, I kept running into the same issue during sprint planning. Every quarter, the same complaint surfaced: "We're always interrupted by urgent bug fixes." We'd shuffle the backlog, add buffer time, tell ourselves this sprint would be different. It never was.
+A few years ago, I kept running into the same issue during sprint planning. Every quarter, the same complaint surfaced: "We're always interrupted by urgent bug fixes". We'd shuffle the backlog, add buffer time, tell ourselves this sprint would be different. It never was.
 
 After a while, I stopped blaming our process discipline. I sketched out a map: where did these interruptions come from? Patterns started to show, the majority of urgent bugs traced back to one legacy service that only a couple of people truly understood. New hires wouldn't touch it. Documentation was sparse. When something broke, all work ground to a halt while the experts scrambled for a fix.
 

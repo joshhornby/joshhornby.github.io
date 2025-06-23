@@ -9,15 +9,15 @@ sitemap:
     lastmod: 2025-07-25 T19:00:00+01:00
 ---
 
-There's a common thread in teams that consistently deliver real value: somewhere in the mix, you'll find an engineer who's obsessed with outcomes. Sometimes the title is "Product Engineer," but most of the time, you just notice the effect before you know the label.
+There's a common thread in teams that consistently deliver real value: somewhere in the mix, you'll find an engineer who's obsessed with outcomes. Sometimes the title is "Product Engineer", but most of the time, you just notice the effect before you know the label.
 
 **Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their compass is set to customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is even worth building, and shorten the loop between intent and result. Their habit is to care about what happens after the merge, not just that the build goes green.
 
 ## Product Engineering is an Outcomes Mindset
 
-In most orgs, it's easy to fall into the trap of focusing on output: delivering features, reducing cycle time, moving tickets from "in progress" to "done." But outputs don't always add up to outcomes. Shipping doesn't guarantee value.
+In most orgs, it's easy to fall into the trap of focusing on output: delivering features, reducing cycle time, moving tickets from "in progress" to "done". But outputs don't always add up to outcomes. Shipping doesn't guarantee value.
 
-Product Engineers resist this drift. They shorten the gap between "what was asked for" and "what actually helps." They seek out real feedback. They're comfortable with ambiguity, willing to prototype, to adjust, to change tack when the data points somewhere new. They know that most of the work is invisible: aligning context, nudging decisions, refining what "done" really means.
+Product Engineers resist this drift. They shorten the gap between "what was asked for" and "what actually helps". They seek out real feedback. They're comfortable with ambiguity, willing to prototype, to adjust, to change tack when the data points somewhere new. They know that most of the work is invisible: aligning context, nudging decisions, refining what "done" really means.
 
 When Product Engineers show up in a team, you notice things move differently:
 

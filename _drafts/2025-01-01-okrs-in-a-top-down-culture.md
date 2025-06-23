@@ -16,7 +16,7 @@ The underlying reason this feels hollow comes down to incentives. [Most teams re
 
 It's easy for measurement to turn into theatre. Outcomes are handed down, metrics become the numbers that matter to someone higher up. There's a ritual of writing, reviewing, and updating, but nobody expects that any of this will change what happens on the ground. You end up tracking numbers for the dashboard, not because you expect it'll shape real decisions.
 
-This is where process reality diverges from process intent. The lived process is always the one people experience day to day, not what's written in the handbook. If the unspoken rule is "just say yes to the boss," it won't matter how you phrase the outcomes, they'll serve as another compliance checklist rather than an engine for healthy challenge.
+This is where process reality diverges from process intent. The lived process is always the one people experience day to day, not what's written in the handbook. If the unspoken rule is "just say yes to the boss", it won't matter how you phrase the outcomes, they'll serve as another compliance checklist rather than an engine for healthy challenge.
 
 But there is a subtle, structural value that comes with measuring outcomes, even in a top-down shop: metrics force conversations that wouldn't otherwise happen. When you're required to put a number on a goal, it brings trade-offs and priorities to the surface. Teams suddenly have to answer: what does success really look like? Is moving this number from X to Y meaningful, or are we just pushing a rock up the same hill?
 
