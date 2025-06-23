@@ -26,15 +26,15 @@ This wasn't a planning failure. It was a system that invisibly routed risk to a 
 
 ## Getting Practical: How I Try to Think in Systems
 
-1. **Map Flows, Not Steps** - When something breaks, don't just fix the broken link. Map the whole flow. Who's upstream, who's downstream? Where does work pile up? Where does it disappear?
+1. **Map Flows, Not Steps**: When something breaks, don't just fix the broken link. Map the whole flow. Who's upstream, who's downstream? Where does work pile up? Where does it disappear?
 
-2. **Ask, "What Happens Next?"** - Every intervention has a knock-on effect. Pause to imagine: If I change X, who gets woken up at 2 a.m. a month from now?
+2. **Ask, "What Happens Next?"**: Every intervention has a knock-on effect. Pause to imagine: If I change X, who gets woken up at 2 a.m. a month from now?
 
-3. **Look for Reinforcing Patterns** - What keeps recurring? Teams firefighting the same issue, code being rewritten every six months, customers finding workarounds you never designed for these aren't just annoyances, they're signals.
+3. **Look for Reinforcing Patterns**: What keeps recurring? Teams firefighting the same issue, code being rewritten every six months, customers finding workarounds you never designed for these aren't just annoyances, they're signals.
 
-4. **Optimise for Feedback Loops** - The sooner you hear about something breaking, the sooner you can adapt. Tight feedback is the heart of healthy systems whether it's alerts, retros, or simply talking to users often.
+4. **Optimise for Feedback Loops**: The sooner you hear about something breaking, the sooner you can adapt. Tight feedback is the heart of healthy systems whether it's alerts, retros, or simply talking to users often.
 
-5. **Accept That You Can't See It All** - Systems thinking is not an exact science. You'll miss stuff. The trick is to build in slack, monitor what you can, and revisit your maps often.
+5. **Accept That You Can't See It All**: Systems thinking is not an exact science. You'll miss stuff. The trick is to build in slack, monitor what you can, and revisit your maps often.
 
 Linear thinking gets you quick wins. System thinking gets you wins that last. The organisations and codebases that endure aren't built on heroics or clever patches. They're built on the quiet discipline of people who bother to map the system, listen to the signals, and are humble enough to adapt.
 
