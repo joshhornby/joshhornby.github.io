@@ -8,14 +8,17 @@ title: Tags
         <div class="col-12 col-lg-8 mx-auto">
             {% assign sorted_tags = site.tags | sort %}
             {% for tag in sorted_tags %}
+            {% assign posts = tag[1] %}
+            {% if posts.size > 0 %}
             <div class="mb-3">
-            <a class="tag-title" href="/tags/{{ tag[0] | slugify }}" id="{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-            <ul class="list-unstyled">
-                {% for post in tag[1] %}
+                <a class="tag-title" href="/tags/{{ tag[0] | slugify }}" id="{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+                <ul class="list-unstyled">
+                    {% for post in posts %}
                     {% include post-link.html %}
-                {% endfor %}
-            </ul>
+                    {% endfor %}
+                </ul>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>

@@ -11,7 +11,7 @@ sitemap:
 
 If you want to influence how people act at work, don't spend time on motivational Slack posts or new processes. The real lever is incentives. Most of us like to think we're guided by logic or team spirit, but the truth is our behaviour follows what's rewarded explicitly or quietly in the system we operate in.
 
-Teams talk about "raising the bar", "shifting culture" or "driving accountability." But none of it sticks if incentives aren't pointing in the new direction.
+Teams talk about "raising the bar", "shifting culture" or "driving accountability." But none of it sticks if incentives aren't aligned to the new direction.
 
 Want engineers to care about quality? Reward shipping stable code, not just shipping fast. Need more documentation? Make it visible, tracked, and something leadership highlights in reviews. You get what you measure, but you only really get what you reward.
 
