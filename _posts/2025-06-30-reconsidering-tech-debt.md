@@ -46,5 +46,3 @@ If I could retire the term "tech debt" from engineering meetings, I would. But w
 - **Describe the impact.** What is the cost today? How is it affecting customers, or slowing the team? Specifics drive better prioritisation.
 
 Ultimately, my gripe with "tech debt" isn't just about language. It's about discipline. "Tech debt" gives us a shorthand to avoid challenging conversations about architectural drift, team incentives, and the messy path of real world delivery. I'd rather see teams confront the mess head on, with the honesty and clarity it deserves.
-
-The most effective teams don't get stuck on metaphors. They focus on real problems, clear trade-offs, and steady progress. That kind of clarity always beats shorthand.

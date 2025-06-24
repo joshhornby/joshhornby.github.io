@@ -17,13 +17,13 @@ The door isn't locked, but it's not exactly wide open either. So how do you earn
 
 ## Getting in the room
 
-It starts with knowing which room you're trying to get into. Remote companies are full of spaces that look important, big meetings, high‑traffic channels, all‑hands but most high‑impact decisions get made in smaller, faster‑moving groups.
+It starts with knowing which room you're trying to get into. Remote companies are full of spaces that look important, big meetings, high‑traffic channels, all‑hands, but most high‑impact decisions get made in smaller faster‑moving groups.
 
 These tend to form around critical projects, not titles. The trick is to notice where blockers are surfacing and where people are spending their energy. That's usually where the real decisions are made.
 
 But here's where remote is different: "the room" is rarely a fixed place. Sometimes it's not a room at all it's a Google Doc that spirals into a decision while you're asleep, or a passing Slack thread that quietly becomes the next project. Sometimes you won't even know you were in the room until later, when your idea circles back to you, filtered through three people, and attached to something else.
 
-Influence is cumulative and mostly invisible. If you keep showing up, making things clearer, reducing friction for others, the invites start to arrive before you even need to ask.
+Influence is cumulative and mostly invisible. If you keep showing up, clarifying things, reducing friction for others, the invites start to arrive before you even need to ask.
 
 When you're aiming for a seat, don't show up empty‑handed. The people already in the room have little patience for spectators. You need to bring something valuable: a concrete solution to a tricky problem, fresh data, or an insight from the edge of the business nobody else is seeing. People rarely remember who was in the meeting, but they remember who brought the missing piece. This is true in person, but in distributed teams, it's even sharper nobody has time for passengers.
 
@@ -39,6 +39,6 @@ Quiet reliability is a better door‑opener than self‑promotion. If you feel o
 
 There's also a practical side: time zones and overloaded calendars make inclusion costly, so make yourself easy to invite. Work asynchronously by default, keep things brief, and offer [flexible ways to collaborate](/boundaries-over-coordination). If you become someone who lightens the load instead of adding to it, you'll find more rooms opening up.
 
-Once you're there, don't overstay your welcome. Being in the room is about adding value, not just occupying a slot on a Zoom grid. Make your points, clarify next steps, and often underrated but much needed task is to summarise decisions afterwards so things don't get lost in the shuffle. The game isn't about being seen everywhere; it's about making your presence count when it matters.
+Once you're there, don't overstay your welcome. Being in the room is about adding value, not just occupying a slot on a Zoom grid. Make your points, clarify next steps, and an often underrated but much-needed task is to summarise decisions afterwards so things don't get lost in the shuffle. The game isn't about being seen everywhere; it's about making your presence count when it matters.
 
 Getting in the room, especially in a remote company, isn't about chasing visibility for its own sake. It's about making sure your effort actually moves the needle, for you and your team. That comes down to intent, preparation, and a reputation for bringing clarity where things are murky. If you're still looking for the right room, start with the work. Leave a clear trail behind you. That's what gets you in and keeps you there.

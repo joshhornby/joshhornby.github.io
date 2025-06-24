@@ -1,7 +1,7 @@
 ---
 title: Shaping Team Boundaries for Flow
 date: 2025-09-01 08:00:00
-tags: [architecture, team-topologies]
+tags: [architecture, team-topologies, org-design]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'

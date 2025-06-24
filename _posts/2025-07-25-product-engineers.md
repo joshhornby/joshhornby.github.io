@@ -9,11 +9,11 @@ sitemap:
     lastmod: 2025-07-25 T19:00:00+01:00
 ---
 
-There's a common thread in teams that consistently deliver real value: somewhere in the mix, you'll find an engineer who's obsessed with outcomes. Sometimes the title is "Product Engineer", but most of the time, you just notice the effect before you know the label.
+There's a common thread in teams that consistently deliver customer value: somewhere in the mix, you'll find an engineer obsessed with outcomes. Sometimes the title is "Product Engineer", but most of the time, you notice the effect before you know the label.
 
-**Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their compass is set to customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is even worth building, and shorten the loop between intent and result. Their habit is to care about what happens after the merge, not just that the build goes green.
+**Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their compass is set to customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is worth building, and shorten the loop between idea and result. Their habit is to care about what happens after the merge, not just that the build goes green.
 
-## Product Engineering is an Outcomes Mindset
+## Product Engineering is an Outcome Mindset
 
 In most orgs, it's easy to fall into the trap of focusing on output: delivering features, reducing cycle time, moving tickets from "in progress" to "done". But outputs don't always add up to outcomes. Shipping doesn't guarantee value.
 
@@ -39,4 +39,4 @@ Product Engineers aren't defined by technical depth alone. The distinguishing ha
 
 [Supporting Product Engineers means rewarding these habits](/culture-follows-incentives). Give them room to experiment, visibility into user needs, and permission to cut across silos when it matters. Treat outcomes as the measure, not just output.
 
-If you want to raise the bar for your org, invest in cultivating Product Engineers. Outcomes don't appear by accident. They show up where people are trusted to get close to the customer, encouraged to ask "what's actually better now?" and measured by what changes, ot just what's delivered.
+If you want to raise the bar for your org, invest in cultivating Product Engineers. Outcomes don't appear by accident. They show up where people are trusted to get close to the customer, encouraged to ask "what's actually better now?" and measured by what changes, not just what's delivered.

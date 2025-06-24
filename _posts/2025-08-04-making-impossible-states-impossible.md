@@ -11,7 +11,7 @@ sitemap:
 
 This is a topic I first discovered ~8 years ago after watching _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_ by Richard Feldman. Ever since it's been influencing how I think about building software, and is an underrated concept across the industry.
 
-The idea of making impossible states impossible in simple terms, means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time.
+The idea of making impossible states impossible in simple terms means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time.
 
 Why does this matter?
 

@@ -42,7 +42,7 @@ Metrics are at their best as conversation starters. They're there to highlight a
 
 Improvement isn't about just driving a number down for its own sake. It's about having a theory, a clear reason why you think a change will actually make things better for engineers or the business. When you skip that step, you end up chasing whatever's easiest to count, not what really matters.
 
-The most useful shift I've made is to treat any metric-driven change as an experiment. Make a change, watch what happens, and check if there's any actual difference in customer engagement or business results after a quarter. If speeding-up deployments doesn't shift the outcome, it's time to pause and ask if you're measuring what matters. And if a metric just encourages busywork, tickets close faster but nothing meaningful is shipping, ditch it or try something else.
+The most useful shift I've made is to treat any metric-driven change as an experiment. Make a change, watch what happens, and check if there's any actual difference in customer engagement or business results after a quarter. If speeding-up deployments doesn't shift the outcome, it's time to pause and ask if you're measuring what matters. And if a metric just encourages busywork, tickets close faster, but nothing meaningful is shipping, ditch it or try something else.
 
 Ultimately, teams don't optimise for what's on a dashboard. They [optimise for whatever gets celebrated and rewarded](/culture-follows-incentives.md). That's why changing the incentives, or making space for narrative and qualitative feedback, always matters more than chasing perfect numbers.
 
