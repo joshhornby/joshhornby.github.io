@@ -9,7 +9,7 @@ sitemap:
     lastmod: 2025-06-24 T19:00:00+01:00
 ---
 
-It's easy to celebrate the wins in product engineering teams: a product launch, pulling together to resolve a critical outage, or watching months of platform investment quietly unlock a wave of customer growth. But beneath the visible achievements sits something far more ordinary and persistent - *toil*. Toil is the work that keeps systems humming, the low-grade friction that quietly erodes a team's time and energy.
+It's easy to celebrate the wins in product engineering teams: a product launch, pulling together to resolve a critical outage, or watching months of platform work quietly unlock a wave of customer growth. But beneath the visible achievements sits something far more ordinary and persistent - *toil*. Toil is the work that keeps systems humming, the low-grade friction that quietly erodes a team's time and energy.
 
 In every system I've touched, toil is there silent, repetitive, rarely celebrated. It's the 2am manual restart of a stuck service, the weekly trawl through logs to clear false positives, the ritual of updating an expiring certificate. You won't see "reduce toil" in most sprint goals, but ignore it long enough, and it becomes the defining experience of the team.
 
