@@ -29,7 +29,7 @@ Still, self-hosting isn't a "set it and forget it" situation. The day you instal
 
 - **Upgrades and Security**: You're on the hook for patches and version bumps, not just features.
 - **Integrations**: That plugin or SSO config you wanted? It might be DIY.
-- **Support**: When something breaks, Stack Overflow (or the project's issues page) is your support line.
+- **Support**: When something breaks, Stack Overflow and ChatGPT (or the project's issues page) is your support line.
 
 It's easy to underestimate how much [operational work ("toil")](/engineering-toil) accumulates around even simple deployments. That time adds up, and it's almost always invisible on the roadmap until something breaks.
 
@@ -51,6 +51,4 @@ For all the caution, there are plenty of places where self-hosting shines. Inter
 
 The trick is to make the decision explicit, revisit it periodically, and be honest about when the costs outweigh the benefits.
 
-### In the End
-
-Self-hosting isn't a trap or a silver bullet. It's just a tool, one with real strengths, and very real upkeep. The best engineering teams I've seen don't default to build, buy, or run. They treat each as a living trade-off, aiming for the path that lets them focus on what matters most to their customers.
+Self-hosting is a series of trade-offs. It brings real strengths, but it comes with ongoing responsibilities. The most effective engineering teams don't default to build, buy, or run they approach each as a conscious choice. The real aim is always the same: pick the path that keeps the focus on what matters most to customers.
