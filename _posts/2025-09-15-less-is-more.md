@@ -1,6 +1,6 @@
 ---
 title: "When Less Is More: The Value of Picking One Way"
-date: 2025-01-01 08:00:00
+date: 2025-09-15 08:00:00
 tags: [architecture, software-engineering]
 sitemap:
     priority: 0.7
