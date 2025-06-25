@@ -8,7 +8,11 @@ sitemap:
     lastmod: 2025-08-25 T19:00:00+01:00
 ---
 
-Most days, the challenge isn't picking the right task to complete, it's moving in and out of the detail. Management diagrams tell a story of clear layers: strategy up top, execution at the bottom, everything flowing neatly between. Reality looks more like a loop: you zoom out to chart a path, then get pulled right back to the ground by the latest fire, awkward hand-off, or invisible bottleneck.
+Most days, the real work isn't about what's on the to-do list. It's the constant shifting between details and direction, knowing when to dive deep and when to come back up for air.
+
+I used to think there was a map for this. Management books lay out neat layers: strategy at the top, execution at the bottom, and a tidy flow from one to the other. In practice, it never feels that clean. Some days, I'll start out trying to sketch out a plan—big picture, “how should we architect the new service?” Within an hour I'm chasing down a subtle production bug, or untangling a hand-off nobody noticed until it jammed up delivery.
+
+If I'm honest, it's rarely a clean climb up the ladder. Most weeks, it feels like running up a down escalator. I get a few steps up, maybe set a direction, only to get pulled back by the gravity of the day-to-day: a fire, an unexpected dependency, some invisible bottleneck you only notice when the work stops moving.
 
 This is the real work of engineering leadership: learning when to stay close or when to step back, and how to keep one eye on the system as a whole while the day-to-day tries to drag you under. Most days, it's about building habits that help you resist gravity, even as it keeps pulling you toward the nearest problem.
 
