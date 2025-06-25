@@ -1,7 +1,7 @@
 ---
 title: Avoiding the Metrics Trap in Developer Experience
 date: 2025-07-14 08:00:00
-tags: [management]
+tags: [management, systems-thinking]
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
@@ -10,7 +10,7 @@ sitemap:
 
 > "If a measure becomes a target, it ceases to be a good measure." – Goodhart's Law
 
-A few years back, we brought in a Developer Experience dashboard at a previous role. Overnight, my teams "cycle time" metric started blinking red. The message was clear: work faster. So we chopped up tickets, made sure stories were bite-sized, and watched our average cycle time drop. The dashboard lit up, everyone relaxed.
+A few years back, we brought in a Developer Experience dashboard at a previous role. Overnight, my teams "cycle time" metric started blinking red. The message was clear: lower this number. So we chopped up tickets, made sure stories were bite-sized, and watched our average cycle time drop. The dashboard lit up, everyone relaxed.
 
 But the reality? Customers saw almost no difference. Our output increased on paper, but the features we shipped weren't more valuable, they just arrived in smaller boxes. Releases might have got a touch safer, but nothing fundamental shifted.
 
