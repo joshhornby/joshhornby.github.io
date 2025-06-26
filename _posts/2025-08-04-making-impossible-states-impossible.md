@@ -1,7 +1,7 @@
 ---
 title: Making Impossible States Impossible
 date: 2025-08-04 08:00:00
-tags: [software-engineering]
+tags: [software-engineering, developer-experience]
 description: "The idea of making impossible states impossible in simple terms, means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time."
 sitemap:
     priority: 0.7

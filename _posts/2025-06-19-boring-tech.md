@@ -1,7 +1,7 @@
 ---
 title: Choose Boring Tech
 date: 2025-06-19 00:00:00
-tags: [software-engineering, architecture]
+tags: [software-engineering, architecture, developer-experience]
 description: "This isn't new advice, but some reminders deserve another run: choose boring tech if you're in the business of product engineering."
 sitemap:
     priority: 0.7

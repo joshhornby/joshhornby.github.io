@@ -1,7 +1,7 @@
 ---
 title: From Scepticism to Collaboration with LLMs
 date: 2025-06-17 08:00:00
-tags: [ai, software-engineering]
+tags: [ai, software-engineering, developer-experience]
 description: "Modern LLMs are reshaping software practice, for better or worse. I began doubtful over the promise of instant productivity with these tools, but over time I've arrived at a surprising conclusion: LLMs offer the most value when we engage them as partners, holding them to the same standards of discipline we expect of ourselves."
 sitemap:
     priority: 0.7
