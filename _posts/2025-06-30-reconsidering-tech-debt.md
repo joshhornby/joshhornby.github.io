@@ -19,7 +19,7 @@ After a while, the phrase stops clarifying things and just becomes a catch-all e
 
 ## The Debt Analogy: Useful Until It Isn't
 
-The core appeal of "tech debt" is its similarities with finance. Debt is familiar: you borrow, gain interest, pay it back later. It makes prioritising work feel rational, invest now, pay off later, balance the books. The metaphor works for a while. But over time, I've found it gets warped in every direction:
+The core appeal of "tech debt" is its similarities with finance. Debt is familiar: you borrow, gain interest, pay it back later. It makes prioritising work feel rational, invest now, pay off later, balance the books. The metaphor works for a while, but it has limitations:
 
 - Some teams use "tech debt" to describe everything from legacy code, to quick hacks, or misaligned architectures, to missed features. "Debt" becomes a catch-all word, big, heavy, packed with too many unrelated things.
 
