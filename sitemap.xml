@@ -3,13 +3,12 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {% for page in site.data.navigation.links %}
-    {% if page.sitemap %}
-      <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-      </url>
-    {% endif %}
-  {% endfor %}
+  <url>
+    <loc>{{ site.url }}</loc>
+  </url>
+  <url>
+    <loc>{{ site.url }}/about</loc>
+  </url>
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
