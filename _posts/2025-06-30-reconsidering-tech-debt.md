@@ -9,7 +9,7 @@ sitemap:
     lastmod: 2025-06-30 T19:00:00+01:00
 ---
 
-There's a phrase I've grown wary of over the years: *tech debt*. It shows up in all kinds of conversations, often spoken as a half-apology, half-warning.
+There's a phrase I've grown wary of over the years: *tech debt*. It shows up in all kinds of conversations, but often hides more than it explains.
 
 "We need to pay down our tech debt".
 
@@ -29,13 +29,7 @@ The core appeal of "tech debt" is its similarities with finance. Debt is familia
 
 ## Language Shapes Our Actions
 
-In engineering, the words we use shape how we act. "Tech debt" turns engineering problems into financial abstractions. That's comforting, but also misleading.
-
-- If every bit of "tech debt" is just a loan, it implies that paying it off is always worthwhile. That's not true. Sometimes, the "debt" is simply the cost of learning what works. Sometimes it's a relic that doesn't matter any more.
-
-- The metaphor hides trade-offs. Financial debt is straightforward, money is money. In software, "debt" ranges from an ugly variable name to an entire architecture that can't scale. Bundling these together under one phrase makes prioritisation fuzzier, not clearer.
-
-- It erases history. When we talk about "tech debt", we usually mean "something that should have been done differently". But most "debt" was the right decision *at the time*, made under real constraints. Today's "debt" is yesterday's pragmatic delivery.
+In engineering, the words we use shape how we act. Calling every problem "tech debt" turns a range of issues into a comforting financial metaphor, but that can be misleading. Not all "debt" is equal, sometimes it's just the cost of learning, sometimes it's a relic that no longer matters, and sometimes it hides important trade-offs by lumping small annoyances in with deep architectural problems. Most of all, it flattens the story: what we call "tech debt" is often just the result of past decisions made under real constraints. Today's "debt" was yesterday's pragmatic delivery, and the metaphor too often blurs that context instead of clarifying it.
 
 ## What to Say Instead
 
