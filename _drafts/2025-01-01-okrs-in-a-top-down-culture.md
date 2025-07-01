@@ -8,6 +8,8 @@ changefreq: 'monthly'
 lastmod: 2025-08-07 T19:00:00+01:00
 ---
 
+!! Reframe this as working backwards, using leading and lagging indicators, and focusing on the outcomes that matter to the business.
+
 There's a particular feeling you get when the roadmap arrives, fully baked, from on high. Leadership spend weeks debating strategy; you get an email and a deck. By the time you see the plan, the initiatives and deadlines are set in stone. Your job, mostly, is to execute.
 
 When outcome measurement lands in this sort of environment, it can feel cosmetic. The language changes suddenly it's all about "outcomes" and "impact", but the reality doesn't. Teams don't really own the goals; the only thing that's changed is the format of the status updates. At best, you're reframing a list of tasks as outcomes. No surprise that people get cynical.
