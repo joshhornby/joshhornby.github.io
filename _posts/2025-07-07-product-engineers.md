@@ -24,7 +24,7 @@ When Product Engineers show up in a team, you notice things move differently:
 - Customer problems get solved, not just acknowledged.
 - Solutions fit the shape of the need, not just the spec.
 - Feedback loops get tighter, learning happens faster.
-- The boundary between engineering and product blurs in a good way.
+- The boundary between engineering and product blurs, in a good way.
 
 There are fewer long hand-offs, less energy spent justifying the roadmap, and more collective momentum. The team shifts from "are we building it right?" to "are we building the right thing?"
 
@@ -39,4 +39,4 @@ Product Engineers aren't defined by technical depth alone. The distinguishing ha
 
 [Supporting Product Engineers means rewarding these habits](/culture-follows-incentives). Give them room to experiment, visibility into user needs, and permission to cut across silos when it matters. Treat outcomes as the measure, not just output.
 
-If you want to raise the bar for your org, invest in cultivating Product Engineers. Outcomes don't appear by accident. They show up where people are trusted to get close to the customer, encouraged to ask "what's actually better now?" and measured by what changes, not just what's delivered.
+If you want to raise the bar for your org, invest in growing Product Engineers. Outcomes don't appear by accident. They show up where people are trusted to get close to the customer, encouraged to ask "what's actually better now?" and measured by what changes, not just what's delivered.
