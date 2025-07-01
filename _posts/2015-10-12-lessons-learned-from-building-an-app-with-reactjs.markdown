@@ -2,7 +2,7 @@
 title:  "Lessons learned from building an app with React.js"
 date:   2015-10-12 11:50:00
 description: An in depth look at flux, React.js and data fetching.
-tags: [code]
+tags: [reactjs]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'

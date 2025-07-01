@@ -1,7 +1,7 @@
 ---
 title:  "Using Terraform to build Twilio TaskRouter Infrastructure"
 date:   2020-05-03 14:30:00
-tags: [code]
+tags: [twilio]
 description: How you can use Terraform to deploy your Twilio TaskRouter config
 sitemap:
     priority: 0.7
