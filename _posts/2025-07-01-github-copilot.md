@@ -16,7 +16,7 @@ didn't capitalise on it._
 
 But since trying [Copilot Coding Agent](https://github.blog/news-insights/product-news/github-copilot-meet-the-new-coding-agent/) my opinion has changed.
 
-Why? Because this time, it actually feels like a leap, not a minor update. The agent isn't just helping with snippets or boilerplate, it's chaining actions, holding context, and offering real, end-to-end support across a whole task. It feels less like autocomplete and more like a reliable partner, something that can actually carry a thread from start to finish, rather than just popping in with a guess and vanishing.
+Why? Because this time, it actually feels like a leap, not a minor update. The agent isn't just helping with small blocks of code or boilerplate, it's chaining actions, holding context, and offering real, end-to-end support across a whole task. It feels less like autocomplete and more like a reliable partner, something that can actually carry a thread from start to finish, rather than just popping in with a guess and vanishing.
 
 It feels like the gap between "tool" and "partner" is shrinking fast. The AI is only going to get smarter, more integrated, and more opinionated. Some tasks that used to take a whole afternoon are now done before you've finished your coffee.
 
