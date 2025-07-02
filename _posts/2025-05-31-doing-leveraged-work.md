@@ -1,7 +1,7 @@
 ---
 title: Doing Leveraged Work
 date: 2025-05-31 10:30:00
-tags: [software-engineering]
+tags: [software-engineering, career]
 description: For Staff and Principal Engineers, the goal is to identify and deliver leveraged work, efforts that multiply both throughput and quality across the organisation.
 sitemap:
     priority: 0.7
