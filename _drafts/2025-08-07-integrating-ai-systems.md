@@ -5,7 +5,7 @@ tags: [ai]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-08-07 T19:00:00+01:00
+    lastmod: "2025-08-07 T19:00:00+01:00"
 ---
 
 4. Decouple “pattern platform” from “model provider”

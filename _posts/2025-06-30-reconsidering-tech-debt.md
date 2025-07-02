@@ -6,7 +6,7 @@ tags: [management, culture, software-engineering]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-06-30 T19:00:00+01:00
+    lastmod: "2025-06-30T19:00:00+01:00"
 ---
 
 There's a phrase I've grown wary of over the years: *tech debt*. It shows up in all kinds of conversations, but often hides more than it explains.

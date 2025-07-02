@@ -3,6 +3,10 @@ title: Using elm-form-validate
 date: 2017-07-03 11:00:00
 description: "Using elm-form-validate form validate to build composable, reusable form validation in Elm."
 tags: [elm]
+sitemap:
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: "2017-07-05T19:00:00+01:00"
 ---
 
 The real pain in frontend engineering isn't writing another form; it's dealing with validation, user feedback, and keeping your codebase from turning into a spaghetti mess of conditionals.

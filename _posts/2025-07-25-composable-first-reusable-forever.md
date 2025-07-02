@@ -6,7 +6,7 @@ description: "There's a certain romance to reusability. Ask any engineering lead
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: 2025-07-07 T19:00:00+01:00
+  lastmod: "2025-07-07 T19:00:00+01:00"
 ---
 
 There's a certain romance to reusability. Ask any engineering leader what they want from their systems, and the word *reusability* will float up within minutes, right alongside "maintainable" and "scalable".

@@ -6,7 +6,7 @@ description: "Experimenting with ways to improve how I interact with large langu
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-06-02 T19:00:00+01:00
+    lastmod: "2025-06-02 T19:00:00+01:00"
 ---
 
 I've been experimenting with ways to improve how I interact with large language models (LLMs) like ChatGPT. Prompting is a surprisingly high-leverage task, where small tweaks often lead to disproportionately better results. Recently, I've been using a simple but powerful workflow to improve the quality of my prompts, especially for more technical or complex tasks.

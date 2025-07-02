@@ -5,7 +5,7 @@ tags: [architecture, software-engineering]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-09-15 T19:00:00+01:00
+    lastmod: "2025-09-15T19:00:00+01:00"
 ---
 
 If there's one lesson I keep coming back to, it's this: the teams that create the most value aren't the ones who pick the most exciting tech, they're the ones who make explicit, repeatable choices about what *not* to run.

@@ -5,7 +5,7 @@ tags: [management, systems-thinking]
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: 2025-07-14 T19:00:00+01:00
+  lastmod: "2025-07-14 T19:00:00+01:00"
 ---
 
 > "If a measure becomes a target, it ceases to be a good measure." – Goodhart's Law

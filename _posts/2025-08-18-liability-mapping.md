@@ -6,7 +6,7 @@ tags: [management, architecture]
 sitemap:
    priority: 0.7
    changefreq: 'monthly'
-   lastmod: 2025-08-18 T19:00:00+01:00
+   lastmod: "2025-08-18T19:00:00+01:00"
 ---
 
 I've [written about tech debt and how often it's used as a catch-all term for a range of issues](/reconsidering-tech-debt), some which could sink a company overnight to minor code-style issues. Often no one can say how much debt exists or what the cost of it is; this results in vague discussions and a lack of paying down the debt.

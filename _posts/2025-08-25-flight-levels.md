@@ -5,7 +5,7 @@ tags: [management, career, systems-thinking]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-08-25 T19:00:00+01:00
+    lastmod: "2025-08-25T19:00:00+01:00"
 ---
 
 Most days, the real work isn't about what's on the to-do list. It's the constant shifting between details and direction, knowing when to dive deep and when to come back up for air.

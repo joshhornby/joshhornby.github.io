@@ -6,7 +6,7 @@ description: How you can use Terraform to deploy your Twilio TaskRouter config
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2020-05-13 T15:00:00+01:00
+    lastmod: "2020-05-13T15:00:00+01:00"
 ---
 
 In order to manage an ever growing [Twilio TaskRouter](https://www.twilio.com/taskrouter)

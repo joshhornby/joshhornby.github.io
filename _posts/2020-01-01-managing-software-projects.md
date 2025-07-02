@@ -1,8 +1,12 @@
 ---
-title:  "Managing Software Projects"
-date:   2020-12-01 16:00:00
+title: "Managing Software Projects"
+date: 2020-12-01 16:00:00
 tags: [management]
 description: During my time working on software projects, I've began to spot trends in what makes a successful project. The most common trait I've observed in successful projects is great communication between teams, seemingly the software methodology used has little to do with if a project is a success.
+sitemap:
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: "2020-12-01T22:12:10+00:00"
 ---
 
 During my time leading software engineering teams, I've begun to spot patterns in what makes a successful project. The most common trait I've observed in successful projects is great communication between teams, seemingly the software methodology used has little to do with if a project is a success.

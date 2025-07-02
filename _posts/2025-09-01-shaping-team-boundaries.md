@@ -5,7 +5,7 @@ tags: [architecture, team-topologies, org-design]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-09-01 T19:00:00+01:00
+    lastmod: "2025-09-01T19:00:00+01:00"
 ---
 
 Most teams start out with the best intentions, ship faster, keep things simple, stay close to the customer. But as companies grow, friction creeps in. Delivery slows, hand-offs multiply, and nobody's quite sure why a feature that looked straightforward ended up stuck in the queue.

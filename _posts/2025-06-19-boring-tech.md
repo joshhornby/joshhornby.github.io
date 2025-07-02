@@ -6,7 +6,7 @@ description: "This isn't new advice, but some reminders deserve another run: cho
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-06-24 T19:00:00+01:00
+    lastmod: "2025-06-24T19:00:00+01:00"
 ---
 
 It's 2025, this isn't new advice. But some reminders should be repeated: choose boring tech if you're in the business of product engineering.

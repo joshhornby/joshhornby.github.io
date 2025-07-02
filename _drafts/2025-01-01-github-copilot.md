@@ -6,7 +6,7 @@ tags: [ai, thoughts]
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: 2025-07-14 T19:00:00+01:00
+  lastmod: "2025-07-14 T19:00:00+01:00"
 ---
 
 I've been using GitHub Copilot lately. It's... fine. It's not bad, it's not great. Sometimes it autocompletes the boilerplate I didn't want to write. Sometimes it gets in the way, guessing wrong. The Copilot agent which runs in the background and creates PR's is promising, I'd say the best feature. That aside, overall, it feels like a marginal gain, not a revolution. Copilot is clever enough to keep around, but nowhere near game-changing.

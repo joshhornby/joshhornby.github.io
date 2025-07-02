@@ -6,7 +6,7 @@ tags: [career]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-08-11 T19:00:00+01:00
+    lastmod: "2025-08-11 T19:00:00+01:00"
 ---
 
 If you want to influence decisions, steer strategy, or just be in the loop on the conversations that matter, there's no shortcut: you need to get in the room. The challenge in a remote company is that "the room" isn't always visible. 

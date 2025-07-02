@@ -6,7 +6,7 @@ description: "Modern LLMs are reshaping software practice, for better or worse. 
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-06-17 T19:00:00+01:00
+    lastmod: "2025-06-17T19:00:00+01:00"
 ---
 
 _For context: most of my experiments are with Claude 3.7, OpenAI's GPT-4, o3 and o4-mini-high. The reflections here are based on hands-on use of those models in day-to-day coding._

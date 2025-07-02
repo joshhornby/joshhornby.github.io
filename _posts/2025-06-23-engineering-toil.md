@@ -6,7 +6,7 @@ description: "It's easy to admire the peak moments in engineering: shipping feat
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-06-24 T19:00:00+01:00
+    lastmod: "2025-06-24T19:00:00+01:00"
 ---
 
 It's easy to celebrate the wins in product engineering teams: a product launch, pulling together to resolve a critical outage, or watching months of platform work quietly unlock a wave of customer growth. But beneath the visible achievements sits something far more ordinary and persistent - *toil*. Toil is the work that keeps systems humming, the low-grade friction that quietly erodes a team's time and energy.

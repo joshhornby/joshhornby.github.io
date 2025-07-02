@@ -6,7 +6,7 @@ tags: [laravel]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2016-03-01T23:49:00+00:00
+    lastmod: "2016-03-01T23:49:00+00:00"
 ---
 
 *This blog post assumes you are using [Laravel](http://laravel.com) & [Dingo API](https://github.com/dingo/api).*

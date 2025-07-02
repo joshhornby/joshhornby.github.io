@@ -5,7 +5,7 @@ tags: [management, career]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-07-28 T19:00:00+01:00
+    lastmod: "2025-07-28T19:00:00+01:00"
 ---
 
 For years, I was an estimation sceptic, closed off to the idea of using it. I saw estimation as a relic of a past era, something best left to Gantt charts and process-heavy project managers. Agile, I thought, had saved us from the shackles of story points, T-shirt sizes, and man-hour breakdowns. Why play the planning poker game at all if the future's always going to surprise us?

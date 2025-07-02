@@ -6,7 +6,7 @@ description: "Self-hosting open-source tools sits between building and buying. S
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: 2025-07-02 T19:00:00+01:00
+  lastmod: "2025-07-02T19:00:00+01:00"
 ---
 
 The classic build vs buy question has always shaped engineering strategy. There's often a third lesser spoke about option: self-hosting. Instead of writing your own tool or handing over money to a SaaS vendor, you stand up and operate the open-source version yourself.

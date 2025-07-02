@@ -6,7 +6,7 @@ tags: [reactjs]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2015-10-12T23:49:00+00:00
+    lastmod: "2015-10-12T23:49:00+00:00"
 ---
 
 A brief overview of what I have learnt when using React.js on a modern web applciation.

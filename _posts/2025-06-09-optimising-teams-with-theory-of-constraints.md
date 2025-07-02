@@ -6,7 +6,7 @@ description: "Using the Theory of Constraints to improve team delivery"
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-06-09 T19:00:00+01:00
+    lastmod: "2025-06-09 T19:00:00+01:00"
 ---
 When I first started in engineering leadership, I figured the best teams ran like well-oiled machines, every engineer flat out, every hour accounted for. It made sense on paper: 100% utilisation must mean maximum output, right? What I learned (mostly the hard way) is that teams pushed to the limit don't run smoothly. One small delay, and everything grinds to a halt.
 

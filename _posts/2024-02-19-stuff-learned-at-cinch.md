@@ -4,9 +4,9 @@ date: 2024-02-19 13:00:00
 tags: [management, career]
 description: Today’s my last day at cinch, where I was a Tech Lead across multiple teams for the past two and a half years. I’ve learned so much working there, and I wanted to end my time there by collecting my thoughts on what I learned.
 sitemap:
-priority: 0.7
-changefreq: 'monthly'
-lastmod: 2024-02-19 T19:00:00+01:00
+  priority: 0.7
+  changefreq: 'monthly'
+  lastmod: "2024-02-19T19:00:00+01:00"
 ---
 
 Today’s my last day at cinch, where I was a Tech Lead across multiple teams for the past two and a half years. I’ve learned so much working there, and I wanted to end my time there by collecting my thoughts on what I learned.

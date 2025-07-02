@@ -6,7 +6,7 @@ description: "The idea of making impossible states impossible in simple terms, m
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-08-04 T19:00:00+01:00
+    lastmod: "2025-08-04 T19:00:00+01:00"
 ---
 
 This is a topic I first discovered ~8 years ago after watching _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_ by Richard Feldman. Ever since it's been influencing how I think about building software, and is an underrated concept across the industry.

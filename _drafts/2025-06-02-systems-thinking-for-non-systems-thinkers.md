@@ -5,7 +5,7 @@ tags: [systems-thinking, management]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-07-14 T19:00:00+01:00
+    lastmod: "2025-07-14 T19:00:00+01:00"
 ---
 
 Most people I know didn't start out thinking in systems. I certainly didn't. I saw problems, solutions, people, outcomes. I built things that worked, until they didn't. Only after enough duct-taped fixes and unexpected side effects did I realise the problem: I was building for *this moment*, not for the complex, persistent, and unpredictable mess that is reality. I needed to see systems.

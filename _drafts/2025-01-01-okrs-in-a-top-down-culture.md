@@ -5,7 +5,7 @@ tags: [culture, management]
 sitemap:
 priority: 0.7
 changefreq: 'monthly'
-lastmod: 2025-08-07 T19:00:00+01:00
+lastmod: "2025-08-07 T19:00:00+01:00"
 ---
 
 !! Reframe this as working backwards, using leading and lagging indicators, and focusing on the outcomes that matter to the business.

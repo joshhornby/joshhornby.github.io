@@ -6,7 +6,7 @@ tags: [reactjs]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2015-11-03GMT22:12:10+00:00
+    lastmod: "2015-11-03T22:12:10+00:00"
 ---
 
 Recently I have been exploring [React Native](https://facebook.github.io/react-native/), the tl;dr of React Native is pretty accurate.

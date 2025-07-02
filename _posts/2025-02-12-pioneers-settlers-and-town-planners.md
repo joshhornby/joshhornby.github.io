@@ -6,7 +6,7 @@ description: "Why engineering teams need different archetypes at different phase
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-02-12 T19:00:00+01:00
+    lastmod: "2025-02-12T19:00:00+01:00"
 ---
 
 It doesn't take long in any engineering team to notice the differences: some people itch for a blank canvas, some thrive turning chaos into order, and some see maintenance as an act of craft, not a chore. Simon Wardley's [Pioneers, Settlers, Town Planners](https://blog.gardeviance.org/2012/06/pioneers-settlers-and-town-planners.html) gives these names, but you can spot them even if you've never seen the model.

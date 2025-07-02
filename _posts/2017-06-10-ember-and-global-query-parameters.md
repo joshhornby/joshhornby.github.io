@@ -6,7 +6,7 @@ tags: [emberjs]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2017-06-11 T19:00:00+01:00
+    lastmod: "2017-06-11T19:00:00+01:00"
 ---
 
 Recently while using [Ember.js](https://www.emberjs.com/) I needed to use global query parameters across routes. For example, navigating from `/users?start=2017-01-01` to `/users/1?start=2017-01-01` I wanted to make sure the `start` filter was applied across routes.

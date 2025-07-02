@@ -4,9 +4,9 @@ date:   2021-01-24 14:30:00
 tags: [management, career]
 description: Will Larson's excellent "An Elegant Puzzle" deep dives into every aspect of being a tech leader at modern software companies
 sitemap:
-priority: 0.7
-changefreq: 'monthly'
-lastmod: 2021-01-24 T19:00:00+01:00
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: "2021-01-24T19:00:00+01:00"
 ---
 
 An Elegant Puzzle, deep dives into pretty much every aspect of being a tech leader at modern software companies. The Author, [Will Larson](https://lethain.com) has worked at Yahoo and Digg, moving on to being an engineering manager for two years at Uber before leaving for Stripe. He's currently left Stripe and is CTO at Calm. Quite the CV.

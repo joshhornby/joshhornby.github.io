@@ -4,9 +4,9 @@ date:   2021-01-10 14:30:00
 tags: [management, career]
 description: Camille Fournier's "A Manager's Path" is a guide for navigating the technical career ladder
 sitemap:
-priority: 0.7
-changefreq: 'monthly'
-lastmod: 2021-01-10 T19:00:00+01:00
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: "2021-01-10T19:00:00+01:00"
 ---
 
 The book's main goal is to describe the steps in the career ladder of a technical manager and I believe it fully lives up to this promise. It starts with discussing mentoring and finishes describing roles of CTOs and VP Engineering.

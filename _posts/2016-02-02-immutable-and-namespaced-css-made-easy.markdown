@@ -6,7 +6,7 @@ tags: [code]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2016-03-01GMT21:00:00+00:00
+    lastmod: "2016-03-01T21:00:00+00:00"
 ---
 
 Two of my favourite CSS blog posts are written by Harry Roberts, [More Transparent UI Code with Namespaces](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) and [Immutable CSS](http://csswizardry.com/2015/03/immutable-css/).

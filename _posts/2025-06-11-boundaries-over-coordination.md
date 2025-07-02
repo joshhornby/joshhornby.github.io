@@ -6,7 +6,7 @@ description: "If you want to know how healthy your engineering org is, count the
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: 2025-06-11 T19:00:00+01:00
+    lastmod: "2025-06-11T19:00:00+01:00"
 ---
 
 If you want to know how healthy your engineering org is, count the meetings on your calendar. Or better yet, count the ones labelled "cross-team sync".

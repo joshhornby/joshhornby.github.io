@@ -12,6 +12,9 @@ layout: null
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.sitemap %}
+        <lastmod>{{ post.sitemap.lastmod | remove: " " }}</lastmod>
+      {% endif %}
     </url>
   {% endfor %}
   <url>
