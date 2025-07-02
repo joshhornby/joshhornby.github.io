@@ -6,7 +6,7 @@ tags: [ai, thoughts]
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: "2025-07-03T09:00:00+01:00"
+  lastmod: "2025-07-02T09:00:00+01:00"
 ---
 
 I had originally written this post expressing my disappointment at GitHub Copilot, that post can be summed up with by paragraph:
