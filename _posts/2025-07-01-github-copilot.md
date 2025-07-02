@@ -1,6 +1,6 @@
 ---
 title: Thoughts on GitHub Copilot
-date: 2025-07-03 08:00:00
+date: 2025-07-01 08:00:00
 description: "General thoughts after using Github Copilot"
 tags: [ai, thoughts]
 sitemap:
