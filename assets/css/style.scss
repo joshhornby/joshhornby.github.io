@@ -643,3 +643,18 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   #mc_embed_signup .clear {display: block; width: 100% }
   #mc_embed_signup .button {width: 100%; margin:0; }
 }
+
+@media (prefers-color-scheme: dark) {
+  html, img, video, iframe {
+    filter: invert(1);
+  }
+
+  body {
+    background-color: white;
+  }
+
+  a {
+    filter: none;
+    color: rebeccapurple;
+  }
+}
