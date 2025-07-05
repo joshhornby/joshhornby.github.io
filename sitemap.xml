@@ -3,8 +3,16 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {% assign latest_post = site.posts
+  | sort: "post.sitemap.lastmod"
+  | last %}
+
+  {% assign last_post_time = latest_post.path
+  | last_modified_at %}
+
   <url>
     <loc>{{ site.url }}</loc>
+    <lastmod>{{ last_post_time | date_to_xmlschema }}</lastmod>
   </url>
   <url>
     <loc>{{ site.url }}/about</loc>
@@ -17,9 +25,13 @@ layout: null
       {% endif %}
     </url>
   {% endfor %}
+
+
   <url>
-    <loc>{{ site.url }}/tags</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}/tags</loc>
+    <lastmod>{{ last_post_time | date_to_xmlschema }}</lastmod>
   </url>
+
   {% for tag in site.tags %}
     {% assign posts_for_tag = tag[1] %}
     {% if posts_for_tag.size > 0 %}
@@ -29,7 +41,7 @@ layout: null
     {% comment %}
     {% endcomment %}
     {% assign git_time = last_post.path | last_modified_at %}
-  
+
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}/tags/{{ tag[0] | slugify }}</loc>
       <lastmod>{{ git_time | date_to_xmlschema }}</lastmod>
