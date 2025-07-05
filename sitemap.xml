@@ -3,58 +3,54 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {%- comment -%}
-  1. Homepage: use the newest `post.sitemap.lastmod` value
-  {%- endcomment -%}
-  {% assign latest_post = site.posts
-  | where_exp: "p", "p.sitemap and p.sitemap.lastmod"
-  | sort: "sitemap.lastmod"
-  | last %}
-  {% assign index_time = latest_post.sitemap.lastmod %}
-  <url>
-    <loc>{{ site.url }}</loc>
-    <lastmod>{{ index_time | date_to_xmlschema }}</lastmod>
-  </url>
+    {%- comment -%}
+    1. Homepage: newest front-matter date
+    {%- endcomment -%}
+    {% assign posts_with_sitemap = site.posts
+    | where_exp: "p", "p.sitemap and p.sitemap.lastmod" %}
+    {% assign latest_post       = posts_with_sitemap
+    | sort: "sitemap.lastmod"
+    | last %}
+    <url>
+        <loc>{{ site.url }}</loc>
+        <lastmod>{{ latest_post.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+    </url>
 
-  <url>
-    <loc>{{ site.url }}/about</loc>
-  </url>
-
-  {%- comment -%}
-  2. Individual posts: front-matter `sitemap.lastmod` if present
-  {%- endcomment -%}
-  {% for post in site.posts %}
-  <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
+    {%- comment -%}
+    2. Individual posts (only if sitemap.lastmod exists)
+    {%- endcomment -%}
+    {% for post in site.posts %}
     {% if post.sitemap and post.sitemap.lastmod %}
-    <lastmod>{{ post.sitemap.lastmod | remove: " " }}</lastmod>
+    <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        <lastmod>{{ post.sitemap.lastmod | remove: " " | date_to_xmlschema }}</lastmod>
+    </url>
     {% endif %}
-  </url>
-  {% endfor %}
+    {% endfor %}
 
-  {%- comment -%}
-  3. Tags index: use the same homepage index_time
-  {%- endcomment -%}
-  <url>
-    <loc>{{ site.url }}/tags</loc>
-    <lastmod>{{ index_time | date_to_xmlschema }}</lastmod>
-  </url>
+    {%- comment -%}
+    3. Tags index: reuse homepage’s latest date
+    {%- endcomment -%}
+    <url>
+        <loc>{{ site.url }}/tags</loc>
+        <lastmod>{{ latest_post.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+    </url>
 
-  {%- comment -%}
-  4. Each tag’s lastmod (newest post under that tag)
-  {%- endcomment -%}
-  {% for tag in site.tags %}
-  {% assign posts_for_tag = tag[1] %}
-  {% if posts_for_tag.size > 0 %}
-  {% assign last_post = posts_for_tag
-  | sort: "last_modified_at"
-  | last %}
-  {% assign git_time = last_post.path | last_modified_at %}
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/tags/{{ tag[0] | slugify }}</loc>
-    <lastmod>{{ git_time | date_to_xmlschema }}</lastmod>
-  </url>
-  {% endif %}
-  {% endfor %}
+    {%- comment -%}
+    4. Each tag’s lastmod (newest Git timestamp per tag)
+    {%- endcomment -%}
+    {% for tag in site.tags %}
+    {% assign posts_for_tag = tag[1] %}
+    {% if posts_for_tag.size > 0 %}
+    {% assign last_post = posts_for_tag
+    | sort: "last_modified_at"
+    | last %}
+    {% assign git_time = last_post.path | last_modified_at %}
+    <url>
+        <loc>{{ site.url }}{{ site.baseurl }}/tags/{{ tag[0] | slugify }}</loc>
+        <lastmod>{{ git_time | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endif %}
+    {% endfor %}
 
 </urlset>
