@@ -3,17 +3,9 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {%- comment -%}
-  1. Build a global_lastmod from front-matter sitemap.lastmod only
-  2. Filter posts that define sitemap.lastmod, sort by it, take newest
-  {%- endcomment -%}
-  {% assign posts_with_lastmod = site.posts
-  | where_exp: "p", "p.sitemap and p.sitemap.lastmod" %}
-  {% assign sorted_posts       = posts_with_lastmod
-  | sort: "sitemap.lastmod" %}
-  {% assign latest_post        = sorted_posts | last %}
-  {% assign last_post_time     = latest_post.sitemap.lastmod
-  | remove: " " | date_to_xmlschema %}
+  {% for post in site.posts | limit:1 %}
+  {% assign last_post_time = post.sitemap.lastmod | remove: " " | date_to_xmlschema %}
+  {% endfor %}
 
   <url>
     <loc>{{ site.url }}</loc>
