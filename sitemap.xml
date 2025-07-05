@@ -3,25 +3,8 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {%- comment -%}
-  1. From all posts, keep only those with sitemap.lastmod
-  2. Sort that list by sitemap.lastmod
-  3. Take the very last (newest) one
-  {%- endcomment -%}
-  {% assign latest_post = site.posts
-  | where_exp: "post", "post.sitemap and post.sitemap.lastmod"
-  | sort: "sitemap.lastmod"
-  | last %}
-
-  {%- comment -%}
-  4. Get its Git‐based timestamp
-  {%- endcomment -%}
-  {% assign last_post_time = latest_post.path
-  | last_modified_at %}
-
   <url>
     <loc>{{ site.url }}</loc>
-    <lastmod>{{ last_post_time | date_to_xmlschema }}</lastmod>
   </url>
   <url>
     <loc>{{ site.url }}/about</loc>
@@ -34,13 +17,9 @@ layout: null
       {% endif %}
     </url>
   {% endfor %}
-
-
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/tags</loc>
-    <lastmod>{{ last_post_time | date_to_xmlschema }}</lastmod>
+    <loc>{{ site.url }}/tags</loc>
   </url>
-
   {% for tag in site.tags %}
     {% assign posts_for_tag = tag[1] %}
     {% if posts_for_tag.size > 0 %}
