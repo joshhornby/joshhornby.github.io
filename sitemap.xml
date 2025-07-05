@@ -4,22 +4,19 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {%- comment -%}
-  1. Filter to posts that have sitemap.lastmod defined
-  2. Sort by that date (oldest→newest)
-  3. Grab the very last (newest) one
-  4. Store its date (stripped of spaces) in a global var
+  1. Get only posts with sitemap.lastmod defined
+  2. Sort by that date
+  3. Pull out the newest one
+  4. Store its cleaned ISO date in global_lastmod
   {%- endcomment -%}
-  {% assign posts_with_sitemap = site.posts
+  {% assign posts_with_lastmod = site.posts
   | where_exp: "p", "p.sitemap and p.sitemap.lastmod" %}
-  {% assign sorted_posts       = posts_with_sitemap
+  {% assign sorted_posts       = posts_with_lastmod
   | sort: "sitemap.lastmod" %}
   {% assign latest_post        = sorted_posts | last %}
-  {% assign last_post_time     = latest_post.sitemap.lastmod | remove: " " %}
-
-  {%- comment -%}
-  Now {{ global_lastmod }} is available anywhere in this template,
-  already formatted as YYYY-MM-DDThh:mm:ss±hh:mm (assuming your front-matter uses that format).
-  {%- endcomment -%}
+  {% assign last_post_time     = latest_post.sitemap.lastmod
+  | remove: " "
+  | date: "%Y-%m-%dT%H:%M:%S%:z" %}
 
   <url>
     <loc>{{ site.url }}</loc>
