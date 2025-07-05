@@ -1,12 +1,12 @@
 ---
 title: Product Engineers
-date: 2025-07-25 08:00:00
+date: 2025-07-07 08:00:00
 description: "Product Engineers don't measure success by tickets closed or code merged they're relentlessly focused on outcomes. This mindset is the real multiplier for teams that consistently deliver customer value."
 tags: [software-engineering]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-07-25T19:00:00+01:00"
+    lastmod: "2025-07-07T08:00:00+01:00"
 ---
 
 There's a common thread in teams that consistently deliver customer value: somewhere in the mix, you'll find an engineer obsessed with outcomes. Sometimes the title is "Product Engineer", but most of the time, you notice the effect before you know the label.
