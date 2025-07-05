@@ -21,8 +21,20 @@ layout: null
     <loc>{{ site.url }}/tags</loc>
   </url>
   {% for tag in site.tags %}
+    {% assign posts_for_tag = tag[1] %}
+    {% if posts_for_tag.size > 0 %}
+    {% assign sorted = posts_for_tag | sort: "last_modified_at" %}
+    {% assign last_post = sorted | last %}
+
+    {% comment %}
+    {% endcomment %}
+    {% assign git_time = last_post.path | last_modified_at %}
+  
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}/tags/{{ tag[0] | slugify }}</loc>
+      <lastmod>{{ git_time | date_to_xmlschema }}</lastmod>
     </url>
+    {% endif %}
   {% endfor %}
+
 </urlset>

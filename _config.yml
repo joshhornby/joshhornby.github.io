@@ -38,3 +38,4 @@ defaults:
       layout: post
 plugins:
   - jekyll-seo-tag
+  - jekyll-last-modified-at
