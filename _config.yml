@@ -39,5 +39,3 @@ defaults:
 plugins:
   - jekyll-seo-tag
   - jekyll-last-modified-at
-
-timezone: Europe/London
