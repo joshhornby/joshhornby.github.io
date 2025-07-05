@@ -23,7 +23,7 @@ layout: null
   {% for tag in site.tags %}
     {% assign posts_for_tag = tag[1] %}
     {% if posts_for_tag.size > 0 %}
-    {% assign sorted = posts_for_tag | sort: "last_modified_at" %}
+    {% assign sorted = posts_for_tag | sort: "sitemap.lastmod" %}
     {% assign last_post = sorted | last %}
 
     {% comment %}
