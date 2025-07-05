@@ -29,13 +29,11 @@ layout: null
   {% for tag in site.tags %}
     {% assign posts_for_tag = tag[1] %}
     {% if posts_for_tag.size > 0 %}
+    {%- comment -%} Sort by the sitemap’s lastmod field {%- endcomment -%}
     {% assign sorted = posts_for_tag | sort: "sitemap.lastmod" %}
     {% assign last_post = sorted | last %}
-
-    {% comment %}
-    {% endcomment %}
-    {% assign git_time = last_post.path | last_modified_at %}
-
+    {%- comment -%} Grab the sitemap.lastmod from that post {%- endcomment -%}
+    {% assign git_time = last_post.sitemap.lastmod %}
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}/tags/{{ tag[0] | slugify }}</loc>
       <lastmod>{{ git_time | date_to_xmlschema }}</lastmod>
