@@ -3,8 +3,27 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {%- comment -%}
+  1. Pre-declare the variable here:
+  {%- endcomment -%}
+  {% assign last_post_time = nil %}
+
+  {%- comment -%}
+  2. Loop through tags, updating last_post_time each time
+  (so when the loop finishes it holds the *last* assignment)
+  {%- endcomment -%}
+  {% for tag in site.tags %}
+  {% assign posts_for_tag = tag[1] %}
+  {% if posts_for_tag.size > 0 %}
+  {% assign last_post = posts_for_tag
+  | sort: "sitemap.lastmod"
+  | last %}
+  {% assign last_post_time = last_post.path | last_modified_at %}
+  {% endif %}
+  {% endfor %}
   <url>
     <loc>{{ site.url }}</loc>
+    <lastmod>{{ last_post_time | date_to_xmlschema }}</lastmod>
   </url>
   <url>
     <loc>{{ site.url }}/about</loc>
