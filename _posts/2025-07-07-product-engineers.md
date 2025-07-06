@@ -30,7 +30,9 @@ The result? Fewer long hand-offs, less energy spent justifying the roadmap, more
 
 ## What to Look For (and How to Support It)
 
-Product Engineers aren't just technically strong they focus on real outcomes, are comfortable with uncertainty, and take ownership of an idea all the way to the user and back. That's what sets them apart. Supporting Product Engineers means rewarding these habits. But it's more than praise or an annual review. It's about designing your system, so these behaviours are the default, not the exception. Here's how to make that real:
+Product Engineers aren't just technically strong they focus on real outcomes, are comfortable with uncertainty, and take ownership of an idea all the way to the user and back. That's what sets them apart.
+
+Supporting Product Engineers means rewarding these habits. But it's more than praise or an annual review. It's about designing your system, so these behaviours are the default, not the exception. Here's how to make that real:
 
 - **Make outcomes visible, not just output.** Highlight what changed for users, not just what shipped. In reviews, demos, or Slack shout‑outs, talk about the customer pain solved, or what actually got better, not the ticket count.
 
