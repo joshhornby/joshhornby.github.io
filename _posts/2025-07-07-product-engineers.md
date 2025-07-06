@@ -15,18 +15,18 @@ There's a common thread in teams that consistently deliver customer value: somew
 
 ## Product Engineering is an Outcome Mindset
 
-In most orgs, it's easy to fall into the trap of focusing on output: delivering features, reducing cycle time, moving tickets from "in progress" to "done". But outputs don't always add up to outcomes. Shipping doesn't guarantee value.
+In most orgs, it's easy to slip into the habit of measuring success by output: shipping features, reducing cycle time, moving tickets from "in progress" to "done". But more output doesn't guarantee outcomes. Shipping alone doesn't create value.
 
-Product Engineers resist these habits. They shorten the gap between "what was asked for" and "what actually helps". They seek out real feedback. They're comfortable with ambiguity, willing to prototype, to adjust, to change tack when the data points somewhere new. They know that most of the work is invisible: aligning context, nudging decisions, refining what "done" really means.
+Product Engineers resist these patterns. They work to close the gap between "what was asked for" and "what actually helps". They make a habit of seeking real feedback. They're comfortable with ambiguity, happy to prototype, adjust, or change tack when the data points somewhere new. Most of their work is invisible: aligning context, nudging decisions, refining what "done" really means.
 
-When Product Engineers show up in a team, you notice things move differently:
+When you have Product Engineers on a team, you notice things start to move differently:
 
-- Customer problems get solved, not just acknowledged.
-- Solutions fit the shape of the need, not just the spec.
-- Feedback loops get tighter, learning happens faster.
-- The boundary between engineering and product blurs, in a good way.
+- Customer problems actually get solved, not just acknowledged
+- Solutions fit the shape of the need, not just the spec
+- Feedback loops tighten, learning happens faster
+- The boundary between engineering and product blurs, in the best possible way
 
-There are fewer long hand-offs, less energy spent justifying the roadmap, and more collective momentum. The team shifts from "are we building it right?" to "are we building the right thing?"
+The result? Fewer long hand-offs, less energy spent justifying the roadmap, more collective momentum. The team shifts from "are we building it right?" to "are we building the right thing?"
 
 ## What to Look For (and How to Support It)
 
