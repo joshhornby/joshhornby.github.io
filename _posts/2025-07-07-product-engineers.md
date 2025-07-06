@@ -30,11 +30,11 @@ The result? Fewer long hand-offs, less energy spent justifying the roadmap, more
 
 ## What to Look For (and How to Support It)
 
-Product Engineers stand out not just for their technical depth but for their bias to outcomes, and comfort with uncertainty, full-loop ownership from idea to user and back again. These habits are what set them apart from traditional engineers.
+Product Engineers stand out not just for their technical depth but for their bias to outcomes, comfort with uncertainty along with owning the idea to user and back again. These habits are what set them apart from traditional engineers.
 
 Supporting Product Engineers means rewarding these habits. But it's more than praise or an annual review. It's about designing your system, so these behaviours are the default, not the exception. Here's how to make that real:
 
-- **Make outcomes visible, not just output.** Highlight what changed for users, not just what shipped. In reviews, demos, or Slack shout‑outs, talk about the customer pain solved, the feedback closed, or what actually got better, not the ticket count.
+- **Make outcomes visible, not just output.** Highlight what changed for users, not just what shipped. In reviews, demos, or Slack shout‑outs, talk about the customer pain solved, or what actually got better, not the ticket count.
 
 - **Create slack for exploration.** Protect time for small experiments, user spikes, or hack weeks. Let engineers test and learn, not just deliver against a fixed backlog. If you only measure velocity, you'll never get new ideas.
 
