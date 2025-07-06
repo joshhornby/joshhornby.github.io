@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2025-07-07T08:00:00+01:00"
 ---
 
-There's a common thread in teams that consistently deliver customer value: somewhere in the mix, you'll find an engineer obsessed with outcomes. Sometimes the title is "Product Engineer", but most of the time, you notice the effect before you know the label.
+There's a common trend in teams that consistently deliver customer value: somewhere in the mix, you'll find an engineer obsessed with outcomes. Sometimes the title is "Product Engineer", but most of the time you notice the effect before you know the label.
 
 **Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their compass is set to customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is worth building, and shorten the loop between idea and result. Their habit is to care about what happens after the merge, not just that the build goes green.
 
