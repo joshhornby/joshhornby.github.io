@@ -17,7 +17,7 @@ There's a common thread in teams that consistently deliver customer value: somew
 
 In most orgs, it's easy to fall into the trap of focusing on output: delivering features, reducing cycle time, moving tickets from "in progress" to "done". But outputs don't always add up to outcomes. Shipping doesn't guarantee value.
 
-Product Engineers resist this drift. They shorten the gap between "what was asked for" and "what actually helps". They seek out real feedback. They're comfortable with ambiguity, willing to prototype, to adjust, to change tack when the data points somewhere new. They know that most of the work is invisible: aligning context, nudging decisions, refining what "done" really means.
+Product Engineers resist these habits. They shorten the gap between "what was asked for" and "what actually helps". They seek out real feedback. They're comfortable with ambiguity, willing to prototype, to adjust, to change tack when the data points somewhere new. They know that most of the work is invisible: aligning context, nudging decisions, refining what "done" really means.
 
 When Product Engineers show up in a team, you notice things move differently:
 
