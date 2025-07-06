@@ -30,13 +30,24 @@ The result? Fewer long hand-offs, less energy spent justifying the roadmap, more
 
 ## What to Look For (and How to Support It)
 
-Product Engineers aren't defined by technical depth alone. The distinguishing habits:
+Product Engineers stand out not just for their technical depth but for their bias to outcomes, and comfort with uncertainty, full-loop ownership from idea to user and back again. These habits are what set them apart from traditional engineers.
 
-- **Bias to outcomes:** Focused on what changes for the customer, not just what ships.
-- **Comfort with uncertainty:** Happy to experiment, measure, and iterate instead of waiting for the perfect plan.
-- **Ownership of the full loop:** Following the work from idea to user to learning, not stopping at release.
-- **Empathy and partnership:** Collaborate across roles, product, design, support without waiting to be asked.
+Supporting Product Engineers means rewarding these habits. But it's more than praise or an annual review. It's about designing your system, so these behaviours are the default, not the exception. Here's how to make that real:
 
-[Supporting Product Engineers means rewarding these habits](/culture-follows-incentives). Give them room to experiment, visibility into user needs, and permission to cut across silos when it matters. Treat outcomes as the measure, not just output.
+- **Make outcomes visible, not just output.** Highlight what changed for users, not just what shipped. In reviews, demos, or Slack shout‑outs, talk about the customer pain solved, the feedback closed, or what actually got better, not the ticket count.
 
-If you want to raise the bar for your org, invest in growing Product Engineers. Outcomes don't appear by accident. They show up where people are trusted to get close to the customer, encouraged to ask "what's actually better now?" and measured by what changes, not just what's delivered.
+- **Create slack for exploration.** Protect time for small experiments, user spikes, or hack weeks. Let engineers test and learn, not just deliver against a fixed backlog. If you only measure velocity, you'll never get new ideas.
+
+- **Default to transparency.** Give engineers a direct line to customer feedback, support tickets, and usage data. Don't hide the raw story, let them see what's working and what's not.
+
+- **Give permission to cross silos.** Encourage engineers who jump into product, support, or design conversations to move the work forward. When someone crosses a boundary to unblock a customer, treat it as impact, not distraction.
+
+- **Reward the full loop, not just the launch.** Celebrate the people who follow the work after release, close the loop with users, and learn from what didn't land. The best outcomes show up after the sprint's over.
+
+- **Tolerate (smart) failures.** Make room for prototypes that don't ship, or experiments that fizzle. If you punish every dead end, you'll only get safe, incremental work.
+
+- **Align recognition and progression.** Promotions, bonuses, and praise should reflect these habits. If the only path up is heroics, velocity, or sticking to your lane, don't expect anyone to own the messy, high‑leverage work.
+
+- **Give explicit feedback.** When someone shows bias to outcomes, closes the loop, or builds cross‑team empathy, call it out. Make it clear this is the bar.
+
+Supporting Product Engineers is about system design, not cheerleading. Culture follows incentives, and if you want more outcomes, you need to make it safer, easier, and more rewarding to get close to customers, own the loop, and measure what changes, not just what ships.
