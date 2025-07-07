@@ -2,6 +2,7 @@
 title: Cycle Time Isn't Your North Star
 date: 2025-07-14 08:00:00
 tags: [management, systems-thinking, developer-experience]
+description: "Many teams obsess over cycle time and DORA metrics, but speed alone isn't a strategy. This post explores why these metrics are useful signals, not your true north and how to anchor measurement in real outcomes, not just dashboards."
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
