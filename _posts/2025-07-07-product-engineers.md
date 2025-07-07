@@ -13,6 +13,8 @@ There's a common pattern in teams that consistently deliver customer value: some
 
 **Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their compass is set to customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is worth building, and shorten the loop between idea and result. Their habit is to care about what happens after the merge, not just that the build goes green.
 
+From a leadership perspective, these engineers are catalysts. They make impact visible, close the gap between what we ship and what actually changes for the customer. And when one person shows these traits, it spreads. Priorities get sharper, feedback loops tighten, and the team starts delivering value that shows up outside the Jira board.
+
 ## Product Engineering is an Outcome Mindset
 
 In most orgs, it's easy to slip into the habit of measuring success by output: shipping features, reducing cycle time, moving tickets from "in progress" to "done". But more output doesn't guarantee outcomes. Shipping alone doesn't create value.
