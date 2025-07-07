@@ -23,7 +23,7 @@ When you have Product Engineers on a team, you notice things start to move diffe
 
 - Customer problems actually get solved, not just acknowledged
 - Solutions fit the shape of the need, not just the spec
-- Feedback loops tighten, learning happens faster
+- [Feedback loops tighten](/optimising-teams-with-theory-of-constraints), learning happens faster
 - The boundary between engineering and product blurs, in the best possible way
 
 The result? Fewer long hand-offs, less energy spent justifying the roadmap, more collective momentum. The team shifts from "are we building it right?" to "are we building the right thing?"
@@ -46,7 +46,7 @@ Supporting Product Engineers means rewarding these habits. But it's more than pr
 
 - **Tolerate (smart) failures.** Make room for prototypes that don't ship, or experiments that fizzle. If you punish every dead end, you'll only get safe, incremental work.
 
-- **Align recognition and progression.** Promotions, bonuses, and praise should reflect these habits. If the only path up is heroics, velocity, or sticking to your lane, don't expect anyone to own the messy, high‑leverage work.
+- **Align recognition and progression.** Promotions, bonuses, and praise should reflect these habits. If the only path up is heroics, velocity, or sticking to your lane, don't expect anyone to own the messy, [high‑leverage work](/doing-leveraged-work).
 
 - **Give explicit feedback.** When someone shows bias to outcomes, closes the loop, or builds cross‑team empathy, call it out. Make it clear this is the bar.
 
