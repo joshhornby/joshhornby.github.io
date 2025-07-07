@@ -6,7 +6,7 @@ tags: [software-engineering, culture]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-07-07T08:00:00+01:00"
+    lastmod: "2025-07-07T20:00:00+01:00"
 ---
 
 There's a common pattern in teams that consistently deliver customer value: somewhere in the mix, you'll find an engineer obsessed with outcomes. Sometimes the title is "Product Engineer", but most of the time you notice the effect before you know the label.
