@@ -1,7 +1,7 @@
 ---
 title: Cycle Time Isn't Your North Star
 date: 2025-07-14 08:00:00
-tags: [management, systems-thinking]
+tags: [management, systems-thinking, developer-experience]
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
