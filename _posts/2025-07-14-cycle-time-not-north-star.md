@@ -17,6 +17,8 @@ But the reality? Customers saw almost no difference. Our output increased on pap
 
 This is the trap of DORA: it's a precise set of measurements for delivery speed, but that precision can mask the bigger question, are you even shipping the right thing?
 
+This post explores what DORA gets right, where it falls short, and how to use it effectively without losing sight of the bigger picture. I'll share how I approach these metrics now, focusing on real outcomes rather than just chasing numbers.
+
 ## What DORA Nails
 
 DORA's four metrics: deployment frequency, lead time, change failure rate, and time to restore became the industry standard for a reason. They shine a spotlight on whether your engineering system is healthy. If releases are infrequent, slow, or prone to breaking things, these metrics quickly make the bottlenecks obvious. In teams where deployment still feels risky, DORA can be a game changer, focusing effort on the mechanics of reliable delivery. You also find that teams who improve these numbers tend to improve trust and psychological safety because you can't move faster without letting people experiment and learn.
