@@ -9,9 +9,9 @@ sitemap:
     lastmod: "2025-07-07T20:00:00+01:00"
 ---
 
-There's a common pattern in teams that consistently deliver customer value: somewhere in the mix, you'll find an engineer obsessed with outcomes. Sometimes the title is "Product Engineer", but most of the time you notice the effect before you know the label.
+I've noticed a common pattern in teams that consistently deliver customer value: somewhere in the mix, you'll find an engineer focused on outcomes. The title might be "Product Engineer" but more often, the impact shows it self before the name does.
 
-**Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their compass is set to customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is worth building, and shorten the loop between idea and result. Their habit is to care about what happens after the merge, not just that the build goes green.
+**Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their goal is customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is worth building, and shorten the loop between idea and result. Their habit is to care about what happens after the merge, not just that something is deployed to production.
 
 From a leadership perspective, these engineers are catalysts. They make impact visible, close the gap between what we ship and what actually changes for the customer. And when one person shows these traits, it spreads. Priorities get sharper, feedback loops tighten, and the team starts delivering value that shows up outside the Jira board.
 
