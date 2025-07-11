@@ -13,8 +13,8 @@ If you want to influence how people act at work, don't spend time on motivationa
 
 Teams talk about "raising the bar", "shifting culture" or "driving accountability". But none of it sticks if incentives aren't aligned to the new direction.
 
-Want engineers to care about quality? Reward shipping stable code, not just shipping fast. Need more documentation? Make it visible, tracked, and something leadership highlights in reviews. You get what you measure, but you only really get what you reward.
+Want engineers to care about quality? Reward shipping stable code, not just shipping fast. Need more documentation? Make it visible, tracked, and something leadership highlights in reviews. You get what you measure, but in reality you get what you reward.
 
-Changing incentives doesn't mean dangling a bonus or adding some new target to the end-of-year review. The best shifts are subtle: moving recognition, freeing up slack for the work you want to see, letting teams own their wins. People are smart, they read between the lines. If the fastest path to a promotion is heroics in the final hours before a launch, that's what you'll get. If it's mentoring, refactoring, or cross-team work, you'll see more of that.
+Changing incentives doesn't mean dangling a bonus or adding a new target to the end-of-year review. The best shifts are subtle: moving recognition, freeing up slack for the work you want to see, letting teams own their wins. People are smart, they read between the lines. If the fastest path to a promotion is heroics in the last hours before a launch, that's what you'll get. If it's mentoring, refactoring, or cross-team work, you'll see more of that.
 
-The lesson: if you want new behaviour, start by re-examining what you actually incentivise. Culture change follows incentive change, not the other way round.
+The lesson: if you want new behaviour, start by re-examining what you actually incentivise. Culture change follows incentives, not the other way round.
