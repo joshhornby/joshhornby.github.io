@@ -11,7 +11,7 @@ sitemap:
 
 > "If a measure becomes a target, it ceases to be a good measure." – Goodhart's Law
 
-A few years back, we brought in a Developer Experience dashboard at a previous role. Overnight, one of my teams "cycle time" metric was cause for concern. The message was clear: lower this number. So we chopped up tickets, made sure stories were smaller, and watched our average cycle time drop. The dashboard turned green and everyone relaxed.
+A few years ago, we brought in a Developer Experience dashboard at a previous role. Overnight, one of my teams "cycle time" metric was cause for concern. The message was clear: lower this number. So we chopped up tickets, made sure stories were smaller, and watched our average cycle time drop. The dashboard turned green and everyone was happy.
 
 But the reality? Customers saw almost no difference. Our output increased on paper, but the features we shipped weren't more valuable, they just arrived in smaller boxes. Releases might have got a touch safer, but nothing fundamental shifted.
 
@@ -21,13 +21,15 @@ This post explores what DORA gets right, where it falls short, and how to use it
 
 ## What DORA Nails
 
-DORA's four metrics: deployment frequency, lead time, change failure rate, and time to restore became the industry standard for a reason. They shine a spotlight on whether your engineering system is healthy. If releases are infrequent, slow, or prone to breaking things, these metrics quickly make the bottlenecks obvious. In teams where deployment still feels risky, DORA can be a game changer, focusing effort on the mechanics of reliable delivery. You also find that teams who improve these numbers tend to improve trust and psychological safety because you can't move faster without letting people experiment and learn.
+DORA's four metrics: deployment frequency, lead time, change failure rate, and time to restore became the industry standard for a reason. They shine a spotlight on whether your engineering system is healthy. If releases are infrequent, slow, or prone to breaking things, these metrics quickly make the bottlenecks obvious.
+
+In teams where deployment still feels risky, DORA can be a game changer, focusing effort on the mechanics of reliable delivery. You also find that teams who improve these numbers tend to improve trust and psychological safety because you can't move faster without letting people experiment and learn.
 
 ## Where It Falls Short
 
-But DORA is a delivery speedometer, not a compass. As soon as a metric like cycle time becomes a target, it gets gamed. Teams split stories thinner, push unfinished work into side channels, or just game the process to make the graph go up and to the right.
+But DORA is a delivery speedometer, not a compass. As soon as a metric like cycle time becomes a target, it gets gamed. Teams split will split stories to be smaller, push unfinished work into side channels, or just game the process to make the graph go up and to the right.
 
-You can improve your DORA dashboard without shipping a single thing that matters. There's also a limit to how much it helps. Going from one release a month to one a week will shake up a business. Shaving cycle time from three days to one rarely moves the needle for customers or the bottom line. Eventually, the most [painful constraints live somewhere else entirely](/optimising-teams-with-theory-of-constraints).
+You can improve your DORA dashboard without shipping a single thing that matters. There's also a limit to how much it helps. Going from one release a month to one a week will change a business. Shaving cycle time from two days to one rarely moves the needle for customers or the bottom line. Eventually, the most [painful constraints live somewhere else entirely](/optimising-teams-with-theory-of-constraints).
 
 ## Looking Wider: SPACE, Flow, and Context
 
