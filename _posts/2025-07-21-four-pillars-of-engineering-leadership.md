@@ -1,5 +1,5 @@
 ---
-title: The Four Pillars of Engineering Leadership
+title: Four Pillars of Engineering Leadership
 date: 2025-07-21 08:00:00
 tags: [management, career, culture]
 description: "Years ago, a previous manager laid out what he called the four pillars of engineering leadership. I keep returning to them because they're straightforward, but never simplistic. They remind me that leadership isn't about hierarchy or authority, it's about how you shape and connect the parts that make a team strong. Each pillar builds on the last; miss one, and the whole structure loses its balance."
@@ -15,7 +15,7 @@ Years ago, a previous manager Paul Ingham laid out what he called the four pilla
 
 It starts with the craft. Artisanship is the pursuit of writing quality code that's understandable, building systems you'd be proud to own in a year, and fixing things properly, not just quickly.
 
-This is the foundation. If you can't model mastery, you can't expect it from your team. Your standards seep into every decision, what gets merged, what gets reworked, what you quietly let through.
+This is the foundation. If you can't model mastery, you can't expect it from your team. Your standards flow into every decision, what gets merged, what gets reworked, what you quietly let through.
 
 Without artisanship, the rest is theory.
 
@@ -45,4 +45,4 @@ Stakeholder engagement is where you make the invisible visible and where enginee
 
 I owe Paul for this framing, but it's lived experiences that bring it to life.
 
-Each pillar supports the next. Skip one, and you feel it soon enough, quality suffers, priorities drift, teams disengage, and engineering becomes a silo. But stack them deliberately, and you build something resilient.
+Each pillar supports the next. Skip one and quality suffers, priorities drift, teams disengage, and engineering becomes a silo. But stack them deliberately, and you build something resilient.
