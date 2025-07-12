@@ -43,6 +43,4 @@ It relies on the other pillars: without strong culture, collaboration falls flat
 
 Stakeholder engagement is where you make the invisible visible and where engineering actually matters.
 
-I owe Paul for this framing, but it's lived experiences that bring it to life.
-
 Each pillar supports the next. Skip one and quality suffers, priorities drift, teams disengage, and engineering becomes a silo. But stack them deliberately, and you build something resilient.
