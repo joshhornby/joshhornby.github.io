@@ -29,7 +29,7 @@ In teams where deployment still feels risky, DORA can be a game changer, focusin
 
 But DORA is a delivery speedometer, not a compass. As soon as a metric like cycle time becomes a target, it gets gamed. Teams split will split stories to be smaller, push unfinished work into side channels, or just game the process to make the graph go up and to the right.
 
-You can improve your DORA dashboard without shipping a single thing that matters. There's also a limit to how much it helps. Going from one release a month to one a week will change a business. Shaving cycle time from two days to one rarely moves the needle for customers or the bottom line. Eventually, the most [painful constraints live somewhere else entirely](/optimising-teams-with-theory-of-constraints).
+You can improve your DORA dashboard without shipping a single thing that matters. There's also a limit to how much it helps. Going from one release a month to one a week will change a business. Reducing cycle time from two days to one rarely moves the needle for customers or the bottom line. Eventually, the most [painful constraints live somewhere else entirely](/optimising-teams-with-theory-of-constraints).
 
 ## Looking Wider: SPACE, Flow, and Context
 
@@ -45,7 +45,7 @@ If you only optimise one layer, you miss the full story. DORA is a great warning
 
 Metrics are at their best as conversation starters. They're there to highlight a possible issue, not declare victory or failure. The real value is in asking why a number moved, not just reacting to it.
 
-Improvement isn't about just driving a number down for its own sake. It's about having a theory, a clear reason why you think a change will actually make things better for engineers or the business. When you skip that step, you end up chasing whatever easiest to count, not what really matters.
+Improvement isn't about just driving a number down for its own sake. It's about having a theory, a clear reason why you think a change will actually make things better for engineers or the business. When you skip that step, you end up chasing whatever is easiest to count, not what really matters.
 
 The most useful shift I've made is to treat any metric-driven change as an experiment. Make a change, watch what happens, and check if there's any actual difference in customer engagement or business results after a quarter. If speeding-up deployments doesn't shift the outcome, it's time to pause and ask if you're measuring what matters. And if a metric just encourages busywork, tickets close faster, but nothing meaningful is shipping, ditch it or try something else.
 
