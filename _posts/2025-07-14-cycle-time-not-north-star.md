@@ -49,7 +49,7 @@ Improvement isn't about just driving a number down for its own sake. It's about 
 
 The most useful shift I've made is to treat any metric-driven change as an experiment. Make a change, watch what happens, and check if there's any actual difference in customer engagement or business results after a quarter. If speeding-up deployments doesn't shift the outcome, it's time to pause and ask if you're measuring what matters. And if a metric just encourages busywork, tickets close faster, but nothing meaningful is shipping, ditch it or try something else.
 
-Ultimately, teams don't optimise for what's on a dashboard. They [optimise for whatever gets celebrated and rewarded](/culture-follows-incentives.md). That's why changing the incentives, or making space for narrative and qualitative feedback, always matters more than chasing perfect numbers.
+Ultimately, teams don't optimise for what's on a dashboard. They [optimise for whatever gets celebrated and rewarded](/culture-follows-incentives). That's why changing the incentives, or making space for narrative and qualitative feedback, always matters more than chasing perfect numbers.
 
 ## How I Approach This Now
 
