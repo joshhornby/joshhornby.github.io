@@ -1,12 +1,12 @@
 ---
 title: Making Impossible States Impossible
-date: 2025-08-04 08:00:00
+date: 2025-07-21 08:00:00
 tags: [software-engineering, developer-experience]
 description: "The idea of making impossible states impossible in simple terms, means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-08-04 T19:00:00+01:00"
+    lastmod: "2025-07-21 T19:00:00+01:00"
 ---
 
 This is a topic I first discovered ~8 years ago after watching _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_ by Richard Feldman. Ever since it's been influencing how I think about building software, and in my opinion is an underrated concept across the industry.
