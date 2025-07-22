@@ -11,9 +11,9 @@ sitemap:
 
 If you want to influence decisions, steer strategy, or just be in the loop on the conversations that matter, there's no shortcut: you need to get in the room. The challenge in a remote company is that "the room" isn't always visible. 
 
-There's no obvious boardroom or after‑work drinks; instead, it's a patchwork of private Slack channels, half‑hidden docs, and recurring calls where the real work happens. By the time you realise the meeting took place, the decision's usually already been made.
+There's no obvious boardroom or after‑work drinks; instead, it's a mix of private Slack channels, half‑hidden docs, and recurring calls where the real work happens. By the time you realise the meeting took place, the decision's usually already been made.
 
-The door isn't locked, but it's not exactly wide open either. So how do you earn a seat and keep it without coming across as the person constantly chasing an invite?
+The door isn't locked, but it's not exactly wide open either. So how do you earn a seat and keep it without coming across as the person constantly chasing an invitation?
 
 ## Getting in the room
 

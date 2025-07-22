@@ -14,6 +14,8 @@ It's rarely about motivation or skill. More often, the real culprit is structura
 
 That's where Team Topologies comes in. Instead of adding more process, it offers a lens to spot the patterns behind delivery drag and practical ways to design teams for flow rather than friction.
 
+In this post, we'll explore how Team Topologies helps you identify and fix common structural problems that slow down delivery. We'll look at real-world examples of teams that started with good intentions but ended up stuck in bottlenecks, and how a few simple changes can get them back on track.
+
 ## Intro to Team Topologies
 
 Team Topologies is a framework for structuring teams to optimise for flow, fast delivery, and sustainable pace. At the heart of it are four team types:
