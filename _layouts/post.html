@@ -42,15 +42,14 @@ layout: default
                 {% assign related = "" | split: "" %}
                 {% for tag in page.tags %}
                 {% for post in site.tags[tag] %}
-                {% if post.url != page.url %}
+                {% if post.url != page.url
+                    and post.slug != 'notes-on-an-elegant-puzzle'
+                    and post.slug != 'notes-on-a-managers-path' %}
                 {% assign related = related | push: post %}
                 {% endif %}
                 {% endfor %}
                 {% endfor %}
                 {% assign related = related | uniq %}
-
-                {% comment %} exclude two specific posts by slug {% endcomment %}
-                {% assign related = related | where_exp: "post", "post.slug != 'notes-on-an-elegant-puzzle' and post.slug != 'notes-on-a-managers-path'" %}
 
                 {% assign top5 = "" | split: "" %}
                 {% assign pool = related %}
