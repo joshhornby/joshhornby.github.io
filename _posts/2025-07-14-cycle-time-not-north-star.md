@@ -53,7 +53,7 @@ Ultimately, teams don't optimise for what's on a dashboard. They [optimise for w
 
 ## How I Approach This Now
 
-These days, I always start by anchoring around one customer or business metric. DORA and flow metrics serve as early warning signals, if they drift, it's a cue to dig deeper, not a call to panic. I run regular reviews where we look at what's changing and whether it's having any real impact. If code review is lightning fast but product discovery drags on for weeks, it's clear the constraint isn't delivery, it's upstream.
+These days, I always start by focusing around one customer or business metric. DORA and flow metrics serve as early warning signals, if they drift, it's a cue to dig deeper, not a call to panic. I run regular reviews where we look at what's changing and whether it's having any real impact. If code review is lightning fast but product discovery drags on for weeks, it's clear the constraint isn't delivery, it's upstream.
 
 Over time, I've learned that measurement should evolve with your team. If a metric is only improving because people have figured out how to game it, or if it stops telling you anything useful, it's time to move on. The most important question isn't "Are the numbers better?" It's "Are we actually making a difference for customers, or just getting more efficient at running in circles?"
 
