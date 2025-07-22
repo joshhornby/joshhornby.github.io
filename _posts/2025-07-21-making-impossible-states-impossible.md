@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2025-07-21 T19:00:00+01:00"
 ---
 
-This is a topic I first discovered ~8 years ago after watching _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_ by Richard Feldman. Ever since it's been influencing how I think about building software, and in my opinion is an underrated concept across the industry.
+This is a topic I first discovered ~8 years ago after watching _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_ by Richard Feldman. Ever since it's been influencing how I think about building software and in my opinion, is an underrated concept across the industry.
 
 The idea of making impossible states impossible in simple terms means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time.
 
@@ -79,6 +79,6 @@ The more you lean into this approach, the more you see the benefit compound:
 
 - **Onboarding new engineers**: The shape of the types tells the story. What can happen? What's forbidden? You don't need tribal knowledge or a wall of comments.
 - **Refactoring with confidence**: Change a type, and the compiler points out everywhere you need to update. You can evolve your codebase without fear of missing some edge-case.
-- **Testing for what matters**: You stop wasting time testing "should never happen" scenarios, and focus on the actual business logic
+- **Testing for what matters**: You stop wasting time testing "should never happen" scenarios and focus on the actual business logic
 
 Most bugs aren't random or wild-edge-cases, they're "shouldn't be possible, but the code allowed it". Making impossible states impossible is the quiet work that prevents entire categories of bugs from existing in the first place. The compiler won't thank you, but your future self (and team) will.
