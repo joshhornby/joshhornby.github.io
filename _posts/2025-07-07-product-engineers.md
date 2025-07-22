@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2025-07-07T20:00:00+01:00"
 ---
 
-In teams that consistently ship meaningful customer value, there's almost always at least one engineer who’s focused on outcomes. They might have "Product Engineer" in their title, but more often you recognise their impact before you notice their role.
+In teams that consistently deliver real customer value, there's almost always an engineer who thinks beyond the code. They focus on outcomes, not just output. Their impact is usually obvious, even if it’s not loudly stated.
 
 **Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their goal is customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is worth building, and shorten the loop between idea and result. Their habit is to care about what happens after the merge, not just that something is deployed to production.
 
