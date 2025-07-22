@@ -13,7 +13,7 @@ In teams that consistently deliver real customer value, there's almost always an
 
 **Product Engineers focus on outcomes**. They don't measure success in tickets closed, lines written, or perfect abstractions. Their goal is customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is worth building, and shorten the loop between idea and result. Their habit is to care about what happens after the merge, not just that something is deployed to production.
 
-From a leadership perspective, these engineers are catalysts. They make impact visible, close the gap between what we ship and what actually changes for the customer. And when one person shows these traits, it spreads. Priorities get sharper, feedback loops tighten, and the team starts delivering value that shows up outside the Jira board.
+From a leadership perspective, these engineers are catalysts. They make the impact visible, close the gap between what we ship and what actually changes for the customer. And when one person shows these traits, it spreads. Priorities get sharper, feedback loops tighten, and the team starts delivering value that shows up outside the Jira board.
 
 ## Product Engineering is an Outcome Mindset
 
