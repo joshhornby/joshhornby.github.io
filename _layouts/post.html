@@ -49,6 +49,9 @@ layout: default
                 {% endfor %}
                 {% assign related = related | uniq %}
 
+                {% comment %} exclude two specific posts by slug {% endcomment %}
+                {% assign related = related | where_exp: "post", "post.slug != 'notes-on-an-elegant-puzzle' and post.slug != 'notes-on-a-managers-path'" %}
+
                 {% assign top5 = "" | split: "" %}
                 {% assign pool = related %}
                 {% for i in (1..5) %}
