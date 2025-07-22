@@ -6,10 +6,10 @@ description: "The idea of making impossible states impossible in simple terms, m
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-07-21 T19:00:00+01:00"
+    lastmod: "2025-07-22 T19:00:00+01:00"
 ---
 
-This is a topic I first discovered ~8 years ago after watching _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_ by Richard Feldman. Ever since it's been influencing how I think about building software and in my opinion, is an underrated concept across the industry.
+I first came across this concept in Richard Feldman's talk _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_. It completely changed the way I think about designing software. Since then, it's shaped how I write code, and honestly, I think it’s one of the most underrated ideas in the industry.
 
 The idea of making impossible states impossible in simple terms means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time.
 
