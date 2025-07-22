@@ -6,7 +6,7 @@ tags: [software-engineering, culture]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-07-07T20:00:00+01:00"
+    lastmod: "2025-07-22T20:00:00+01:00"
 ---
 
 In teams that consistently deliver real customer value, there's almost always an engineer who thinks beyond the code. They focus on outcomes, not just output. Their impact is usually obvious, even if it’s not loudly stated.
