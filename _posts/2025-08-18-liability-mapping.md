@@ -21,11 +21,11 @@ Liability mapping breaks down the messy sprawl of "tech debt" into five categori
 
 | Category      | Definition                                                                                     | Primary signal                                           | Typical owner action                                       |
 |---------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------|------------------------------------------------------------|
-| **Liability** | Clear, externally‑visible risk that violates contractual, security, or compliance obligations. | CVE backlog, failed audits.                              | **Must‑fix** inside cycle time or sprint.                  |
-| **Drag**      | Internal friction that slows feature flow but rarely harms customers directly.                 | Build times, flaky tests, manual deploy steps.           | Schedule & track via *flow‑metrics budget*.                |
-| **Hazard**    | Latent defect with low frequency but high blast‑radius.                                        | Single‑point-of-failure, critical data coupling.         | Invest in redundancy or feature-flags before feature work. |
-| **Relic**     | Dormant code, unused infra, forgotten toggles that clutter cognition.                          | Zero‑call endpoints, abandoned feature flags.            | Archive or delete quarterly; measure LOC shrink.           |
-| **Bet**       | Conscious shortcut taken for speed-to‑market with a written expiry date.                       | TODO markers with "sunset‑by" field; prototype branches. | Review in *risk council* before expiry; promote or retire. |
+| **Liability** | Clear, externally-visible risk that violates contractual, security, or compliance obligations. | CVE backlog, failed audits.                              | **Must-fix** inside cycle time or sprint.                  |
+| **Drag**      | Internal friction that slows feature flow but rarely harms customers directly.                 | Build times, flaky tests, manual deploy steps.           | Schedule & track via *flow-metrics budget*.                |
+| **Hazard**    | Latent defect with low frequency but high blast-radius.                                        | Single-point-of-failure, critical data coupling.         | Invest in redundancy or feature-flags before feature work. |
+| **Relic**     | Dormant code, unused infra, forgotten toggles that clutter cognition.                          | Zero-call endpoints, abandoned feature flags.            | Archive or delete quarterly; measure LOC shrink.           |
+| **Bet**       | Conscious shortcut taken for speed-to-market with a written expiry date.                       | TODO markers with "sunset-by" field; prototype branches. | Review in *risk council* before expiry; promote or retire. |
 
 Because each one points to a different kind of pain: customer harm (liability, hazard), team speed (drag), mental clutter (relic), and deliberate, short-term risk (bet). Lumping them all together as "tech debt" means you either treat everything as equally urgent, or worse, ignore the actual dangerous bits until they bite you.
 
@@ -43,7 +43,7 @@ Now, with everything tagged and scored, it's time to make the map.
 
 ![Graph showing a liability map in grid form](/assets/images/liability-mapping-grid.png)
 
-I like to plot each item on a 3×3 grid: immediate impact on one axis, longer-term risk on the other. Colour-code by class. Instantly, certain problems will pop out, the "drag" that's actually a ticking time bomb, the relics that are harmless, the liabilities hiding in plain sight. This picture gives everyone a shared, visual sense of what really needs urgent attention and what can stay in the backlog for now.
+I like to plot each item on a 3x3 grid: immediate impact on one axis, longer-term risk on the other. Colour-code by class. Instantly, certain problems will pop out, the "drag" that's actually a ticking time bomb, the relics that are harmless, the liabilities hiding in plain sight. This picture gives everyone a shared, visual sense of what really needs urgent attention and what can stay in the backlog for now.
 
 Link the map to how you actually budget and prioritise work. Anything labelled a liability or hazard goes straight into the run-cost or operational budget those are the items that could hit you with fines, customer churn, or outages if left unchecked. Drags, relics, and bets get slotted into your change-cost or innovation work streams.
 
@@ -51,7 +51,7 @@ This translation is great when you're trying to get buy-in from finance or leade
 
 The real trick is to treat this whole exercise as a living document, not a one-off event. The first map you make will be rough, maybe even a bit awkward, but that's fine. The point is to get started, get the categories working for you, and begin building the muscle. Over time, it'll get easier to spot liabilities, identify hazards before they escalate, and run pruning rituals on relics and bets.
 
-## Getting exec buy‑in
+## Getting exec buy-in
 
 Winning over execs starts with translating technical issues into their priorities; risk, money, and time. Most leadership teams don't care about "refactoring" or "debt" in the abstract. What they want to know is why they should spend actual budget on things that aren't shiny features or new revenue. That means you have to speak their language, connecting every liability to either avoided disaster, increased velocity, or long-term cost reduction.
 
@@ -73,7 +73,7 @@ Picture an e-commerce business, call them "SportingGoods", who specialise in sel
 | **Drag**      | Deployments to the payment service can only happen during a two-hour maintenance window, causing week-long lead times.    | Invest in zero-downtime deploys and automation.      |
 | **Hazard**    | All payment requests are routed through a single, unmonitored queue, one silent failure could block every transaction.    | Add monitoring and redundancy before peak season.    |
 | **Relic**     | Codebase still contains endpoints for a retired payment partner (SportPay), unused for nine months, but never cleaned up. | Identify, archive, and safely delete old endpoints.  |
-| **Bet**       | Fast-tracked “Buy Now, Pay Later” feature shipped behind a toggle, with no refund logic, review before next quarter.      | Reassess, build missing logic or sunset as needed.   |
+| **Bet**       | Fast-tracked "Buy Now, Pay Later" feature shipped behind a toggle, with no refund logic, review before next quarter.      | Reassess, build missing logic or sunset as needed.   |
 
 A one-page liability map like this turns back-room technical complaints into a crisp, shared plan, making the next actions, and their urgency, obvious to both teams and leadership.
 
@@ -85,6 +85,6 @@ Once you've got liability mapping up and running, the next challenge is making s
 
 - Second, treat every label as perishable. Nothing should linger on your map indefinitely. Set a policy: every entry expires after twelve months unless it's actively reviewed and renewed. This keeps the map a reflection of current risk, not a dusty archive of old fears and half-forgotten tickets.
 
-- Finally, make the map a living artefact. Store it right alongside your architecture decision records, in the same repo your engineers already use. This transparency acts as a vaccine against hand-wavy “debt” arguments and makes the whole process less about finger-pointing and more about building shared understanding.
+- Finally, make the map a living artefact. Store it right alongside your architecture decision records, in the same repo your engineers already use. This transparency acts as a vaccine against hand-wavy "debt" arguments and makes the whole process less about finger-pointing and more about building shared understanding.
 
 Keeping the map honest isn't about more process, it's about small, consistent acts of clarity: pick a label, expire old entries, and keep the map where everyone can see it. That's how you ensure the liability map keeps earning its place as a real decision tool, not just another forgotten spreadsheet.

@@ -15,7 +15,7 @@ I've been experimenting with ways to improve how I interact with large language 
 
 1. **Create a new "project" in ChatGPT** - Using this as a dedicated workspace as it gives you a clean context where the model can remember your interactions, which is important when iterating on prompt design.
 2. **Upload context** - I use [Google's Prompt Engineering whitepaper](https://www.kaggle.com/whitepaper-prompt-engineering) as the foundation. It contains concise principles and techniques that help shape effective prompts. Upload it directly as a file into the project, so the model can refer back to it
-3. **Set instructions** - Then, I define system instructions to steer the model's behaviour. Here's an example of the kind of instruction I’ll set:
+3. **Set instructions** - Then, I define system instructions to steer the model's behaviour. Here's an example of the kind of instruction I'll set:
 
     ```text
     You are a tool to generate excellent prompts that will greatly improve 
@@ -44,7 +44,7 @@ Write me a prompt to plan a retro on a recent incident at work which involved do
 **Response:**
 
 ```text
-### ✨ Improved prompt ✨
+### Improved prompt
 
 SYSTEM ROLE  
 You are an experienced **Site Reliability Engineer and retrospective facilitator**.  
@@ -52,7 +52,7 @@ Your mission: craft a concise, psychologically-safe, and action-oriented *retros
 
 CONTEXT VARIABLES  
 Incident summary: {incident_summary}  
-Start time ⇢ End time: {start_time} – {end_time}  
+Start time ⇢ End time: {start_time} - {end_time}  
 Primary impact: {impact_statement}  
 Attendees & roles: {participants}  
 Known (or suspected) root cause: {root_cause}
@@ -70,7 +70,7 @@ INSTRUCTIONS (OUTPUT MUST BE MARKDOWN)
 
 2. Emphasise **blameless inquiry**, shared learning, and prevention.
 3. Keep total length ≤ 450 words.
-4. Return *only* the Markdown document—no extra commentary.
+4. Return *only* the Markdown document no extra commentary.
 
 ---
 
@@ -78,14 +78,14 @@ INSTRUCTIONS (OUTPUT MUST BE MARKDOWN)
 
 | Guideline leveraged                                                                              | How the prompt applies it                                                                                        |
 | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| **Be specific about the output** – spell out structure, style and length                         | We enumerate exact headings, Markdown format and a 450-word cap, so the model knows *precisely* what to produce  |
-| **Role + system prompting** – give the model an identity & purpose                               | Declaring the model an *SRE facilitator* primes domain tone and expertise                                        |
-| **Use variables in prompts** – make it reusable                                                  | Place-holders like `{incident_summary}` mean the same template works for any future incident                     |
-| **Positive instructions over constraints** – tell the model what to *do*, not a list of “don’ts” | Clear, affirmative steps guide behaviour while keeping creative latitude                                         |
-| **Design with simplicity** – concise, action verbs, no fluff                                     | Short sections and numbered rules reduce ambiguity and cognitive load                                            |
-| **Control token length** – avoid rambling answers                                                | An explicit 450-word limit aligns with best-practice token control                                               |
+| **Be specific about the output** - spell out structure, style and length                         | We enumerate exact headings, Markdown format and a 450-word cap, so the model knows *precisely* what to produce  |
+| **Role + system prompting** - give the model an identity & purpose                               | Declaring the model an *SRE facilitator* primes domain tone and expertise                                        |
+| **Use variables in prompts** - make it reusable                                                  | Place-holders like `{incident_summary}` mean the same template works for any future incident                     |
+| **Positive instructions over constraints** - tell the model what to *do*, not a list of "don'ts" | Clear, affirmative steps guide behaviour while keeping creative latitude                                         |
+| **Design with simplicity** - concise, action verbs, no fluff                                     | Short sections and numbered rules reduce ambiguity and cognitive load                                            |
+| **Control token length** - avoid rambling answers                                                | An explicit 450-word limit aligns with best-practice token control                                               |
 
-Use the variable block to drop in the real incident details, send the prompt, and you’ll receive a ready-to-run retro agenda that’s tight, blameless and outcome-focused.
+Use the variable block to drop in the real incident details, send the prompt, and you'll receive a ready-to-run retro agenda that's tight, blameless and outcome-focused.
 ```
 
 <br />
@@ -93,7 +93,7 @@ Use the variable block to drop in the real incident details, send the prompt, an
 ## Why this works
 This method combines three useful ideas:
 
-- **Shared context** - By using the whitepaper, you align the model’s responses with your reference point.
+- **Shared context** - By using the whitepaper, you align the model's responses with your reference point.
 
 - **Stable instruction** - Setting system instructions ensures that the model stays in a consistent expert role.
 

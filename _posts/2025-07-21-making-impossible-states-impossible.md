@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2025-07-22 T19:00:00+01:00"
 ---
 
-I first came across this concept in Richard Feldman's talk _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_. It completely changed the way I think about designing software. Since then, it's shaped how I write code, and honestly, I think it’s one of the most underrated ideas in the industry.
+I first came across this concept in Richard Feldman's talk _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_. It completely changed the way I think about designing software. Since then, it's shaped how I write code, and honestly, I think it's one of the most underrated ideas in the industry.
 
 The idea of making impossible states impossible in simple terms means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time.
 
@@ -29,7 +29,7 @@ interface UserSession {
 
 // Example usage:
 const session1: UserSession = { isLoggedIn: false, username: 'alice' }
-// — impossible: how can you have a username when not logged in?
+// impossible: how can you have a username when not logged in?
 
 function render(session: UserSession) {
   if (session.isLoggedIn) {

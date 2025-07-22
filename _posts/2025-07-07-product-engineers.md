@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2025-07-22T20:00:00+01:00"
 ---
 
-In teams that consistently deliver real customer value, there's almost always an engineer who thinks beyond the code. They focus on outcomes, not just output. Their impact is usually obvious, even if it’s not loudly stated.
+In teams that consistently deliver real customer value, there's almost always an engineer who thinks beyond the code. They focus on outcomes, not just output. Their impact is usually obvious, even if it's not loudly stated.
 
 That's the mindset of a Product Engineer. They don't measure success in tickets closed, lines written, or perfect abstractions. Their goal is customer impact. They're the ones who push a fix to unblock a customer, ask uncomfortable questions about whether a feature is worth building, and shorten the loop between idea and result. Their habit is to care about what happens after the merge, not just that something is deployed to production.
 
@@ -36,7 +36,7 @@ Product Engineers aren't just technically strong they focus on real outcomes, ar
 
 Supporting Product Engineers means rewarding these habits. But it's more than praise or an annual review. It's about designing your system, so these behaviours are the default, not the exception. Here's how to make that real:
 
-- **Make outcomes visible, not just output.** Highlight what changed for users, not just what shipped. In reviews, demos, or Slack shout‑outs, talk about the customer pain solved, or what actually got better, not the ticket count.
+- **Make outcomes visible, not just output.** Highlight what changed for users, not just what shipped. In reviews, demos, or Slack shout-outs, talk about the customer pain solved, or what actually got better, not the ticket count.
 
 - **Create slack for exploration.** Protect time for small experiments, user spikes, or hack weeks. Let engineers test and learn, not just deliver against a fixed backlog. If you only measure velocity, you'll never get new ideas.
 
@@ -48,8 +48,8 @@ Supporting Product Engineers means rewarding these habits. But it's more than pr
 
 - **Tolerate (smart) failures.** Make room for prototypes that don't ship, or experiments that fizzle. If you punish every dead end, you'll only get safe, incremental work.
 
-- **Align recognition and progression.** Promotions, bonuses, and praise should reflect these habits. If the only path up is heroics, velocity, or sticking to your lane, don't expect anyone to own the messy, [high‑leverage work](/doing-leveraged-work).
+- **Align recognition and progression.** Promotions, bonuses, and praise should reflect these habits. If the only path up is heroics, velocity, or sticking to your lane, don't expect anyone to own the messy, [high-leverage work](/doing-leveraged-work).
 
-- **Give explicit feedback.** When someone shows bias to outcomes, closes the loop, or builds cross‑team empathy, call it out. Make it clear this is the bar.
+- **Give explicit feedback.** When someone shows bias to outcomes, closes the loop, or builds cross-team empathy, call it out. Make it clear this is the bar.
 
 Supporting Product Engineers is about system design, not cheerleading. Culture follows incentives, and if you want more outcomes, you need to make it safer, easier, and more rewarding to get close to customers, own the loop, and measure what changes, not just what ships.

@@ -9,7 +9,7 @@ sitemap:
   lastmod: "2025-07-14 T08:00:00+01:00"
 ---
 
-> "If a measure becomes a target, it ceases to be a good measure." – Goodhart's Law
+> "If a measure becomes a target, it ceases to be a good measure." - Goodhart's Law
 
 A few years ago, we brought in a Developer Experience dashboard at a previous role. Overnight, one of my teams "cycle time" metric was cause for concern. The message was clear: lower this number. So we chopped up tickets, made sure stories were smaller, and watched our average cycle time drop. The dashboard turned green and everyone was happy.
 

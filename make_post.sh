@@ -12,10 +12,10 @@ fi
 
 title="$*"
 
-# Build a clean, URL‑friendly slug:
+# Build a clean, URL-friendly slug:
 #   1. Strip accents (iconv)            eg. “résumé” → “resume”
-#   2. Down‑case                        “Hello”     → “hello”
-#   3. Replace non‑alphanumerics w/ ‑   “c++ tips”  → “c-tips”
+#   2. Down-case                        “Hello”     → “hello”
+#   3. Replace non-alphanumerics w/ -   “c++ tips”  → “c-tips”
 #   4. Trim leading/trailing hyphens    “foo-”      → “foo”
 slug=$(
   printf '%s' "$title"                       \

@@ -19,7 +19,7 @@ Terraform is an open source tool for building, changing, and versioning infrastr
 
 If we didn't use Terraform we'd need to manually create and update our Twilio TaskQueues, Workflows, Phone numbers and the list goes on. When infrastructure is created manually, knowledge ends up trapped in the heads of individuals and future updates are scary, unrepeatable, difficult and undocumented.
 
-But that’s where infrastructure as code can help. By storing infrastructure configurations in code, and not making changes manually, engineers can apply processes, such as code review to their infrastructure changes too. The code acts as documentation, and becomes a history of changes.
+But that's where infrastructure as code can help. By storing infrastructure configurations in code, and not making changes manually, engineers can apply processes, such as code review to their infrastructure changes too. The code acts as documentation, and becomes a history of changes.
 
 ## Benefits of using Terraform with Twilio
 

@@ -10,7 +10,7 @@ sitemap:
 
 Most days, the real work isn't about what's on the to-do list. It's the constant shifting between details and direction, knowing when to dive deep and when to come back up for air.
 
-I used to think there was a map for this. Management books lay out neat layers: strategy at the top, execution at the bottom, and a tidy flow from one to the other. In practice, it never feels that clean. Some days, I'll start out trying to sketch out a plan—big picture, “how should we architect the new service?” Within an hour I'm chasing down a subtle production bug, or untangling a hand-off nobody noticed until it jammed up delivery.
+I used to think there was a map for this. Management books lay out neat layers: strategy at the top, execution at the bottom, and a tidy flow from one to the other. In practice, it never feels that clean. Some days, I'll start out trying to sketch out a plan big picture, "how should we architect the new service?" Within an hour I'm chasing down a subtle production bug, or untangling a hand-off nobody noticed until it jammed up delivery.
 
 If I'm honest, it's rarely a clean climb up the ladder. Most weeks, it feels like running up a down escalator. I get a few steps up, maybe set a direction, only to get pulled back by the gravity of the day-to-day: a fire, an unexpected dependency, some invisible bottleneck you only notice when the work stops moving.
 

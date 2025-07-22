@@ -11,13 +11,13 @@ sitemap:
 
 If you want to influence decisions, steer strategy, or stay updated on important conversations, you need to get in the room. The challenge in a remote company is that "the room" isn't always visible.
 
-There's no obvious boardroom or after‑work drinks. Instead, a mix of private Slack channels, hidden docs, and recurring calls is where the real work happens. By the time you realise the meeting took place, the decision's usually already been made.
+There's no obvious boardroom or after-work drinks. Instead, a mix of private Slack channels, hidden docs, and recurring calls is where the real work happens. By the time you realise the meeting took place, the decision's usually already been made.
 
 The door isn't locked, but it's not wide open either. How do you earn a seat and keep it without coming across as constantly chasing an invitation?
 
 ## Getting in the room
 
-It starts with knowing which room you're trying to get into. Remote companies are full of spaces that look important, big meetings, high‑traffic channels, all‑hands, but most high‑impact decisions get made in smaller faster‑moving groups.
+It starts with knowing which room you're trying to get into. Remote companies are full of spaces that look important, big meetings, high-traffic channels, all-hands, but most high-impact decisions get made in smaller faster-moving groups.
 
 These tend to form around critical projects, not titles. The trick is to notice where blockers are surfacing and where people are spending their energy. That's usually where the real decisions are made.
 

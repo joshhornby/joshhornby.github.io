@@ -15,7 +15,7 @@ Model providers (OpenAI, Anthropic, Mistral)
 
 Pattern platforms (agents, RAG stacks, eval pipelines)
 
-Pick a platform that speaks many models and patterns so devs can experiment without commercial renegotiation every six months. That preserves leverage and shields DX from lock‑in.
+Pick a platform that speaks many models and patterns so devs can experiment without commercial renegotiation every six months. That preserves leverage and shields DX from lock-in.
 
 A great AI platform, from a DX standpoint, is the one whose absence developers would complain about in six months because it quietly removed toil without forcing them to learn a new workflow. Integration cost, reversibility, and measurable impact on flow trump leaderboard wins every time.
 
