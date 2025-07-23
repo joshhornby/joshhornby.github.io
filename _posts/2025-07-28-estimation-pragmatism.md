@@ -12,7 +12,7 @@ For years, I was an estimation sceptic, closed off to the idea of using it. I sa
 
 It's hard to talk about estimation without baggage. There's the meeting that turns into a three-hour debate over T-shirt sizes, the line manager who misuses story points, the well-intentioned agile transformation that quietly slides into velocity theatre. It's tempting to swing hard in the other direction, "Estimation is broken, let's just build and see what happens". I've been there. I even believed it for a while.
 
-But the thing is: businesses don't run on blind faith. Budgets exist, customers have deadlines, and the rest of the company isn't waiting around for engineering to reach nirvana. In the absence of any signal, trust erodes fast. So, estimation remains not as a magic trick but as a tool for alignment.
+Businesses don't run on blind faith. Budgets exist, customers have deadlines, and the rest of the company isn't waiting around for engineering to reach nirvana. In the absence of any signal, trust erodes fast. So, estimation remains not as a magic trick but as a tool for alignment.
 
 My perspective shifted after watching a promising project implode. We'd refused to estimate, insisting it would "be ready when it's ready." Six months in, stakeholders were flying blind, dependencies were misaligned, and trust had evaporated. That's when I realised: The mistakes aren't hard to spot: using estimates as a play for control, pinning commitments to numbers we all know are uncertain, letting metrics stand in for real conversations. That's when things get toxic, when estimates become a stick, not a bridge.
 
