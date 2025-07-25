@@ -44,7 +44,6 @@ layout: default
                 {% for post in site.tags[tag] %}
                 {% comment %} Exclude these two posts are they are low quality {% endcomment %}
                 {% if post.url != page.url
-                    and post.slug != 'notes-on-an-elegant-puzzle'
                     and post.slug != 'notes-on-a-managers-path' %}
                 {% assign related = related | push: post %}
                 {% endif %}
