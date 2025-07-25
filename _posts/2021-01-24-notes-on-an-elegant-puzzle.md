@@ -39,7 +39,7 @@ If you've just started a new job, create a 90-day plan what you want to learn, s
 
 Another bit I keep returning to is the simple framework for presenting to senior management (Chapter 3). It's not just about "sounding smart", it's about building trust, showing that you understand the trade-offs, and making it easy for others to support your decisions. I'll probably do a deeper dive on this alone.
 
-For engineers: build a real relationship with your manager. Larson lists the things your manager should know about you:
+For engineers, build a real relationship with your manager. Larson lists the things your manager should know about you:
 
 - What problems you're trying to solve
 - What you like to work on
