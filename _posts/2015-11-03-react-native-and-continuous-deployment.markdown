@@ -21,12 +21,12 @@ By using a continuous integration tool such as [CircleCI](circleci.com) or [Code
 
 Before answering this question it is worth noting that this isn't a new idea, [this article wrote by the guys at Meteor](http://info.meteor.com/blog/apple-hot-code-push-mobile) outlines a similar concept. But as the article points out, the [iOS Developer Program Agreement](https://developer.apple.com/programs/terms/ios/standard/ios_program_standard_agreement_20140909.pdf) states the following:
 
-> 3.3.2 An Application may not download or install executable code. Interpreted code may only be used in an Application if all scripts, code and interpreters are packaged in the Application and not downloaded. The only exception to the foregoing is scripts and code downloaded and run by Apple's builtin
+> 3.3.2 An Application may not download or install executable code. Interpreted code may only be used in an Application if all scripts, code, and interpreters are packaged in the Application and not downloaded. The only exception to the foregoing is scripts and code downloaded and run by Apple's builtin
 WebKit framework, provided that such scripts and code do not change the primary purpose of the Application by providing features or functionality that are inconsistent with the intended and advertised purpose of the Application as submitted to the App Store.
 
-Which means that there is no reason for these types of applications to be rejected by Apple.
+Which means that there is no reason for Apple to reject these types of applications.
 
-For more information take a look at [Joe's GitHub repository](https://github.com/JoeStanton/london-react).
+For more information, take a look at [Joe's GitHub repository](https://github.com/JoeStanton/london-react).
 
 ### Update
 

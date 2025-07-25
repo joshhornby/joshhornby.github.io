@@ -11,9 +11,9 @@ sitemap:
 
 *This blog post assumes you are using [Laravel](http://laravel.com) & [Dingo API](https://github.com/dingo/api).*
 
-The [JSON API spec](http://jsonapi.org/) is a set of rules which can increase productivity, take advantage of generalized tooling, and focus on what matters: your application.
+The [JSON API spec](http://jsonapi.org/) is a set of rules which can increase productivity, take advantage of generalised tooling, and focus on what matters: your application.
 
-In order to add the JSON API spec to your API create a service provider called `JSONApiServiceProvider` and add the following in your register function:
+To add the JSON API spec to your API create a service provider called `JSONApiServiceProvider` and add the following in your register function:
 
 ```php
 $this->app->bind('League\Fractal\Manager', function($app) {
@@ -31,10 +31,10 @@ $this->app->bind('Dingo\Api\Transformer\Adapter\Fractal', function($app) {
 });
 ```
 
-Next add `JSONApiServiceProvider` to the providers array in `config/app.php`.
+Next add `JSONApiServiceProvider` to the provider array in `config/app.php`.
 
 
-This will use the built in `JsonApiSerializer` from [Fractal](http://fractal.thephpleague.com). This makes makes using the JSON API Spec as simple as calling a transformer.
+This will use the built in `JsonApiSerializer` from [Fractal](http://fractal.thephpleague.com). This makes using the JSON API Spec as simple as calling a transformer.
 
 In a controller add the following:
 
@@ -47,7 +47,7 @@ public function index()
     return $this->response->collection($posts, new PostTransformer(), [ 'key' => "posts" ]);
 }
 ```
-The final step is to create a Transformer, in a nut shell a transformer takes the data in one format and outputs it to another. It provides an abstraction layer over the database which allows you to map the data to any output, in our case the JSON API Spec.
+The final step is to create a Transformer, in a nutshell a transformer takes the data in one format and outputs it to another. It provides an abstraction layer over the database which allows you to map the data to any output, in our case the JSON API Spec.
 
 > Transformers are classes, or anonymous functions, which are responsible for taking one instance of the resource data and converting it to a basic array. This process is done to obfuscate your data store, avoiding Object-relational impedance mismatch and allowing you to even glue various elements together from different data stores if you wish. The data is taken from these complex data store(s) and made into a format that is more manageable, and ready to be Serialized.
 

@@ -25,17 +25,17 @@ I'd also like to extend thanks to [Ken Ding](https://github.com/choonkending) an
 
 ## Why React?
 
-This is a very good question, after some failed experiments using [ember.js](http://emberjs.com/) React seemed the next logical choice. A major  plus point was the fact that we could render both the client and server in JavaScript, something which is kown as [universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) JavaScript.
+This is a very good question, after some failed experiments using [ember.js](http://emberjs.com/) React seemed the next logical choice. A major  plus point was the fact that we could render both the client and server in JavaScript, something which is known as [universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) JavaScript.
 
 ## Thinking dumb
 
-The biggest question we had when writing our React application was, *'what is the correct way to write compontents?'* The answer came from the fantastic [Dan Abramov](https://twitter.com/dan_abramov) and his article on [smart and dumb components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+The biggest question we had when writing our React application was, *'what is the correct way to write components?'* The answer came from the fantastic [Dan Abramov](https://twitter.com/dan_abramov) and his article on [smart and dumb components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
-We then began a refactor and splitting most of our components into data fetching smart components and prop rendering dump components. This is where we found [AltContainer](http://alt.js.org/docs/components/altContainer/) extremely useful, a higher-order container component but also known as [the swiss army knife of the alt world](https://github.com/goatslacker/alt/blob/master/components/AltContainer.js). This allowed us to remove a lot of the alt.js boilerplate code and focus on writing simple, clean and maintainable JavaScript.
+We then began a refactor and splitting most of our components into data-fetching smart components and prop rendering dump components. This is where we found [AltContainer](http://alt.js.org/docs/components/altContainer/) extremely useful, a higher-order container component but also known as [the swiss army knife of the alt world](https://github.com/goatslacker/alt/blob/master/components/AltContainer.js). This allowed us to remove a lot of the alt.js boilerplate code and focus on writing simple, clean, and maintainable JavaScript.
 
 ## Universal JS can be painful
 
-Due to the server side rendering aspect of Universal JS this can lead to a few headaches along the way, one of our biggest was when we wanted to use external libraries, for example using the React Highcharts package [we had issues](https://github.com/kirjs/react-highcharts/issues/12) with getting this package to work in a server side application. Although this isn't a reason not to build Universal JS apps its something to take on board, and be prepared for the odd hacky fix.
+Due to the server side rendering aspect of Universal JS this can lead to a few headaches along the way, one of our biggest was when we wanted to use external libraries. For example, using the React Highcharts package [we had issues](https://github.com/kirjs/react-highcharts/issues/12) with getting this package to work in a server side application. Although this isn't a reason not to build Universal JS apps, It's something to take on board and be prepared for the odd hacky fix.
 
 ## The Future
 
