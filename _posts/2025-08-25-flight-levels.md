@@ -10,29 +10,29 @@ sitemap:
 
 Most days, the real work isn't about what's on the to-do list. It's the constant shifting between details and direction, knowing when to dive deep and when to come back up for air.
 
-I used to think there was a map for this. Management books lay out neat layers: strategy at the top, execution at the bottom, and a tidy flow from one to the other. In practice, it never feels that clean. Some days, I'll start out trying to sketch out a plan big picture, "how should we architect the new service?" Within an hour I'm chasing down a subtle production bug, or untangling a hand-off nobody noticed until it jammed up delivery.
+I used to think there was a map for this. Management books lay out neat layers: strategy at the top, execution at the bottom, tidy flow from one to the other. Reality is messier. Some days I'll start sketching architecture for a new service. Within an hour I'm chasing a production bug or untangling a hand-off that's blocking delivery.
 
-If I'm honest, it's rarely a clean climb up the ladder. Most weeks, it feels like running up a down escalator. I get a few steps up, maybe set a direction, only to get pulled back by the gravity of the day-to-day: a fire, an unexpected dependency, some invisible bottleneck you only notice when the work stops moving.
+It's rarely a clean climb. Most weeks feel like running up a down escalator. Get a few steps up, set a direction, then gravity pulls you back: a fire, an unexpected dependency, some invisible bottleneck that only shows when work stops moving.
 
-This is the real work of engineering leadership: learning when to stay close or when to step back, and how to keep one eye on the system as a whole while the day-to-day tries to drag you under. Most days, it's about building habits that help you resist gravity, even as it keeps pulling you toward the nearest problem.
+This is engineering leadership: knowing when to stay close, when to step back, how to watch the system while the day-to-day pulls you under. It's about building habits that resist gravity's pull toward the nearest problem.
 
-This is where the *Flight Levels* framework has been especially useful as a mental model. [Flight Levels: Leading Organizations with Business Agility](https://www.flightlevels.io/book) by Klaus Leopold, describes three core "flight levels" in an organisation:
+The *Flight Levels* framework helps here. Klaus Leopold's [Flight Levels: Leading Organizations with Business Agility](https://www.flightlevels.io/book) describes three organisational altitudes:
 
 > "It's not about getting everyone to 30,000 feet. It's about knowing which altitude you're at, why you're there, and when it's time to change."
 
-At the **first flight level**, you're inside the team, working on stories, fixing bugs, running stand-ups. It's the realm of the day-to-day, where things are concrete and feedback loops are tight. It's deeply satisfying because you can see and touch the work.
+**Flight Level One**: Inside the team. Stories, bugs, stand-ups. The day-to-day where things are concrete, feedback loops tight. Deeply satisfying because you can see and touch the work.
 
-The **second flight level** zooms out: now you're looking across teams, surfacing dependencies, bottlenecks, and hand-offs. The game shifts from "how do we ship this feature?" to "how do we keep the whole machine running smoothly?"
+**Flight Level Two**: Across teams. Dependencies, bottlenecks, hand-offs. The question shifts from "how do we ship this feature?" to "how do we keep the machine running?"
 
-**Flight Level Three** is the true balcony view: systems thinking, business outcomes, portfolio management. It's no longer about work-in-progress tickets or Jira boards. It's about how the whole organisation adapts to change, allocates resources, and stays focused on outcomes.
+**Flight Level Three**: The balcony view. Systems thinking, business outcomes, portfolio management. Not about tickets or boards anymore. It's how the organisation adapts, allocates resources, stays focused on outcomes.
 
 ## Gravity Always Wins
 
-The challenge, at least for me, is that gravity is always pulling you back to level one. Every fire, incident, or awkward hand-off tempts you to jump in and fix things directly. As an engineer, this feels like helping. As a leader, it's often the opposite: you end up treating symptoms, not causes. If you spend all your energy in the weeds, nobody's looking at the system as a whole.
+Gravity always pulls you back to level one. Every fire, incident, or broken hand-off tempts you to jump in and fix things directly. As an engineer, this feels like helping. As a leader, it's often the opposite: treating symptoms, not causes. Stay in the weeds and nobody watches the system.
 
-I've found the only way to get better at operating at the right flight level is to build habits that *force* you to look up. These might be as simple as carving out time each week to review key delivery metrics like cycle time, cross-team blockers, or where work is piling up. Even just asking "are we working on the right thing?" before diving into the next fire.
+The only way to operate at the right level is building habits that force you to look up. Weekly reviews of cycle time, cross-team blockers, work pileups. Even just asking "are we working on the right thing?" before diving into the next fire.
 
-But the real unlocking is reframing the job: leadership isn't just about helping your team *do* the work, it's about working *on* the system that produces the work. That means:
+The real shift: leadership isn't helping your team *do* the work. It's working *on* the system that produces the work:
 
 - **Stepping back regularly:** Use rituals (weekly reviews, retros) to force altitude changes.
 - **[Surfacing hidden constraints](/optimising-teams-with-theory-of-constraints):** Map dependencies, bottlenecks, and work hand-offs.
@@ -41,8 +41,8 @@ But the real unlocking is reframing the job: leadership isn't just about helping
 
 ## Flight Levels as a Practice
 
-I'm still not perfect at this, but I'm trying to get more deliberate about where I spend my time and which flight level I'm operating at.
+I'm getting more deliberate about where I spend time, which altitude I'm operating at.
 
-*Flight Levels* is a practical reminder: you don't need to stay at 30,000 feet all day. You should know why you're there, what needs your attention, and when it's time to come back down.
+*Flight Levels* reminds us: you don't need to stay at 30,000 feet. Just know why you're there, what needs attention, when to descend.
 
-The real trick, and maybe the hardest part of leadership, is making sure you're working on the team, not just in it.
+The hardest part of leadership: working on the team, not just in it.

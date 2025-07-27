@@ -9,15 +9,15 @@ sitemap:
     lastmod: "2025-07-22 T19:00:00+01:00"
 ---
 
-I first came across this concept in Richard Feldman's talk _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_. It completely changed the way I think about designing software. Since then, it's shaped how I write code, and honestly, I think it's one of the most underrated ideas in the industry.
+I first encountered this concept in Richard Feldman's talk _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_. It changed how I design software. Years later, I still think it's one of the most underrated ideas in our industry.
 
-The idea of making impossible states impossible in simple terms means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time.
+Making impossible states impossible means designing your types and APIs so invalid program states can't exist. The compiler enforces correctness at build time.
 
 Why does this matter?
 
-- You don't need to write checks or handle impossible cases, they're unrepresentable and thus eliminated from your code.
-- Fewer bug fixes, fewer tests, less code, the compiler does the heavy lifting.
-- Your code becomes clearer and more maintainable because you and your team can instantly see "only these states are allowed here".
+- No checks for impossible cases. They're unrepresentable
+- Fewer bugs, tests, and code. The compiler does the work
+- Clear intent. Anyone can see which states are allowed
 
 An example without thinking about impossible states:
 
@@ -71,14 +71,14 @@ function render(session: UserSession) {
 
 ## The benefits of designing with types
 
-The real shift comes when you stop treating these "impossible" cases as a runtime problem and start treating them as a design problem. Rather than constantly adding defensive if-else checks, hoping no one will ever pass in `{ isLoggedIn: false, username: 'alice' }` you push the burden up front, into your types. The compiler is now your safety net, not your tests or code reviews.
+The shift comes when you stop treating impossible cases as runtime problems. Make them design problems. Instead of defensive checks hoping no one passes `{ isLoggedIn: false, username: 'alice' }`, encode the rules in your types. The compiler becomes your safety net.
 
-It's a small, but powerful mental shift: suddenly, a whole class of bugs just can't exist. You don't even think about them. Reviewers don't need to ask, "What happens if this function gets a loggedOut user with a username?" The code simply can't represent that situation. Fewer mental branches. Fewer "should this be possible?" debates.
+It's a small but powerful shift. Whole categories of bugs vanish. Reviewers stop asking, "What if a logged-out user has a username?" The code can't represent it. Fewer mental branches. No "should this be possible?" debates.
 
 The more you lean into this approach, the more you see the benefit compound:
 
-- **Onboarding new engineers**: The shape of the types tells the story. What can happen? What's forbidden? You don't need tribal knowledge or a wall of comments.
-- **Refactoring with confidence**: Change a type, and the compiler points out everywhere you need to update. You can evolve your codebase without fear of missing some edge-case.
-- **Testing for what matters**: You stop wasting time testing "should never happen" scenarios and focus on the actual business logic
+- **Onboarding**: Types tell the story. What's allowed? What's forbidden? No tribal knowledge needed
+- **Refactoring**: Change a type, the compiler shows every affected spot. Evolve without fear
+- **Testing**: Stop testing "should never happen" scenarios. Focus on actual business logic
 
-Most bugs aren't random or wild-edge-cases, they're "shouldn't be possible, but the code allowed it". Making impossible states impossible is the quiet work that prevents entire categories of bugs from existing in the first place. The compiler won't thank you, but your future self (and team) will.
+Most bugs aren't edge cases. They're "shouldn't be possible, but the code allowed it." Making impossible states impossible prevents entire bug categories from existing. The compiler won't thank you, but your future self will.

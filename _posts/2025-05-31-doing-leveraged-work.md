@@ -13,7 +13,7 @@ For Staff and Principal Engineers, the goal is to identify and deliver leveraged
 
 ![Two-axis graph plotting impact and longevity in relation to Leveraged work](/assets/images/leveraged-work-chart.png)
 
-Picture leverage as a simple chart: time on the x-axis, impact on the y. The real win is top right contributions that endure and change the trajectory. Not just a quick boost or flashy result, but work that compounds. It becomes part of the foundation others build on, shifts the baseline, and raises the bar for everything that follows.
+Picture leverage as a chart: time on the x-axis, impact on the y. The goal is top-right contributions that endure and change trajectory. Not quick boosts or flashy results, but work that compounds. Work that becomes foundation, shifts baselines, raises bars.
 
 | If it...                                                  | ...then it probably belongs in that sweet-spot |
 |-----------------------------------------------------------|------------------------------------------------|
@@ -22,16 +22,16 @@ Picture leverage as a simple chart: time on the x-axis, impact on the y. The rea
 | lets teams build *on* it rather than *around* it          | clear Enablement                               |
 | leaves a template, script, or doc that's easy to copy     | strong Teachability                            |
 
-The art of leveraged work is finding where the opportunities lie, the majority of the time these can be found through conversations with team members and the wider business. 
+Finding leveraged work is mostly detective work. Talk to teams, read between the lines, spot the patterns. 
 
-- **Pain-point mapping**: Sit with on-call, read incident reviews, notice recurring toil
-- **Road-map stress-tests**: Ask, "What single failure would torpedo next year's plan?" and front-load the fix
-- **Glue-work synthesis**: Connect patterns observed across teams and turn them into shared libraries or services
+- **Pain-point mapping**: Sit with on-call, read incident reviews, spot recurring toil
+- **Roadmap stress-tests**: "What single failure would torpedo next year?" Fix that first
+- **Glue-work synthesis**: Connect patterns across teams into shared libraries or services
 
 Below are some concrete examples of leveraged work:
 
-- **Feature-flag platform**: Internal service + SDKs for fast, reversible releases
-- **Incident-retrospective programme**: A lightweight 5-Whys process that looks at systemic fixes
-- **Service-bootstrap template**: A generator that spins up a production-ready app in minutes
+- **Feature-flag platform**: Internal service and SDKs for fast, reversible releases
+- **Incident retrospective programme**: Lightweight 5-Whys process targeting systemic fixes
+- **Service bootstrap template**: Generator that creates production-ready apps in minutes
 
-Leveraged work is how Staff & Principal engineers multiply impact as it's durable, scales beyond the individual, and spreads by design. 
+Leveraged work is how Staff and Principal engineers multiply impact as it's durable, scales beyond the individual, and spreads by design. 
