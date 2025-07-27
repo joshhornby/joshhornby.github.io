@@ -1,5 +1,5 @@
 ---
-title: Liability Mapping and Tech Debt
+title: Liability Mapping your Tech Debt
 date: 2025-08-18 08:00:00
 description: "How Liability Mapping can be used to improve conversations around tech debt, help teams prioritise which areas they should start paying back and when. The aim is to cut through the noise of 'debt', 'toil' and everything in between, surfacing what actually matters so teams can spend less time debating and more time making clear progress."
 tags: [management, architecture]
@@ -13,11 +13,11 @@ I've [written about tech debt and how often it's used as a catch-all term for a 
 
 I've also covered [engineering toil](/engineering-toil) that quiet, repetitive work that slows teams down and chips away at morale, yet rarely gets counted in any official budget or roadmap.
 
-This post introduces the concept of liability mapping, how it can be used to improve conversations around tech debt, help teams prioritise which areas they should start paying back and when. The aim is to cut through the noise of "debt", "toil" and everything in between, surfacing what actually matters so teams can spend less time debating and more time making progress.
+This post introduces liability mapping: a framework for improving tech debt conversations and helping teams prioritise what to fix and when. Instead of endless debates about "debt" and "toil", liability mapping surfaces what actually matters.
 
 ## What is liability mapping?
 
-Liability mapping breaks down the messy sprawl of "tech debt" into five categories. The goal is to surface what really matters, separate minor annoyances from large risks, whilst giving each a clear owner and action. Here's how I think about it:
+Liability mapping breaks "tech debt" into five categories, separating minor annoyances from real risks. Each category gets a clear owner and action:
 
 | Category      | Definition                                                                                     | Primary signal                                           | Typical owner action                                       |
 |---------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------|------------------------------------------------------------|
@@ -27,45 +27,45 @@ Liability mapping breaks down the messy sprawl of "tech debt" into five categori
 | **Relic**     | Dormant code, unused infra, forgotten toggles that clutter cognition.                          | Zero-call endpoints, abandoned feature flags.            | Archive or delete quarterly; measure LOC shrink.           |
 | **Bet**       | Conscious shortcut taken for speed-to-market with a written expiry date.                       | TODO markers with "sunset-by" field; prototype branches. | Review in *risk council* before expiry; promote or retire. |
 
-Because each one points to a different kind of pain: customer harm (liability, hazard), team speed (drag), mental clutter (relic), and deliberate, short-term risk (bet). Lumping them all together as "tech debt" means you either treat everything as equally urgent, or worse, ignore the actual dangerous bits until they bite you.
+Each category represents different pain: customer harm (liability, hazard), team velocity (drag), cognitive load (relic), and calculated risk (bet). Treating them all as "tech debt" means everything becomes equally urgent or equally ignored.
 
 Liability mapping gives you a way to break that trend. Once you see which problems fall into which bucket, it's much easier to have conversations about what to fix now, what to plan for, and what you can safely ignore.
 
 ## Creating your first liability map
 
-The most important thing is to start with real, observable evidence rather than gut feel or personal gripes. That means pulling from sources that tell the story of your systems: recent security scan reports, incident reviews, system flow metrics, maybe even a dead-code analysis. The goal is to surface facts, not feelings, so everyone's working from the same page.
+Start with evidence, not opinions. Pull from security scans, incident reviews, flow metrics, dead-code analysis. You want facts that everyone can see and agree on.
 
-Once you've got your evidence, bring together a cross-functional group, engineering, product, maybe even compliance if the risks warrant it. The workshop itself should be quick, energetic, and decisive: take each item, debate its category, and tag it with one of the five liability classes. Don't get bogged down in edge cases or endless debate, argue once, decide, and move on. The classification isn't about assigning blame, it's about getting clarity. You're looking for agreement on what the thing is, not how it happened.
+Bring together engineering, product, and compliance if needed. Run a quick workshop: take each item, debate its category, assign one of the five classes. Don't overthink edge cases argue once, decide, move on. You're classifying what something is, not how it happened.
 
-After labelling, add a few triage scores. This is less about precise numbers and more about gut-level, back-of-the-envelope assessment. Ask: does this problem bite customers or the business right now, or does it have the potential to blow up later? How badly is it slowing us down? Are we sure we understand it, or is there uncertainty? The answers give you a rough sense of immediacy, potential blast radius, and how much evidence you actually have, as opposed to just vibes.
+After labelling, add rough triage scores. Ask: Does this hurt customers now? Could it explode later? How much does it slow us down? Do we actually understand it? You're gauging immediacy, blast radius, and confidence level.
 
 Now, with everything tagged and scored, it's time to make the map.
 
 ![Graph showing a liability map in grid form](/assets/images/liability-mapping-grid.png)
 
-I like to plot each item on a 3x3 grid: immediate impact on one axis, longer-term risk on the other. Colour-code by class. Instantly, certain problems will pop out, the "drag" that's actually a ticking time bomb, the relics that are harmless, the liabilities hiding in plain sight. This picture gives everyone a shared, visual sense of what really needs urgent attention and what can stay in the backlog for now.
+I like to plot items on a 3x3 grid: immediate impact versus long-term risk. Colour-code by class. Instantly, certain problems will stand out, the "drag" that's actually a ticking time bomb, the relics that are harmless, the liabilities hiding in plain sight. This picture gives everyone a shared, visual sense of what really needs urgent attention and what can stay in the backlog for now.
 
-Link the map to how you actually budget and prioritise work. Anything labelled a liability or hazard goes straight into the run-cost or operational budget those are the items that could hit you with fines, customer churn, or outages if left unchecked. Drags, relics, and bets get slotted into your change-cost or innovation work streams.
+Connect the map to how you actually budget and prioritise work. Anything labelled a liability or hazard goes into the run-cost or operational budget those are the items that could hit you with fines, customer churn, or outages if left unchecked. Drags, relics, and bets get slotted into your change-cost or innovation work streams.
 
 This translation is great when you're trying to get buy-in from finance or leadership, because it lines up technical pain with the language of business costs and value.
 
-The real trick is to treat this whole exercise as a living document, not a one-off event. The first map you make will be rough, maybe even a bit awkward, but that's fine. The point is to get started, get the categories working for you, and begin building the muscle. Over time, it'll get easier to spot liabilities, identify hazards before they escalate, and run pruning rituals on relics and bets.
+The map is a living document, not a one-time exercise. Your first attempt will be rough that's fine. Start somewhere. Over time, you'll get better at spotting liabilities early and pruning relics before they pile up.
 
 ## Getting exec buy-in
 
-Winning over execs starts with translating technical issues into their priorities; risk, money, and time. Most leadership teams don't care about "refactoring" or "debt" in the abstract. What they want to know is why they should spend actual budget on things that aren't shiny features or new revenue. That means you have to speak their language, connecting every liability to either avoided disaster, increased velocity, or long-term cost reduction.
+Executives care about risk, money, and time not "refactoring" in the abstract. They want to know why they should fund work that isn't features or revenue. Connect every liability to avoided disasters, faster delivery, or cost reduction.
 
-- Take the classic, "Why do refactoring now?" No need to get defensive. Point directly to liability-class issues and show how leaving them alone risks legal exposure or damaging headlines. It's almost always cheaper to patch the roof now than deal with a flooded office later. This isn't just about code, it's about protecting the business from preventable pain.
+- "Why refactor now?" Point to liability-class issues. Show the legal exposure or headline risk. Patching the roof is less expensive than fixing flood damage. You're protecting the business, not just cleaning code.
 
-- Next up, "Isn't this just 'nice to have'?" Here, data is your friend. Demonstrate how cutting drag led to faster shipping and measurable wins, features delivered sooner, cost per change reduced, or even churn prevented. If you can tie a technical clean-up to a quantifiable boost in throughput, suddenly it moves from "nice to have" to "making us money".
+- "Isn't this nice to have?" Show data. Cutting drag led to features shipping 30% faster. Cost per change dropped. Churn decreased. Technical clean-up that boosts throughput isn't nice to have it makes money.
 
-- And for the old "We can't pause the roadmap", the map itself is your best tool. Show how dedicating a slice of capacity (say, 15% of effort) to relic clean-up or hazard reduction compounds over time. That investment means less firefighting, more predictable launches, and a downward trend in run-cost. Most execs have seen how unchecked tech mess drags on delivery, connecting clean-up work directly to improved flow and lower cost makes it obvious you're not pausing the roadmap, you're clearing the lane for it.
+- "We can't pause the roadmap." The map shows why 15% capacity on clean-up compounds over time: less firefighting, predictable launches, declining run-costs. You're not pausing the roadmap you're clearing the path.
 
 In the end, liability mapping gives you a story that's both credible and actionable. It lets you meet execs where they are, with real numbers and outcomes, instead of hand-waving about invisible debt. The conversation shifts from asking for resources to a mutual understanding: fix the right things, at the right time, and the business moves faster and safer.
 
 ## Creating an example map
 
-Picture an e-commerce business, call them "SportingGoods", who specialise in selling sports equipment online. Their payments system is a key part of their business, but over time, layers of shortcuts and old infrastructure have built up, making it increasingly brittle. Engineers regularly voice frustration about the difficulty of shipping changes, and product teams worry about how outages and how this will impact revenue.
+Consider SportingGoods, an e-commerce company. Their payment system critical to the business has accumulated shortcuts and legacy infrastructure. Engineers struggle to ship changes. Product worries about outages hitting revenue.
 
 | Class         | Example                                                                                                                   | Action                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -75,16 +75,16 @@ Picture an e-commerce business, call them "SportingGoods", who specialise in sel
 | **Relic**     | Codebase still contains endpoints for a retired payment partner (SportPay), unused for nine months, but never cleaned up. | Identify, archive, and safely delete old endpoints.  |
 | **Bet**       | Fast-tracked "Buy Now, Pay Later" feature shipped behind a toggle, with no refund logic, review before next quarter.      | Reassess, build missing logic or sunset as needed.   |
 
-A one-page liability map like this turns back-room technical complaints into a crisp, shared plan, making the next actions, and their urgency, obvious to both teams and leadership.
+This one-page map turns technical complaints into a shared plan. Next actions and urgency become obvious to everyone.
 
 ## Keeping the map up to date
 
-Once you've got liability mapping up and running, the next challenge is making sure it stays sharp. Any system like this, left unchecked, starts to drift, labels blur, maps go stale, and before long, people slip back into calling everything "debt". The real work is keeping your categories clear and the map relevant.
+Once you've got liability mapping up and running, the next challenge is making sure it stays up to date. Any system like this, left unchecked, starts to drift, labels blur, maps go stale, and before long, people slip back into calling everything "debt". The real work is keeping your categories clear and the map relevant.
 
-- Start by being ruthless about labels. Every item gets a single class, the one that demands the earliest safe fix. If something feels like it straddles drag and hazard, push the team to pick. The discipline is worth it: forcing a decision means you always know what needs doing first, instead of hedging with dual priorities that never get tackled.
+- Be ruthless with labels. One item, one class whichever needs fixing first. If something straddles drag and hazard, pick one. This discipline ensures you know what to tackle first, not hedge with dual priorities.
 
-- Second, treat every label as perishable. Nothing should linger on your map indefinitely. Set a policy: every entry expires after twelve months unless it's actively reviewed and renewed. This keeps the map a reflection of current risk, not a dusty archive of old fears and half-forgotten tickets.
+- Labels expire. Set a twelve-month limit entries disappear unless actively renewed. This keeps the map current, not an archive of old worries.
 
-- Finally, make the map a living artefact. Store it right alongside your architecture decision records, in the same repo your engineers already use. This transparency acts as a vaccine against hand-wavy "debt" arguments and makes the whole process less about finger-pointing and more about building shared understanding.
+- Store the map with your architecture decision records in the repo engineers use daily. Transparency prevents opinion based debt arguments and builds shared understanding.
 
 Keeping the map honest isn't about more process, it's about small, consistent acts of clarity: pick a label, expire old entries, and keep the map where everyone can see it. That's how you ensure the liability map keeps earning its place as a real decision tool, not just another forgotten spreadsheet.
