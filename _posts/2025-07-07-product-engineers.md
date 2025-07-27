@@ -2,7 +2,7 @@
 title: Product Engineers
 date: 2025-07-07 08:00:00
 description: "Product Engineers don't measure success by tickets closed or code merged they're focused on outcomes. This mindset is the real multiplier for teams that consistently deliver customer value."
-tags: [software-engineering, culture]
+tags: [software-engineering, culture, product]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
