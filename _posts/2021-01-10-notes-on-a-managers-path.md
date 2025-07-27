@@ -21,7 +21,7 @@ The shift from individual contributor to leader requires a fundamental reorienta
 
 ## "One-on-one meetings with your manager are an essential feature of a good working relationship."
 
-Fournier makes the case for one-on-ones early and often—and she's right to do so.
+Fournier makes the case for one-on-ones early and often, and she's right to do so.
 
 She identifies two core purposes:
 
