@@ -8,29 +8,52 @@ sitemap:
     lastmod: "2025-08-07 T19:00:00+01:00"
 ---
 
-4. Decouple “pattern platform” from “model provider”
-   The ecosystem is already fragmenting into:
+Last week, our team spent three days migrating to GPT-4o because the benchmarks looked great. This week, Claude 3.5 dropped and suddenly we're behind again. Meanwhile, our actual AI features haven't shipped because we're too busy chasing model updates.
 
-Model providers (OpenAI, Anthropic, Mistral)
+Sound familiar? Here's what most companies miss: the model is becoming a commodity. The real value is in the platform layer that sits between your code and whichever model is flavour of the month.
 
-Pattern platforms (agents, RAG stacks, eval pipelines)
+## The Pattern Platform vs Model Provider Split
 
-Pick a platform that speaks many models and patterns so devs can experiment without commercial renegotiation every six months. That preserves leverage and shields DX from lock-in.
+The AI ecosystem is fragmenting into distinct layers:
 
-A great AI platform, from a DX standpoint, is the one whose absence developers would complain about in six months because it quietly removed toil without forcing them to learn a new workflow. Integration cost, reversibility, and measurable impact on flow trump leaderboard wins every time.
+**Model providers** (OpenAI, Anthropic, Mistral) compete on benchmarks, speed, and cost. They'll keep leapfrogging each other every few months. That's their job.
 
-Every company is looking to pick an AI platform right now. You get endless demo calls, benchmarks, and new "best models" every few months. It's easy to get caught up comparing all the latest scores.
+**Pattern platforms** handle the actual work: agent orchestration, RAG pipelines, evaluation frameworks, prompt management. This is where your team spends their time.
 
-But the "best" model is always temporary. What actually matters is how well the platform fits into the way your team already works. That's what sticks.
+Pick a platform that speaks to many models. When Anthropic releases something new, you want a config change, not a migration project. When your contracts team negotiates better rates with a different provider, engineering shouldn't need to rewrite anything.
 
-We should've learned this from the SaaS years. Back then, we kept adding new tools for every problem, and before you knew it, you were drowning in logins, dashboards, and clunky hand-offs between systems. Each tool on its own made sense, but stitching it all together turned into a real challenge.
+A startup I advised learned this the hard way. They built their entire RAG pipeline directly against OpenAI's APIs. When costs exploded and they needed to switch to Mistral, it took two engineers six weeks to migrate. Their competitor used LangChain—they switched providers in an afternoon.
 
-The same pattern is playing out now with AI, only faster and with higher stakes. The leading models are changing by the month, sometimes the week. If you make "the best" your north star, you'll spend more time chasing upgrades and rebuilding workflows than shipping actual value. The tools will keep changing; the work of making them fit will not.
+## Developer Experience Trumps Benchmarks
 
-What makes the difference isn't who's ahead in the benchmarks this quarter. It's whether your chosen AI platform actually fits the way your team builds, reviews, and ships software today. Can your engineers work where they're comfortable? Will your security and data teams get what they need without endless new approval cycles? Does the platform respect the boundaries and workflows that already exist, or does it expect your team to contort around the latest features?
+Here's how to spot a platform worth adopting: developers stop noticing it's there. The best AI infrastructure removes friction without adding ceremony.
 
-Integration, not innovation, is where the rubber meets the road. When AI slots into your existing stack, your team can stay focused on problems that matter, instead of learning yet another workflow or dealing with more tool sprawl. It becomes part of the furniture, there when you need it, invisible when you don't. That's the measure of real adoption.
+I watched a team evaluate three AI platforms. They picked the one with the "worst" model performance. Why? It dropped into their existing GitHub workflow. No new dashboards to learn, no separate deployment pipeline, no special review process. Engineers could experiment with prompts in their IDE and push to production like any other code change.
 
-It's easy to get distracted by the pace of change, and all the hype around the latest release. But the only thing that matters is what sticks after the hype fades: how much does this platform make your team's life easier? How much did it let you keep working the way you already know works? Because everything else is temporary.
+Six months later, they'd shipped more AI features than teams using "better" models. The platform that integrated beat the platform that impressed.
 
-So if you're picking an AI platform, start with your team's reality, not someone else's roadmap. Find the thing that fits quietly and naturally. The best AI is the one that feels invisible, not the one that wins this month's leaderboard.
+## What Actually Matters
+
+Forget the leaderboard. Ask these questions instead:
+
+**Integration cost**: Can your team use their existing tools? A platform that requires new workflows will gather dust, regardless of model quality.
+
+**Reversibility**: When you inevitably need to switch providers, what breaks? Good platforms make models pluggable. Bad ones make them permanent.
+
+**Measurable impact**: Track developer productivity, not model benchmarks. How many AI features shipped this quarter? How much time did engineers spend on integration?
+
+At cinch, we picked a platform that wasn't winning any benchmarks. But it integrated with our existing observability stack, respected our security boundaries, and let developers work in their preferred environment. Result: 3x more experiments, 70% faster iteration cycles.
+
+## The Six-Month Test
+
+A great AI platform passes this test: if you removed it in six months, would developers complain? Not because of some fancy feature, but because it quietly eliminated toil they'd forgotten about.
+
+The platforms that survive aren't the ones with the best models. They're the ones that respect how teams already work. They handle the boring stuff—retries, fallbacks, token management, prompt versioning—so developers can focus on building features.
+
+## Pick Boring, Ship Features
+
+The AI landscape will keep changing. New models, new benchmarks, new hype cycles. But your team's need for stable, integrated tooling won't change.
+
+Choose platforms that decouple patterns from providers. Value developer experience over demo impressiveness. Focus on shipping features, not chasing scores.
+
+Because in six months, today's leading model will be yesterday's news. But the platform that quietly makes your team more productive? That's the one that actually matters.

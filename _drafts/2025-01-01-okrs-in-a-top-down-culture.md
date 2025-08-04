@@ -8,46 +8,60 @@ sitemap:
     lastmod: "2025-08-07 T19:00:00+01:00"
 ---
 
-I've spent much of my career watching teams struggle with outcome measurement. This pattern repeats across our industry: teams diligently track metrics, present detailed dashboards, and run thorough quarterly reviews, yet still find themselves surprised by actual business outcomes. The problem isn't a lack of measurement – it's that we're often measuring the wrong things at the wrong time.
+Last year, I watched a product team celebrate hitting their OKR targets. They'd increased user engagement by 23%, reduced churn by 8%, and shipped twelve major features. Three months later, the business unit was restructured because revenue had tanked. Nobody saw it coming—except they should have. Every metric they tracked was a lagging indicator, telling them what had already happened instead of what was about to.
 
-In my experience, the root issue is that we've learned to celebrate the ceremony of measurement without building the mechanisms to make it meaningful. We track lagging indicators that tell us what already happened, while underinvesting in the leading indicators that could help us shape what happens next.
+The problem runs deeper than bad metrics. We've turned measurement into theatre. Teams perform the rituals—weekly dashboards, monthly reviews, quarterly retrospectives—but miss the fundamental distinction between metrics that report history and metrics that predict the future.
 
-Start with outcomes that matter. When leadership hands down a fully baked roadmap, complete with initiatives and deadlines, they've skipped the most crucial step: working backwards for meaningful business results. Instead of asking "what should we build?", the question should be "what outcomes move the business forward?"
+Here's what happens in most top-down organisations: leadership decides what to build, sets deadlines, then asks teams to find metrics that justify the plan. It's backwards. The first question should be "what outcome moves the business forward?" Only then do you work out what to build.
 
-When organisations only superficially adopt outcome measurement, it shows up in how they track progress. They might talk about "outcomes" and "impact", but they're still focused on lagging indicators - metrics that tell you what already happened, like revenue or user growth. What's missing are the leading indicators - the early signals that predict whether you're on track to hit those business outcomes. Teams need both to make informed decisions.
+Watch how teams discuss metrics in practice. They'll show you last quarter's revenue (lagging), this month's user growth (lagging), yesterday's engagement scores (lagging). Where are the forward-looking signals? Where's the metric that tells you in week 2 whether you'll hit your Q4 target? Most teams can't answer because they never built that predictive muscle.
 
-The underlying reason this feels hollow comes down to incentives. If the organisation still values delivering initiatives over moving the business, measuring outcomes quickly becomes just another ritual, a layer of process that leaves the underlying priorities untouched.
+This happens because incentives trump process every time. If bonuses depend on shipping features, not business outcomes, then outcome measurement becomes another box to tick. The metrics exist, but nobody acts on them.
 
-It's easy for measurement to become disconnected from value creation. Teams track metrics that matter to leadership without understanding how those numbers connect to customer and business value. The key is identifying clear chains of cause and effect: which leading indicators predict the lagging outcomes we care about? What early signals tell us we're on the right path before the quarterly numbers come in?
+I once worked with a team tracking 47 different metrics. When I asked which ones predicted revenue, they couldn't tell me. They'd never tested the relationships. They just tracked what leadership asked for. Finding real leading indicators requires understanding causality: if X moves today, Y will move next month. Most teams never do this analysis.
 
-This is where process reality diverges from process intent. The lived process is always the one people experience day to day, not what's written in the handbook. If the unspoken rule is "just say yes to the boss", it won't matter how you phrase the outcomes, they'll serve as another compliance checklist rather than an engine for a healthy challenge.
+The gap between process and practice is where good intentions die. Your wiki might say "challenge assumptions with data", but if the unspoken rule is "don't question the roadmap", then outcomes become another compliance exercise. The real process is what people do when nobody's watching.
 
-But there is power in working backwards from outcomes, even in a top-down environment. Starting with the desired result forces crucial conversations about causality. Teams must answer: What does success look like for the business? Which metrics actually predict that success? What leading indicators will tell us early if we're on track? These questions surface assumptions and trade-offs that might otherwise remain hidden.
+Even in command-and-control cultures, working backwards from outcomes creates leverage. When you start with "we need to increase retention by 15%" instead of "we need to build feature X", you force different conversations. Suddenly teams ask: Will this feature actually move retention? What early signal tells us if we're on track? These questions expose hidden assumptions.
 
-This isn't a cure-all, but it does create leverage. A measurable outcome gives teams a reason to interrogate the plan, even when the work is dictated: is this project actually going to move the metric, or should we be prioritising something else? The discussion becomes less about how many things get shipped and more about whether anything actually changes.
+A clear outcome metric gives teams permission to push back. "This feature won't move our retention target" carries more weight than "I don't think we should build this." The conversation shifts from activity to impact.
 
-Friction here is a healthy sign. When outcome measures provoke debate, disagreement, or even discomfort, it means the process is surfacing genuine trade-offs, not just generating reporting noise. The system is adjusting. This tension should be encouraged, not as conflict for its own sake, but as a signal that the team is engaged in real prioritisation, not passive delivery.
+Good metrics create productive friction. If your outcome measures don't provoke debate, they're probably not measuring anything meaningful. The discomfort means you're surfacing real trade-offs, not just tracking vanity metrics.
 
-For any of this to work, teams need actual slack, room to think critically and challenge the status quo. If every quarter is a scramble to keep up, nobody's going to step back and question the plan. Measurement is just extra pressure, not a platform for smarter work.
+None of this works if teams are running at 120% capacity. Finding leading indicators takes time. Testing causality takes experimentation. If you're always scrambling to deliver, measurement becomes another burden instead of a tool for better decisions.
 
-None of these shifts overnight. If you're working in a command-and-control org, you're not going to suddenly get a blank slate. But you can start using measurement to force better conversations:
+You won't transform a top-down culture overnight. But you can use measurement to shift conversations:
 
 - Start with lagging indicators that directly measure business success.
 - Identify the leading indicators that predict those outcomes.
 - Map every initiative to both leading and lagging measures.
 - Focus daily and weekly discussions on leading indicators.
 - Use monthly or quarterly reviews to validate if leading indicators actually predicted outcomes.
-- Celebrate teams that improve the predictive power of their metrics, not just those who hit their numbers.
+- Reward teams that find better leading indicators, not just those who hit targets.
 
 ## Real-world Examples of Outcome Measurement
 
-I find it helpful to look at how different organisations approach outcome measurement, as it often reveals how context shapes what works. Here are two scenarios I've encountered:
+Here are two contrasting examples from my experience:
 
-TODO ADD EXAMPLES HERE
+**Example 1: The Dashboard Nobody Looked At**
+
+At a fintech startup, the CEO mandated building a "comprehensive analytics dashboard" for enterprise clients. The team dutifully tracked adoption metrics: 85% of clients had activated the feature, average session time was 12 minutes. Lagging indicators looked great.
+
+Six months later, during renewal discussions, we discovered the truth. Clients logged in once during onboarding, poked around, then never returned. The feature they actually wanted was automated reporting delivered to their inbox. We'd built the wrong thing, but our metrics hid the failure.
+
+The leading indicator we should have tracked: repeat usage within 30 days. That would have shown the problem in week 5, not month 6.
+
+**Example 2: The Metric That Predicted Churn**
+
+At cinch, our product team noticed customers who didn't complete their first vehicle inspection within 7 days had 3x higher churn rates. This became our north star leading indicator. Every feature was evaluated on whether it moved this metric.
+
+When leadership pushed for a premium subscription tier, we ran the numbers. Premium features wouldn't help customers complete inspections faster. We proposed investing in onboarding improvements instead. The data was so clear that even our command-and-control leadership agreed.
+
+Result: 40% reduction in early churn, worth £2.1M in annual revenue.
 
 ## Framework for Metric Selection
 
-When evaluating potential metrics, I've found it useful to work through these questions:
+When choosing metrics, work through these questions:
 
 1. **Causality Check**
 
@@ -67,28 +81,28 @@ When evaluating potential metrics, I've found it useful to work through these qu
 - What's the cost of collecting and processing the data?
 - How quickly can you detect significant changes?
 
-For example, at cinch we initially tracked "number of support tickets" as a leading indicator of customer satisfaction. This failed the causality check – fewer tickets sometimes meant customers were stuck but not asking for help. We shifted to "time to resolution" combined with "successful self-service rate", which proved more predictive of renewal rates.
+At cinch, we tracked "support ticket volume" as a proxy for customer satisfaction. Then ticket numbers dropped 30% in a month. Success? No—customers had given up asking for help. We switched to tracking "time to first resolution" and "self-service success rate". These actually predicted renewal rates.
 
 ## When to Adjust Your Metrics
 
-My experience is that organisations often hold onto metrics too long rather than not long enough. Here are signs it's time to reevaluate:
+Most organisations cling to metrics long after they've stopped being useful. Time to change when:
 
-1. **Leading indicators stop predicting outcomes**This often happens when:
+1. **Your leading indicators stop predicting outcomes**
 
 - Your product or user base has evolved significantly
 - Market conditions have changed fundamentally
 - You've optimised the metric to the point of diminishing returns
 
-2. **Teams are optimising for measurement instead of outcomes**Watch for:
+2. **Teams game the metrics instead of solving problems**
 
 - Solutions designed around the metric rather than the problem
 - Declining secondary metrics that weren't being tracked
 - Teams feel constrained by metrics rather than guided by them
 
-3. **Business priorities have shifted**Consider adjusting when:
+3. **The business has moved on but metrics haven't**
 
 - New strategic initiatives require different success criteria
 - Competitive landscape changes demand new focus areas
-- Organization has matured past current metrics
+- Your metrics measure problems you've already solved
 
-The point isn't that tracking outcomes will fix a top-down culture. But it can make the gap between activity and impact more visible. If you treat measurement as a lever, not a box-ticking exercise, it can help shift the conversation from "just do it" to "what's actually worth doing?" That's not compliance, it's the foundation of a healthier, more outcome-driven way of working.
+Outcome measurement won't fix a broken culture. But it makes the dysfunction visible. When everyone can see that Feature X didn't move the needle, it's harder to pretend activity equals progress. Use metrics as a wedge to open conversations about what actually matters. That's how you start shifting from "ship it because the boss said so" to "ship it because it works."

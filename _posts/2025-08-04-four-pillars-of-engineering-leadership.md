@@ -7,6 +7,7 @@ sitemap:
   priority: 0.7
   changefreq: 'monthly'
   lastmod: "2025-08-04 T19:00:00+01:00"
+published: false
 ---
 
 A few years ago a previous manager Paul Ingham laid out what he called the four pillars of engineering leadership. They remind me that leadership isn't about hierarchy or authority, it's about how you shape and connect the parts that make a team strong. Each pillar builds on the last.
