@@ -13,7 +13,7 @@ I've [written about tech debt and how often it's used as a catch-all term for a 
 
 I've also covered [engineering toil](/engineering-toil) that quiet, repetitive work that slows teams down and chips away at morale, yet rarely gets counted in any official budget or roadmap.
 
-This post introduces liability mapping: a framework for improving tech debt conversations and helping teams prioritise what to fix and when. Instead of endless debates about "debt" and "toil", liability mapping surfaces what actually matters.
+This post introduces liability mapping: a framework for improving tech debt conversations and helping teams prioritise what to fix and when. Instead of endless debates about "debt" and "toil", you can focus on what actually needs attention.
 
 ## What is liability mapping?
 
@@ -27,9 +27,9 @@ Liability mapping breaks "tech debt" into five categories, separating minor anno
 | **Relic**     | Dormant code, unused infra, forgotten toggles that clutter cognition.                          | Zero-call endpoints, abandoned feature flags.            | Archive or delete quarterly; measure LOC shrink.           |
 | **Bet**       | Conscious shortcut taken for speed-to-market with a written expiry date.                       | TODO markers with "sunset-by" field; prototype branches. | Review in *risk council* before expiry; promote or retire. |
 
-Each category represents different pain: customer harm (liability, hazard), team velocity (drag), cognitive load (relic), and calculated risk (bet). Treating them all as "tech debt" means everything becomes equally urgent or equally ignored.
+Each category represents different pain: customer harm (liability, hazard), team velocity (drag), cognitive load (relic), and calculated risk (bet). Call them all "tech debt" and everything becomes equally urgent or equally ignored.
 
-Liability mapping gives you a way to break that trend. Once you see which problems fall into which bucket, it's much easier to have conversations about what to fix now, what to plan for, and what you can safely ignore.
+Once you see which problems fall into which bucket, conversations about what to fix now, what to plan for, and what you can safely ignore become much clearer.
 
 ## Creating your first liability map
 
@@ -47,7 +47,7 @@ I like to plot items on a 3x3 grid: immediate impact versus long-term risk. Colo
 
 Connect the map to how you actually budget and prioritise work. Anything labelled a liability or hazard goes into the run-cost or operational budget those are the items that could hit you with fines, customer churn, or outages if left unchecked. Drags, relics, and bets get slotted into your change-cost or innovation work streams.
 
-This translation is great when you're trying to get buy-in from finance or leadership, because it lines up technical pain with the language of business costs and value.
+This translation helps when you're trying to get buy-in from finance or leadership, because it connects technical pain to business costs and value.
 
 The map is a living document, not a one-time exercise. Your first attempt will be rough that's fine. Start somewhere. Over time, you'll get better at spotting liabilities early and pruning relics before they pile up.
 
@@ -61,7 +61,7 @@ Executives care about risk, money, and time not "refactoring" in the abstract. T
 
 - "We can't pause the roadmap." The map shows why 15% capacity on clean-up compounds over time: less firefighting, predictable launches, declining run-costs. You're not pausing the roadmap you're clearing the path.
 
-In the end, liability mapping gives you a story that's both credible and actionable. It lets you meet execs where they are, with real numbers and outcomes, instead of hand-waving about invisible debt. The conversation shifts from asking for resources to a mutual understanding: fix the right things, at the right time, and the business moves faster and safer.
+Liability mapping gives you a credible, actionable story. You can meet execs where they are, with real numbers and outcomes, instead of hand-waving about invisible debt. The conversation shifts from begging for resources to shared understanding: fix the right things, at the right time, and the business moves faster and safer.
 
 ## Creating an example map
 
@@ -75,7 +75,7 @@ Consider SportingGoods, an e-commerce company. Their payment system critical to 
 | **Relic**     | Codebase still contains endpoints for a retired payment partner (SportPay), unused for nine months, but never cleaned up. | Identify, archive, and safely delete old endpoints.  |
 | **Bet**       | Fast-tracked "Buy Now, Pay Later" feature shipped behind a toggle, with no refund logic, review before next quarter.      | Reassess, build missing logic or sunset as needed.   |
 
-This one-page map turns technical complaints into a shared plan. Next actions and urgency become obvious to everyone.
+This one-page map turns technical complaints into a shared plan. What to do next and how urgent it is becomes obvious.
 
 ## Keeping the map up to date
 
@@ -87,4 +87,4 @@ Once you've got liability mapping up and running, the next challenge is making s
 
 - Store the map with your architecture decision records in the repo engineers use daily. Transparency prevents opinion based debt arguments and builds shared understanding.
 
-Keeping the map honest isn't about more process, it's about small, consistent acts of clarity: pick a label, expire old entries, and keep the map where everyone can see it. That's how you ensure the liability map keeps earning its place as a real decision tool, not just another forgotten spreadsheet.
+Keeping the map honest isn't about more process, it's about small, consistent acts of clarity: pick a label, expire old entries, and keep the map where everyone can see it. This ensures the liability map stays useful, not just another forgotten spreadsheet.
