@@ -8,28 +8,27 @@ sitemap:
     lastmod: "2025-09-01T19:00:00+01:00"
 ---
 
-Most teams start out with the best intentions, ship faster, keep things simple, stay close to the customer. But as companies grow, friction creeps in. Delivery slows, hand-offs multiply, and nobody's quite sure why a feature that looked straightforward ended up stuck in the queue.
+Most teams start out with the best intentions: ship faster, keep things simple, stay close to the customer. But as companies grow, friction creeps in. Delivery slows, hand-offs multiply, and nobody's quite sure why a feature that looked straightforward ended up stuck in the queue.
 
-It's rarely about motivation or skill. More often, the real culprit is structural: the invisible web of boundaries, dependencies, and team interactions that quietly shapes how work gets done. The org chart might look logical, but the day-to-day reality is usually more tangled. If you want to make real progress, you have to see how these connections help or hinder teams from delivering end-to-end value.
+It's rarely about motivation or skill. The real culprit is structural: the invisible web of boundaries, dependencies, and team interactions that quietly shapes how work gets done. The org chart might look logical, but the day-to-day reality is usually more tangled. To make real progress, you have to see how these connections help or hinder teams from delivering end-to-end value.
 
 That's where Team Topologies comes in. Instead of adding more process, it offers a lens to spot the patterns behind delivery drag and practical ways to design teams for flow rather than friction.
 
-In this post, we'll explore how Team Topologies helps you identify and fix common structural problems that slow down delivery. We'll look at real-world examples of teams that started with good intentions but ended up stuck in bottlenecks, and how a few simple changes can get them back on track.
 
 ## Intro to Team Topologies
 
 Team Topologies is a framework for structuring teams to optimise for flow, fast delivery, and sustainable pace. At the heart of it are four team types:
 
-- Stream-aligned (directly delivering customer value),
+- Stream-aligned (directly delivering customer value)
 - Enabling (helping others build capability)
 - Complicated Subsystem (deep specialists), 
 - Platform (internal product teams)
 
-Along with three modes of interaction: collaboration, X-as-a-Service, and facilitation.
+Three modes of interaction: collaboration, X-as-a-Service, and facilitation.
 
 ![Graph showing a liability map in grid form](/assets/images/team-topologies-teams-models.png)
 
-The big idea is simple: the way you structure teams and define how they interact has more impact on delivery than almost any single process or tool. Bottlenecks aren't accidents; they're examples of how work moves (or doesn't) across boundaries. Healthy teams have clear ownership, minimal dependencies, and can deliver end-to-end value without getting stuck in queues.
+The way you structure teams and define how they interact has more impact on delivery than almost any single process or tool. Bottlenecks aren't accidents. They're examples of how work moves (or doesn't) across boundaries. Healthy teams have clear ownership, minimal dependencies, and can deliver end-to-end value without getting stuck in queues.
 
 ## Team Topologies in Action
 
@@ -46,7 +45,7 @@ None of them can ship customer value until Integrations builds or reviews their 
 This isn't just a people problem, it's a structural problem. If you drew a map of how work flows, you'd see tickets piling up in front of Integrations while everyone else waits. Teams are busy, but nothing moves.
 
 ### What Team Topologies Would Do
-Team Topologies says: don't add more meetings or try to "align" more. Change the shape of the system.
+Team Topologies: don't add more meetings or try to "align" more. Change the shape of the system.
 
 - **Push the integration work closer to the product teams**. Give Payments, Orders, and Fulfillment the skills, tools, and permissions to build and own their own integrations, reducing dependencies and hand-offs.
 
@@ -54,7 +53,7 @@ Team Topologies says: don't add more meetings or try to "align" more. Change the
 
 - **[Make boundaries explicit](/boundaries-over-coordination)**. Strong API contracts, automation, and clear ownership remove the need for weekly stand-ups just to keep everyone "in sync".
 
-Instead of a bottleneck, you get a network of empowered teams who can deliver value independently, with support, not blockage from specialists. Bottlenecks aren't fixed with better coordination; they're fixed by changing the architecture, so you need less of it in the first place.
+Instead of a bottleneck, you get a network of empowered teams who can deliver value independently, with support, not blockage from specialists. Bottlenecks aren't fixed with better coordination. They're fixed by changing the architecture, so you need less of it in the first place.
 
 ## Example Two: The Enabling Team That Became a Catch-All
 
@@ -68,7 +67,7 @@ Now, nobody knows whether Enabling is supposed to deliver features, run training
 
 ### What Went Wrong?
 
-This is a classic case of the glue team antipattern. When your "enabling" team becomes the safety net, you've traded focused support for a lack of clarity and flow. Every new dependency adds invisible friction work piles up, nobody owns the full outcome, and delivery quietly stalls.
+This is a classic case of the glue team antipattern. When your "enabling" team becomes the safety net, you've traded focused support for a lack of clarity and flow. Every new dependency adds invisible friction: work piles up, nobody owns the full outcome, and delivery quietly stalls.
 
 ### How Team Topologies Would Solve It
 
@@ -80,13 +79,13 @@ Team Topologies would call for stronger boundaries and more explicit modes of in
 
 - **Say no to operational catch-all work**. If a product team needs ongoing support, that's a sign the problem should be solved by investing in documentation, self-serve tooling, or a dedicated platform not by repeatedly handing tasks to the enabling team.
 
-When you get this right, the enabling team creates real leverage raising the bar for everyone, without getting stuck as the default "fixers". Product teams actually get stronger, the enabling team avoids burnout, and the system flows instead of clogs.
+When you get this right, the enabling team creates real leverage: raising the bar for everyone, without getting stuck as the default "fixers". Product teams actually get stronger, the enabling team avoids burnout, and the system flows instead of clogs.
 
 ## Example Three: The Platform Team That Became a Product Team
 
 Let's check back in with Acme Org. After a few years of rapid growth, things start to creak: every product team manages their own deployment scripts, each has a slightly different way of wiring up authentication, monitoring is a grab-bag of open-source dashboards and half-finished alerts. Developers spend more time debugging infrastructure than building features.
 
-Leadership decides it's time to get serious about scale and reliability. They form a Platform Team. The goal: build and own the paved path for the rest of engineering, central CI/CD pipelines, a standard way to log and trace requests, a shared authentication service, and reusable tooling for standing up new microservices. Product teams are now supposed to rely on these internal services, so they can stay focused on customer problems.
+Leadership decides it's time to get serious about scale and reliability. They form a Platform Team. The goal: build and own the paved path for the rest of engineering. Central CI/CD pipelines, a standard way to log and trace requests, a shared authentication service, and reusable tooling for standing up new microservices. Product teams are now supposed to rely on these internal services, so they can stay focused on customer problems.
 
 ![Graph showing a liability map in grid form](/assets/images/platform-product-team-org-design.png)
 
@@ -114,10 +113,10 @@ Done right, the platform team creates leverage: they unlock speed and consistenc
 
 ## Structure Shapes Flow
 
-Most team design mistakes aren't obvious in the beginning. You notice the symptoms, blocked delivery, endless coordination, mounting frustration long before anyone stops to ask if the structure itself is the problem. That's what Team Topologies is really about: not more process, but changing the environment so that good work can happen without heroics.
+Most team design mistakes aren't obvious in the beginning. You notice the symptoms: blocked delivery, endless coordination, mounting frustration. Long before anyone stops to ask if the structure itself is the problem. That's what Team Topologies is really about: not more process, but changing the environment so that good work can happen without heroics.
 
-If you keep finding the same bottlenecks, blurred responsibilities, or "catch-all" teams propping up the system, it's probably not a people problem, it's an architecture problem. Real progress means making boundaries sharper, interactions clearer, and giving teams the autonomy (and support) to actually deliver.
+If you keep finding the same bottlenecks, blurred responsibilities, or "catch-all" teams propping up the system, it's probably not a people problem, it's an architecture problem. Real progress means making boundaries sharper, interactions clearer, giving teams the autonomy (and support) to actually deliver.
 
-The playbook isn't complicated, but it takes discipline: map your current team types, make dependencies explicit, and shrink the need for coordination wherever you can. The healthiest orgs don't have more meetings they have fewer, because the structure lets teams move with purpose.
+The playbook isn't complicated, but it takes discipline. Map your current team types, make dependencies explicit, shrink the need for coordination wherever you can. The healthiest orgs don't have more meetings. They have fewer because the structure lets teams move with purpose.
 
-In the end, Team Topologies is a reminder that flow is a product of design. Get the architecture right, and teams don't just move faster; they get happier, too.
+Team Topologies is a reminder that flow is a product of design. Get the architecture right, and teams don't just move faster. They get happier, too.

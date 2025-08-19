@@ -14,7 +14,7 @@ I used to think there was a map for this. Management books lay out neat layers: 
 
 It's rarely a clean climb. Most weeks feel like running up a down escalator. Get a few steps up, set a direction, then gravity pulls you back: a fire, an unexpected dependency, some invisible bottleneck that only shows when work stops moving.
 
-This is engineering leadership: knowing when to stay close, when to step back, how to watch the system while the day-to-day pulls you under. It's about building habits that resist gravity's pull toward the nearest problem.
+This is engineering leadership: knowing when to stay close, when to step back, how to watch the system while the day-to-day pulls you under. Building habits that resist gravity's pull toward the nearest problem.
 
 The *Flight Levels* framework helps here. Klaus Leopold's [Flight Levels: Leading Organizations with Business Agility](https://www.flightlevels.io/book) describes three organisational altitudes:
 
@@ -28,11 +28,11 @@ The *Flight Levels* framework helps here. Klaus Leopold's [Flight Levels: Leadin
 
 ## Gravity Always Wins
 
-Gravity always pulls you back to level one. Every fire, incident, or broken hand-off tempts you to jump in and fix things directly. As an engineer, this feels like helping. As a leader, it's often the opposite: treating symptoms, not causes. Stay in the weeds and nobody watches the system.
+Gravity always pulls you back to level one. Every fire, incident, or broken hand-off tempts you to jump in and fix things directly. As an engineer, this feels like helping. As a leader, it treats symptoms, not causes. Stay in the weeds and nobody watches the system.
 
 The only way to operate at the right level is building habits that force you to look up. Weekly reviews of cycle time, cross-team blockers, work pileups. Even just asking "are we working on the right thing?" before diving into the next fire.
 
-The real shift: leadership isn't helping your team *do* the work. It's working *on* the system that produces the work:
+Leadership isn't helping your team *do* the work. It's working *on* the system that produces the work:
 
 - **Stepping back regularly:** Use rituals (weekly reviews, retros) to force altitude changes.
 - **[Surfacing hidden constraints](/optimising-teams-with-theory-of-constraints):** Map dependencies, bottlenecks, and work hand-offs.
@@ -43,6 +43,6 @@ The real shift: leadership isn't helping your team *do* the work. It's working *
 
 I'm getting more deliberate about where I spend time, which altitude I'm operating at.
 
-*Flight Levels* reminds us: you don't need to stay at 30,000 feet. Just know why you're there, what needs attention, when to descend.
+*Flight Levels* reminds you: you don't need to stay at 30,000 feet. Know why you're there, what needs attention, when to descend.
 
 The hardest part of leadership: working on the team, not just in it.
