@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+
+# Josh Hornby's Blog
+
+This is the personal blog for Josh Hornby, a software engineer from the UK. Current information about Josh Hornby can be found on his [about page](https://joshhornby.com/about).
+
+## Posts
+
+{% for post in site.posts %}
+- [{{ post.title }}]({{ site.url }}{{ post.url }}.md)
+{% endfor %}
