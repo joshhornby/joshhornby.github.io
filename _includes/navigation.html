@@ -1,32 +1,6 @@
 <nav class="navbar py-2">
     <div class="container px-0 px-md-3">
-        <a style="color: #c4c9d4; font-family: 'DM Sans', sans-serif;" href="/" class="text-sm">
-        [josh@hornby ~]#
-            {% if page.url == "/" %}
-            ./home.sh
-            {% elsif page.url == "/about" %}
-            whoami
-            {% elsif page.url == "/tags" %}
-            ls ./tags
-            {% elsif page.url contains "/tags" %}
-            {%- comment -%}
-            Prefer an explicit front-matter variable if you set one (e.g. `tag: ai`)
-            {%- endcomment -%}
-            {% if page.tag %}
-            ls ./tags {{ page.tag }}
-            {% else %}
-            {%- assign tag_slug = page.url | remove_first: "/tags" -%}
-            {%- assign tag_slug = tag_slug | split: "/" | first -%}
-            ls ./tags {{ tag_slug }}
-            {% endif %}
-            {% elsif page.layout == "post" %}
-            {% if page.tags and page.tags != empty %}
-
-            {% endif %}
-            {% endif %}
-        </a>
-
-
+        <a class="navbar-brand" href="/">Josh Hornby</a>
 
         <ul class="navbar-nav ml-auto flex-row">
             <li class="nav-item mx-2">
