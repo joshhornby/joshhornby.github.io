@@ -1,6 +1,7 @@
 ---
 title: "Building an AI Application: Lessons from Lenny's Vault"
 date: 2025-08-22 08:00:00
+description: "A few lessons from building an application built on top of AI APIs."
 tags: [software-engineering, ai]
 sitemap:
     priority: 0.7
