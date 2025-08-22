@@ -24,7 +24,7 @@ The *Flight Levels* framework helps here. Klaus Leopold's [Flight Levels: Leadin
 
 **Flight Level Two**: Across teams. Dependencies, bottlenecks, hand-offs. The question shifts from "how do we ship this feature?" to "how do we keep the machine running?"
 
-**Flight Level Three**: The balcony view. Systems thinking, business outcomes, portfolio management. Not about tickets or boards anymore. It's how the organisation adapts, allocates resources, stays focused on outcomes.
+**Flight Level Three**: The balcony view. Systems thinking, business outcomes, portfolio management. Not about tickets or boards any more. It's how the organisation adapts, allocates resources, stays focused on outcomes.
 
 ## Gravity Always Wins
 
