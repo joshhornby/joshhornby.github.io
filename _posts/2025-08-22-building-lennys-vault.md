@@ -56,10 +56,7 @@ My approach: **golden dataset testing**. I maintain a list of podcast episodes w
 
 AI systems fail in ways you can't predict. A prompt that worked perfectly suddenly starts producing rubbish outputs because the underlying model behaviour changed.
 
-I log:
-- Every prompt and response pair
-- Processing times for each agent
-- Model versions and timestamps
+I log every prompt and response pair, processing times for each agent and model versions and timestamps.
 
 This verbose logging saved me when OpenAI's API behaviour changed unexpectedly, causing my Content Analysis Agent to misclassify strategic discussions as tactical advice.
 
