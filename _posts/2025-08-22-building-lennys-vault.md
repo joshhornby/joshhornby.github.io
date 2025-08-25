@@ -8,7 +8,7 @@ sitemap:
     changefreq: 'monthly'
     lastmod: "2025-08-22 T08:00:00+00:00"
 ---
-I've just finished a side project built on top of AI APIs and in the main using Claude Code. [Lenny's Vault](https://lennysvault.com/) is an AI-powered search engine for [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/podcast). It transforms hours of audio content into searchable insights, letting users find specific advice on topics like growth strategies, product management, and leadership in seconds rather than scrolling through dozens of episode transcripts.
+I've just finished a side project built on top of AI APIs and in the main using Claude Code. [Lenny's Vault](https://lennysvault.com/) is an AI-powered search engine for [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/podcast). It transforms podcast episodes into searchable insights, letting users find specific advice on topics like growth strategies, product management, and leadership.
 
 ## How It Works
 
