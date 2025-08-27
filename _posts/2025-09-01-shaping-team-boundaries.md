@@ -6,7 +6,7 @@ description: "How the invisible web of team dependencies quietly shapes delivery
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-09-01T19:00:00+01:00"
+    lastmod: "2025-09-01T07:00:00+01:00"
 ---
 
 Most teams start out with the best intentions: ship faster, keep things simple, stay close to the customer. But as companies grow, friction creeps in. Delivery slows, hand-offs multiply, and nobody's quite sure why a feature that looked straightforward ended up stuck in the queue.
@@ -14,7 +14,6 @@ Most teams start out with the best intentions: ship faster, keep things simple, 
 It's rarely about motivation or skill. The real culprit is structural: the invisible web of boundaries, dependencies, and team interactions that quietly shapes how work gets done. The org chart might look logical, but the day-to-day reality is usually more tangled. To make real progress, you have to see how these connections help or hinder teams from delivering end-to-end value.
 
 That's where Team Topologies comes in. Instead of adding more process, it offers a lens to spot the patterns behind delivery drag and practical ways to design teams for flow rather than friction.
-
 
 ## Intro to Team Topologies
 
