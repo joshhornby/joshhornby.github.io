@@ -2,6 +2,7 @@
 title: "When Less Is More: The Value of Picking One Way"
 date: 2025-09-15 08:00:00
 tags: [architecture, software-engineering]
+description: "Why teams that create the most value aren't the ones with the best tech, they're the ones with the clearest constraints."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'

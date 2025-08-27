@@ -1,7 +1,7 @@
 ---
 title:  "The Local Optimisation Trap"
 date:   2025-09-22 08:00:00
-description: ""
+description: "How rational team-level decisions create irrational company-wide outcomes and why zooming out matters."
 tags: [architecture, software-engineering, management]
 sitemap:
     priority: 0.7
