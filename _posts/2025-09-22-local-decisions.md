@@ -11,6 +11,8 @@ sitemap:
 
 Consider a team that implements comprehensive API rate limiting to protect their service from overload. Sensible engineering decision. But those limits force client teams to build complex retry logic and caching layers, slowing their development by weeks.
 
+Or a security team that mandates detailed approval processes for database schema changes. Logical from a risk perspective. But now feature teams spend days waiting for sign-offs on trivial column additions, turning two-hour tasks into week-long blockers.
+
 This is the local optimisation trap in action. Teams make rational decisions within their scope that create irrational outcomes for the company. Each decision makes perfect sense from the team's perspective. The problems only become visible when you zoom out.
 
 ## Why Smart Teams Make Locally Optimal Decisions
