@@ -1,13 +1,14 @@
 ---
 title: "Building an AI Application: Lessons from Lenny's Vault"
 date: 2025-08-22 08:00:00
+description: "A few lessons from building an application built on top of AI APIs."
 tags: [software-engineering, ai]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
     lastmod: "2025-08-22 T08:00:00+00:00"
 ---
-I've just finished a side project built on top of AI APIs and in the main using Claude Code. [Lenny's Vault](https://lennysvault.com/) is an AI-powered search engine for [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/podcast). It transforms hours of audio content into searchable insights, letting users find specific advice on topics like growth strategies, product management, and leadership in seconds rather than scrolling through dozens of episode transcripts.
+I've just finished a side project built on top of AI APIs and in the main using Claude Code. [Lenny's Vault](https://lennysvault.com/) is an AI-powered search engine for [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/podcast). It transforms podcast episodes into searchable insights, letting users find specific advice on topics like growth strategies, product management, and leadership.
 
 ## How It Works
 
@@ -56,10 +57,7 @@ My approach: **golden dataset testing**. I maintain a list of podcast episodes w
 
 AI systems fail in ways you can't predict. A prompt that worked perfectly suddenly starts producing rubbish outputs because the underlying model behaviour changed.
 
-I log:
-- Every prompt and response pair
-- Processing times for each agent
-- Model versions and timestamps
+I log every prompt and response pair, processing times for each agent and model versions and timestamps.
 
 This verbose logging saved me when OpenAI's API behaviour changed unexpectedly, causing my Content Analysis Agent to misclassify strategic discussions as tactical advice.
 

@@ -2,6 +2,7 @@
 title: Navigating Flight Levels
 date: 2025-08-25 08:00:00
 tags: [management, career, systems-thinking]
+description: "Why management isn't about climbing layers, it's about knowing when to zoom in and when to pull back."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
@@ -12,7 +13,7 @@ Most days, the real work isn't about what's on the to-do list. It's the constant
 
 I used to think there was a map for this. Management books lay out neat layers: strategy at the top, execution at the bottom, tidy flow from one to the other. Reality is messier. Some days I'll start sketching architecture for a new service. Within an hour I'm chasing a production bug or untangling a hand-off that's blocking delivery.
 
-It's rarely a clean climb. Most weeks feel like running up a down escalator. Get a few steps up, set a direction, then gravity pulls you back: a fire, an unexpected dependency, some invisible bottleneck that only shows when work stops moving.
+It's rarely a smooth climb. Most weeks feel like running up a down escalator. Get a few steps up, set a direction, then gravity pulls you back: a fire, an unexpected dependency, some invisible bottleneck that only shows when work stops moving.
 
 This is engineering leadership: knowing when to stay close, when to step back, how to watch the system while the day-to-day pulls you under. Building habits that resist gravity's pull toward the nearest problem.
 
@@ -24,7 +25,7 @@ The *Flight Levels* framework helps here. Klaus Leopold's [Flight Levels: Leadin
 
 **Flight Level Two**: Across teams. Dependencies, bottlenecks, hand-offs. The question shifts from "how do we ship this feature?" to "how do we keep the machine running?"
 
-**Flight Level Three**: The balcony view. Systems thinking, business outcomes, portfolio management. Not about tickets or boards anymore. It's how the organisation adapts, allocates resources, stays focused on outcomes.
+**Flight Level Three**: The balcony view. Systems thinking, business outcomes, portfolio management. Not about tickets or boards any more. It's how the organisation adapts, allocates resources, stays focused on outcomes.
 
 ## Gravity Always Wins
 
@@ -44,5 +45,3 @@ Leadership isn't helping your team *do* the work. It's working *on* the system t
 I'm getting more deliberate about where I spend time, which altitude I'm operating at.
 
 *Flight Levels* reminds you: you don't need to stay at 30,000 feet. Know why you're there, what needs attention, when to descend.
-
-The hardest part of leadership: working on the team, not just in it.
