@@ -25,7 +25,7 @@ When teams aren't deliberate, complexity creeps in. The ["background hum of toil
 
 There's a discipline to constraining choice. At cinch, the default was a golden path: "We use this stack, these platforms, this set of libraries, unless you have a reason, stick to it." This doesn't kill creativity, it focuses it. Teams ship faster, onboarding is smoother, and you're not burning energy arguing over which flavour of queue to deploy.
 
-That discipline paid off in all the invisible places. Incidents happened less. New engineers could ship in their first week. We had more capacity for bets that moved the needle, instead of firefighting or hand-rolling another deployment pipeline..
+That discipline paid off in all the invisible places. Incidents happened less. New engineers could ship in their first week. We had more capacity for bets that moved the needle, instead of firefighting or hand-rolling another deployment pipeline.
 
 ## Run Less, Build More
 
