@@ -9,9 +9,9 @@ sitemap:
     lastmod: "2025-09-15T19:00:00+01:00"
 ---
 
-If there's one lesson I keep coming back to, it's this: the teams that create the most value aren't the ones who pick the most exciting tech, they're the ones who make explicit, repeatable choices about what *not* to run.
+Something I've been thinking about recently is choosing what *not* to do is as important as choosing what you will do.
 
-I first saw this up close at [cinch](/stuff-learned-at-cinch). The engineering principles there were clear, nearly boring by design: build on AWS serverless, lean on managed services, stay away from custom platforms unless there's a real need. The payoff wasn't just in uptime or cost; it was in focus. With so much of the heavy lifting handled, most of our effort went straight into products and customers, not infrastructure. That wasn't an accident, it was the result of a handful of high-leverage decisions made early, then stuck too deliberately.
+I saw this up close at [cinch](/stuff-learned-at-cinch). The engineering principles there were clear: build on AWS serverless, lean on managed services, stay away from custom platforms unless there's a real need. The payoff wasn't just in uptime or cost, it was in focus. With so much of the heavy lifting handled, most of our effort went straight into products and customers, not infrastructure. That wasn't an accident, it was the result of a handful of high-leverage decisions made early, then stuck too deliberately.
 
 Compare that to teams I've joined where choices pile up quietly: a script here, a homegrown service there, a pet framework someone loved five years ago _(I've been guilty of being this person)_. Each addition feels small in the moment, but the lesson often learned the hard way, is that every extra moving part creates a tax you pay forever. Patching, scaling, wrangling flaky tests, untangling broken pipelines; these jobs rarely make the roadmap, but together, they take up weeks out of every engineer's year.
 
