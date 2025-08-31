@@ -2,7 +2,7 @@
 title: Shaping Team Boundaries for Flow
 date: 2025-09-01 08:00:00
 tags: [architecture, team-topologies, org-design]
-description: "How the invisible web of team dependencies quietly shapes delivery speed and what to do about it."
+description: "How the team dependencies shapes delivery speed and what to do about it."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
