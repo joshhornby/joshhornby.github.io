@@ -1,12 +1,12 @@
 ---
 title: "When Less Is More: The Value of Picking One Way"
-date: 2025-09-15 08:00:00
+date: 2025-09-17 08:00:00
 tags: [architecture, software-engineering]
 description: "Why teams that create the most value aren't the ones with the best tech, they're the ones with the clearest constraints."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-09-15T19:00:00+01:00"
+    lastmod: "2025-09-17T08:00:00+01:00"
 ---
 
 Something I've been thinking about recently is choosing what *not* to do is as important as choosing what you will do.
