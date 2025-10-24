@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2025-10-24T07:00:00+00:00"
 ---
 
-I've been thinking about the relationship between experience and judgement. Initially, I assumed that accumulating experience would naturally lead to better judgement. After all, the more situations you encounter, the more patterns you should recognise, right?
+I've been reflecting on the relationship between experience and judgement. Initially, I assumed that accumulating experience would naturally lead to better judgement. After all, the more situations you encounter, the more patterns you should recognise, right?
 
 But for that to be true, you need to actively reflect on your experiences. Without reflection, experiences are just a series of events that happen without deeper understanding.
 
