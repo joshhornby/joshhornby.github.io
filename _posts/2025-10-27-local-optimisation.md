@@ -17,12 +17,13 @@ This is Local Optimisation in action. Teams make rational decisions within their
 
 ## Why Teams Make Locally Optimal Decisions
 
-I don't believe teams do this on purpose; they respond to their incentive structure. Engineering teams normally get measured on what they can control:
+I don't believe teams do this on purpose; [they respond to their incentive structure](/culture-follows-incentives). Engineering teams normally get measured on what they can control:
 
-- Sprint velocity and story point completion
-- Code quality and test coverage  
-- System uptime and performance
+
 - Feature delivery against roadmap commitments
+- Code quality and test coverage
+- Sprint velocity and story point completion _(No one said they had to be good measures)_
+- System uptime and performance
 
 None of these metrics capture cross-team impact. A team can hit all their targets whilst creating chaos elsewhere.
 
