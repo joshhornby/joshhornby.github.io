@@ -1,7 +1,7 @@
 ---
 title: "Judgement"
 date: 2025-10-22 08:00:00
-description: "How to improve judgement by reflecting on experience and teaching others."
+description: "How I'm hoping to improve my judgement by reflecting on experience and teaching others."
 tags: [thoughts]
 sitemap:
     priority: 0.7
