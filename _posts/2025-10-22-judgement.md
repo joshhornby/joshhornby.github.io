@@ -1,12 +1,12 @@
 ---
 title: "Judgement"
-date: 2025-10-25 08:00:00
+date: 2025-10-22 08:00:00
 description: "How to improve judgement by reflecting on experience and teaching others."
 tags: [thoughts]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-10-25T07:00:00+00:00"
+    lastmod: "2025-10-24T07:00:00+00:00"
 ---
 
 I've been thinking about the relationship between experience and judgement. Initially, I assumed that accumulating experience would naturally lead to better judgement. After all, the more situations you encounter, the more patterns you should recognise, right?
