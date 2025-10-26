@@ -9,16 +9,15 @@ sitemap:
     lastmod: "2025-10-27T07:00:00+00:00"
 ---
 
-Recently I've been thinking about a behaviour I've seen teams fall into, something I've started calling "Local Optimisation" _(I think I need a better name)_. 
+Recently I've been thinking about a behaviour I've seen teams fall into, something I've started calling "Local Optimisation". 
 
 Imagine a team that implements API rate limiting to protect their service from overload. A sensible engineering decision, right? But those limits force client teams to build complex retry logic and caching layers, slowing their development by weeks.
 
-This is Local Optimisation in action. Teams make rational decisions within their scope that create irrational outcomes for the company. Each decision makes perfect sense from the team's perspective. The problems only become visible when you zoom out.
+This is Local Optimisation in action. Teams make rational decisions within their scope that create irrational outcomes for the company or other teams. Each decision makes perfect sense from the team's perspective, and the problems only become visible when you zoom out.
 
 ## Why Teams Make Locally Optimal Decisions
 
 I don't believe teams do this on purpose; [they respond to their incentive structure](/culture-follows-incentives). Engineering teams normally get measured on what they can control:
-
 
 - Feature delivery against roadmap commitments
 - Code quality and test coverage
