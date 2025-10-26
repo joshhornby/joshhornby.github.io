@@ -8,11 +8,11 @@ sitemap:
     changefreq: 'monthly'
     lastmod: "2025-06-09 T19:00:00+01:00"
 ---
-When I first started in engineering leadership, I figured the best teams ran like well-oiled machines, every engineer flat out, every hour accounted for. It made sense on paper: 100% utilisation must mean maximum output, right? What I learned (mostly the hard way) is that teams pushed to the limit don't run smoothly. One small delay, and everything grinds to a halt.
+When I first started in engineering leadership roles, I figured the best teams ran like well-oiled machines, every engineer flat out, every hour accounted for. It made sense on paper: 100% utilisation must mean maximum output, right? What I learned (mostly the hard way) is that teams pushed to the limit don't run smoothly. One small delay, and everything grinds to a halt.
 
 At first, I thought the fix was better planning or clearer priorities, maybe even more process. But no matter how we organised the work, the same pattern kept showing up: things started fast, then piled up somewhere in the middle. That's when I came across the Theory of Constraints.
 
-The Theory of Constraints offers a simple insight: your throughput is governed by a single constraint, not by the sum of everyone's individual effort. When you index on personal productivity, story points completed or hours logged, you merely accumulate invisible queues in front of that constraint. Lead times increase, frustration mounts, and the illusion that "everyone's working" masks the reality that value isn't moving.
+The Theory of Constraints offers a simple insight: your throughput is governed by a single constraint, not by the sum of everyone's individual effort. When you index on personal productivity, story points completed, or hours logged, you merely accumulate invisible queues in front of that constraint. Lead times increase, frustration mounts, and the illusion that "everyone's working" masks the reality that value isn't moving.
 
 To fix that, you have to shift focus from how busy individuals are to how well the system flows. And that starts with identifying what's actually slowing you down.
 
@@ -25,7 +25,7 @@ A few tools help bring that picture into focus:
 - **Kanban boards with explicit WIP limits** make queues visible, so you can't ignore them.
 - **Flow-based metrics such as lead time and throughput** turn gut feel into something you can act on.
 
-Once you know where the real bottleneck is, you can protect it and eventually remove it. But seeing the constraint is only the first step, how you structure work in response to it is what really determines whether things speed up or stay stuck.
+Once you know where the real bottleneck is, you can protect it and eventually remove it. But seeing the constraint is only the first step, how your structure works in response to it is what really determines whether things speed up or stay stuck.
 
 ## Designing healthy habits
 Too much work piles up and everything slows down. Too little, and the bottleneck sits idle. You want just enough of a buffer to handle the usual bumps without hiding real problems. It's a bit like keeping a few tables free in a busy restaurant, just enough to keep things moving, but not so much that the place grinds to a halt.
