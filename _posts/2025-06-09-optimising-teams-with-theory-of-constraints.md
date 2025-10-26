@@ -6,7 +6,7 @@ description: "Using the Theory of Constraints to improve team delivery"
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-06-09 T19:00:00+01:00"
+    lastmod: "2025-10-26 T09:00:00+01:00"
 ---
 When I first started in engineering leadership roles, I figured the best teams ran like well-oiled machines, every engineer flat out, every hour accounted for. It made sense on paper: 100% utilisation must mean maximum output, right? What I learned (mostly the hard way) is that teams pushed to the limit don't run smoothly. One small delay, and everything grinds to a halt.
 
@@ -28,7 +28,7 @@ A few tools help bring that picture into focus:
 Once you know where the real bottleneck is, you can protect it and eventually remove it. But seeing the constraint is only the first step, how your structure works in response to it is what really determines whether things speed up or stay stuck.
 
 ## Designing healthy habits
-Too much work piles up and everything slows down. Too little, and the bottleneck sits idle. You want just enough of a buffer to handle the usual bumps without hiding real problems. It's a bit like keeping a few tables free in a busy restaurant, just enough to keep things moving, but not so much that the place grinds to a halt.
+Stack ten pull requests in front of your single code reviewer and watch lead times explode. Leave them with nothing to review and you've wasted your constraint. Keep two or three ready and you maintain flow without hiding problems. It's a bit like keeping a few tables free in a busy restaurant, just enough to keep things moving, but not so much that the place looks empty.
 
 When someone on the team has capacity, point it at the bottleneck:
 
@@ -46,10 +46,10 @@ But fast feedback doesn't just come from tooling, and it relies on the team's ab
 ## Cultural scaffolding
 Process tweaks are pointless unless your culture backs them up. You can introduce all the right tools: WIP limits, standups, metrics, automation, but if the underlying team culture doesn't support how and why they're used, then it won't stick. Worse, they'll become theatre: rules followed on paper but ignored in spirit.
 
-It takes deliberate cultural foundations to make these practices meaningful, things that shape how the team behaves when no one's watching:
+You need three things to make this work:
 
 - **Psychological safety** - people must feel authorised to pause work rather than pile it on.
 - **Shared responsibility** - the feature isn't done until it's in production and customers succeed.
 - **Managerial coaching** - celebrate queue reduction and flow improvement, not personal velocity.
 
-Optimising a team isn't about keeping everyone busy, it's about making sure the right work moves at the right time. Focus on throughput, not utilisation, and you get steady, predictable progress instead of a mad dash. The trade-off is clear: the team that's fine with slowing down occasionally is the one that ends up moving faster overall.
+Optimising a team isn't about keeping everyone busy. It's about watching features actually ship to production instead of counting how many tickets got picked up. Focus on throughput, not utilisation. The team that leaves some engineers free to unblock others can ship twice as much as the one where everyone's heads-down on their own work.
