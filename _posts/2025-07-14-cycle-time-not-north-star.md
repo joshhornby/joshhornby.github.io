@@ -49,7 +49,7 @@ Improvement requires a theory: a clear reason why a change will help engineers o
 
 I treat metric-driven changes as experiments. Make a change, watch what happens, check for real differences in customer engagement after a quarter. If faster deployments don't shift outcomes, you're measuring the wrong thing. If a metric just creates busywork (tickets close faster but nothing meaningful ships) kill it.
 
-Teams don't optimise for dashboards. They [optimise for what gets celebrated](/culture-follows-incentives). Changing incentives and making space for qualitative feedback matters more than perfect numbers.
+Teams don't optimise for dashboards. They [optimise for what gets celebrated](/culture-follows-incentives). Changing incentives and making space for qualitative feedback matter more than perfect numbers.
 
 ## How I Approach This Now
 
