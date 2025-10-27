@@ -2,18 +2,18 @@
 title: Doing Leveraged Work
 date: 2025-05-31 10:30:00
 tags: [software-engineering, career]
-description: For Staff and Principal Engineers, the goal is to identify and deliver leveraged work, efforts that multiply both throughput and quality across the organisation.
+description: Staff and Principal Engineers find work that keeps paying off long after they've moved on, multiplying what teams can achieve.
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-05-31T15:00:00+01:00"
+    lastmod: "2025-10-26T08:00:00+00:00"
 ---
 
 For Staff and Principal Engineers, the goal is to identify and deliver leveraged work, efforts that multiply both throughput and quality across the organisation.
 
 ![Two-axis graph plotting impact and longevity in relation to Leveraged work](/assets/images/leveraged-work-chart.png)
 
-Picture leverage as a chart: time on the x-axis, impact on the y. The goal is top-right contributions that endure and change trajectory. Not quick boosts or flashy results, but work that compounds. Work that becomes foundation, shifts baselines, raises bars.
+Picture leverage as a chart: time on the x-axis, impact on the y. The goal is top-right: work that lasts years and touches everything. Not quick boosts or flashy results, but work that compounds. Work that becomes foundation, shifts how teams think, makes everyone better.
 
 | If it...                                                  | ...then it probably belongs in that sweet-spot |
 |-----------------------------------------------------------|------------------------------------------------|

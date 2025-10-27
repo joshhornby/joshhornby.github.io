@@ -6,13 +6,13 @@ description: "Using the Theory of Constraints to improve team delivery"
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-10-26 T09:00:00+01:00"
+    lastmod: "2025-10-26T08:00:00+00:00"
 ---
 When I first started in engineering leadership roles, I figured the best teams ran like well-oiled machines, every engineer flat out, every hour accounted for. It made sense on paper: 100% utilisation must mean maximum output, right? What I learned (mostly the hard way) is that teams pushed to the limit don't run smoothly. One small delay, and everything grinds to a halt.
 
 At first, I thought the fix was better planning or clearer priorities, maybe even more process. But no matter how we organised the work, the same pattern kept showing up: things started fast, then piled up somewhere in the middle. That's when I came across the Theory of Constraints.
 
-The Theory of Constraints offers a simple insight: your throughput is governed by a single constraint, not by the sum of everyone's individual effort. When you index on personal productivity, story points completed, or hours logged, you merely accumulate invisible queues in front of that constraint. Lead times increase, frustration mounts, and the illusion that "everyone's working" masks the reality that value isn't moving.
+The Theory of Constraints shows you something simple: one bottleneck controls your entire throughput, not the sum of everyone's individual effort. When you index on personal productivity, story points completed, or hours logged, you just build invisible queues in front of that bottleneck. Lead times increase, frustration mounts, and the illusion that "everyone's working" masks the reality that nothing's shipping.
 
 To fix that, you have to shift focus from how busy individuals are to how well the system flows. And that starts with identifying what's actually slowing you down.
 
