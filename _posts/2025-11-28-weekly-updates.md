@@ -1,5 +1,5 @@
 ---
-title: "My Weekly Update Framework"
+title: "Four Questions I Answer Every Week"
 date: 2025-11-28 08:00:00
 description: "How I use weekly updates to provide visibility, track productivity, and build trust with my manager."
 tags: [management, career]
