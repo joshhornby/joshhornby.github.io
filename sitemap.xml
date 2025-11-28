@@ -22,6 +22,12 @@ layout: null
     <lastmod>{{ about_page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
   </url>
 
+  {% assign start_here_page = site.pages | where: "url", "/start-here" | first %}
+  <url>
+    <loc>{{ site.url }}/start-here</loc>
+    <lastmod>{{ start_here_page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+  </url>
+
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>

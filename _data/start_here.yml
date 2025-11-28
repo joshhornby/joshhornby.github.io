@@ -1,0 +1,67 @@
+intro: "I'm a Principal Engineer writing about engineering leadership, systems thinking, and building effective teams. Most of what I write comes directly from the work: patterns I've spotted across companies, failures I've learned from, and frameworks that have actually helped."
+
+sections:
+  - title: Engineering Leadership
+    description: What it takes to lead engineering teams well, from craft to culture.
+    posts:
+      - url: /four-pillars-of-engineering-leadership
+        title: Four Pillars of Engineering Leadership
+        summary: The foundation - artisanship, strategy, culture, and stakeholder engagement. Each pillar needs the one before it.
+      - url: /doing-leveraged-work
+        title: Doing Leveraged Work
+        summary: Staff and Principal Engineers find work that keeps paying off long after they've moved on.
+      - url: /culture-follows-incentives
+        title: Culture Follows Incentives
+        summary: You don't change culture with posters. You change it by changing what gets rewarded.
+      - url: /pioneers-settlers-and-town-planners
+        title: Pioneers, Settlers, and Town Planners
+        summary: Different people thrive at different phases. Match people to work, not vice versa.
+
+  - title: Systems Thinking & Organisation Design
+    description: How team structure and dependencies shape delivery more than individual effort.
+    posts:
+      - url: /boundaries-over-coordination
+        title: Don't Improve Coordination, Eliminate It
+        summary: Every sync meeting is a signal - there's a boundary that needs reinforcing.
+      - url: /shaping-team-boundaries
+        title: Shaping Team Boundaries for Flow
+        summary: Team Topologies in practice - how structure shapes speed.
+      - url: /optimising-teams-with-theory-of-constraints
+        title: Optimising Teams with Theory of Constraints
+        summary: One bottleneck controls your entire throughput, not the sum of everyone's effort.
+
+  - title: Product Engineering & Delivery
+    description: Building the right thing, not just building the thing right.
+    posts:
+      - url: /product-engineers
+        title: Product Engineers
+        summary: Engineers who care more about whether something works for customers than whether it ships on time.
+      - url: /cycle-time-not-north-star
+        title: Cycle Time is Not a North Star
+        summary: Delivery metrics are useful, but they're not the goal.
+      - url: /less-is-more
+        title: Less is More
+        summary: The power of constraints and focus.
+
+  - title: Tech Strategy & Architecture
+    description: Making technical decisions that compound over time.
+    posts:
+      - url: /boring-tech
+        title: Boring Tech
+        summary: Innovation tokens are finite. Spend them wisely.
+      - url: /reconsidering-tech-debt
+        title: Reconsidering Tech Debt
+        summary: Not all tech debt is created equal. Some is strategic.
+      - url: /build-vs-buy-vs-run
+        title: Build vs Buy vs Run
+        summary: The decision isn't just build or buy. Running is the hard part.
+
+  - title: AI & LLMs
+    description: Practical approaches to working with AI in engineering.
+    posts:
+      - url: /scepticism-to-collaboration-with-llms
+        title: Scepticism to Collaboration with LLMs
+        summary: How I went from dismissing AI tools to using them daily.
+      - url: /building-lennys-vault
+        title: Building Lenny's Vault
+        summary: A side project using AI to make podcasts searchable.
