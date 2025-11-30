@@ -29,7 +29,17 @@ The delivery role of PMs can vary significantly between organisations. In some c
 
 ## Owning the How, Partnering on the What
 
+I see the Tech Lead owning the "how" of delivery - ensuring we build things the right way, with quality and maintainability in mind. However, I also see value in partnering closely with PMs on the "what" - understanding the customer needs and business goals behind features.
+
+In my experience it's not uncommon for the PM to be more junior than the Tech Lead in terms of experience. In these situations, I see part of the Tech Lead role as mentoring and supporting the PM to grow into their role. This could involve sharing best practices around prioritisation, stakeholder management, or customer research.
+
 ## Balancing Delivery and Quality
+
+A common situation Tech Leads face is balancing the need for speedy delivery with maintaining high quality. PMs may push for faster delivery to meet business deadlines, while engineers advocate for more time to ensure quality. In these situations, open communication is key.
+
+Like most things in product engineering, it's about finding the right balance. Sometimes speed is more important, while other times quality must take precedence. By discussing trade-offs openly, we can make informed decisions together.
+
+A good practice I've found is to involve PMs in technical discussions about architecture and quality. This helps them understand the implications of technical decisions on delivery timelines.
 
 ## Common Challenges
 
