@@ -1,18 +1,16 @@
 ---
 title: "Working Effectively With Product Managers"
-date: 2025-08-07 08:00:00
+date: 2025-12-03 08:00:00
 tags: [management, product, tech-lead-series]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-08-07 T05:00:00+01:00"
+    lastmod: "2025-12-03 T07:00:00+01:00"
 ---
 
 > This post is part of a series on engineering leadership from a Tech Leads perspective. You can read the other posts in the [Tech Leadership Series](/tags/tech-lead-series/).
 
 One of the most important relationships for a Tech Lead is with their product manager. A strong partnership here can make or break a team's success.
-
-In this post I share some principles and practices I've found useful when working closely with product managers.
 
 ## What Product Managers Do
 
@@ -47,7 +45,7 @@ Over the years I've seen a few common challenges arise in the PM-Engineering rel
 
 ### Unclear ownership
 
-When nobody knows who owns what, things slip through. I've watched teams where the PM assumed engineering would handle stakeholder updates, while engineering assumed the PM had it covered. Neither did. The fix is boring but effective: define responsibilities early. Write them down. Revisit them when scope changes.
+When nobody knows who owns what, things slip through. The PM assumes engineering will handle stakeholder updates. Engineering assumes the PM has it covered. Neither does. The fix is boring but effective: define responsibilities early. Write them down. Revisit them when scope changes.
 
 ### Different definitions of success
 
@@ -55,11 +53,11 @@ PMs watch business metrics. Engineers care about technical excellence. Neither i
 
 ### Committing to dates without engineering input
 
-PM promises a deadline to stakeholders, then tells the team. Engineers feel set up to fail before they've written a line of code. The fix: bring engineering into estimation conversations before commitments are made. Even a rough "t-shirt size" check can prevent a lot of pain.
+PM promises a deadline to stakeholders, then tells the team. Engineers feel set up to fail before they've written a line of code. The fix: bring engineering into estimation conversations before commitments are made. Even a rough "t-shirt size" check can prevent a lot of pain. I've written more about this in [Estimation Pragmatism](/estimation-pragmatism).
 
 ### Solution vs problem framing
 
-PM arrives with a fully-specced solution instead of a problem to solve. Engineers become ticket-takers rather than partners. Better PMs share the customer problem and constraints, then collaborate on the approach. The best solutions often come from engineers who understand the technical possibilities.
+PM arrives with a fully-specced solution instead of a problem to solve. Engineers become ticket-takers rather than partners. Better PMs share the customer problem and constraints, then collaborate on the approach. The best solutions often come from engineers who understand the technical possibilities. This is what [Product Engineers](/product-engineers) do well.
 
 ### Technical work as a hard sell
 
@@ -69,3 +67,12 @@ Refactoring, paying down debt, improving observability. PMs don't always see the
 
 PM assumes something is easy because it sounds simple. A one-line copy change turns into a database migration. Trust erodes when engineers feel their expertise isn't respected. The antidote is curiosity: ask why something is complex instead of assuming it shouldn't be.
 
+## The Relationship Is the Work
+
+Most of these challenges come down to the same thing: two people with different contexts trying to solve the same problem. The PM sees stakeholder pressure, market timing, and customer feedback you'll never hear. You see technical risk, maintenance burden, and the last three times a "quick fix" came back to bite you.
+
+Neither view is complete. The best PM-Tech Lead partnerships I've seen treat this gap as a feature, not a bug. You're not supposed to agree on everything. You're supposed to bring different perspectives and hash it out until you land on something better than either of you would reach alone.
+
+That takes trust. Trust takes time. And time takes showing up, being honest about trade-offs, and occasionally admitting you got it wrong.
+
+The teams that ship well aren't the ones with the smoothest processes. They're the ones where the Tech Lead and PM actually like working together.

@@ -1,16 +1,16 @@
 ---
 title: "Using Hill Charts for Progress Tracking"
-date: 2025-12-05 08:00:00
+date: 2025-12-11 08:00:00
 tags: [project-management, product]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-12-05 T07:00:00+01:00"
+    lastmod: "2025-12-11 T07:00:00+01:00"
 ---
 
 If a picture speaks a thousand words. A hill chart shows where we got stuck explaining them. 
 
-I've found Hill Charts helpful for visualising progress, especially when dealing with uncertainty. Instead of just marking tasks as "not started", "in progress", or "done", Hill Charts show where you actually are in figuring something out.
+Hill Charts are helpful for visualising progress, especially when dealing with uncertainty. Instead of just marking tasks as "not started", "in progress", or "done", Hill Charts show where you actually are in figuring something out.
 
 ## What are Hill Charts?
 
