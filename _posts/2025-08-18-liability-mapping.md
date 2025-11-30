@@ -2,7 +2,7 @@
 title: Liability Mapping your Tech Debt
 date: 2025-08-18 08:00:00
 description: "How Liability Mapping can be used to improve conversations around tech debt, help teams prioritise which areas they should start paying back and when. The aim is to cut through the noise of 'debt', 'toil' and everything in between, surfacing what actually matters so teams can spend less time debating and more time making clear progress."
-tags: [management, architecture]
+tags: [architecture]
 sitemap:
    priority: 0.7
    changefreq: 'monthly'

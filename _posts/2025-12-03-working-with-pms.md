@@ -1,7 +1,7 @@
 ---
 title: "Working Effectively With Product Managers"
 date: 2025-12-03 08:00:00
-tags: [management, product, tech-lead-series]
+tags: [management, leadership, product, tech-lead-series]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'

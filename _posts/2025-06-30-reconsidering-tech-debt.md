@@ -2,7 +2,7 @@
 title: Reconsidering Tech Debt
 date: 2025-06-30 08:00:00
 description: "There's a phrase I've grown wary of over the years: tech debt. It shows up in all kinds of conversations, often spoken as a half-apology, half-warning. The metaphor is sticky, and like most sticky things in engineering, I think it's started to obscure more than it reveals."
-tags: [management, culture, software-engineering]
+tags: [culture, software-engineering]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
