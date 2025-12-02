@@ -23,11 +23,11 @@ I think it's useful to start by understanding the role of a product manager. A P
 
 This can be shortened to: PMs focus on the "what" and "why", engineering focuses on the "how".
 
-When it comes to the delivery role it can vary significantly between organisations. In some companies, PMs are deeply involved in day-to-day delivery, while in others they take a more strategic view. In my experience engineering normally own delivery execution, with PMs providing context, prioritisation, and stakeholder management.
+Often the delivery role is overlooked and it can vary significantly between organisations. In some companies, PMs are deeply involved in day-to-day delivery, while in others they take a more strategic view. In my experience engineering normally own delivery execution, with PMs providing context, prioritisation, and stakeholder management.
 
 ## Owning the How, Partnering on the What
 
-As we spoke about above, the Tech Lead owns the "how" of delivery - ensuring we build things the right way, with quality and maintainability in mind. However, I also see value in partnering closely with PMs on the "what" - understanding the customer needs and business goals behind features.
+As we spoke about above, the Tech Lead owns the "how" - ensuring we build things the right way, with quality and maintainability in mind. However, I also see value in partnering closely with PMs on the "what" - understanding the customer needs and business goals behind features.
 
 It's not uncommon for the PM to be more junior than the Tech Lead in terms of experience. In these situations, I see part of the Tech Lead role as mentoring and supporting the PM to grow into their role. This could involve sharing best practices around prioritisation, stakeholder management, or customer research.
 
