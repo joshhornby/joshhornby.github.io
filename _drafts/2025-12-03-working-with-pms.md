@@ -1,20 +1,18 @@
 ---
 title: "Working Effectively With Product Managers"
 date: 2025-12-03 08:00:00
-tags: [management, leadership, product, tech-lead-series]
+tags: [management, leadership, product]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
     lastmod: "2025-12-03 T07:00:00+01:00"
 ---
 
-> This post is part of a series on engineering leadership from a Tech Leads perspective. You can read the other posts in the [Tech Leadership Series](/tags/tech-lead-series/).
-
 One of the most important relationships for a Tech Lead is with their product manager. A strong partnership here can make or break a team's success.
 
 ## What Product Managers Do
 
-I think it's useful to start by understanding the role of a product manager. A PM is responsible for:
+It's useful to start by understanding the role of a product manager. A PM is responsible for:
 
 - Product vision and strategy
 - Prioritisation based on customer needs and business goals
@@ -27,9 +25,9 @@ Often the delivery role is overlooked and it can vary significantly between orga
 
 ## Owning the How, Partnering on the What
 
-As we spoke about above, the Tech Lead owns the "how" - ensuring we build things the right way, with quality and maintainability in mind. However, I also see value in partnering closely with PMs on the "what" - understanding the customer needs and business goals behind features.
+The Tech Lead owns the "how" - ensuring we build things the right way, with quality and maintainability in mind. But stopping there is a mistake, Tech Leads also engage with the "what" - understanding customer needs and business goals behind features. This isn't stepping on the PM's toes. It's how you catch problems early and propose solutions that actually fit.
 
-It's not uncommon for the PM to be more junior than the Tech Lead in terms of experience. In these situations, I see part of the Tech Lead role as mentoring and supporting the PM to grow into their role. This could involve sharing best practices around prioritisation, stakeholder management, or customer research.
+This matters even more when the PM is less experienced. Tech Leads often have years on their PM counterparts, especially at growing companies. Use that. Share what you've learned about prioritisation, stakeholder management, or customer research. A stronger PM makes your life easier.
 
 ## Balancing Delivery and Quality
 
@@ -74,5 +72,3 @@ Most of these challenges come down to the same thing: two people with different 
 Neither view is complete. The best PM-Tech Lead partnerships I've seen treat this gap as a feature, not a bug. You're not supposed to agree on everything. You're supposed to bring different perspectives and hash it out until you land on something better than either of you would reach alone.
 
 That takes trust. Trust takes time. And time takes showing up, being honest about trade-offs, and occasionally admitting you got it wrong.
-
-The teams that ship well aren't the ones with the smoothest processes. They're the ones where the Tech Lead and PM actually like working together.
