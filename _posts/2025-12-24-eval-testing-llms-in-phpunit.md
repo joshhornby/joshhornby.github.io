@@ -177,14 +177,16 @@ The `simulateConversation` method sends each message sequentially, building up t
 These tests make real API calls. Left unchecked, a test suite can rack up significant costs. The base test case tracks token usage and prints a summary at the end:
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    AI EVAL COST SUMMARY                     │
-├─────────────────────────────────────────────────────────────┤
-│  gpt-4o-mini       12 reqs │    8.2K in │    3.1K out │ $0.0031 │
-│  gpt-4o            12 reqs │   15.4K in │    2.8K out │ $0.0665 │
-├─────────────────────────────────────────────────────────────┤
-│  TOTAL ESTIMATED COST:                            $0.0696 │
-└─────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────┐
+│                   AI EVAL COST SUMMARY                     │
+├──────────────┬─────────┬──────────┬───────────┬───────────┤
+│ Model        │ Reqs    │ In       │ Out       │ Cost      │
+├──────────────┼─────────┼──────────┼───────────┼───────────┤
+│ gpt-4o-mini  │ 12      │ 8.2K     │ 3.1K      │ $0.0031   │
+│ gpt-4o       │ 12      │ 15.4K    │ 2.8K      │ $0.0665   │
+├──────────────┴─────────┴──────────┴───────────┼───────────┤
+│ TOTAL                                         │ $0.0696   │
+└───────────────────────────────────────────────┴───────────┘
 ```
 
 Run these in a separate test group (`--group=ai-eval`) so they don't execute on every commit. CI runs them nightly or on prompt changes.
