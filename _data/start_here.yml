@@ -62,6 +62,9 @@ sections:
       - url: /scepticism-to-collaboration-with-llms
         title: Scepticism to Collaboration with LLMs
         summary: How I went from dismissing AI tools to using them daily.
+      - url: /eval-testing-llms-in-phpunit
+        title: Eval Testing LLMs in PHPUnit
+        summary: Unit tests for prompts. How to build eval suites that catch regressions before your users do.
       - url: /building-lennys-vault
         title: Building Lenny's Vault
         summary: A side project using AI to make podcasts searchable.
