@@ -143,7 +143,22 @@ A few things worth noting:
 
 - **Use a cheaper model for conversation, a smarter one for judging.** The judge needs to be more capable than the model being tested, otherwise it misses subtle failures.
 - **JSON mode makes parsing reliable.** No regex parsing of natural language responses.
-- **Failed tests include reasoning.** You get the criteria that failed, why, and the actual response.
+- **Failed tests include reasoning.** You get the criteria that failed, why, and the actual response:
+
+```
+FAILED  Tests\Evals\Roles\HappyWithCurrentVendorEvalTest
+
+Response failed criteria: Response shows resistance to switching OR
+dismisses the pitch, Response maintains satisfaction with current solution.
+
+Reasoning: The response does not explicitly show resistance to switching
+or dismiss the pitch, as it simply indicates a lack of understanding.
+It does not express satisfaction with the current solution.
+
+Response was: "I'm not following. What are you asking?"
+```
+
+This tells you exactly what went wrong: the AI responded with confusion instead of the expected "we're happy with our current vendor" pushback.
 
 ## Testing multi-turn conversations
 
