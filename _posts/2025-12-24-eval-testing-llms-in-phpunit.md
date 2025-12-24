@@ -13,6 +13,8 @@ Most teams treat prompts like configuration. Tweak a few words, deploy, move on.
 
 The thing about prompts is they're code in disguise. They change behaviour, they have edge cases, and they regress. Without tests, the only feedback loop is customer complaints.
 
+This post covers what I learned building [Cold Call Coach](https://coldcall.coach), an AI-powered sales training app. The AI plays different prospect personas, and each persona needs to behave consistently: sceptical prospects should stay sceptical, happy customers shouldn't suddenly turn hostile. Evals are how I keep that in check.
+
 ## The problem with testing LLM outputs
 
 Traditional unit tests assert on exact outputs. `assertEquals('hello', greet())`. LLMs don't work that way. Ask the same prompt twice, and you'll get different wording, different structure, sometimes different conclusions. The output is probabilistic, not deterministic.
