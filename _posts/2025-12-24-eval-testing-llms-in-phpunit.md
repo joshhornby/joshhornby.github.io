@@ -253,7 +253,7 @@ Keep humans for:
 The test suite lives alongside regular PHPUnit tests but runs separately:
 
 ```bash
-php artisan test --group=ai-eval
+./vendor/bin/phpunit --group=ai-eval
 ```
 
 A dedicated API key (`OPENAI_API_KEY_EVALS`) keeps costs isolated and auditable. The tests skip gracefully if the key isn't set, so local development isn't blocked.
