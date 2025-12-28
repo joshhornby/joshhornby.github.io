@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2025-12-24T08:00:00+00:00"
 ---
 
-Most teams treat prompts like configuration. Tweak a few words, deploy, move on. I did the same until I shipped a "small fix" that quietly broke behaviours I didn't even know to check.
+Most teams treat prompts like configuration. Tweak a few words, deploy, move on. I did the same until I shipped a "small fix" that quietly broke a feature I didn't even know to check.
 
 The thing about prompts is they're code in disguise. They change behaviour, they have edge cases, and they regress. Without tests, the only feedback loop is customer complaints.
 
