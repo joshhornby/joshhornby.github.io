@@ -7,6 +7,26 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️️</text></svg>">
     <meta name="google-site-verification" content="29nMS88wbHFM-PFNgK9AAfQojw367FNb3p74HvPq1Mw"/>
     {% seo %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.author.name }}",
+      "url": "{{ site.url }}",
+      "sameAs": [
+        {% for link in site.social.links %}"{{ link }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+    </script>
     <link rel="alternate" type="application/rss+xml" title="Josh Hornby" href="/feed.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
