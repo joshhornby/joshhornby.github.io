@@ -32,6 +32,6 @@ My current solution is not to abandon local metrics; teams need that focus. Inst
 
 - Have engineers spend time embedded with their consumers. Nothing changes perspective faster than seeing your work from the other side.
 
-- Add cross-team satisfaction to your team's objectives. Local optimisation that hurts other teams isn't success, it's debt.
+- Add cross-team satisfaction to your team's goals. Local optimisation that hurts other teams isn't success, it's debt.
 
 The hardest part is that local optimisation feels like good engineering. Clean code, proper abstractions, following best practices these are valuable. But they become dangerous when you ignore the wider impact. Instead of "what's the best solution for us?" reframe the question to be "what's the best solution for the customer journey flowing through us?"
