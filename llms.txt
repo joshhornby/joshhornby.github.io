@@ -8,6 +8,11 @@ permalink: /llms.txt
 
 Written by Josh Hornby, an engineering leader based in the UK. Posts cover practical lessons from building software teams and products, with a focus on real experience over theory.
 
+## Links
+
+- [About]({{ site.url }}/about): Background on Josh Hornby
+- [Start Here]({{ site.url }}/start-here): Curated introduction to the best posts by topic
+
 ## Recent Posts
 {% assign recent_posts = site.posts | slice: 0, 10 %}
 {% for post in recent_posts %}
