@@ -25,7 +25,7 @@ Both approaches fail. The first catches nothing. The second catches everything, 
 
 ## LLM-as-judge: testing behaviour, not strings
 
-The solution is to test *behaviour*, not exact output. Instead of checking whether the response contains "I understand your concern", you check whether the response *demonstrates empathy*. And you use another LLM to make that judgement.
+The solution is to test _behaviour_, not exact output. Instead of checking whether the response contains "I understand your concern", you check whether the response _demonstrates empathy_. And you use another LLM to make that judgement.
 
 This is the LLM-as-judge pattern. You send the response to a judge model along with a list of criteria, and it returns a pass/fail verdict for each. The criteria are written in plain English:
 
@@ -141,11 +141,11 @@ PROMPT;
 }
 ```
 
-A few things worth noting:
+A few things are worth noting:
 
-- **Use a cheaper model for conversation, a smarter one for judging.** The judge needs to be more capable than the model being tested, otherwise it misses subtle failures.
-- **JSON mode makes parsing reliable.** No regex parsing of natural language responses.
-- **Failed tests include reasoning.** You get the criteria that failed, why, and the actual response:
+- Use a cheaper model for conversation, a smarter one for judging.** The judge needs to be more capable than the model being tested, otherwise it misses subtle failures.
+- JSON mode makes parsing reliable. No regex parsing of natural language responses.
+- Failed tests include reasoning. You get the criteria that failed, why, and the actual response:
 
 ```
 FAILED  Tests\Evals\Roles\HappyWithCurrentVendorEvalTest
@@ -212,11 +212,11 @@ Run these in a separate test group (`--group=ai-eval`) so they don't execute on 
 
 Over the past few months, these tests have caught issues I wouldn't have found otherwise:
 
-- **Character breaks.** A test explicitly tries to get the AI to acknowledge being an AI. The test expects it to stay in character. This caught a regression where a prompt change made the model more "helpful" about meta-questions.
+- Character breaks. A test explicitly tries to get the AI to acknowledge being an AI. The test expects it to stay in character. This caught a regression where a prompt change made the model more "helpful" about meta-questions.
 
-- **Premature agreement.** The AI prospect was supposed to be sceptical. A prompt tweak made it too friendly too fast. The "does not warm up after one good question" test caught it.
+- Premature agreement. The AI prospect was supposed to be sceptical. A prompt tweak made it too friendly too fast. The "does not warm up after one good question" test caught it.
 
-- **Edge case handling.** Tests for unclear inputs ("Hello?", "Testing 1 2 3") ensure the model asks for clarification rather than assuming context.
+- Edge case handling. Tests for unclear inputs ("Hello?", "Testing 1 2 3") ensure the model asks for clarification rather than assuming context.
 
 ```php
 #[Test]
