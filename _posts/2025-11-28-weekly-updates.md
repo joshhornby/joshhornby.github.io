@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2025-11-28T07:00:00+00:00"
 ---
 
-Sending my manager weekly updates have become a key part of how I stay effective. There are three main reasons I do this:
+Sending my manager weekly updates has become a key part of how I stay effective. There are three main reasons I do this:
 
 First, it provides visibility. My manager can quickly see what I'm up to in a given week and means we spend less time on status updates during 1-on-1s and more time on strategic issues.
 
@@ -17,7 +17,7 @@ Second, it tracks how productive (or unproductive) I've been. Each week, I log t
 
 Third, it earns trust. This could also be called managing up, but by sharing what I'm working on, I build confidence that I'm focused on the right things. It also opens the door for feedback before problems arise.
 
-The format I use is simple and consistent. Each week, I answer four questions:
+The format I use is straightforward and consistent. Each week, I answer four questions:
 
 ```text
 What I'm working on this week?

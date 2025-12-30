@@ -13,7 +13,7 @@ Most teams treat prompts like configuration. Tweak a few words, deploy, move on.
 
 The thing about prompts is they're code in disguise. They change behaviour, they have edge cases, and they regress. Without tests, the only feedback loop is customer complaints.
 
-This post covers what I learned building [Cold Call Coach](https://coldcall.coach), an AI-powered sales training app. The AI plays different prospect personas, and each persona needs to behave consistently: sceptical prospects should stay sceptical, happy customers shouldn't suddenly turn hostile. Evals are how I keep that in check.
+I learned this building [Cold Call Coach](https://coldcall.coach), an AI-powered sales training app. The AI plays different prospect personas, and each persona needs to behave consistently: sceptical prospects should stay sceptical, happy customers shouldn't suddenly turn hostile. Evals are how I keep that in check.
 
 ## The problem with testing LLM outputs
 
@@ -143,7 +143,7 @@ PROMPT;
 
 A few things are worth noting:
 
-- Use a cheaper model for conversation, a smarter one for judging.** The judge needs to be more capable than the model being tested, otherwise it misses subtle failures.
+- Use a cheaper model for conversation, a smarter one for judging. The judge needs to be more capable than the model being tested, otherwise it misses subtle failures.
 - JSON mode makes parsing reliable. No regex parsing of natural language responses.
 - Failed tests include reasoning. You get the criteria that failed, why, and the actual response:
 
@@ -257,8 +257,6 @@ The test suite lives alongside regular PHPUnit tests but runs separately:
 ```
 
 A dedicated API key (`OPENAI_API_KEY_EVALS`) keeps costs isolated and auditable. The tests skip gracefully if the key isn't set, so local development isn't blocked.
-
-## Conclusion
 
 The biggest benefit isn't catching bugs. It's confidence. Before evals, every prompt change felt risky. Did I break something? Would I even know? Now there's a baseline. The tests codify expected behaviours in a way that survives team changes and model updates.
 

@@ -5,27 +5,33 @@ tags: [project-management, product]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-12-11 T07:00:00+01:00"
+    lastmod: "2025-12-30 T10:00:00+01:00"
 ---
 
-If a picture speaks a thousand words. A hill chart shows where we got stuck explaining them. 
+Three weeks into a migration project, the status update said "70% complete". Two months later, it still said "70% complete". The remaining 30% contained all the problems nobody had figured out yet.
 
-Hill Charts are helpful for visualising progress, especially when dealing with uncertainty. Instead of just marking tasks as "not started", "in progress", or "done", Hill Charts show where you actually are in figuring something out.
-
-## What are Hill Charts?
-
-Hill Charts are a visual tool used to track the progress of tasks or projects. They represent the journey from uncertainty to clarity, helping teams understand where they are in the process of completing a task.
+Percentage complete is a comforting lie. It treats all work as equal, when the hard part is usually discovering what you don't know. Hill Charts fix this by separating "figuring it out" from "making it happen".
 
 ## How Hill Charts Work
 
 ![Example Hill Chart](/assets/images/example_hill_chart_hillchart.png)
 
-Hill Charts consist of a hill shape, with the left side representing the "uphill" phase where uncertainty is high and the right side representing the "downhill" phase where clarity increases. The peak of the hill signifies the point where the team has enough information to proceed confidently.
+The left side of the hill is the uphill phase: research, spikes, uncertainty. You're still learning what the work actually involves. The right side is downhill: execution. You know what to build, you just need to build it.
 
-Teams plot their tasks on the hill based on their current understanding and progress. As they gather more information and make decisions, they move the task along the hill.
+The peak is the turning point. You've answered enough questions to proceed confidently. Moving a task past the peak means "we know what to do now".
 
-The drawback is that Hill Charts can be subjective. They rely on people's own sense of where they are. Regular check-ins help, so the team agrees on what moving up or down the hill actually means.
+This distinction matters because stuck work looks different on each side. A task stuck on the uphill needs more investigation or a different approach. A task stuck on the downhill has a blocking dependency or resource problem. The response is different, and the chart makes that visible.
 
-I've found Hill Charts particularly useful when communicating with senior stakeholders. They provide a clear visual representation of progress and help manage expectations around uncertainty and risk. 
+## The Subjectivity Problem
 
-Next time you're tracking a project with unknowns, consider using a Hill Chart to visualise your progress.
+Hill Charts rely on self-assessment. One person's "almost at the peak" is another's "barely started climbing". I've seen tasks teleport backwards when someone new looked at them with fresh eyes.
+
+Regular check-ins help calibrate. The team needs a shared understanding of what "past the peak" means for their context. Without this, the chart becomes another form of false precision.
+
+## Where They Work Best
+
+I've found Hill Charts most useful in two situations:
+
+Communicating with senior stakeholders. Executives understand "we're still figuring out the approach" versus "we know what to do; it's just taking time". A percentage doesn't convey that distinction.
+
+Spotting stuck work early. When a task hasn't moved in two weeks, the chart makes it obvious. More importantly, its position tells you what kind of stuck it is.
