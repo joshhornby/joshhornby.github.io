@@ -48,9 +48,55 @@ The base test case handles the plumbing. Tests inherit from it and focus on scen
 #[Group('ai-eval')]
 abstract class EvalTestCase extends TestCase
 {
+    protected Client $client;
+
     // Cheap model generates responses, smarter model judges them
     protected string $conversationModel = 'gpt-4o-mini';
     protected string $judgeModel = 'gpt-4o';
+
+    // Token usage tracking per model
+    protected static array $tokenUsage = [];
+
+    // Pricing per million tokens
+    protected static array $pricing = [
+        'gpt-4o-mini' => ['input' => 0.15, 'output' => 0.60],
+        'gpt-4o' => ['input' => 2.50, 'output' => 10.00],
+    ];
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->client = OpenAI::client(env('OPENAI_API_KEY_EVALS'));
+
+        // Print cost summary when tests finish
+        register_shutdown_function([self::class, 'printCostSummary']);
+    }
+
+    protected function trackUsage(CreateResponse $response, string $model): void
+    {
+        if (! isset(self::$tokenUsage[$model])) {
+            self::$tokenUsage[$model] = ['input' => 0, 'output' => 0, 'requests' => 0];
+        }
+
+        self::$tokenUsage[$model]['input'] += $response->usage->promptTokens;
+        self::$tokenUsage[$model]['output'] += $response->usage->completionTokens;
+        self::$tokenUsage[$model]['requests']++;
+    }
+
+    public static function printCostSummary(): void
+    {
+        if (empty(self::$tokenUsage)) return;
+
+        $total = 0.0;
+        foreach (self::$tokenUsage as $model => $usage) {
+            $pricing = self::$pricing[$model] ?? ['input' => 0, 'output' => 0];
+            $cost = ($usage['input'] / 1_000_000) * $pricing['input']
+                  + ($usage['output'] / 1_000_000) * $pricing['output'];
+            $total += $cost;
+            // Print per-model breakdown...
+        }
+        echo "Total cost: \${$total}\n";
+    }
 
     protected function getAIResponse(
         AIRole $role,
@@ -67,6 +113,8 @@ abstract class EvalTestCase extends TestCase
             'model' => $this->conversationModel,
             'messages' => $messages,
         ]);
+
+        $this->trackUsage($response, $this->conversationModel);
 
         return $response->choices[0]->message->content;
     }
@@ -113,6 +161,8 @@ PROMPT;
             'messages' => [['role' => 'user', 'content' => $prompt]],
             'response_format' => ['type' => 'json_object'],
         ]);
+
+        $this->trackUsage($result, $this->judgeModel);
 
         $parsed = json_decode($result->choices[0]->message->content, true);
 
