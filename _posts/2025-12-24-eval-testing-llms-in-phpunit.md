@@ -6,7 +6,7 @@ description: "Unit tests for prompts. How to build eval suites in PHPUnit that c
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-12-24T08:00:00+00:00"
+    lastmod: "2026-01-02T08:00:00+00:00"
 ---
 
 Most teams treat prompts like configuration. Tweak a few words, deploy, move on. I did the same until I shipped a "small fix" that quietly broke a feature I didn't even know to check.
@@ -25,6 +25,7 @@ This post covers the patterns I've found useful:
 - [Model comparison](#model-comparison-tests) - benchmarking across models
 - [Judge calibration](#calibrating-the-judge) - verifying the LLM judge is accurate
 - [Organising with traits](#organising-tests-with-traits) - reusable test patterns
+- [Tracking costs](#tracking-costs) - keeping API spend under control
 
 ## The problem with testing LLM outputs
 
@@ -62,16 +63,16 @@ abstract class EvalTestCase extends TestCase
     protected Client $client;
 
     // Cheap model generates responses, smarter model judges them
-    protected string $conversationModel = 'gpt-4o-mini';
-    protected string $judgeModel = 'gpt-4o';
+    protected string $conversationModel = 'gpt-4.1-mini';
+    protected string $judgeModel = 'gpt-4.1';
 
     // Token usage tracking per model
     protected static array $tokenUsage = [];
 
     // Pricing per million tokens
     protected static array $pricing = [
-        'gpt-4o-mini' => ['input' => 0.15, 'output' => 0.60],
-        'gpt-4o' => ['input' => 2.50, 'output' => 10.00],
+        'gpt-4.1-mini' => ['input' => 0.10, 'output' => 0.40],
+        'gpt-4.1' => ['input' => 2.00, 'output' => 8.00],
     ];
 
     protected function setUp(): void
@@ -202,10 +203,10 @@ PROMPT;
 }
 ```
 
-A few things are worth noting:
+A few details matter here:
 
-- Use a cheaper model for conversation, a smarter one for judging. The judge needs to be more capable than the model being tested, otherwise it misses subtle failures.
-- JSON mode makes parsing reliable. No regex parsing of natural language responses.
+- Use a cheap model for conversation, a smarter one for judging. The judge needs to be more capable than the model being tested, otherwise it misses subtle failures.
+- JSON mode makes parsing reliable. No regex parsing of natural language.
 - Failed tests include reasoning. You get the criteria that failed, why, and the actual response:
 
 ```
@@ -250,7 +251,7 @@ public function it_gradually_warms_up_after_multiple_good_exchanges(): void
 
 The `simulateConversation` method sends each message sequentially, building up the conversation history. The judge then evaluates the entire transcript against the criteria.
 
-Extended conversations surface different failure modes. Over 10+ turns, personas can drift. The AI might become too friendly, forget earlier context, or break character when confused:
+Longer conversations reveal different problems. Over 10+ turns, personas can drift. The AI might become too friendly, forget earlier context, or break character when confused:
 
 ```php
 #[Test]
@@ -386,7 +387,7 @@ public static function printLatencySummary(): void
 
 ## Prompt sensitivity testing
 
-Small changes in phrasing shouldn't dramatically change behaviour. Prompt sensitivity tests check that the AI responds consistently to semantically equivalent inputs:
+Small changes in phrasing shouldn't change behaviour. If "Hi, I'm calling about software" works but "Hey, quick call about software" doesn't, your prompt is too fragile:
 
 ```php
 #[Test]
@@ -416,7 +417,7 @@ public static function openingVariationsProvider(): array
 
 ## Response format assertions
 
-Beyond semantic correctness, responses need to match expected formats. The base test case includes helpers for common checks:
+Getting the meaning right isn't enough. Responses also need the right format. The base test case includes helpers for common checks:
 
 ```php
 protected function assertResponseLength(
@@ -480,9 +481,9 @@ public function compare_cold_call_handling(string $model): void
 public static function modelComparisonProvider(): array
 {
     return [
-        'gpt-4o-mini' => ['gpt-4o-mini'],
-        'gpt-4o' => ['gpt-4o'],
         'gpt-4.1-mini' => ['gpt-4.1-mini'],
+        'gpt-4.1' => ['gpt-4.1'],
+        'gpt-5-mini' => ['gpt-5-mini'],
     ];
 }
 ```
@@ -493,9 +494,9 @@ The test suite aggregates results and prints a comparison table:
 ┌──────────────┬───────────┬──────────┬───────────┐
 │ Model        │ Pass Rate │ Avg ms   │ p95 ms    │
 ├──────────────┼───────────┼──────────┼───────────┤
-│ gpt-4o-mini  │ 92%       │ 342      │ 521       │
-│ gpt-4o       │ 98%       │ 891      │ 1,203     │
-│ gpt-4.1-mini │ 95%       │ 298      │ 445       │
+│ gpt-4.1-mini │ 92%       │ 298      │ 445       │
+│ gpt-4.1      │ 98%       │ 612      │ 890       │
+│ gpt-5-mini   │ 96%       │ 245      │ 380       │
 └──────────────┴───────────┴──────────┴───────────┘
 ```
 
@@ -550,11 +551,11 @@ class B2BSaaSProspectEvalTest extends EvalTestCase
 }
 ```
 
-Each trait adds 5-10 tests. A role class using all four traits automatically inherits 30+ tests covering long conversations, security, prompt robustness, and statistical consistency. New roles get comprehensive coverage by including the same traits.
+Each trait adds 5-10 tests. A role class using all four traits inherits 30+ tests. New roles get the same coverage by including the same traits.
 
 ## Calibrating the judge
 
-The LLM-as-judge pattern relies on the judge model being accurate. Calibration tests verify this by running obviously good and bad responses through the judge:
+The LLM-as-judge pattern only works if the judge is accurate. Calibration tests check this by running obviously good and bad responses through the judge:
 
 ```php
 #[Test]
@@ -596,14 +597,25 @@ These tests make real API calls. Left unchecked, a test suite can rack up signif
 ├──────────────┬─────────┬──────────┬───────────┬───────────┤
 │ Model        │ Reqs    │ In       │ Out       │ Cost      │
 ├──────────────┼─────────┼──────────┼───────────┼───────────┤
-│ gpt-4o-mini  │ 12      │ 8.2K     │ 3.1K      │ $0.0031   │
-│ gpt-4o       │ 12      │ 15.4K    │ 2.8K      │ $0.0665   │
+│ gpt-4.1-mini │ 12      │ 8.2K     │ 3.1K      │ $0.0020   │
+│ gpt-4.1      │ 12      │ 15.4K    │ 2.8K      │ $0.0532   │
 ├──────────────┴─────────┴──────────┴───────────┼───────────┤
-│ TOTAL                                         │ $0.0696   │
+│ TOTAL                                         │ $0.0552   │
 └───────────────────────────────────────────────┴───────────┘
 ```
 
-Run these in a separate test group (`--group=ai-eval`) so they don't execute on every commit. CI runs them nightly or on prompt changes.
+A full test run with 40 tests costs around $0.20. Not nothing, but not painful either. The trick is keeping it that way.
+
+The biggest cost lever is model selection. Using gpt-4.1-mini for the conversation and gpt-4.1 only for judging cuts costs by 10x compared to using gpt-4.1 for everything. The conversation model just needs to be representative of production. The judge needs to be smart.
+
+Other things that help:
+
+- A dedicated API key for evals. Easier to track spend and set alerts.
+- Running tests in a separate group (`--group=ai-eval`). They don't run on every commit.
+- CI runs them nightly or on prompt changes, not on every push.
+- Statistical robustness tests (running N times) are expensive. Use them sparingly for critical behaviours only.
+
+I set a budget alert at $5/month. In practice, I've never hit it. Most of the cost comes from the judge model, so if costs creep up, switching the judge to a cheaper model (with calibration tests to verify it's still accurate) is the first thing to try.
 
 ## What evals actually catch
 
@@ -635,9 +647,9 @@ public function it_does_not_assume_sales_call_without_context(): void
 
 ## You can't vibe code a prompt
 
-The incident.io team [wrote about this recently](https://incident.io/building-with-ai/you-cant-vibe-code-a-prompt). Their observation: letting an LLM optimise its own prompts leads to overfitting. The model memorises specific answers rather than learning generalisable patterns. When they let Claude fix a failing eval, it added overly specific rules that broke previously passing cases.
+The incident.io team [wrote about this recently](https://incident.io/building-with-ai/you-cant-vibe-code-a-prompt). Their observation: letting an LLM optimise its own prompts leads to overfitting. The model memorises specific answers rather than learning the underlying rules. When they let Claude fix a failing eval, it added overly specific instructions that broke previously passing cases.
 
-The lesson applies here too. Evals are for *detecting* problems, not solving them. The LLM can generate test cases and judge responses, but the actual prompt engineering requires human intuition. You need to understand *why* a behaviour matters, not just pattern-match on symptoms.
+The lesson applies here too. Evals detect problems. They don't solve them. The LLM can generate test cases and judge responses, but fixing the prompt is still your job. You need to understand *why* a behaviour matters, not just pattern-match on symptoms.
 
 Use LLMs to:
 - Generate diverse test cases
@@ -657,7 +669,7 @@ The test suite lives alongside regular PHPUnit tests but runs separately:
 ./vendor/bin/phpunit --group=ai-eval
 ```
 
-A dedicated API key (`OPENAI_API_KEY_EVALS`) keeps costs isolated and auditable. The tests skip gracefully if the key isn't set, so local development isn't blocked.
+A dedicated API key (`OPENAI_API_KEY_EVALS`) keeps costs isolated and auditable. The tests skip if the key isn't set, so local development isn't blocked.
 
 The biggest benefit isn't catching bugs. It's confidence. Before evals, every prompt change felt risky. Did I break something? Would I even know? Now there's a baseline. The tests codify expected behaviours in a way that survives team changes and model updates.
 
