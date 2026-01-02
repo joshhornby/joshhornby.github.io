@@ -9,11 +9,9 @@ sitemap:
     lastmod: "2026-01-02T08:00:00+00:00"
 ---
 
-Most teams treat prompts like configuration. Tweak a few words, deploy, move on. I did the same until I shipped a "small fix" that quietly broke a feature I didn't even know to check.
+I shipped a one-line prompt change and broke a feature I didn't know to check. [Cold Call Coach](https://coldcall.coach) is a sales training app where AI plays prospect personas - the sceptical buyer, the satisfied customer, the gatekeeper. After my change, the sceptical persona started agreeing to meetings on the first call. Nobody complained - users just assumed the AI was inconsistent. I only found out when I demoed it two weeks later.
 
-The thing about prompts is they're code in disguise. They change behaviour, they have edge cases, and they regress. Without tests, the only feedback loop is customer complaints.
-
-I learned this building [Cold Call Coach](https://coldcall.coach), an AI-powered sales training app. The AI plays different prospect personas, and each persona needs to behave consistently: sceptical prospects should stay sceptical, happy customers shouldn't suddenly turn hostile. Evals are how I keep that in check.
+Prompts are code. They change behaviour, they have edge cases, and they regress. Without tests, the only feedback loop is noticing something feels off.
 
 This post covers the patterns I've found useful:
 
