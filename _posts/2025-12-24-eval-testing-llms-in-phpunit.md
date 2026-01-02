@@ -2,7 +2,7 @@
 title: Eval Testing LLMs in PHPUnit
 date: 2025-12-24 08:00:00
 tags: [ai, php, software-engineering]
-description: "Unit tests for prompts. How to build eval suites in PHPUnit that catch regressions before your users do."
+description: "Prompts break silently. Here's how to catch regressions with PHPUnit evals before your users do."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
