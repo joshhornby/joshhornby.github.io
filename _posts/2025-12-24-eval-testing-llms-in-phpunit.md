@@ -42,6 +42,9 @@ The solution is to test _behaviour_, not exact output. Instead of checking wheth
 This is the LLM-as-judge pattern. You send the response to a judge model along with a list of criteria, and it returns a pass/fail verdict for each. The criteria are written in plain English:
 
 ```php
+$role = $this->createRole();
+$response = $this->getAIResponse($role, "Hi, I'm calling about automation software.");
+
 $this->assertResponseMeetsCriteria($response, [
     'Response is short (1-3 sentences)',
     'Response shows skepticism, impatience, or guardedness',
@@ -251,6 +254,27 @@ public function it_gradually_warms_up_after_multiple_good_exchanges(): void
 
 The `simulateConversation` method sends each message sequentially, building up the conversation history. The judge then evaluates the entire transcript against the criteria.
 
+The `assertConversationMeetsCriteria` method works like `assertResponseMeetsCriteria`, but formats the full conversation for the judge:
+
+```php
+protected function assertConversationMeetsCriteria(
+    array $messages,
+    array $criteria,
+    string $context = ''
+): void {
+    $transcript = collect($messages)
+        ->map(fn ($m) => strtoupper($m['role']).': '.$m['content'])
+        ->join("\n\n");
+
+    $result = $this->judgeResponse($transcript, $criteria);
+
+    if (! $result['passed']) {
+        $failed = array_keys(array_filter($result['scores'], fn ($p) => ! $p));
+        $this->fail("{$context}: Failed: ".implode(', ', $failed));
+    }
+}
+```
+
 Longer conversations reveal different problems. Over 10+ turns, personas can drift. The AI might become too friendly, forget earlier context, or break character when confused:
 
 ```php
@@ -340,7 +364,25 @@ public function never_acknowledges_being_ai(string $attack): void
 }
 ```
 
-The `assertNoAIDisclosure` helper checks for phrases like "I'm an AI", "as an AI assistant", or mentions of ChatGPT, Claude, or other models. This catches subtle leakage that the LLM judge might miss.
+The `assertNoAIDisclosure` helper checks for phrases like "I'm an AI", "as an AI assistant", or mentions of ChatGPT, Claude, or other models. This catches subtle leakage that the LLM judge might miss:
+
+```php
+protected function assertNoAIDisclosure(string $response): void
+{
+    $forbidden = [
+        "i'm an ai", "i am an ai", "as an ai",
+        'language model', 'chatgpt', 'openai', 'claude', 'anthropic',
+    ];
+
+    foreach ($forbidden as $phrase) {
+        $this->assertStringNotContainsString(
+            $phrase,
+            strtolower($response),
+            "Response reveals AI identity: {$response}"
+        );
+    }
+}
+```
 
 ## Statistical robustness
 
@@ -365,9 +407,40 @@ public function maintains_skepticism_consistently(): void
 
 This runs the test 10 times and requires 80% of runs to pass all criteria. It catches flaky prompts that work most of the time but occasionally produce unwanted behaviour.
 
+The implementation is straightforward:
+
+```php
+protected function assertCriteriaMeetRate(
+    callable $getResponse,
+    array $criteria,
+    int $runs,
+    float $requiredPassRate,
+    string $context = ''
+): void {
+    $passes = 0;
+
+    for ($i = 0; $i < $runs; $i++) {
+        $response = $getResponse();
+        $result = $this->judgeResponse($response, $criteria);
+        if ($result['passed']) {
+            $passes++;
+        }
+    }
+
+    $actualRate = $passes / $runs;
+    $this->assertGreaterThanOrEqual(
+        $requiredPassRate,
+        $actualRate,
+        "{$context}: Pass rate {$actualRate} below required {$requiredPassRate}"
+    );
+}
+```
+
 The base test case also tracks per-model latency with p95 metrics. Slow responses matter for real-time applications:
 
 ```php
+protected static array $latencyMetrics = [];
+
 protected function trackLatency(float $startTime, string $model): void
 {
     $latency = (microtime(true) - $startTime) * 1000;
@@ -458,6 +531,8 @@ These catch format violations that the LLM judge might miss. A response can be s
 When evaluating new models or considering a switch, comparison tests run identical scenarios across multiple models and output structured results:
 
 ```php
+protected static array $modelResults = [];
+
 #[Test]
 #[DataProvider('modelComparisonProvider')]
 public function compare_cold_call_handling(string $model): void
@@ -488,16 +563,29 @@ public static function modelComparisonProvider(): array
 }
 ```
 
-The test suite aggregates results and prints a comparison table:
+The test suite aggregates results and prints summaries at the end:
 
 ```
-┌──────────────┬───────────┬──────────┬───────────┐
-│ Model        │ Pass Rate │ Avg ms   │ p95 ms    │
-├──────────────┼───────────┼──────────┼───────────┤
-│ gpt-4.1-mini │ 92%       │ 298      │ 445       │
-│ gpt-4.1      │ 98%       │ 612      │ 890       │
-│ gpt-5-mini   │ 96%       │ 245      │ 380       │
-└──────────────┴───────────┴──────────┴───────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                    AI EVAL COST SUMMARY                     │
+├─────────────────────────────────────────────────────────────┤
+│  gpt-4.1-mini     136 reqs │  217.2K in │    1.7K out │ $0.0336 │
+│  gpt-4.1           90 reqs │   14.9K in │    8.8K out │ $0.1252 │
+├─────────────────────────────────────────────────────────────┤
+│  TOTAL ESTIMATED COST:                            $0.1589 │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│                   AI EVAL LATENCY SUMMARY                   │
+├─────────────────────────────────────────────────────────────┤
+│  gpt-4.1-mini        132 reqs │ avg:   735ms │ p95:  1384ms │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│                   AI EVAL FAILURE SUMMARY                   │
+├─────────────────────────────────────────────────────────────┤
+│  Total failures logged: 7                                   │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 This makes model selection decisions data-driven rather than based on vibes.
@@ -589,22 +677,7 @@ If calibration tests fail, the judge model or prompt needs adjustment before tru
 
 ## Tracking costs
 
-These tests make real API calls. Left unchecked, a test suite can rack up significant costs. The base test case tracks token usage and prints a summary at the end:
-
-```
-┌────────────────────────────────────────────────────────────┐
-│                   AI EVAL COST SUMMARY                     │
-├──────────────┬─────────┬──────────┬───────────┬───────────┤
-│ Model        │ Reqs    │ In       │ Out       │ Cost      │
-├──────────────┼─────────┼──────────┼───────────┼───────────┤
-│ gpt-4.1-mini │ 12      │ 8.2K     │ 3.1K      │ $0.0020   │
-│ gpt-4.1      │ 12      │ 15.4K    │ 2.8K      │ $0.0532   │
-├──────────────┴─────────┴──────────┴───────────┼───────────┤
-│ TOTAL                                         │ $0.0552   │
-└───────────────────────────────────────────────┴───────────┘
-```
-
-A full test run with 40 tests costs around $0.20. Not nothing, but not painful either. The trick is keeping it that way.
+These tests make real API calls. Left unchecked, a test suite can rack up costs. The summaries shown above help track spend per model.
 
 The biggest cost lever is model selection. Using gpt-4.1-mini for the conversation and gpt-4.1 only for judging cuts costs by 10x compared to using gpt-4.1 for everything. The conversation model just needs to be representative of production. The judge needs to be smart.
 
@@ -635,6 +708,7 @@ Over the past few months, these tests have caught issues I wouldn't have found o
 #[Test]
 public function it_does_not_assume_sales_call_without_context(): void
 {
+    $role = $this->createRole();
     $response = $this->getAIResponse($role, 'Testing, testing, 1 2 3.');
 
     $this->assertResponseMeetsCriteria($response, [
