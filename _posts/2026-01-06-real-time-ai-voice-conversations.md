@@ -11,13 +11,15 @@ sitemap:
 
 > This is the second post about building [Cold Call Coach](https://coldcall.coach). The first covered [eval testing LLMs in PHPUnit](/2025/12/24/eval-testing-llms-in-phpunit/).
 
-Real-time voice AI has a problem that text chat doesn't: humans expect conversational norms that took evolution millions of years to establish. When someone interrupts you, you stop talking. When there's a pause, you wait. When the conversation ends, both parties know it. Violate any of these, and the interaction feels broken even if it's technically working.
+Real-time voice AI has a problem that text chat doesn't: humans expect certain things from conversations. When someone interrupts you, you stop talking. When there's a pause, you wait. When the conversation ends, both parties know it. Break any of these rules, and the interaction feels wrong even if it's technically working.
 
-I ran into this building [Cold Call Coach](https://coldcall.coach), a sales training app where users practice cold calls against an AI prospect via Twilio. The first beta tester interrupted the AI mid-sentence. It kept talking. Then it responded to something she'd said thirty seconds earlier. The conversation became incoherent within three turns.
+I ran into this building [Cold Call Coach](https://coldcall.coach), a sales training app where users practice cold calls against an AI prospect via Twilio. The first beta tester interrupted the AI mid-sentence. It kept talking. Then it responded to something she'd said thirty seconds earlier. The conversation made no sense within three turns.
 
 The patterns that follow emerged from fixing these failures. They're specific to Twilio and OpenAI, but the underlying challenges apply to any real-time voice system.
 
-## Stream interruption handling
+## Interruptions break context, not just audio
+
+In human conversation, an interruption resets the speaker's train of thought. They stop, listen, and respond to what you just said. Most voice AI implementations get this wrong. They treat interruption as an audio problem - stop the current playback - when it's actually a context problem.
 
 When a user talks over the AI mid-response, you need to cancel the current OpenAI stream immediately. If you don't, you're burning tokens on a response nobody will hear. Worse, you lose context. The user said something important, but you're still processing stale input.
 
@@ -61,7 +63,9 @@ State management matters here. You need at least three flags:
 
 Get any of these wrong, and you'll have conversations where the AI responds to questions from two turns ago.
 
-## Sentence-aware chunking for TTS
+## The latency-quality tradeoff in speech synthesis
+
+Every real-time system faces a tension between speed and quality. Stream too eagerly and you get choppy output. Buffer too long and you get awkward pauses. Voice AI makes this obvious: users notice both problems immediately.
 
 Sending every token to Twilio as it arrives creates choppy, robotic speech. The TTS engine receives "I" then "think" then "we" and tries to synthesise each fragment. The result sounds like a bad mobile connection.
 
@@ -112,13 +116,9 @@ for await (const chunk of result.textStream) {
 }
 ```
 
-The `isLast` flag tells the TTS engine this chunk ends a sentence. It adjusts prosody accordingly, adding a natural pause before the next sentence. Without this, the AI speaks in one continuous monotone.
+The `isLast` flag tells the TTS engine this chunk ends a sentence. It adds a natural pause before the next sentence. Without this, the AI speaks in one continuous monotone.
 
-## End-of-call detection via marker tokens
-
-The AI prospect decides when to end the call. Maybe the user successfully booked a meeting. Maybe they were too pushy and the prospect hung up. Either way, the AI signals this by including `[END_CALL]` in its response.
-
-Detecting the marker seems trivial until you consider abbreviations. "Dr. Smith will see you now" has a period, but it's not a sentence ending. Your end-of-sentence detection needs to ignore these:
+Detecting sentence endings sounds simple until you hit abbreviations. "Dr. Smith will see you now" has a period, but it's not a sentence ending. You need to check for common abbreviations:
 
 ```typescript
 const ABBREVIATIONS = [
@@ -127,23 +127,23 @@ const ABBREVIATIONS = [
   'vs', 'etc', 'approx', 'dept', 'est', 'govt', 'no', 'vol',
 ];
 
-const ABBREVIATION_PATTERN = new RegExp(
-  `\\b(${ABBREVIATIONS.join('|')})\\.\\s*`,
-  'i'
-);
-
 export function hasEndPunctuation(text: string): boolean {
   const trimmed = text.trim();
   if (!/[.!?]$/.test(trimmed)) {
     return false;
   }
-  // Don't treat abbreviation periods as sentence endings
   if (endsWithAbbreviation(trimmed)) {
     return false;
   }
   return true;
 }
 ```
+
+## Letting the AI decide when to hang up
+
+Phone calls have a natural ending that both parties recognise. Someone says "great, talk soon" and both sides know to hang up. In voice AI, you need to give the model control over this transition. Hard-coding call duration or waiting for silence leads to awkward endings where neither party knows if the conversation is over.
+
+For Cold Call Coach, the AI prospect decides when to end the call. Maybe the user successfully booked a meeting. Maybe they were too pushy and the prospect hung up. Either way, the AI signals this by including `[END_CALL]` in its response.
 
 The marker detection strips the token from the output and sets a flag:
 
@@ -173,16 +173,14 @@ if (state.shouldEndCall && !state.isInterrupted) {
 
 The 500ms delay gives the TTS time to finish the final sentence. Ending immediately would cut off the AI mid-word.
 
-## Lessons from production
+## What I learned
 
-These three patterns emerged from watching real users break the app. Each one seems obvious in retrospect, but I didn't find them in any tutorial or documentation.
+Beyond the specific patterns, three things shaped how I approached debugging.
 
-A few other things that mattered:
+First, log everything. When voice conversations go wrong, reproducing the issue is nearly impossible. You can't replay a phone call the way you can replay an HTTP request. Log timestamps, message content, and state flags for every event. You'll need it.
 
-- Log everything. When voice conversations go wrong, reproducing the issue is nearly impossible. Timestamps, message content, state flags. All of it. You'll need it.
+Second, assume bad input. Users on mobile with spotty signal will have packets arrive out of order, duplicated, or not at all. Your state machine needs to handle rubbish gracefully. Assume every message might arrive at the worst possible moment.
 
-- Test with bad connections. Users on mobile with spotty signal will have packets arrive out of order, duplicated, or not at all. Your state machine needs to handle rubbish input gracefully.
+Third, treat latency as a hard constraint. Users tolerate about 300ms of silence before they think something broke. This shapes every decision. Profile aggressively.
 
-- Latency budgets are tight. Users tolerate about 300ms of silence before they think something broke. Every millisecond in your processing pipeline matters. Profile aggressively.
-
-Real-time voice is hard in ways that text chat isn't. Humans expect conversational norms that took evolution millions of years to establish. When an AI violates those norms, it feels broken even if it's technically working.
+The broader lesson: real-time voice exposes problems that text chat hides. Text is forgiving. Users wait a few seconds for a response, re-read if something's unclear, scroll back to check context. Voice has none of that. Every rough edge becomes a conversation that feels broken.
