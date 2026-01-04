@@ -177,7 +177,7 @@ The 500ms delay gives the TTS time to finish the final sentence. Ending immediat
 
 Beyond the specific patterns, three things shaped how I approached debugging.
 
-First, log everything. When voice conversations go wrong, reproducing the issue is nearly impossible. You can't replay a phone call the way you can replay an HTTP request. Log timestamps, message content, and state flags for every event. I covered [how to set up AI tracing with Sentry](/sentry-ai-tracing-laravel) in a previous post. You'll need it.
+First, log everything. When voice conversations go wrong, reproducing the issue is nearly impossible. You can't replay a phone call the way you can replay an HTTP request. Log timestamps, message content, and state flags for every event. I covered [how to set up AI tracing with Sentry](/sentry-ai-tracing-laravel) in a previous post.
 
 Second, assume bad input. Users on mobile with spotty signal will have packets arrive out of order, duplicated, or not at all. Your state machine needs to handle rubbish gracefully. Assume every message might arrive at the worst possible moment.
 
