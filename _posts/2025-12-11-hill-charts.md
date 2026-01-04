@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2026-01-04 T10:00:00+01:00"
 ---
 
-Progress tracking has a fundamental problem: it conflates two different kinds of work. There's work where you know what to do and just need to do it. And there's work where you're still figuring out what "done" even looks like. Percentage complete treats these as interchangeable. They aren't.
+Progress tracking has a fundamental problem: it combines two different kinds of work. There's work where you know what to do and just need to do it. And there's work where you're still figuring out what "done" even looks like. Percentage complete treats these as interchangeable. They aren't.
 
 I watched a migration project sit at "70% complete" for two months. The remaining 30% contained all the uncertainty nobody had resolved yet. The number was accurate in some narrow sense, but it told you nothing about whether the project was on track.
 
