@@ -6,7 +6,7 @@ description: "Patterns for handling interruptions, chunking speech, and detectin
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2026-01-05T08:00:00+00:00"
+    lastmod: "2026-01-06T08:00:00+00:00"
 ---
 
 > This is the second post about building [Cold Call Coach](https://coldcall.coach). The first covered [eval testing LLMs in PHPUnit](/2025/12/24/eval-testing-llms-in-phpunit/).
