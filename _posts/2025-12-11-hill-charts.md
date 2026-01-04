@@ -6,12 +6,14 @@ description: "Why percentage complete lies about progress, and how Hill Charts s
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-12-30 T10:00:00+01:00"
+    lastmod: "2026-01-04 T10:00:00+01:00"
 ---
 
-Three weeks into a migration project, the status update said "70% complete". Two months later, it still said "70% complete". The remaining 30% contained all the problems nobody had figured out yet.
+Progress tracking has a fundamental problem: it conflates two different kinds of work. There's work where you know what to do and just need to do it. And there's work where you're still figuring out what "done" even looks like. Percentage complete treats these as interchangeable. They aren't.
 
-Percentage complete is a comforting lie. It treats all work as equal, when the hard part is usually discovering what you don't know. Hill Charts fix this by separating "figuring it out" from "making it happen".
+I watched a migration project sit at "70% complete" for two months. The remaining 30% contained all the uncertainty nobody had resolved yet. The number was accurate in some narrow sense, but it told you nothing about whether the project was on track.
+
+Hill Charts fix this by making the distinction explicit. The left side is "figuring it out". The right side is "making it happen". A task's position tells you what kind of work remains, not just how much.
 
 ## How Hill Charts Work
 

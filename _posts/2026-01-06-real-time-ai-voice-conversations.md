@@ -1,6 +1,6 @@
 ---
 title: Building Production-Grade Real-Time AI Voice Conversations
-date: 2026-01-05 08:00:00
+date: 2026-01-06 08:00:00
 tags: [ai, twilio, software-engineering]
 description: "Patterns for handling interruptions, chunking speech, and detecting call endings when building voice AI with Twilio and OpenAI."
 sitemap:
@@ -11,11 +11,11 @@ sitemap:
 
 > This is the second post about building [Cold Call Coach](https://coldcall.coach). The first covered [eval testing LLMs in PHPUnit](/2025/12/24/eval-testing-llms-in-phpunit/).
 
-The demo worked perfectly. User speaks, AI responds, conversation flows naturally. Then people started to use it.
+Real-time voice AI has a problem that text chat doesn't: humans expect conversational norms that took evolution millions of years to establish. When someone interrupts you, you stop talking. When there's a pause, you wait. When the conversation ends, both parties know it. Violate any of these, and the interaction feels broken even if it's technically working.
 
-Real users don't wait politely for the AI to finish speaking. They interrupt. They talk over it. They say "yeah, yeah, got it" mid-sentence and expect the AI to stop and listen. Our first production version handled none of this. Users would interrupt, but the AI kept talking. Then it would respond to what they'd said thirty seconds ago. The conversation became incoherent within three turns.
+I ran into this building [Cold Call Coach](https://coldcall.coach), a sales training app where users practice cold calls against an AI prospect via Twilio. The first beta tester interrupted the AI mid-sentence. It kept talking. Then it responded to something she'd said thirty seconds earlier. The conversation became incoherent within three turns.
 
-I was building [Cold Call Coach](https://coldcall.coach), a sales training app where users practice cold calls with an AI prospect via Twilio. The AI plays a sceptical buyer. The user tries to book a meeting. Real sales calls are messy, so the training had to handle that mess.
+The patterns that follow emerged from fixing these failures. They're specific to Twilio and OpenAI, but the underlying challenges apply to any real-time voice system.
 
 ## Stream interruption handling
 
