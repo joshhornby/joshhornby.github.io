@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2026-01-02T08:00:00+00:00"
 ---
 
-I shipped a one-line prompt change and broke a feature I didn't know to check. [Cold Call Coach](https://coldcall.coach) is a sales training app where AI plays prospect personas - the sceptical buyer, the satisfied customer, the gatekeeper. After my change, the sceptical persona started agreeing to meetings on the first call. Nobody complained - users just assumed the AI was inconsistent. I only found out when I demoed it two weeks later.
+I shipped a one-line prompt change and broke a feature I didn't know I needed to check. [Cold Call Coach](https://coldcall.coach) is a sales training app where AI plays prospect personas - the sceptical buyer, the satisfied customer, the gatekeeper. After my change, the sceptical persona started agreeing to meetings on the first call. Nobody complained - users just assumed the AI was inconsistent. I only found out when I demoed it two weeks later.
 
 Prompts are code. They change behaviour, they have edge cases, and they regress. Without tests, the only feedback loop is noticing something feels off.
 
