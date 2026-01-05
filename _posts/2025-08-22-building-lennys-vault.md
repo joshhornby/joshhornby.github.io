@@ -6,7 +6,7 @@ tags: [software-engineering, ai]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-08-22 T08:00:00+00:00"
+    lastmod: "2026-01-05 T08:00:00+00:00"
 ---
 I've just finished a side project built on top of AI APIs and in the main using Claude Code. [Lenny's Vault](https://lennysvault.com/) is an AI-powered search engine for [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/podcast). It transforms podcast episodes into searchable insights, letting users find specific advice on topics like growth strategies, product management, and leadership.
 
@@ -14,11 +14,11 @@ I've just finished a side project built on top of AI APIs and in the main using 
 
 The system uses a multi-agent architecture built on AWS Lambda & Step Functions. When new podcast episodes are published:
 
-1. **Transcript Processing Agent** extracts and cleans audio transcriptions
-2. **Content Analysis Agent** identifies key topics, themes, and actionable insights
-3. **Semantic Indexing Agent** creates embeddings for search functionality
-4. **Categorisation Agent** organises insights into themes (Strategic Thinking, Leadership, etc.)
-5. **Quality Control Agent** validates extracted insights before indexing
+1. Transcript Processing Agent extracts and cleans audio transcriptions
+2. Content Analysis Agent identifies key topics, themes, and actionable insights
+3. Semantic Indexing Agent creates embeddings for search functionality
+4. Categorisation Agent organises insights into themes (Strategic Thinking, Leadership, etc.)
+5. Quality Control Agent validates extracted insights before indexing
 
 Each agent is a separate Lambda function, allowing independent scaling and easier debugging when things go wrong.
 
@@ -49,9 +49,7 @@ The trade-off? Less creative outputs, but predictable behaviour that users can r
 
 ### Testing AI Is Still Unsolved
 
-There's no agreed approach for testing prompts in TypeScript. Traditional unit tests don't work when your "function" is a Large Language Model. I found [this resource from Incident.io](https://incident.io/building-with-ai/you-cant-vibe-code-a-prompt) particularly useful for thinking about AI testing strategies.
-
-My approach: **golden dataset testing**. I maintain a list of podcast episodes with manually curated insights. Each deployment runs the full pipeline against this dataset, flagging any outputs that deviate significantly from expected results.
+There's no agreed approach for testing prompts in TypeScript. Traditional unit tests don't work when your "function" is a Large Language Model. I found [this resource from Incident.io](https://incident.io/building-with-ai/you-cant-vibe-code-a-prompt) particularly useful for thinking about AI testing strategies. I've since written about [eval testing LLMs in PHPUnit](/eval-testing-llms-in-phpunit) - different language, same patterns.
 
 ### Log Everything (Seriously, Everything)
 
@@ -67,7 +65,7 @@ Claude Code accelerated development significantly, especially for wiring togethe
 
 But it also introduced subtle bugs I only caught in production. The AI would generate syntactically correct code that violated business logic assumptions. For example, it created error handling that silently continued processing when it should have failed fast.
 
-I'm convinced the future is engineers working **with** AI tools, not being replaced by them. The human judgment for business context remains irreplaceable.
+I'm convinced the future is engineers working with AI tools, not being replaced by them. The human judgment for business context remains irreplaceable.
 
 ### AWS Step Functions Made Agent Chaining Simple
 
