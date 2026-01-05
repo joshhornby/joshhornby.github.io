@@ -522,7 +522,7 @@ protected function assertNaturalSpeech(string $response): void
 }
 ```
 
-These catch format violations that the LLM judge might miss. A response can be semantically correct but still fail if it's too long or contains markdown that wouldn't make sense in a phone conversation.
+These catch format violations that the LLM judge might miss. A response can be semantically correct but still fail if it's too long or contains Markdown that wouldn't make sense in a phone conversation.
 
 ## Model comparison tests
 
@@ -677,7 +677,7 @@ If calibration tests fail, the judge model or prompt needs adjustment before tru
 
 These tests make real API calls. Left unchecked, a test suite can rack up costs. The summaries shown above help track spend per model.
 
-The biggest cost lever is model selection. Using gpt-4.1-mini for the conversation and gpt-4.1 only for judging cuts costs by 10x compared to using gpt-4.1 for everything. The conversation model just needs to be representative of production. The judge needs to be smart.
+The biggest cost lever is model selection. Using GPT-4.1-mini for the conversation and GPT-4.1 only for judging cuts costs by 10x compared to using GPT-4.1 for everything. The conversation model just needs to be representative of production. The judge needs to be smart.
 
 Other things that help:
 
