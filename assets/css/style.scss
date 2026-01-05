@@ -644,6 +644,18 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   #mc_embed_signup .button {width: 100%; margin:0; }
 }
 
+/* Newsletter CTA sidebar */
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: #fff;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html, img, video, iframe {
     filter: invert(1);

@@ -1,0 +1,64 @@
+---
+layout: default
+title: Newsletter
+sitemap:
+    priority: 0.8
+    changefreq: 'monthly'
+---
+<div class="container mt-2 mt-md-3">
+    <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-8">
+            <h1 class="h1 my-3">Newsletter</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-7">
+            <section class="post-content">
+                <p>I send out a weekly newsletter with thoughts on software engineering, leadership, and interesting things I've discovered.</p>
+
+                <p>The newsletter includes:</p>
+                <ul>
+                    <li>Reflections on engineering and leadership</li>
+                    <li>Links to articles and resources I've found valuable</li>
+                    <li>Occasional life lessons and personal insights</li>
+                </ul>
+
+                <p>I respect your inbox. No spam, and you can unsubscribe at any time.</p>
+
+                <div class="newsletter-form my-4">
+                    <div id="mc_embed_signup">
+                        <form action="//joshhornby.us7.list-manage.com/subscribe/post?u=3749c15a8759f402eb64ab3d0&amp;id=4e67495a84" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3749c15a8759f402eb64ab3d0_4e67495a84" tabindex="-1" value=""></div>
+                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <h2 class="mt-5">What to expect</h2>
+                <p>The newsletter goes out weekly, typically on Mondays. Each issue is concise and focused - I won't waste your time with filler content.</p>
+
+                <h2 class="mt-4">Previous issues</h2>
+                <p>Want to see what the newsletter is like before subscribing? Check out some of my recent posts to get a feel for my writing style.</p>
+            </section>
+        </div>
+
+        <aside class="col-12 col-lg-3">
+            <div class="bg-light px-3 py-3 rounded-xl">
+                <p class="mb-1"><strong>Recent Posts</strong></p>
+                {% assign recent_posts = site.posts | slice: 0, 5 %}
+                <ul class="list-group">
+                    {% for post in recent_posts %}
+                    <li class="mb-2 list-no-style">
+                        <a class="small-link" href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </aside>
+    </div>
+</div>
