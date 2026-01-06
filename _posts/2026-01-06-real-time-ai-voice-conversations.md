@@ -21,7 +21,7 @@ The patterns that follow emerged from fixing these failures. They're specific to
 
 In human conversation, an interruption resets the speaker's train of thought. They stop, listen, and respond to what you just said. Most voice AI implementations get this wrong. They treat interruption as an audio problem - stop the current playback - when it's actually a context problem.
 
-When a user talks over the AI mid-response, you need to cancel the current OpenAI stream immediately. If you don't, you're burning tokens on a response nobody will hear. Worse, you lose context. The user said something important, but you're still processing stale input.
+When a user talks over the AI mid-response, you need to cancel the current OpenAI stream immediately. If you don't, you're wasting processing on a response nobody will hear. Worse, you lose context. The user said something important, but you're still processing stale input.
 
 The solution uses `AbortController` to cancel in-flight streams:
 
@@ -54,7 +54,7 @@ case 'interrupt':
   break;
 ```
 
-The `isInterrupted` flag prevents race conditions. Without it, the streaming loop might send another chunk to TTS before the abort completes. The user hears a fragment of speech that makes no sense.
+The `isInterrupted` flag prevents timing bugs. Without it, the streaming loop might send another chunk to the voice system before the abort completes. The user hears a fragment of speech that makes no sense.
 
 State management matters here. You need at least three flags:
 - `isProcessing`: Are we currently streaming a response?
@@ -63,13 +63,13 @@ State management matters here. You need at least three flags:
 
 Get any of these wrong, and you'll have conversations where the AI responds to questions from two turns ago.
 
-## The latency-quality tradeoff in speech synthesis
+## Speed vs. quality in voice output
 
 Every real-time system faces a tension between speed and quality. Stream too eagerly and you get choppy output. Buffer too long and you get awkward pauses. Voice AI makes this obvious: users notice both problems immediately.
 
-Sending every token to Twilio as it arrives creates choppy, robotic speech. The TTS engine receives "I" then "think" then "we" and tries to synthesise each fragment. The result sounds like a bad mobile connection.
+Sending every word to Twilio as it arrives creates choppy, robotic speech. The text-to-speech system receives "I" then "think" then "we" and tries to speak each fragment. The result sounds like a bad mobile connection.
 
-The fix is buffering. Collect tokens until you have a complete phrase, then send it all at once:
+The fix is buffering. Collect words until you have a complete phrase, then send it all at once:
 
 ```typescript
 export const WORDS_PER_CHUNK = 4;
@@ -116,7 +116,7 @@ for await (const chunk of result.textStream) {
 }
 ```
 
-The `isLast` flag tells the TTS engine this chunk ends a sentence. It adds a natural pause before the next sentence. Without this, the AI speaks in one continuous monotone.
+The `isLast` flag tells the voice system this chunk ends a sentence. It adds a natural pause before the next sentence. Without this, the AI speaks in one continuous monotone.
 
 Detecting sentence endings sounds simple until you hit abbreviations. "Dr. Smith will see you now" has a period, but it's not a sentence ending. You need to check for common abbreviations:
 
@@ -171,7 +171,7 @@ if (state.shouldEndCall && !state.isInterrupted) {
 }
 ```
 
-The 500ms delay gives the TTS time to finish the final sentence. Ending immediately would cut off the AI mid-word.
+The 500ms delay gives the voice system time to finish the final sentence. Ending immediately would cut off the AI mid-word.
 
 ## What I learned
 
@@ -179,7 +179,7 @@ Beyond the specific patterns, three things shaped how I approached debugging.
 
 First, log everything. When voice conversations go wrong, reproducing the issue is nearly impossible. You can't replay a phone call the way you can replay an HTTP request. Log timestamps, message content, and state flags for every event. I covered [how to set up AI tracing with Sentry](/sentry-ai-tracing-laravel) in a previous post.
 
-Second, assume bad input. Users on mobile with spotty signal will have packets arrive out of order, duplicated, or not at all. Your state machine needs to handle rubbish gracefully. Assume every message might arrive at the worst possible moment.
+Second, assume bad input. Users on mobile with spotty signal will have packets arrive out of order, duplicated, or not at all. Your code needs to handle rubbish gracefully. Assume every message might arrive at the worst possible moment.
 
 Third, treat latency as a hard constraint. Users tolerate about 300ms of silence before they think something broke. This shapes every decision. Profile aggressively.
 

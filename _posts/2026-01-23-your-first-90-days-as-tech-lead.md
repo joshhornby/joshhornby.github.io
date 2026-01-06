@@ -1,7 +1,7 @@
 ---
 title: Your First 90 Days as Tech Lead
 date: 2026-01-23 08:00:00
-tags: [tech-lead-series, leadership, career]
+tags: [tech-lead, leadership, career]
 description: "The first three months as a tech lead set the tone for what follows. Here's what to focus on, what to ignore, and the mistakes most people make."
 sitemap:
   priority: 0.7
@@ -9,9 +9,9 @@ sitemap:
   lastmod: "2026-01-23T08:00:00+00:00"
 ---
 
-> This post is part of my [Tech Lead Series](/tags/tech-lead-series), a collection of practical advice for engineers stepping into leadership roles.
+> This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
 
-A friend got promoted to tech lead on a Friday. By Monday, she'd reorganised the team's Jira board, proposed a new branching strategy, and scheduled a "vision session" for the architecture. By Wednesday, half the team was annoyed and the other half was confused. She'd tried to change everything before understanding anything.
+A friend got promoted to tech lead on a Friday. By Monday, he'd reorganised the team's Jira board, proposed a new branching strategy, and scheduled a "vision session" for the architecture. By Wednesday, half the team was annoyed and the other half was confused. He'd tried to change everything before understanding anything.
 
 I made the same mistake. Most new tech leads do. The title feels like permission to fix things, so you start fixing. But you don't yet know what's actually broken.
 

@@ -1,7 +1,7 @@
 ---
 title: What is a Tech Lead?
 date: 2026-01-20 08:00:00
-tags: [tech-lead-series, leadership, career]
+tags: [tech-lead, leadership, career]
 description: "The tech lead role means different things at different companies. At smaller organisations, it usually means doing both technical leadership and people work. Here's what that actually looks like."
 sitemap:
   priority: 0.7
@@ -9,7 +9,7 @@ sitemap:
   lastmod: "2026-01-20T08:00:00+00:00"
 ---
 
-> This post is part of my [Tech Lead Series](/tags/tech-lead-series), a collection of practical advice for engineers stepping into leadership roles.
+> This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
 
 Three weeks into my first tech lead role, my manager asked how things were going. I told her I wasn't sure what I was supposed to be doing. She laughed and said, "Neither does anyone else."
 
