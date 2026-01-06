@@ -4,6 +4,8 @@ title: "Tech Lead Series - Article Ideas"
 
 Ideas for the [Tech Leadership Series](/tags/tech-lead-series/).
 
+What is a tech lead?
+
 ## Relationships
 
 - **Working with Designers** - Similar dynamic to PMs. When to push back on designs, how to collaborate early, handling "pixel perfect" vs pragmatism.

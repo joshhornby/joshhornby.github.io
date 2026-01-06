@@ -37,7 +37,7 @@ This is why I never look at DORA alone. Frameworks like SPACE include satisfacti
 
 Personally, I believe a good measurement works in layers. At the top: business outcomes like retention, activation, revenue. These tell you if work made a difference. Below that, flow metrics show where value gets blocked, not just code. DORA sits underneath, signalling delivery health. At the foundation: is the team thriving or just burning down tickets?
 
-![A black-and-white diagram with four stacked boxes labeled: Business Outcomes, Flow Metrics, DORA Metrics, and Team Thriving. Double-headed vertical arrows connect each box, showing two-way influence between the layers](/assets/images/dora-flow-diagram.png)
+![A black-and-white diagram with four stacked boxes labelled: Business Outcomes, Flow Metrics, DORA Metrics, and Team Thriving. Double-headed vertical arrows connect each box, showing two-way influence between the layers](/assets/images/dora-flow-diagram.png)
 
 If you only optimise one layer, you miss the full story. DORA is a great warning light, but business metrics tell you if you're driving toward the right destination.
 

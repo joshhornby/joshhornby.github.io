@@ -13,7 +13,7 @@ sitemap:
 
 Real-time voice AI has a problem that text chat doesn't: humans expect certain things from conversations. When someone interrupts you, you stop talking. When there's a pause, you wait. When the conversation ends, both parties know it. Break any of these rules, and the interaction feels wrong even if it's technically working.
 
-I ran into this building [Cold Call Coach](https://coldcall.coach), a sales training app where users practice cold calls against an AI prospect via Twilio. The first beta tester interrupted the AI mid-sentence. It kept talking. Then it responded to something she'd said thirty seconds earlier. The conversation made no sense within three turns.
+I ran into this building [Cold Call Coach](https://coldcall.coach), a sales training app where users practise cold calls against an AI prospect via Twilio. The first beta tester interrupted the AI mid-sentence. It kept talking. Then it responded to something she'd said thirty seconds earlier. The conversation made no sense within three turns.
 
 The patterns that follow emerged from fixing these failures. They're specific to Twilio and OpenAI, but the underlying challenges apply to any real-time voice system.
 
