@@ -656,6 +656,20 @@ Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
   }
 }
 
+@media (max-width: 767px) {
+  .with-footer form input[type="email"],
+  .with-footer form button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .with-footer form input[type="email"] {
+    max-width: 250px;
+    margin-right: 12px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html, img, video, iframe {
     filter: invert(1);
