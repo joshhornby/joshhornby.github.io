@@ -11,6 +11,8 @@ sitemap:
 
 The [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview) is the same engine that powers Claude Code, exposed as a library. It handles the agent loop, provides built-in tools for file operations and terminal commands, and manages context across turns.
 
+> If you're unclear on what separates an agent from a prompt, I covered that in [What is an AI Agent?](/what-makes-an-ai-agent).
+
 This post covers building a test generator agent that analyses source files, identifies untested code paths, and writes test files.
 
 ## What the SDK provides
