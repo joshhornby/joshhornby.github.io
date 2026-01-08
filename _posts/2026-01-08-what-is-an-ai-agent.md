@@ -1,19 +1,17 @@
 ---
-title: What Makes an AI Agent Different from a Prompt
-date: 2026-01-07 08:00:00
+title: What is an AI Agent?
+date: 2026-01-08 08:00:00
 tags: [ai, software-engineering]
-description: "Everyone calls their LLM wrapper an 'agent' now. Most aren't. Here's what actually makes an agent different from a prompt."
+description: "The term 'agent' gets used loosely. Here's a practical definition: tools, loops, and deciding when to stop."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2026-01-07T08:00:00+00:00"
+    lastmod: "2026-01-08T08:00:00+00:00"
 ---
 
-You see it everywhere online now. "I built an AI agent that does X." Twitter threads. YouTube tutorials. Product launches. Everyone's building agents.
+The term "agent" gets used for everything from chatbots to autonomous systems. The definition has become fuzzy.
 
-Most of them aren't agents. They're prompts with a nice UI.
-
-The confusion matters because they're built differently. A prompt is a function call. An agent is a loop. Get this wrong and you'll either over-engineer a simple task or under-engineer a complex one.
+This matters because prompts and agents are built differently. A prompt is a function call. An agent is a loop. Pick the wrong one, and you'll either over-engineer a simple task or under-engineer a complex one.
 
 ## The prompt: input goes in, output comes out
 
@@ -30,7 +28,7 @@ console.log(response.choices[0].message.content);
 
 This works for simple tasks. Summarisation. Classification. Extraction. Translation. The model does one thing and stops.
 
-Even with system prompts, few-shot examples, and structured outputs, it's still a prompt. You've made the input fancier. The basic pattern hasn't changed: text in, text out, done.
+Even with system prompts, few-shot examples, and structured outputs, it's still a prompt. The input is more sophisticated, but the basic pattern hasn't changed: text in, text out, done.
 
 ## The agent: a loop that decides when to stop
 
@@ -145,15 +143,15 @@ Cold Call Coach uses an agent for grading sales transcripts. The agent doesn't j
 
 Real systems exist on a spectrum:
 
-**Prompt**: Single LLM call. Stateless. `f(input) -> output`
+A prompt is a single LLM call. Stateless. `f(input) -> output`
 
-**Chain**: Multiple prompts in sequence. The output of one becomes input to the next. Fixed flow.
+A chain is multiple prompts in sequence. The output of one becomes input to the next. Fixed flow.
 
-**Agent**: Loop with tool use. The LLM decides the flow. Unknown number of steps.
+An agent is a loop with tool use. The LLM decides the flow. Unknown number of steps.
 
-**Multi-agent**: Multiple agents working together. One plans, others execute. Complex coordination.
+A multi-agent system has multiple agents working together. One plans, others execute. Complex coordination.
 
-Most production systems are chains or simple agents. Multi-agent systems sound impressive but the coordination overhead usually isn't worth it. Start simple.
+Most production systems are chains or simple agents. Multi-agent systems add coordination overhead that's hard to justify until you've hit the limits of a single agent. Start simple.
 
 ## Building your first agent
 
@@ -169,7 +167,7 @@ The hardest part isn't the code. It's deciding what tools the agent can use and 
 
 ## The failure modes are different
 
-Prompts fail, obviously. The output is wrong or malformed. You adjust the prompt and try again.
+Prompts fail predictably. The output is wrong or malformed. You adjust the prompt and try again.
 
 Agents fail subtly. They might:
 - Loop forever trying different approaches
@@ -181,13 +179,11 @@ Logging matters more with agents. You need to see every step of its thinking, ev
 
 I wrote about [Sentry tracing for AI calls](/sentry-ai-tracing-laravel) previously. For agents, this becomes essential. Without it, debugging is guesswork.
 
-## The industry confusion
+## A working definition
 
-The term "agent" has been stretched until it means nothing. A ChatGPT wrapper with a system prompt isn't an agent. A scheduled script that calls an LLM isn't an agent. A chatbot that answers questions from a knowledge base isn't an agent (usually).
+The term "agent" covers a lot of ground. A chatbot with a system prompt, a scheduled script that calls an LLM, a knowledge base assistant - these all get called agents, though they work very differently.
 
-The word sounds good in marketing, so everyone uses it. This makes it harder to have useful conversations about how things are built.
-
-When someone says "agent", ask: does it use tools? Does it loop? Does it decide when it's done? If the answers are no, it's a prompt. A clever prompt, maybe. But a prompt.
+A useful distinction: does it use tools? Does it loop? Does it decide when it's done? If yes to all three, it's an agent. If no, it's probably a prompt or a chain - which might be exactly what the task needs.
 
 ## Start with the task, not the design
 
