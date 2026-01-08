@@ -143,13 +143,13 @@ Cold Call Coach uses an agent for grading sales transcripts. The agent doesn't j
 
 Real systems exist on a spectrum:
 
-A prompt is a single LLM call. Stateless. `f(input) -> output`
+A prompt is a single LLM call with no memory of previous calls.
 
-A chain is multiple prompts in sequence. The output of one becomes input to the next. Fixed flow.
+A chain is multiple prompts in sequence where the output of one becomes input to the next.
 
-An agent is a loop with tool use. The LLM decides the flow. Unknown number of steps.
+An agent is a loop with tool use where the LLM decides the flow.
 
-A multi-agent system has multiple agents working together. One plans, others execute. Complex coordination.
+A multi-agent system has multiple agents working together where one plans and others execute.
 
 Most production systems are chains or simple agents. Multi-agent systems add coordination overhead that's hard to justify until you've hit the limits of a single agent. Start simple.
 
