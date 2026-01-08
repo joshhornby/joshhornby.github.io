@@ -79,4 +79,4 @@ The "Evaluator-Optimizer" pattern from the [AI SDK documentation](https://ai-sdk
 
 If the score falls below a threshold, the system re-runs the failed agent with additional context.
 
-Building Lenny's Vault taught me that AI development isn't just about prompt engineering and model selection. It's about building robust systems that handle uncertainty, provide observability, and maintain quality at scale. The same engineering principles that apply to traditional software testing, monitoring, and gradual rollouts become even more important when your core logic is non-deterministic.
+Building Lenny's Vault taught me that AI development isn't just about prompt engineering and model selection. It's about building reliable systems that handle uncertainty and stay observable. Testing, monitoring, and gradual rollouts matter even more when your core logic is non-deterministic.

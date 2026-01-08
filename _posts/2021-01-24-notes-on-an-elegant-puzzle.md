@@ -20,7 +20,7 @@ One of my favourite aspects is how grounded the book is in reality. Larson's bee
 A few standouts for me:
 - What to do when your systems are slowing you down, but migrations are stacked up higher than you can count.
 - How to say no, when there's endless work and not enough people.
-- Good, actionable ways of paying down tech debt (not just hand-wavy "prioritise it" advice).
+- Practical ways of paying down tech debt (not just hand-wavy "prioritise it" advice).
 
 ## Structure
 

@@ -21,7 +21,7 @@ Today's my last day at cinch, where I was a Tech Lead across multiple teams for 
   - **Engineering strategy**
     - Involves planning and executing long-term technical goals, aligning engineering efforts with business goals.
   - **Culture**
-    - Focuses on fostering a collaborative, inclusive, and high-performing engineering team environment.
+    - Building a collaborative, inclusive, and high-performing engineering team environment.
   - **Stakeholder engagement**
     - Entails effective communication, collaboration, and relationship-building with internal and external stakeholders to ensure alignment and support for engineering initiatives.
 

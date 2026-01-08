@@ -81,7 +81,7 @@ If you notice something concerning, address it early. Small issues discussed pro
 
 Some principles for difficult conversations:
 
-Be specific. "Your code quality has been slipping" is vague and makes people defensive. "The last three PRs had bugs that made it to production" is specific and actionable.
+Be specific. "Your code quality has been slipping" is vague and makes people defensive. "The last three PRs had bugs that made it to production" is specific and something they can act on.
 
 Focus on behaviour, not character. You're addressing what someone did, not who they are. "You've been late to the last four standups" is about behaviour. "You're unreliable" is about character.
 

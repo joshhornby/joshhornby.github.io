@@ -38,7 +38,7 @@ Fournier also shares a great piece of wisdom:
 
 The conventional wisdom tells managers to shield their teams from organisational chaos. There's truth here, constantly dumping stress on your team destroys focus and morale.
 
-But Fournier offers a more nuanced view:
+But Fournier offers a more balanced view:
 
 *"Sometimes it's appropriate to let some stress through to the team. The goal is not to stress them out but to help them get context into what they're dealing with."*
 

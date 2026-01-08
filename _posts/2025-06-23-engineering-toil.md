@@ -47,7 +47,7 @@ Leadership's job isn't to remove toil overnight, it's to surface it, prioritise,
 
 ### Make Toil Visible
 
-The first step is to name and track toil. Invite teams to surface the tasks they repeat most often. Regular "toil audits" a lightweight, candid team conversation about recurring work can be transformative. Metrics help, but anecdotes are powerful: "How much of your week is spent on work you wish you never had to do again?"
+The first step is to name and track toil. Invite teams to surface the tasks they repeat most often. Regular "toil audits" a lightweight, candid team conversation about recurring work can change everything. Metrics help, but anecdotes are powerful: "How much of your week is spent on work you wish you never had to do again?"
 
 ### Incentivise Automation
 

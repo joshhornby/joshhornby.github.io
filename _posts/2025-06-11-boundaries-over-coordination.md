@@ -23,7 +23,7 @@ Jess Kerr, in her piece ["Better Coordination, or Better Software?"](https://jes
 
 We tell ourselves coordination is necessary to keep the system ticking over. But more often, it's a tax we pay for missing contracts, leaky abstractions, or responsibilities spread across too many teams. Each sync is a signal: there's a boundary that needs reinforcing.
 
-When you pay that cost up front by investing in clear APIs, real ownership, and robust contract tests, the system gives you back time. You replace five recurring meetings with one shared doc and a test suite. Teams stop unblocking each other and start unblocking themselves.
+When you pay that cost up front by investing in clear APIs, real ownership, and solid contract tests, the system gives you back time. You replace five recurring meetings with one shared doc and a test suite. Teams stop unblocking each other and start unblocking themselves.
 
 ## The Composability Dividend
 

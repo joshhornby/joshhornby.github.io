@@ -61,7 +61,7 @@ Executives care about risk, money, and time not "refactoring" in the abstract. T
 
 - "We can't pause the roadmap." The map shows why 15% capacity on clean-up compounds over time: less firefighting, predictable launches, declining run-costs. You're not pausing the roadmap you're clearing the path.
 
-Liability mapping gives you a credible, actionable story. You can meet execs where they are, with real numbers and outcomes, instead of hand-waving about invisible debt. The conversation shifts from begging for resources to shared understanding: fix the right things, at the right time, and the business moves faster and safer.
+Liability mapping gives you a credible story you can act on. You can meet execs where they are, with real numbers and outcomes, instead of hand-waving about invisible debt. The conversation shifts from begging for resources to shared understanding: fix the right things, at the right time, and the business moves faster and safer.
 
 ## Creating an example map
 

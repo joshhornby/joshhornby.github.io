@@ -53,7 +53,7 @@ Team Topologies: don't add more meetings or try to "align" more. Change the shap
 
 - **[Make boundaries explicit](/boundaries-over-coordination)**. Strong API contracts, automation, and clear ownership remove the need for weekly stand-ups just to keep everyone "in sync".
 
-Instead of a bottleneck, you get a network of empowered teams who can deliver value independently, with support, not blockage from specialists. Bottlenecks aren't fixed with better coordination. They're fixed by changing the architecture, so you need less of it in the first place.
+Instead of a bottleneck, you get teams who can deliver value independently, with support instead of blockage from specialists. Bottlenecks aren't fixed with better coordination. They're fixed by changing the architecture, so you need less of it in the first place.
 
 ## Example Two: The Enabling Team That Became a Catch-All
 
@@ -79,7 +79,7 @@ Team Topologies would call for stronger boundaries and more explicit modes of in
 
 - **Say no to operational catch-all work**. If a product team needs ongoing support, that's a sign the problem should be solved by investing in documentation, self-serve tooling, or a dedicated platform not by repeatedly handing tasks to the enabling team.
 
-When you get this right, the enabling team creates real leverage: raising the bar for everyone, without getting stuck as the default "fixers". Product teams actually get stronger, the enabling team avoids burnout, and the system flows instead of clogs.
+When you get this right, the enabling team multiplies output across the org: raising the bar for everyone, without getting stuck as the default "fixers". Product teams actually get stronger, the enabling team avoids burnout, and the system flows instead of clogs.
 
 ## Example Three: The Platform Team That Became a Product Team
 
