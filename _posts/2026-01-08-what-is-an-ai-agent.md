@@ -190,5 +190,3 @@ A useful distinction: does it use tools? Does it loop? Does it decide when it's 
 The goal isn't to build agents. The goal is to solve problems. Sometimes a prompt solves the problem. Sometimes you need tools. Sometimes you need a loop.
 
 Reaching for an agent when a prompt would work is over-engineering. Using a prompt when you need an agent means building something that can't do the job.
-
-The distinction isn't about being clever. It's about matching the solution to the problem.
