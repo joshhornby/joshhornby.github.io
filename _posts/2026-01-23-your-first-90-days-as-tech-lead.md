@@ -19,7 +19,7 @@ The first 90 days aren't about making your mark. They're about earning the right
 
 ## The First Month: Listen and Learn
 
-Your only job in month one is to understand. Not to improve, not to optimise, not to show off your ideas. Just understand.
+Your only job in month one is to understand, not to improve, not to optimise, not to show off your ideas.
 
 Talk to everyone. Schedule 1:1s with every engineer on the team, even if you've worked with them for years. Ask different questions now: What's working? What's frustrating? What would they change if they could? What do they wish leadership understood? You'll hear things you didn't hear as a peer. People tell tech leads different things than they tell teammates.
 

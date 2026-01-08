@@ -151,7 +151,7 @@ An agent is a loop with tool use where the LLM decides the flow.
 
 A multi-agent system has multiple agents working together where one plans and others execute.
 
-Most production systems are chains or simple agents. Multi-agent systems add coordination overhead that's hard to justify until you've hit the limits of a single agent. Start simple.
+Most production systems are chains or simple agents. Multi-agent systems add coordination overhead that's hard to justify until you've hit the limits of a single agent, so start simple.
 
 ## Building your first agent
 

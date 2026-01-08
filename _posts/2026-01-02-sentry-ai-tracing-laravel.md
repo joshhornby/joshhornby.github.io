@@ -134,7 +134,7 @@ public function gradeTranscript(string $transcript, string $roleContext): array
 }
 ```
 
-The callable pattern keeps the wrapper generic. Chat completions, embeddings, image generation, whatever. Same tracing method.
+The callable pattern keeps the wrapper generic. Chat completions, embeddings, image generation and they all use the same tracing method.
 
 ### Why these specific attributes
 

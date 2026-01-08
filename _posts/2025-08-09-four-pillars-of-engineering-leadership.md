@@ -43,7 +43,7 @@ Everything so far is wasted if it stays internal. Stakeholder engagement connect
 
 This only works with the other pillars in place. Without culture, collaboration dies. Without strategy, you talk in circles. Without craft, nobody trusts you.
 
-This is where engineering becomes visible. Where it matters.
+This is where engineering becomes visible and where it matters.
 
 Each pillar needs the one before it. Skip one: quality drops, priorities drift, teams check out, engineering becomes that department nobody talks to.
 

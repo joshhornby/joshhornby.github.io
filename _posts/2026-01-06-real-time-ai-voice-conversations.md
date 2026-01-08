@@ -181,6 +181,6 @@ First, log everything. When voice conversations go wrong, reproducing the issue 
 
 Second, assume bad input. Users on mobile with spotty signal will have packets arrive out of order, duplicated, or not at all. Your code needs to handle rubbish gracefully. Assume every message might arrive at the worst possible moment.
 
-Third, treat latency as a hard constraint. Users tolerate about 300ms of silence before they think something broke. This shapes every decision. Profile aggressively.
+Third, treat latency as a hard constraint. Users tolerate about 300ms of silence before they think something broke. This shapes every decision, so profile aggressively.
 
 The broader lesson: real-time voice exposes problems that text chat hides. Text is forgiving. Users wait a few seconds for a response, re-read if something's unclear, scroll back to check context. Voice has none of that. Every rough edge becomes a conversation that feels broken.

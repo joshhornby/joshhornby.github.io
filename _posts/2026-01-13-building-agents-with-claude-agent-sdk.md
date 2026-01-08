@@ -112,7 +112,7 @@ npx tsx agent.ts
 
 Three things matter:
 
-1. `allowedTools` restricts what Claude can do. Start narrow.
+1. `allowedTools` restricts what Claude can do, so start narrow.
 2. `maxTurns` caps the loop. 50 is enough for simple tasks.
 3. The message stream shows progress as it happens.
 
