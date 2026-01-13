@@ -9,6 +9,8 @@ sitemap:
     lastmod: "2026-01-08T08:00:00+00:00"
 ---
 
+> If you want to build an agent without writing the loop yourself, I wrote a follow-up on [Building AI Agents with the Claude Agent SDK](/building-agents-with-claude-agent-sdk/).
+
 The term "agent" gets used for everything from chatbots to autonomous systems. The definition has become fuzzy.
 
 This matters because prompts and agents are built differently. A prompt is a function call. An agent is a loop. Pick the wrong one, and you'll either over-engineer a simple task or under-engineer a complex one.
