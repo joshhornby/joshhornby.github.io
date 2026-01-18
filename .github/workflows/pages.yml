@@ -34,6 +34,21 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
 
+      - name: Copy markdown source files for AI agents
+        run: |
+          # Copy post markdown files to _site with URL-matching paths
+          # Permalink structure is /:title so files go to _site/{slug}.md
+          find _posts -name "*.md" -o -name "*.markdown" | while read file; do
+            filename=$(basename "$file")
+            # Match pattern: YYYY-MM-DD-slug.md or .markdown
+            if [[ $filename =~ ^([0-9]{4})-([0-9]{2})-([0-9]{2})-(.+)\.(md|markdown)$ ]]; then
+              slug="${BASH_REMATCH[4]}"
+              dest="_site/${slug}.md"
+              cp "$file" "$dest"
+              echo "Copied $file -> $dest"
+            fi
+          done
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
