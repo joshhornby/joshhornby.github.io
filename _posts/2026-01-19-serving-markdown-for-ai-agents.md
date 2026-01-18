@@ -31,7 +31,7 @@ Second, copy the markdown files during the build. GitHub Pages doesn't support c
 ```yaml
 - name: Copy markdown source files
   run: |
-    find _posts -name "*.md" -o -name "*.markdown" | while read file; do
+    find _posts \( -name "*.md" -o -name "*.markdown" \) | while read file; do
       filename=$(basename "$file")
       if [[ $filename =~ ^([0-9]{4})-([0-9]{2})-([0-9]{2})-(.+)\.(md|markdown)$ ]]; then
         slug="${BASH_REMATCH[4]}"
