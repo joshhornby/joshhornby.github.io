@@ -20,9 +20,7 @@ First, add a link tag to the HTML head. This tells AI agents where to find the M
 
 ```html
 {% raw %}{% if page.layout == 'post' %}
-<link rel="alternate" type="text/markdown"
-      href="{{ page.url | append: '.md' }}"
-      title="Markdown">
+<link rel="alternate" type="text/markdown" href="{{ page.url | append: '.md' }}">
 {% endif %}{% endraw %}
 ```
 
