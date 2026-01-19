@@ -41,27 +41,45 @@ Early involvement prevents this. When you're in the conversation from the start,
 
 What early involvement looks like:
 
-Join the problem definition. Before wireframes exist, there's a problem being explored. Be in that conversation. Your technical knowledge shapes what solutions are even possible.
+### Join the problem definition
 
-Share constraints upfront. If the team is using a design system with limited components, say so. If there's a performance budget that rules out certain approaches, mention it. Let the designer work with real constraints rather than discovering them later.
+Before wireframes exist, there's a problem being explored. Be in that conversation. Your technical knowledge shapes what solutions are even possible.
 
-Review rough ideas, not polished designs. Looking at early sketches is more useful than seeing final mockups. Changes are easier and feel less personal when the design is still rough.
+### Share constraints upfront
 
-Pair on complex interactions. For anything involving animation, state transitions, or complex data, sit together and work through it. The designer understands what they want to achieve; you understand what's achievable. Meet in the middle.
+If the team is using a design system with limited components, say so. If there's a performance budget that rules out certain approaches, mention it. Let the designer work with real constraints rather than discovering them later.
+
+### Review rough ideas, not polished designs
+
+Looking at early sketches is more useful than seeing final mockups. Changes are easier and feel less personal when the design is still rough.
+
+### Pair on complex interactions
+
+For anything involving animation, state transitions, or complex data, sit together and work through it. The designer understands what they want to achieve; you understand what's achievable. Meet in the middle.
 
 ## Having the Pushback Conversation
 
 Sometimes you need to say no, or at least "not like this." These conversations go badly when they feel like engineering vetoing design. They go well when they feel like problem-solving together.
 
-Start with understanding. Before explaining why something is hard, understand why it was designed that way. "Help me understand what this animation is trying to achieve" opens a conversation. "We can't do this animation" closes it.
+### Start with understanding
 
-Explain the cost, not just the answer. "This will take two weeks" is more useful than "we can't do this." It lets the designer weigh the trade-off themselves. Sometimes they'll decide it's worth it. Sometimes they'll find another way.
+Before explaining why something is hard, understand why it was designed that way. "Help me understand what this animation is trying to achieve" opens a conversation. "We can't do this animation" closes it.
 
-Offer alternatives. Don't just spot problems; bring solutions. "We can't do this custom animation, but here's what we can do with our existing library" gives the designer something to work with.
+### Explain the cost, not just the answer
 
-Pick your battles. Not every gap from the spec matters equally. A button that's slightly smaller than the mockup probably isn't worth fighting about. An interaction that breaks accessibility is. Focus your pushback on things that actually matter.
+"This will take two weeks" is more useful than "we can't do this." It lets the designer weigh the trade-off themselves. Sometimes they'll decide it's worth it. Sometimes they'll find another way.
 
-Never say "just" when it isn't. Dismissing design decisions as unimportant ("it's just a colour") damages trust. If you're pushing back, do it respectfully. If you don't understand why something matters, ask.
+### Offer alternatives
+
+Don't just spot problems; bring solutions. "We can't do this custom animation, but here's what we can do with our existing library" gives the designer something to work with.
+
+### Pick your battles
+
+Not every gap from the spec matters equally. A button that's slightly smaller than the mockup probably isn't worth fighting about. An interaction that breaks accessibility is. Focus your pushback on things that actually matter.
+
+### Never say "just" when it isn't
+
+Dismissing design decisions as unimportant ("it's just a colour") damages trust. If you're pushing back, do it respectfully. If you don't understand why something matters, ask.
 
 ## The Pixel Perfect Debate
 
@@ -87,15 +105,25 @@ Have the conversation explicitly. "For this feature, what's the priority: speed 
 
 Like all relationships, this one requires upkeep.
 
-Learn their tools. You don't need to master Figma, but understanding how design files work helps. You can export assets correctly, read specs, and ask good questions.
+### Learn their tools
 
-Share your tools. Help designers understand how the codebase works, what reusable components exist, what's easy versus hard. This knowledge makes their designs easier to build.
+You don't need to master Figma, but understanding how design files work helps. You can export assets correctly, read specs, and ask good questions.
 
-Give them access. Let designers see the staging environment, use the product, experience what users experience. Bugs and gaps are easier to discuss when everyone can see them.
+### Share your tools
 
-Celebrate their work. When a design makes the product better, say so. Designers often only hear from engineering when there's a problem. Positive feedback builds the relationship.
+Help designers understand how the codebase works, what reusable components exist, what's easy versus hard. This knowledge makes their designs easier to build.
 
-Include them in retrospectives. If a feature shipped with design compromises, talk about why together. What could you do differently next time to avoid late-stage pushback?
+### Give them access
+
+Let designers see the staging environment, use the product, experience what users experience. Bugs and gaps are easier to discuss when everyone can see them.
+
+### Celebrate their work
+
+When a design makes the product better, say so. Designers often only hear from engineering when there's a problem. Positive feedback builds the relationship.
+
+### Include them in retrospectives
+
+If a feature shipped with design compromises, talk about why together. What could you do differently next time to avoid late-stage pushback?
 
 ## The Goal
 

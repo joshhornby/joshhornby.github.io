@@ -58,7 +58,7 @@ Bad tech lead coding looks like:
 - Working on isolated tasks that don't involve the team
 - Doing easy tickets to feel productive
 
-The goal is coding that makes the team better, not coding that makes you feel busy.
+Aim for coding that makes the team better, not coding that makes you feel busy.
 
 ## Protecting Leadership Time
 
@@ -68,9 +68,9 @@ But these things compound. Skip enough 1:1s and you lose touch with your team. D
 
 Some tactics that help:
 
-- Block your calendar. Put recurring blocks for leadership work: 1:1s, thinking time, documentation. Treat them as seriously as meetings with stakeholders.
+- Block your calendar for leadership work: 1:1s, thinking time, documentation. Treat these blocks as seriously as meetings with stakeholders.
 
-- Batch your coding. Context switching between code and meetings destroys output for both. Try to cluster coding time into longer blocks rather than scattered hours.
+- Batch your coding. Context switching between code and meetings destroys output for both. Cluster coding time into longer blocks rather than scattered hours.
 
 - Make commitments visible. If you've told someone you'll review their RFC or pair with them on a problem, put it in the calendar. Invisible commitments get dropped.
 
@@ -101,6 +101,6 @@ Here's what nobody tells you: you will never feel like you're getting this right
 
 When you're coding, you'll worry you're neglecting leadership. When you're leading, you'll feel guilty about not contributing code. There's no state where both halves of the job feel satisfied.
 
-This is normal. The discomfort is the job. Your task isn't to eliminate the tension but to manage it, to make conscious choices about where your time goes rather than letting it happen to you.
+This is normal. The discomfort is the job. You're not trying to eliminate the tension. You're trying to manage it, to make conscious choices about where your time goes rather than letting it happen to you.
 
 Some weeks you'll code more. Some weeks you'll code less. What matters is that you're choosing based on what the team needs, not what feels comfortable.

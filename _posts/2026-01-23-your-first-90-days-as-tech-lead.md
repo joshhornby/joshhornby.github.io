@@ -19,7 +19,7 @@ The first 90 days aren't about making your mark. They're about earning the right
 
 ## The First Month: Listen and Learn
 
-Your only job in month one is to understand, not to improve, not to optimise, not to show off your ideas.
+Your only job in month one is to understand. Not to improve. Not to show off your ideas.
 
 Talk to everyone. Schedule 1:1s with every engineer on the team, even if you've worked with them for years. Ask different questions now: What's working? What's frustrating? What would they change if they could? What do they wish leadership understood? You'll hear things you didn't hear as a peer. People tell tech leads different things than they tell teammates.
 
@@ -55,15 +55,25 @@ Deliver and reflect. Ship the improvement. Talk about what worked and what didn'
 
 ## Common Mistakes
 
-Changing too much too fast. You don't have the context yet. Changes made in ignorance create problems you can't predict.
+### Changing too much too fast
 
-Trying to stay an IC. You got promoted because you were a good engineer. It's tempting to keep doing what made you successful. But your job has changed. If you're still writing most of the code, you're not doing the tech lead job. As I covered in [What is a Tech Lead?](/what-is-a-tech-lead), your goal is to be a multiplier, not a bottleneck.
+You don't have the context yet. Changes made in ignorance create problems you can't predict.
 
-Avoiding difficult conversations. There's probably something you need to address that you've been putting off. A performance issue, a team dynamic problem, a stakeholder who needs pushback. The longer you wait, the harder it gets.
+### Trying to stay an IC
 
-Going dark on your manager. New tech leads often stop communicating upward, assuming their manager will reach out if needed. They won't, or they'll reach out when it's too late. Talking to your manager early builds trust and catches problems early.
+You got promoted because you were a good engineer. It's tempting to keep doing what made you successful. But your job has changed. If you're still writing most of the code, you're not doing the tech lead job. As I covered in [What is a Tech Lead?](/what-is-a-tech-lead), your goal is to be a multiplier, not a bottleneck.
 
-Solving problems for people instead of with them. It's faster to just fix things yourself. But you're teaching people to wait for you. Help them solve problems so they can solve the next one alone.
+### Avoiding difficult conversations
+
+There's probably something you need to address that you've been putting off. A performance issue, a team dynamic problem, a stakeholder who needs pushback. The longer you wait, the harder it gets.
+
+### Going dark on your manager
+
+New tech leads often stop communicating upward, assuming their manager will reach out if needed. They won't, or they'll reach out when it's too late. Proactive communication builds trust and catches problems early.
+
+### Solving problems for people instead of with them
+
+It's faster to just fix things yourself. But you're teaching people to wait for you. Help them solve problems so they can solve the next one alone.
 
 ## What Success Looks Like
 

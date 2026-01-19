@@ -25,13 +25,21 @@ This is harder than status updates. It requires you to care about people as peop
 
 ## The Basics
 
-Frequency matters. Weekly or Fortnightly is ideal for most teams. Monthly is too rare to build a real relationship. In your [first 90 days](/your-first-90-days-as-tech-lead), establishing this rhythm is one of the most important things you can do.
+### Frequency matters
 
-Don't cancel. Cancelling a 1:1 sends a message: you're not a priority. If you absolutely must reschedule, reschedule rather than cancel. The meeting should happen every week, even if it's shorter than usual.
+Weekly or fortnightly is ideal for most teams. Monthly is too rare to build a real relationship. In your [first 90 days](/your-first-90-days-as-tech-lead), establishing this rhythm is one of the most important things you can do.
 
-Let them set the agenda. The 1:1 belongs to them, not you. Ask what they want to discuss. If they don't have anything, that's useful information too. Either things are going smoothly or they don't feel comfortable raising issues.
+### Don't cancel
 
-Take notes. Not during the meeting necessarily, but after. What did you discuss? What did you commit to? What should you follow up on? Without notes, you'll forget, and forgotten commitments wear away trust.
+Cancelling a 1:1 sends a message: you're not a priority. If you absolutely must reschedule, reschedule rather than cancel. The meeting should happen every week, even if it's shorter than usual.
+
+### Let them set the agenda
+
+The 1:1 belongs to them, not you. Ask what they want to discuss. If they don't have anything, that's useful information too. Either things are going smoothly or they don't feel comfortable raising issues.
+
+### Take notes
+
+Not during the meeting necessarily, but after. What did you discuss? What did you commit to? What should you follow up on? Without notes, you'll forget, and forgotten commitments wear away trust.
 
 ## Questions That Work
 
@@ -81,25 +89,43 @@ If you notice something concerning, address it early. Small issues discussed pro
 
 Some principles for difficult conversations:
 
-Be specific. "Your code quality has been slipping" is vague and makes people defensive. "The last three PRs had bugs that made it to production" is specific and something they can act on.
+### Be specific
 
-Focus on behaviour, not character. You're addressing what someone did, not who they are. "You've been late to the last four standups" is about behaviour. "You're unreliable" is about character.
+"Your code quality has been slipping" is vague and makes people defensive. "The last three PRs had bugs that made it to production" is specific and something they can act on.
 
-Have the conversation, not the verdict. You're opening a dialogue, not delivering a judgment. Share what you've seen, explain why it matters, then ask for their view. There might be context you don't have.
+### Focus on behaviour, not character
 
-Follow up. A difficult conversation without follow-up is pointless. Check in on progress. Acknowledge improvement. Address continued problems.
+You're addressing what someone did, not who they are. "You've been late to the last four standups" is about behaviour. "You're unreliable" is about character.
+
+### Have the conversation, not the verdict
+
+You're opening a dialogue, not delivering a judgment. Share what you've seen, explain why it matters, then ask for their view. There might be context you don't have.
+
+### Follow up
+
+A difficult conversation without follow-up is pointless. Check in on progress. Acknowledge improvement. Address continued problems.
 
 ## Common Mistakes
 
-Making it about you. If you're doing most of the talking, you're doing it wrong. The 1:1 is their time, not yours.
+### Making it about you
 
-Only discussing current work. Career growth, skill development, personal wellbeing. These all belong in 1:1s. If every conversation is about the current sprint, you're missing the point.
+If you're doing most of the talking, you're doing it wrong. The 1:1 is their time, not yours.
 
-Avoiding discomfort. If every 1:1 is pleasant and easy, you're probably avoiding the hard topics. Some discomfort is a sign you're addressing real issues.
+### Only discussing current work
 
-Not following through. If you say you'll do something, do it. If you can't do it, explain why. Nothing destroys trust faster than dropped commitments.
+Career growth, skill development, personal wellbeing: these all belong in 1:1s. If every conversation is about the current sprint, you're missing the point.
 
-Treating everyone the same. Different people need different things. Some want detailed career coaching. Some want to vent about frustrations. Some need help with technical growth. Adapt to the person.
+### Avoiding discomfort
+
+If every 1:1 is pleasant and easy, you're probably avoiding the hard topics. Some discomfort is a sign you're addressing real issues.
+
+### Not following through
+
+If you say you'll do something, do it. If you can't do it, explain why. Nothing destroys trust faster than dropped commitments.
+
+### Treating everyone the same
+
+Different people need different things. Some want detailed career coaching. Some want to vent about frustrations. Some need help with technical growth. Adapt to the person.
 
 ## Building the Relationship
 
