@@ -3,6 +3,8 @@ name: Build & Deploy Jekyll (Plugins) to GitHub Pages
 on:
   push:
     branches: [master]
+  schedule:
+    - cron: '1 8 * * *'  # Run at 8:01 am every day
   workflow_dispatch:
 
 permissions:
