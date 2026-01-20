@@ -11,9 +11,9 @@ sitemap:
 
 > This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
 
-Three weeks into my first tech lead role, my manager asked how things were going. I told her I wasn't sure what I was supposed to be doing. She laughed and said, "Neither does anyone else."
+Three weeks into my first tech lead role, my manager asked how things were going. I told her I wasn't sure what I was supposed to be doing. She laughed, "Neither does anyone else."
 
-I'd spent those three weeks bouncing between writing code, reviewing PRs, sitting in planning meetings, having 1:1s with engineers I'd been peers with days earlier, and trying to figure out why the deployment pipeline kept failing on Thursdays. Nobody had given me a job description. The promotion announcement just said "tech lead" and left me to work out the rest.
+I'd spent those three weeks bouncing between writing code, reviewing PRs, sitting in planning meetings, having 1:1s with engineers and trying to figure out why the deployment pipeline kept failing on Thursdays. Nobody had given me a job description.
 
 The role is different everywhere, defined by context rather than a career ladder document.
 
