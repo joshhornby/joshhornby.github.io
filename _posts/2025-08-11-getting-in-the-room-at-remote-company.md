@@ -6,39 +6,43 @@ tags: [career]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-08-11 T19:00:00+01:00"
+    lastmod: "2026-01-22 T19:00:00+01:00"
 ---
 
-If you want to influence decisions, steer strategy, or stay updated on important conversations, you need to get in the room. The challenge in a remote company is that "the room" isn't always visible.
+If you want to influence decisions, you need to get in the room. At a remote company, the room isn't always visible.
 
-There's no obvious boardroom or after-work drinks. Instead, a mix of private Slack channels, hidden docs, and recurring calls is where the real work happens. By the time you realise the meeting took place, the decision's usually already been made.
+There's no boardroom. No after-work drinks. Instead, decisions happen in private Slack channels, shared docs, and recurring calls you didn't know existed. By the time you hear about the meeting, it's already over.
 
-The door isn't locked, but it's not wide open either. How do you earn a seat and keep it without coming across as constantly chasing an invitation?
+## Finding the room
 
-## Getting in the room
+First problem: which room? Remote companies have lots of spaces that look important. Big meetings. High-traffic channels. All-hands. But real decisions happen in smaller groups that form around specific projects, not job titles.
 
-It starts with knowing which room you're trying to get into. Remote companies are full of spaces that look important, big meetings, high-traffic channels, all-hands, but most high-impact decisions get made in smaller faster-moving groups.
+Watch where blockers surface. Watch where people spend their energy. That's usually where things actually get decided.
 
-These tend to form around critical projects, not titles. The trick is to notice where blockers are surfacing and where people are spending their energy. That's usually where the real decisions are made.
+Remote makes this harder. "The room" moves. Sometimes it's a Google Doc that turns into a decision while you're asleep. Sometimes it's a Slack thread that quietly becomes next quarter's project. Sometimes you won't know you were in the room until your idea comes back to you, filtered through three other people.
 
-But here's where remote is different: "the room" is rarely a fixed place. Sometimes it's not a room at all; it's a Google Doc that spirals into a decision while you're asleep, or a passing Slack thread that quietly becomes the next project. Sometimes you won't even know you were in the room until later, when your idea circles back to you, filtered through three people, and attached to something else.
+## Getting invited
 
-Influence is cumulative and mostly invisible. If you keep showing up, clarifying things, reducing friction for others, the invites start to arrive before you even need to ask.
+The people already in the room don't have patience for spectators. Show up with something useful: a solution to something that's been stuck, data nobody else has looked at, context from the edges of the business. People forget who attended the meeting. They remember who unblocked it.
 
-When you're aiming for a seat, don't show up empty-handed. The people already in the room have little patience for spectators. You need to bring something valuable: a concrete solution to a tricky problem, fresh data, or an insight from the edge of the business nobody else is seeing. People rarely remember who was in the meeting, but they remember who brought the missing piece. This is true in person, but in distributed teams, it's even sharper; nobody has time for passengers.
+At a remote company, written work is how you get noticed. Not by talking the most in meetings, but by leaving a trail of useful documents behind you. A summary that moves things forward gets you invited back. A hundred status updates don't.
 
-In a remote company, your superpower is written work. The best way to get noticed isn't to talk the most in meetings; it's to leave a trail of crisp, useful documents. A tight summary that moves the team forward will get you invited back faster than a hundred status updates. Your trail is your invite: the notes you write, the issues you close, the feedback you give quietly stack up until they become a body of work. That's the compounding effect of composability: small, useful contributions connect and create opportunities for everyone to move faster.
+The notes you write, the issues you close, the feedback you give: these stack up. They become a body of work. That body of work is your invitation.
 
-Of course, none of this matters if you're just a name in a doc. The people already in the room usually got there by quietly compounding trust. They don't dominate conversations, but when things get unclear, someone always asks for their input.
+## Building trust
 
-This is the slow earn. Being in the room is often about being the person who can reset the conversation, untangle a mess, or just ship the next piece of work. You don't get there by accident. You get there by consistently solving what needs solving, even if it doesn't have your name on it. This is the human side of stakeholder engagement, one of the [four pillars of my view on engineering leadership](/four-pillars-of-engineering-leadership).
+None of this matters if you're just a name in a doc. The people in the room got there by being reliable over time. They don't dominate conversations. But when things get unclear, someone asks for their take.
 
-In a distributed world, building those relationships is more deliberate. In the office, you could rely on bumping into people. Remotely, you need to be intentional: reach out for short catch-ups, share context, and crucially follow through when you say you will.
+This is slow. Being in the room means being the person who can untangle a mess or ship the next piece of work. You get there by solving what needs solving, even when it doesn't have your name on it. This is the human side of stakeholder engagement, one of the [four pillars of my view on engineering leadership](/four-pillars-of-engineering-leadership).
 
-Quiet reliability is a better door-opener than self-promotion. If you feel on the outside, don't take it personally. Most rooms in remote companies are full of people who started on the outside. The real privilege isn't getting every invite but shaping how decisions are made when you do get the nod.
+In an office, relationships happen by accident. You bump into people. Remotely, you have to be deliberate: reach out for catch-ups, share context, follow through when you say you will.
 
-There's also a practical side: time zones and overloaded calendars make inclusion costly, so make yourself easy to invite. By default, work asynchronously, keep things brief, and offer [flexible ways to collaborate](/boundaries-over-coordination). If you become someone who lightens the load instead of adding to it, you'll find more rooms opening up.
+If you feel on the outside, don't take it personally. Most people in the room started there too.
 
-Once you're there, don't overstay your welcome. Being in the room is about adding value, not just occupying a slot on a Zoom grid. Make your points, clarify next steps, and an often underrated but much-needed task is to summarise decisions afterwards so things don't get lost in the shuffle. The game isn't about being seen everywhere; it's about making your presence count when it matters.
+## Staying there
 
-Getting in the room, especially in a remote company, isn't about chasing visibility for its own sake. It's about making sure your effort actually moves the needle, for you and your team. That comes down to intent, preparation, and a reputation for bringing clarity where things are murky. If you're still looking for the right room, start with the work. Leave a clear trail behind you. That's what gets you in and keeps you there.
+Time zones and overloaded calendars make inclusion expensive. Make yourself easy to invite. Work asynchronously by default. Keep things brief. Offer [flexible ways to collaborate](/boundaries-over-coordination). If you lighten the load instead of adding to it, more rooms open up.
+
+Once you're in, don't overstay. Make your points. Clarify next steps. Summarise decisions afterwards so things don't get lost. The goal isn't to be seen everywhere. It's to make your presence count when it matters.
+
+Start with the work. Leave a clear trail. That's what gets you in.
