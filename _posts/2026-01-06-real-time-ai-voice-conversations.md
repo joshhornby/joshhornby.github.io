@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2026-01-06T08:00:00+00:00"
 ---
 
-> This is the second post about building [Cold Call Coach](https://coldcall.coach). The first covered [eval testing LLMs in PHPUnit](/2025/12/24/eval-testing-llms-in-phpunit/).
+> This is the second post about building [Cold Call Coach](https://coldcall.coach). The first covered [eval testing LLMs in PHPUnit](/eval-testing-llms-in-phpunit/).
 
 Real-time voice AI has a problem that text chat doesn't: humans expect certain things from conversations. When someone interrupts you, you stop talking. When there's a pause, you wait. When the conversation ends, both parties know it. Break any of these rules, and the interaction feels wrong even if it's technically working.
 

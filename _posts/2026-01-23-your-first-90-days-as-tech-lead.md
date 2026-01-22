@@ -11,9 +11,7 @@ sitemap:
 
 > This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
 
-A friend got promoted to tech lead on a Friday. By Monday, he'd reorganised the team's Jira board, proposed a new branching strategy, and scheduled a "vision session" for the architecture. By Wednesday, half the team was annoyed and the other half was confused. He'd tried to change everything before understanding anything.
-
-I made the same mistake. Most new tech leads do. The title feels like permission to fix things, so you start fixing. But you don't yet know what's actually broken.
+New tech leads almost always make the same mistake: they try to change things before understanding them. The title feels like permission to fix, so they start fixing. New branching strategy. Reorganised backlog. Architecture discussions. Within weeks, the team is frustrated and nobody's sure why.
 
 The first 90 days aren't about making your mark. They're about earning the right to.
 
@@ -49,7 +47,7 @@ Pick one thing. Not three things, not a big transformation. One clear improvemen
 
 Maybe it's fixing that flaky test suite. Maybe it's simplifying the PR review process. Maybe it's cancelling a meeting everyone hates. Pick something visible, achievable, and genuinely valuable.
 
-Make the change together. Don't announce your solution. Bring the problem to the team, share your thinking, ask for input. The goal isn't just to fix the thing. It's to show how you'll lead: openly, together, focused on real problems.
+Make the change together. Don't announce your solution. Bring the problem to the team, share your thinking, ask for input. You're fixing the thing, yes, but you're also showing how you'll lead: openly, with input, focused on real problems.
 
 Deliver and reflect. Ship the improvement. Talk about what worked and what didn't. This sets the pattern for how you'll operate.
 
