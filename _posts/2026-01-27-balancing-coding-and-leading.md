@@ -11,11 +11,13 @@ sitemap:
 
 > This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
 
-Six months into being a tech lead, I realised I hadn't merged a PR in three weeks. I'd been so busy with planning, 1:1s, and stakeholder meetings that coding had slipped away entirely. When I finally picked up a ticket, I had to ask a junior engineer how the new testing setup worked.
+Every new tech lead faces the same question: how much should I code?
 
-I'd swung too far. A few months earlier, I'd been writing 80% of the team's code and wondering why nobody else was growing.
+Code too much and you're not leading. You become a bottleneck. Your team doesn't grow because you're doing all the interesting work. Code too little and you lose touch. Your technical opinions carry less weight because you don't understand the daily reality of the codebase any more.
 
-Finding the right balance is the hardest part of the tech lead role. There's no universal answer, but there are principles that help.
+Most tech leads swing between these extremes before finding their balance. One month they haven't merged a PR in weeks. A few months earlier, they were writing 80% of the team's code. Neither state works.
+
+There's no universal answer, but there are principles that help.
 
 ## Why This Is Hard
 
