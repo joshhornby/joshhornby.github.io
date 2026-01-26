@@ -15,7 +15,7 @@ New tech leads almost always make the same mistake: they try to change things be
 
 The first 90 days aren't about making your mark. They're about earning the right to.
 
-## The First Month: Listen and Learn
+## The first month: listen and learn
 
 Your only job in month one is to understand. Not to improve. Not to show off your ideas.
 
@@ -27,7 +27,7 @@ Find the real problems. Every team has problems everyone knows about but nobody 
 
 Resist the urge to solve things in month one. Write them down instead.
 
-## The Second Month: Build Relationships
+## The second month: build relationships
 
 Month two is about trust. You can't lead people who don't trust you, and trust isn't transferred with a title.
 
@@ -39,7 +39,7 @@ Connect with your PM and designer, if you have them. Understand their pressures,
 
 Find your peers. Other tech leads, senior engineers in adjacent teams, people who've done this before. You need people to talk to who understand the role. Your team can't be your support system for leadership challenges.
 
-## The Third Month: Small Wins
+## The third month: small wins
 
 By month three, you understand the landscape and you've built some trust. Now you can start making changes, but start small.
 
@@ -51,7 +51,7 @@ Make the change together. Don't announce your solution. Bring the problem to the
 
 Deliver and reflect. Ship the improvement. Talk about what worked and what didn't. This sets the pattern for how you'll operate.
 
-## Common Mistakes
+## Common mistakes
 
 ### Changing too much too fast
 
@@ -73,7 +73,7 @@ New tech leads often stop communicating upward, assuming their manager will reac
 
 It's faster to just fix things yourself. But you're teaching people to wait for you. Help them solve problems so they can solve the next one alone.
 
-## What Success Looks Like
+## What success looks like
 
 After 90 days, you should have:
 

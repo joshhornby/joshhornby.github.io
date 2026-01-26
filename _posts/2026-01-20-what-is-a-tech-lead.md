@@ -17,7 +17,7 @@ I'd spent those three weeks bouncing between writing code, reviewing PRs, sittin
 
 The role is different everywhere, defined by context rather than a career ladder document.
 
-## The Role Nobody Defines
+## The role nobody defines
 
 Ask ten companies what a tech lead does and you'll get twelve answers.
 
@@ -29,7 +29,7 @@ At a typical mid-sized company, the tech lead is responsible for the technical d
 
 This isn't a failure of organisation design. It's just how smaller teams work. You can't specialise when there are only 30 engineers in the company.
 
-## Three Core Responsibilities
+## Three core responsibilities
 
 The hybrid tech lead role breaks down into three areas that overlap constantly.
 
@@ -47,7 +47,7 @@ Things need to ship. You're the person who notices when a project is drifting, w
 
 These responsibilities pull against each other. Time spent on architecture is time not spent coaching. Time spent unblocking delivery is time not spent writing code. Learning to balance them is the actual job. (I've written before about these tensions in [four pillars of engineering leadership](/four-pillars-of-engineering-leadership).)
 
-## What a Tech Lead is NOT
+## What a tech lead is not
 
 The title confuses people, including the people who hold it.
 
@@ -57,7 +57,7 @@ A tech lead is not a mini engineering manager. You probably have some people res
 
 A tech lead is not the person who writes all the important code. Your job is to make the team capable of writing important code. Don't hoard the interesting problems for yourself.
 
-## The Multiplier Test
+## The multiplier test
 
 One measure for whether you're doing the role well: is the team depending less on you each month?
 
@@ -67,7 +67,7 @@ This feels backwards. Don't you want to be essential? No. Essential people are b
 
 Good tech leads work themselves out of their current job so they can take on new challenges. They leave behind teams that are better than when they arrived. I've written about this before as [doing leveraged work](/doing-leveraged-work): efforts that multiply what teams can achieve long after you've moved on.
 
-## This Series
+## This series
 
 This is the first post in a series about the tech lead role. Not the version with dedicated career ladders and clear boundaries, but the version where you're figuring it out as you go.
 
