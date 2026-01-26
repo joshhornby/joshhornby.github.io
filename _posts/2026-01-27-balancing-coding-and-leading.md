@@ -19,7 +19,7 @@ Most tech leads swing between these extremes before finding their balance. One m
 
 There's no universal answer, but there are principles that help.
 
-## Why This Is Hard
+## Why this is hard
 
 The problem is that both extremes feel productive.
 
@@ -29,7 +29,7 @@ When you're leading, the output is invisible. A good 1:1 doesn't show up in Jira
 
 So you default to what's measurable, which means you keep coding and neglect the leadership work that only you can do.
 
-## The Right Amount of Code
+## The right amount of code
 
 There's no magic percentage. It depends on your team size, their experience level, the complexity of the work, and what else is demanding your time.
 
@@ -43,7 +43,7 @@ You shouldn't take the most interesting problems. It's tempting to grab the gnar
 
 For most tech leads on teams of 4-8 engineers, something like 30-50% coding time is realistic. Less than that and you lose touch. More than that and you're not doing the other parts of the job.
 
-## What to Work On
+## What to work on
 
 The type of code matters as much as the amount.
 
@@ -62,7 +62,7 @@ Bad tech lead coding looks like:
 
 Aim for coding that makes the team better, not coding that makes you feel busy.
 
-## Protecting Leadership Time
+## Protecting leadership time
 
 The leadership work is easier to skip because it doesn't have deadlines. Nobody notices if you cancel a 1:1. The architecture discussion can wait until next week. The coaching conversation you've been meaning to have can always happen tomorrow.
 
@@ -78,7 +78,7 @@ Some tactics that help:
 
 - Audit your week. Every few weeks, look at where your time actually went. Compare it to where you think it should go. The gap is usually larger than you expect.
 
-## When the Balance Shifts
+## When the balance shifts
 
 The right ratio isn't static. It changes based on circumstances.
 
@@ -97,9 +97,9 @@ Less coding when:
 
 The balance should flex. The mistake is letting it drift without noticing.
 
-## The Uncomfortable Truth
+## The uncomfortable truth
 
-Here's what nobody tells you: you will never feel like you're getting this right.
+You will never feel like you're getting this right.
 
 When you're coding, you'll worry you're neglecting leadership. When you're leading, you'll feel guilty about not contributing code. There's no state where both halves of the job feel satisfied.
 
