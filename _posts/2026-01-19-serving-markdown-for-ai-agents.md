@@ -4,6 +4,7 @@ date: 2026-01-19 08:00:00
 tags: [ai, software-engineering]
 description: "AI agents prefer clean markdown over HTML. Here's how to serve both from a Jekyll blog."
 sitemap:
+    lastmod: "2026-01-19 08:00:00"
     priority: 0.7
     changefreq: 'monthly'
 ---
