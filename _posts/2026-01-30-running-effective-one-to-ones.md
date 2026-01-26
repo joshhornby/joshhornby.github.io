@@ -1,5 +1,5 @@
 ---
-title: Running Effective 1:1s
+title: Running Effective 1:1s as a Tech Lead
 date: 2026-01-30 08:00:00
 tags: [tech-lead, leadership, management]
 description: "As a tech lead, 1:1s are your most important meeting. Not status updates, not technical discussions. Real conversations about how people are doing and where they're going."
@@ -15,7 +15,7 @@ My first 1:1 as a tech lead lasted seven minutes. I asked if there were any bloc
 
 It took months to realise the problem wasn't the engineer. It was me. I was treating 1:1s like standups with a smaller audience. I hadn't understood what these meetings were actually for.
 
-## What 1:1s Are For
+## What 1:1s are for
 
 A 1:1 is not a status update. You can get status from Jira, from standups, from Slack. If you're using your 1:1 time to ask "what are you working on?", you're wasting both your time.
 
@@ -23,9 +23,9 @@ A 1:1 is a conversation about how someone is doing, what they're learning, where
 
 This is harder than status updates. It requires you to care about people as people, not just as resources who complete tickets.
 
-## The Basics
+## The basics
 
-### Frequency matters
+### Frequency
 
 Weekly or fortnightly is ideal for most teams. Monthly is too rare to build a real relationship. In your [first 90 days](/your-first-90-days-as-tech-lead), establishing this rhythm is one of the most important things you can do.
 
@@ -41,7 +41,7 @@ The 1:1 belongs to them, not you. Ask what they want to discuss. If they don't h
 
 Not during the meeting necessarily, but after. What did you discuss? What did you commit to? What should you follow up on? Without notes, you'll forget, and forgotten commitments wear away trust.
 
-## Questions That Work
+## Questions that work
 
 Open questions beat closed ones. "How are things going?" beats "Are things going well?" Give people room to tell you what they actually think.
 
@@ -67,7 +67,7 @@ For building trust:
 
 The last category is the hardest. But if you can create space for honest feedback, you'll learn things that would otherwise stay hidden.
 
-## Listening, Actually
+## Listening, actually
 
 Most people are bad at listening. They're waiting for their turn to talk, planning what they'll say next, or mentally categorising what they're hearing. This isn't listening.
 
@@ -79,9 +79,9 @@ Some signals that you're actually listening:
 - You notice what they're not saying as much as what they are
 - You resist the urge to immediately problem-solve
 
-That last one is crucial. When someone shares a problem, the instinct is to jump to solutions. Often what they need first is to feel heard. Ask "what do you think you should do?" before offering your own ideas.
+The last point trips people up. When someone shares a problem, the instinct is to jump to solutions. Often what they need first is to feel heard. Ask "what do you think you should do?" before offering your own ideas.
 
-## The Difficult Conversations
+## The difficult conversations
 
 1:1s are also where you have conversations you'd rather avoid. Performance issues, attitude problems, missed expectations. These conversations are uncomfortable, so people skip them. That's a mistake.
 
@@ -105,7 +105,7 @@ You're opening a dialogue, not delivering a judgment. Share what you've seen, ex
 
 A difficult conversation without follow-up is pointless. Check in on progress. Acknowledge improvement. Address continued problems.
 
-## Common Mistakes
+## Common mistakes
 
 ### Making it about you
 
@@ -113,7 +113,7 @@ If you're doing most of the talking, you're doing it wrong. The 1:1 is their tim
 
 ### Only discussing current work
 
-Career growth, skill development, personal wellbeing: these all belong in 1:1s. If every conversation is about the current sprint, you're missing the point.
+Career growth and personal wellbeing belong in 1:1s too. If every conversation is about the current sprint, you're missing the point.
 
 ### Avoiding discomfort
 
@@ -127,7 +127,7 @@ If you say you'll do something, do it. If you can't do it, explain why. Nothing 
 
 Different people need different things. Some want detailed career coaching. Some want to vent about frustrations. Some need help with technical growth. Adapt to the person.
 
-## Building the Relationship
+## Building the relationship
 
 The 1:1 is where you build the relationship that makes everything else possible. Trust built in these conversations lets you give hard feedback that gets heard. It lets you delegate challenging work that people grow from. It creates the psychological safety that makes teams function.
 
