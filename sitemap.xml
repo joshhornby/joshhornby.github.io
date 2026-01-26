@@ -31,7 +31,7 @@ layout: null
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.sitemap %}
+      {% if post.sitemap.lastmod %}
         <lastmod>{{ post.sitemap.lastmod | remove: " " | date_to_xmlschema }}</lastmod>
       {% endif %}
     </url>
