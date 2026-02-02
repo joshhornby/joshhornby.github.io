@@ -33,7 +33,7 @@ Scope creep has a few common causes.
 
 When the initial scope isn't well-defined, people fill in the gaps with guesses. Those guesses get turned into requirements as work moves forward.
 
-Different stakeholders have different expectations. Without clear agreement on what's in and what's out, each stakeholder adds their own version.
+Different stakeholders have different expectations. Without clear agreement on what's in and what's out, each stakeholder adds their own version. This is why [working closely with your PM](/working-with-product-managers) on scope definition matters so much.
 
 PMs want to please stakeholders. Tech leads want to please PMs. Engineers want to solve problems. Everyone's drive is to say yes. Nobody's drive is to protect the timeline. Learning [when to say no](/when-to-say-no) is one of the most important skills for a tech lead.
 
@@ -63,7 +63,7 @@ Quantify the impact. "Each of these additions adds roughly two days. We're now l
 
 Present the trade-offs. "We can add this feature, but it means either pushing the deadline or cutting something else. Which would you prefer?" Force a decision rather than absorbing the cost silently.
 
-If the team committed to a deadline, additions should require clear trade-offs. Don't let creep quietly extend timelines. Make it a choice.
+If the team committed to a deadline, additions should require clear trade-offs. Don't let creep quietly extend timelines. Make it a choice. And [keep your manager informed](/managing-up-as-tech-lead) as scope shifts. They'll need to manage expectations upward too.
 
 When scope changes, record what changed and why. This creates accountability and helps prevent further creep.
 
