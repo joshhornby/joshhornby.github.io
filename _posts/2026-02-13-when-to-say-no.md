@@ -53,7 +53,7 @@ The word "no" rarely needs to be spoken. Good pushback sounds like problem-solvi
 
 "Not now, but maybe later." Some requests aren't wrong, just poorly timed. Deferring isn't the same as rejecting. Add it to the backlog, set a time to revisit, make clear you're not dismissing it.
 
-"Yes, if." Sometimes yes depends on something else. "Yes, if we can move the deadline. Yes, if we cut scope on this other feature. Yes, if we get another engineer." Conditional yes clarifies trade-offs.
+"Yes, if." Sometimes yes depends on something else. "Yes, if we can move the deadline. Yes, if we cut the scope on this other feature. Yes, if we get another engineer." Conditional yes clarifies trade-offs.
 
 ## Saying No to Different People
 
@@ -73,9 +73,9 @@ Sometimes the answer is technically yes but really no. Be careful with these.
 
 "Sure, but it'll take six months." If you know something won't get prioritised with that timeline, you're not really saying yes. Be honest about whether something is actually going to happen.
 
-"Let me check and get back to you." A useful delay when you need time to think. A harmful one when you're just avoiding the conversation. Don't use process as a shield.
+"Let me check and get back to you." A useful delay when you need time to think. A harmful one when you're just avoiding the conversation. Don't use a process as a shield.
 
-"We'd need to talk to [someone else]." Sometimes this is fair. Sometimes it's passing the buck. Own the decision if it's yours to own.
+"We'd need to talk to someone else." Sometimes this is fair. Sometimes it's passing the buck. Own the decision if it's yours to own.
 
 ## Building the Reputation
 
