@@ -151,6 +151,8 @@ class SentryAiTracing
             ? strtolower($event->prompt->provider->name())
             : 'unknown';
 
+        $agentName = class_basename($event->prompt->agent);
+
         $context = SpanContext::make()
             ->setOp('gen_ai.chat')
             ->setDescription('chat '.$event->prompt->model)
@@ -159,6 +161,8 @@ class SentryAiTracing
                 'gen_ai.system' => $providerName,
                 'gen_ai.request.model' => $event->prompt->model,
                 'gen_ai.operation.name' => 'chat',
+                'gen_ai.agent.name' => $agentName,
+                'gen_ai.pipeline.name' => $agentName,
             ]);
 
         $childSpan = $parentSpan->startChild($context);
