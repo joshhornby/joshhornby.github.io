@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2026-02-14T08:00:00+00:00"
 ---
 
-In my [previous post](/2026/01/02/sentry-ai-tracing-laravel), I showed how to manually wrap OpenAI calls with Sentry spans to get LLM monitoring in PHP. It worked, but every AI call needed to pass through a tracing method. You had to remember to use it.
+In my [previous post](/sentry-ai-tracing-laravel), I showed how to manually wrap OpenAI calls with Sentry spans to get LLM monitoring in PHP. It worked, but every AI call needed to pass through a tracing method. You had to remember to use it.
 
 Laravel now ships an [official AI SDK](https://laravel.com/docs/12.x/ai-sdk) (`laravel/ai`) that changes this. The SDK fires events for every agent interaction, which means tracing becomes a listener. Write it once, and every AI call in your app gets traced automatically.
 
