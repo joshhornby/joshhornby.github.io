@@ -6,7 +6,7 @@ description: "The tech lead role means different things at different companies. 
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: "2026-01-20T08:00:00+00:00"
+  lastmod: "2026-03-03T08:00:00+00:00"
 ---
 
 > This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
@@ -69,6 +69,15 @@ Good tech leads work themselves out of their current job so they can take on new
 
 ## This series
 
-This is the first post in a series about the tech lead role. Not the version with dedicated career ladders and clear boundaries, but the version where you're figuring it out as you go.
-
-Future posts cover the practical challenges: working with PMs and designers, running 1:1s, balancing coding and leading, giving hard feedback. The stuff nobody tells you when you get the title.
+- [Your First 90 Days as Tech Lead](/your-first-90-days-as-tech-lead)
+- [Balancing Coding and Leading](/balancing-coding-and-leading)
+- [Running Effective 1:1s as a Tech Lead](/running-effective-one-to-ones)
+- [Working with Product Managers](/working-with-product-managers)
+- [Working with Designers](/working-with-designers)
+- [Managing Up](/managing-up-as-tech-lead)
+- [When to Say No](/when-to-say-no)
+- [Scope Creep and How to Fight It](/scope-creep-and-how-to-fight-it)
+- [Making Technical Decisions Stick](/making-technical-decisions-stick)
+- [Giving Hard Feedback](/giving-hard-feedback)
+- [Inheriting a Struggling Team](/inheriting-a-struggling-team)
+- [The Tech Lead Trap](/the-tech-lead-trap)
