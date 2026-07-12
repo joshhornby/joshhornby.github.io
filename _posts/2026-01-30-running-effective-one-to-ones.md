@@ -45,7 +45,7 @@ Not during the meeting necessarily, but after. What did you discuss? What did yo
 
 Open questions beat closed ones. "How are things going?" beats "Are things going well?" Give people room to tell you what they actually think.
 
-Some questions I return too often:
+Some questions I return to often:
 
 For regular check-ins:
 - What's on your mind this week?

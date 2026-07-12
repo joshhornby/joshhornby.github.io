@@ -13,7 +13,7 @@ sitemap:
 
 Scope creep doesn't announce itself. It arrives as reasonable requests. Each addition seems small. Each conversation is "while we're building this anyway." Nobody makes a bad decision. You just make a lot of small decisions that add up to a bad outcome.
 
-## Recognising the Pattern
+## Recognising the pattern
 
 "While you're in there..." The logic seems sound. You're already working on the payment system, so why not also add refund handling? Because refund handling is a week of work you didn't plan for.
 
@@ -27,7 +27,7 @@ Scope creep doesn't announce itself. It arrives as reasonable requests. Each add
 
 The common thread: each individual addition seems fair. The problem is the pile-up.
 
-## Why It Happens
+## Why it happens
 
 Scope creep has a few common causes.
 
@@ -41,7 +41,7 @@ PMs want to please stakeholders. Tech leads want to please PMs. Engineers want t
 
 When the goal is vague ("make a good dashboard"), scope expands to fill available time. When the goal is specific ("show four metrics, ship in two weeks"), additions are clearly out of scope.
 
-## Fighting It Early
+## Fighting it early
 
 The best time to fight scope creep is before work starts.
 
@@ -49,11 +49,11 @@ Define scope explicitly. Write down what's included and what's not. "The dashboa
 
 Get sign-off on boundaries. Make sure everyone with influence agrees on the scope before work begins. When additions arise, you can point back to the agreement.
 
-Size the work with buffers. Things take longer than estimated. If you estimate two weeks and commit to two weeks, any addition blows the timeline. Build in slack so small adjustments don't become crises. [Good estimation](/estimation-pragmatism) isn't about perfect numbers; it's about reducing surprise.
+Size the work with buffers. Things take longer than estimated. If you estimate two weeks and commit to two weeks, any addition blows the timeline. Build in slack so small adjustments don't become crises. [Good estimation](/estimation-pragmatism) is about reducing surprises, not hitting perfect numbers.
 
 Separate must-have from nice-to-have. Prioritise hard upfront. When pressure mounts, you know what can be cut.
 
-## Having the Conversation
+## Having the conversation
 
 Once creep starts, you need to address it directly. Hoping it stops on its own doesn't work.
 
@@ -67,7 +67,7 @@ If the team committed to a deadline, additions should require clear trade-offs. 
 
 When scope changes, record what changed and why. This creates accountability and helps prevent further creep.
 
-## Structural Approaches
+## Structural approaches
 
 Beyond conversations, some structural approaches help.
 
@@ -81,7 +81,7 @@ Some teams require formal change requests for scope additions. The process itsel
 
 Burn-down charts, task boards, regular demos. When everyone can see how much work remains, it's harder to pretend additions are free. [Hill charts](/hill-charts) are useful here because they show uncertainty, not just completion.
 
-## When to Accept Changes
+## When to accept changes
 
 Not all scope additions are creep. Sometimes requirements genuinely change. Sometimes you learn something that makes the original plan wrong.
 
@@ -91,7 +91,7 @@ The difference is whether the change is driven by new information or by wishful 
 
 Accept legitimate changes. Push back on scope creep. The skill is knowing which is which.
 
-## The Uncomfortable Truth
+## The uncomfortable truth
 
 You cannot eliminate scope creep entirely. Some additions will get through. Some projects will expand beyond their original bounds. This is normal.
 

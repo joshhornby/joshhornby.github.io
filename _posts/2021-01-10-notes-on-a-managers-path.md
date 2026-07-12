@@ -11,7 +11,7 @@ sitemap:
 
 "The Manager's Path" maps out the technical management career ladder, from mentoring junior engineers to navigating the C-suite. Camille Fournier delivers on her promise: a practical guide through each stage of engineering leadership.
 
-What makes this book valuable isn't just its completeness; it's that you can return to it at each career transition. Think of it as a field guide that grows more relevant as you progress.
+What makes this book valuable is that you can return to it at each career transition, not just its completeness. Think of it as a field guide that grows more relevant as you progress.
 
 ## "Feedback works best when you, as a manager, pair that feedback with coaching."
 

@@ -15,7 +15,7 @@ Decisions that aren't documented don't exist. They live in the memories of peopl
 
 Making technical decisions is one part of the job. Making them stick is another.
 
-## Why Decisions Don't Stick
+## Why decisions don't stick
 
 Even good decisions fade without reinforcement.
 

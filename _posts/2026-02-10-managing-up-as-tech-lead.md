@@ -17,7 +17,7 @@ I had told her. Once, briefly, buried in a longer conversation. I'd assumed that
 
 Managing up isn't about politics or self-promotion. It's about giving your manager the information they need to make good decisions and support your team effectively.
 
-## What Your Manager Needs
+## What your manager needs
 
 Your engineering manager has visibility problems you don't think about. They're responsible for multiple teams, attend meetings you never see, and make trade-offs across contexts you don't have. They depend on you for ground truth.
 
@@ -29,7 +29,7 @@ Progress and context. Not just what's done, but what it means. A shipped feature
 
 Your honest assessment. When asked how things are going, "fine" is not helpful. What's actually happening? Where are the gaps between reality and how things look?
 
-## How to Communicate
+## How to communicate
 
 The failure mode isn't usually silence. It's the wrong type of communication at the wrong time.
 
@@ -41,9 +41,9 @@ Quantify when you can. "The team is stressed" is vague. "Three people have worke
 
 Provide options, not just problems. When raising an issue, come with thoughts on how to address it. "We have a problem" puts the burden on your manager. "We have a problem, and here are three ways we could handle it" starts a useful conversation.
 
-Know what they'll get asked. Your manager gets questioned by their manager, by stakeholders, by other teams. Think about what questions they might face and give them the answers. This isn't manipulation; it's helping them help you.
+Know what they'll get asked. Your manager gets questioned by their manager, by stakeholders, by other teams. Think about what questions they might face and give them the answers. That's not manipulation, just good preparation.
 
-## Advocating for Your Team
+## Advocating for your team
 
 Part of managing up is making sure your team gets what they need. Resources, recognition, protection from unreasonable demands. Your manager can provide these things, but only if you make the case.
 
@@ -55,7 +55,7 @@ Pick your battles. You can't fight for everything. Decide what matters most and 
 
 Acknowledge constraints. Your manager operates within limits you don't always see. Budget, headcount, political realities. Acknowledge these when making requests. It shows you understand their position and makes you easier to work with.
 
-## Influencing Without Authority
+## Influencing without authority
 
 Tech leads often need to influence decisions they don't control. Architectural standards, team processes, resource allocation. You can't mandate these things, but you can shape them.
 
@@ -67,7 +67,7 @@ Make it easy to say yes. Do the work upfront. Don't bring a vague idea; bring a 
 
 Accept no gracefully. Sometimes the answer is no. Accept it without resentment, understand why, and move on. How you handle no affects whether you get yes next time.
 
-## Common Mistakes
+## Common mistakes
 
 Assuming they know. If you haven't explicitly told your manager something, assume they don't know. They have too much going on to guess problems from hints.
 
@@ -79,7 +79,7 @@ Complaining without solutions. Anyone can spot problems. What separates good tec
 
 Going around your manager. If you disagree with a decision, escalating around your manager is almost never the right move. It damages trust for good. If you must escalate, tell them first.
 
-## The Underlying Principle
+## The underlying principle
 
 Managing up isn't a separate activity from your job. It's how you make your job possible. Your manager controls resources, shields you from nonsense, and advocates for your team in rooms you're not in. They can only do these things if you give them what they need.
 

@@ -15,7 +15,7 @@ A designer once handed me a Figma file with a custom animation for a loading spi
 
 She wasn't wrong to be frustrated. I wasn't wrong about the constraints. We were both failing at the same thing: collaborating early enough that this conversation never needed to happen.
 
-## The Core Tension
+## The core tension
 
 Engineering and design optimise for different things. Design optimises for user experience: how it looks, how it feels, whether it delights. Engineering optimises for what we can build: can we do this reliably, keep it working, within our constraints?
 
@@ -23,7 +23,7 @@ Both matter. Neither is more important. But they pull in different directions.
 
 This tension isn't a problem to solve. It's a dynamic to manage. The best products come from holding both perspectives in balance. That requires a relationship where you can have honest conversations about trade-offs without it feeling like a battle.
 
-## The Product Trio
+## The product trio
 
 Marty Cagan popularised the idea of the Product Trio: product manager, designer, and tech lead working together as equal partners. Each owns a different dimension of the problem.
 
@@ -33,7 +33,7 @@ The key insight is shared ownership rather than hand-offs. Strong teams make dec
 
 I covered [working with product managers](/working-with-product-managers) earlier in this series. The same principles apply here: early involvement, shaping each other's work, productive disagreement. The trio works when all three roles respect what the others bring.
 
-## Collaborate Early
+## Collaborate early
 
 The spinner story happened because I wasn't involved until the design was finished. By then, the designer had invested time and creative energy. Asking for changes felt like rejection.
 
@@ -57,7 +57,7 @@ Looking at early sketches is more useful than seeing final mockups. Changes are 
 
 For anything involving animation, state transitions, or complex data, sit together and work through it. The designer understands what they want to achieve; you understand what's achievable. Meet in the middle.
 
-## Having the Pushback Conversation
+## Having the pushback conversation
 
 Sometimes you need to say no, or at least "not like this." These conversations go badly when they feel like engineering vetoing design. They go well when they feel like problem-solving together.
 
@@ -81,7 +81,7 @@ Not every gap from the spec matters equally. A button that's slightly smaller th
 
 Dismissing design decisions as unimportant ("it's just a colour") damages trust. If you're pushing back, do it respectfully. If you don't understand why something matters, ask.
 
-## The Pixel Perfect Debate
+## The pixel perfect debate
 
 Every tech lead eventually has the "pixel perfect" conversation. The designer wants the implementation to match their mockup exactly. Engineering is shipping something close enough. Both sides get frustrated.
 
@@ -101,7 +101,7 @@ Some things don't need to be:
 
 Have the conversation explicitly. "For this feature, what's the priority: speed or polish?" Get agreement before work starts, not after it ships.
 
-## Building the Relationship
+## Building the relationship
 
 Like all relationships, this one requires upkeep.
 
@@ -125,7 +125,7 @@ When a design makes the product better, say so. Designers often only hear from e
 
 If a feature shipped with design compromises, talk about why together. What could you do differently next time to avoid late-stage pushback?
 
-## The Goal
+## The goal
 
 The goal isn't engineering and design agreeing on everything. It's both sides understanding each other well enough to have productive disagreements. To argue about the right approach because you're both trying to build something great, not because you're protecting your territory.
 

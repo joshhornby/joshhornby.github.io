@@ -17,7 +17,7 @@ Years later, I worked with a PM who did the opposite. She'd share half-formed id
 
 The difference wasn't the PMs. It was the relationship.
 
-## The Partnership Model
+## The partnership model
 
 In healthy teams, the tech lead and PM operate as partners, not as spec-writer and spec-implementer. Both own the outcome. Both contribute to the solution. The boundaries are fuzzy by design.
 
@@ -27,7 +27,7 @@ This sounds obvious, but it's not how many teams actually work. The default mode
 
 When you're not involved in the "what", you build solutions to the wrong problems. When the PM isn't involved in the "how", they specify things that are expensive or impossible. The handoff model optimises for clean boundaries at the cost of good outcomes.
 
-## What Good Looks Like
+## What good looks like
 
 ### Early involvement
 
@@ -49,7 +49,7 @@ You argue about the right approach, sometimes heatedly. But you argue in service
 
 When the PM makes a call without you, you trust it was reasonable. When you make a technical decision that affects the product, they trust you thought about the user impact.
 
-## Building the Relationship
+## Building the relationship
 
 This partnership doesn't happen by itself. You have to build it.
 
@@ -73,7 +73,7 @@ When a feature request arrives, understand the problem it's solving. Often there
 
 If you can't do what they're asking, don't just say no. Come back with options. "We can't do X, but we could do Y which addresses most of the same need in half the time."
 
-## When to Push Back
+## When to push back
 
 Part of the tech lead's job is saying no. Not to block things, but to be helpful. Some situations that call for pushback:
 
@@ -95,7 +95,7 @@ You see the strain on your team more clearly than anyone. If people are burning 
 
 The key is how you push back. "No" is rarely useful. "Here's what I'm seeing and here are some options" starts a conversation.
 
-## Common Failure Modes
+## Common failure modes
 
 ### The adversarial relationship
 
@@ -113,7 +113,7 @@ The tech lead treats specs as requirements to build rather than problems to solv
 
 Every discussion about how to build becomes a negotiation about adding features. What started as a simple improvement becomes a three-month project because neither person knows how to say "not now."
 
-## The Underlying Principle
+## The underlying principle
 
 The best tech lead-PM relationships share one thing: both people are trying to solve the same problem rather than protect their territory.
 

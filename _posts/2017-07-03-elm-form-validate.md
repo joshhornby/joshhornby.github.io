@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2017-07-05T19:00:00+01:00"
 ---
 
-The real pain in frontend engineering isn't writing another form; it's dealing with validation, user feedback, and keeping your codebase from turning into a spaghetti mess of conditionals.
+The real pain in frontend engineering isn't writing another form. It's dealing with validation, user feedback, and keeping your codebase from turning into a spaghetti mess of conditionals.
 
 Elm, with its focus on making impossible states impossible, is a breath of fresh air. But vanilla form validation can get verbose, fast. That's where [`elm-form-validate`](https://package.elm-lang.org/packages/joshhornby/elm-form-validate/latest/) slots in: composable validation that lets you write forms the Elm way.
 

@@ -15,7 +15,7 @@ Learning to say no is one of the hardest parts of becoming a tech lead. It feels
 
 The instinct is to say yes. Yes to the PM's feature request, yes to the stakeholder's timeline, yes to the "quick addition" that's never quick. It feels like being helpful. But every yes is a commitment of your team's finite time and energy. Say yes to everything and you deliver nothing well.
 
-## Why Saying No Is Hard
+## Why saying no is hard
 
 Saying yes feels good. You're being helpful. You're being a team player. You're not the person blocking progress. The immediate social reward is powerful.
 
@@ -25,7 +25,7 @@ But the calculus changes when you think about consequences. Every yes is a commi
 
 The job of a tech lead is to protect the team's capacity to do good work. That requires saying no often.
 
-## When to Say No
+## When to say no
 
 Not every request deserves no. The skill is knowing when to push back.
 
@@ -41,7 +41,7 @@ When it conflicts with priorities. Every company has more ideas than capacity. W
 
 When your gut says no. Sometimes you can't explain exactly why something feels wrong. Trust that instinct, at least enough to slow down and understand it. Your experience is spotting patterns in situations that haven't fully shown themselves.
 
-## How to Say No
+## How to say no
 
 The word "no" rarely needs to be spoken. Good pushback sounds like problem-solving, not rejection.
 
@@ -55,7 +55,7 @@ The word "no" rarely needs to be spoken. Good pushback sounds like problem-solvi
 
 "Yes, if." Sometimes yes depends on something else. "Yes, if we can move the deadline. Yes, if we cut the scope on this other feature. Yes, if we get another engineer." Conditional yes clarifies trade-offs.
 
-## Saying No to Different People
+## Saying no to different people
 
 The approach varies depending on who's asking.
 
@@ -67,7 +67,7 @@ Your own manager is delicate. You can't just say no to your boss. But you can sh
 
 Your own team sometimes proposes approaches you disagree with. The dynamic is different here. You have more authority but also more responsibility to explain your reasoning. Don't just veto; teach.
 
-## The No That Isn't No
+## The no that isn't no
 
 Sometimes the answer is technically yes but really no. Be careful with these.
 
@@ -77,7 +77,7 @@ Sometimes the answer is technically yes but really no. Be careful with these.
 
 "We'd need to talk to someone else." Sometimes this is fair. Sometimes it's passing the buck. Own the decision if it's yours to own.
 
-## Building the Reputation
+## Building the reputation
 
 Saying no well requires credibility. People need to believe you're saying no for good reasons, not because you're blocking or lazy.
 
@@ -89,7 +89,7 @@ Follow through on your yes's. When you commit to something, deliver. Reliable ex
 
 Be consistent. If you say no to one person's feature and yes to another's without clear reasoning, you'll be seen as political rather than principled.
 
-## The Hard Truth
+## The hard truth
 
 You will sometimes say no and be wrong. You'll block something that would have worked, delay something that mattered, frustrate someone who had a good idea. This is unavoidable.
 

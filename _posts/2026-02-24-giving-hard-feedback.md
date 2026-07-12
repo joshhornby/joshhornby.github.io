@@ -13,7 +13,7 @@ sitemap:
 
 Giving hard feedback is uncomfortable. That's why most people avoid it. But avoiding it doesn't make the problem go away. It just delays the conversation until it's worse for everyone.
 
-## Why Hard Feedback Matters
+## Why hard feedback matters
 
 People can't fix what they don't know is broken. When you see a performance issue, an attitude problem, or a skill gap and don't address it, you're denying that person the chance to improve.
 
@@ -35,7 +35,7 @@ Private, not public. Hard feedback happens in [1:1s](/running-effective-one-to-o
 
 Direct, not cruel. You can be clear without being harsh. "I need to see improvement in the next month" is direct. "You're the worst performer on the team" is cruel and useless.
 
-## The Conversation
+## The conversation
 
 A structure that I have found to work is:
 
@@ -53,7 +53,7 @@ Agree on next steps. What happens now? A plan to fix the issues? More check-ins?
 
 Write it down. Write up what was discussed and share it. This creates accountability and protects both of you if things escalate.
 
-## Handling Reactions
+## Handling reactions
 
 Hard feedback often triggers emotional reactions. Some common ones and how to handle them.
 
@@ -69,9 +69,9 @@ Tears. Emotional reactions happen. Don't panic or rush to end the conversation. 
 
 Your job is to deliver the message clearly and kindly, not to manage their emotional response. Let them react, acknowledge their feelings, but don't let the reaction derail the conversation.
 
-## Following Up
+## Following up
 
-The conversation isn't the end; it's the start.
+The conversation is only the beginning.
 
 Check in often. Don't wait months to see if things improved. Weekly or fortnightly, ask how things are going, note progress, address continued concerns.
 
@@ -81,7 +81,7 @@ Escalate if needed. If things don't improve despite clear feedback and support, 
 
 Keep records. Document your conversations, the expectations you set, and whether they were met. This protects both of you and makes sure nothing gets forgotten.
 
-## Common Mistakes
+## Common mistakes
 
 Sandwiching. Hiding criticism between compliments waters down the message. The person hears the praise and misses the point. Be direct about what needs to change.
 
@@ -95,7 +95,7 @@ Not following up. Feedback without follow-up is pointless. The conversation is s
 
 Avoiding it entirely. The most common mistake. Hoping that problems will go away on their own.
 
-## When It Doesn't Work
+## When it doesn't work
 
 Sometimes, despite clear feedback and genuine support, things don't improve. This is hard but important to accept.
 
@@ -105,7 +105,7 @@ When you've been clear and supportive and improvement still doesn't happen, it's
 
 You gave them information and opportunity. What they do with it is their choice.
 
-## The Hardest Part
+## The hardest part
 
 The hardest part isn't the conversation itself. It's the days before, when you're dreading it. The anxiety, the script-writing in your head, the temptation to postpone.
 

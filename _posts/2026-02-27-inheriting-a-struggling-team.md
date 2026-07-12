@@ -13,7 +13,7 @@ sitemap:
 
 Inheriting a struggling team is one of the hardest things a tech lead can face. The problems run deep and the trust is gone. But it's also an opportunity. Teams in crisis have nowhere to go but up.
 
-## Understanding What You've Inherited
+## Understanding what you've inherited
 
 Before you can fix anything, you need to understand what's actually broken. The symptoms are visible; the causes are usually hidden.
 
@@ -27,7 +27,7 @@ Identify the real problems. The obvious problems are rarely the root problems. T
 
 Find the bright spots. Even struggling teams have things that work. People who still care, processes that function, code that's actually solid. Build on these rather than only focusing on what's broken.
 
-## Quick Wins Matter
+## Quick wins matter
 
 Struggling teams have often been promised turnarounds before. They've heard the speeches about change. They're sceptical, and they should be.
 
@@ -37,7 +37,7 @@ Find something you can fix in the first two weeks. Something visible, something 
 
 The specific fix matters less than what it signals: things can change, and raising problems with you leads to action.
 
-## Building Trust
+## Building trust
 
 Trust is usually the deepest wound. The team has learned that leadership doesn't deliver and that feedback goes nowhere.
 
@@ -53,7 +53,7 @@ Protect them. When unreasonable demands come from outside, push back. Let the te
 
 Follow through on feedback. When someone raises a concern, act on it or explain why you can't. The worst thing is asking for feedback and then ignoring it.
 
-## Addressing Performance Issues
+## Addressing performance issues
 
 Struggling teams sometimes have performance issues that were never addressed. The previous lead was too busy firefighting or too conflict-averse to have hard conversations.
 
@@ -67,7 +67,7 @@ But don't avoid the hard calls. Sometimes performance issues are real and persis
 
 Be fair. The team is watching how you handle this. If you're arbitrary or cruel, trust collapses. If you're fair and clear, even difficult decisions can build credibility.
 
-## Fixing the Technical Mess
+## Fixing the technical mess
 
 Struggling teams usually have struggling codebases. Tech debt, architectural rot, unclear ownership. This can't be fixed quickly, but it can be managed.
 
@@ -81,7 +81,7 @@ Celebrate progress. When a gnarly piece of code gets cleaned up, acknowledge it.
 
 Be patient. Technical messes take time to create and time to fix. Rushing leads to new messes. Steady, sustainable progress beats heroic sprints.
 
-## Communicating with Stakeholders
+## Communicating with stakeholders
 
 Stakeholders have learned not to trust this team. They've been burned by missed deadlines and broken features. Your job is to reset that relationship.
 
@@ -93,7 +93,7 @@ Show progress. Regular updates on what's improving. Delivered features, but also
 
 Ask for what you need. If the team needs time, resources, or protection from demands, advocate for it. Stakeholders can be reasonable when they understand the situation.
 
-## The Long Game
+## The long game
 
 Turning around a struggling team takes time. Not weeks, but months. Probably six months before things feel genuinely different. A year before the turnaround is clearly sustained.
 

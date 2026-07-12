@@ -11,7 +11,7 @@ sitemap:
 
 It's 2025, this isn't new advice. But some reminders should be repeated: choose boring tech if you're in the business of product engineering.
 
-It's easy to get pulled into the latest frameworks or the not-quite-stable libraries. But the real edge, especially for small teams, is pouring every ounce of focus into the product and not the plumbing. Boring tech isn't about being cautious; it's about being deliberate. The stack should fade quietly into the background so you can keep your hands on the work that matters.
+It's easy to get pulled into the latest frameworks or the not-quite-stable libraries. But the real edge, especially for small teams, is pouring every ounce of focus into the product and not the plumbing. Boring tech isn't about being cautious. It's about being deliberate. The stack should fade quietly into the background so you can keep your hands on the work that matters.
 
 To borrow from [Trainspotting](https://en.wikipedia.org/wiki/Trainspotting_(film)): choose life. Or, at least, choose a life where your stack isn't the most interesting thing about your company. Choose boring frameworks. Choose reliable databases. Choose proven languages. Choose not to spend your weekends deciphering cryptic errors in a bleeding-edge runtime. Choose to ship. Customers remember what you build, not what you built it with.
 
