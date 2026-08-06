@@ -98,17 +98,17 @@ Be explicit about the process. Are we deciding today? Taking input for a week th
 
 Disagree and commit. Once a decision is made, everyone should support it, even those who disagreed. If you can't get to agreement, be clear that you're making a call despite disagreement and expect people to follow through.
 
-Don't revisit without new information. Every decision can be debated forever. Establish that decisions stay made unless new facts arise. "We already decided this" should end conversations, not start them.
+Don't revisit without new information. Every decision can be debated forever. Make it clear that decisions stay made unless new facts arise. "We already decided this" should end conversations, not start them.
 
 ## Decisions need visible attention, not rules
 
 Follow-through doesn't mean a heavy process. It means someone is paying attention.
 
-Check in code reviews. When you see code that goes against a decision, ask about it. Sometimes there's a good reason; sometimes someone didn't know. Either way, it's a conversation.
+Check in code reviews. When you see code that goes against a decision, ask about it. Sometimes there's a good reason. Sometimes someone didn't know. Either way, it's a conversation.
 
 Point to decisions in discussions. When someone proposes something that clashes with a prior decision, point to the docs. "We decided X for these reasons. Has something changed?"
 
-Update decisions when needed. Things change. If a decision no longer makes sense, update it explicitly. Don't let it fade away; mark it replaced and write down why.
+Update decisions when needed. Things change. If a decision no longer makes sense, update it explicitly. Don't let it fade away. Mark it replaced and write down why.
 
 Model it yourself. Your own code should follow the decisions. If you ignore the standards, so will everyone else.
 

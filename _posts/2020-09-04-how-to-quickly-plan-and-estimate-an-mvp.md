@@ -10,11 +10,11 @@ sitemap:
 ---
 
 This post outlines my tried and tested strategy for quickly planning and estimating MVP projects.
-This process departs a little from Agile/Scrum best practices. There are no guarantees on estimation quality, which I believe is impossible to do for software projects, but it helps to provide a rough guide for new projects.
+This process departs a little from Agile/Scrum best practices. It won't give you an accurate estimate, because I don't think accurate estimates are possible for software projects, but it gives you a rough guide for a new one.
 
-## Gather Requirements
-To plan you need to know what you should be building.
-The more questions you can ask in this step, the easier you will find future steps. 
+## Gather requirements
+To plan, you need to know what you're building.
+The more questions you ask at this stage, the easier the later steps get.
 
 Some questions to ask are:
 
@@ -25,14 +25,11 @@ Some questions to ask are:
 
 ## Break down the work
 
-Now you've gathered some requirements and have a better understanding of what needs to be built; it's time to start breaking down the work.
+Now that you have the requirements and understand what needs building, start breaking down the work.
 
-I like to split the work into **Epics** & **User Stories**.
+I split the work into epics and user stories. An epic is a group of related user stories. A user story is a short requirement written from the point of view of an end user.
 
-- **Epics**: A group of related user stories
-- **User Stories**: Short requirements or requests written from the perspective of an end user
-
-Normally I start with the CRUD *(Create, Read, Update, Delete)* stories, for example, Create User, View User, Update User Marketing Preferences. 
+I normally start with the CRUD *(Create, Read, Update, Delete)* stories, so Create User, View User, Update User Marketing Preferences, and so on.
 
 | Epic   | Story |
 |---------|-------|
@@ -45,21 +42,21 @@ Normally I start with the CRUD *(Create, Read, Update, Delete)* stories, for exa
 
 ## Estimate
 
-When building a greenfield project it's impossible to predict how long it will take to build features.
-In my experience many factors affect the accuracy of estimations:
+On a greenfield project it's impossible to predict how long a feature will take.
+Plenty of things affect the accuracy of an estimate:
 
-- How many hours will be spent on the project
-- How many times a day you get interrupted
-- Who is working on the project eg Experience level of the team, how long has the team worked together
+- How many hours actually get spent on the project
+- How often people get interrupted
+- Who is working on it, how experienced they are, and how long they've worked together
 
-As a general rule, time-based estimation will fail, this is why I like to use Story Points instead.
+Time-based estimation fails as a rule, which is why I use story points instead.
 
-## How to estimate difficulty?
+## How to estimate difficulty
 
-As humans, it's easier for us to compare than it is to analyse.
-As an example, if someone asked you how big Europe is compared to Australia, you would most likely look at a map.
+People are better at comparing than at analysing.
+If someone asks you how big Europe is compared to Australia, you'll reach for a map.
 
-This is why I use **Relative estimation**.
+So I use relative estimation.
 
 ### Putting this into practice
 
@@ -70,9 +67,9 @@ This is why I use **Relative estimation**.
 
 Use the following scale, *1, 2, 3, 5, 8, 13, 20, 40, 100*.
 
-Do this for each story and verify throughout that each additional estimated story is relative to other stories; you may need to go back and change the values as you do this.
+Do this for every story, checking as you go that each new estimate still makes sense against the others. You'll need to go back and change earlier values.
 
-As a general rule, if a story is quite large then this is normally a sign you need to break this down into multiple stories.
+If a story comes out very large, that's usually a sign to break it into several smaller ones.
 
 Once all stories have an estimate, it's time to put the stories in priority order.
 
@@ -86,7 +83,7 @@ Once all stories have an estimate, it's time to put the stories in priority orde
 In my experience there are too many variables outside your control
 to confidently promise dates this early on in the development lifecycle. 
 
-But a rough guide is normally required so other teams can coordinate their efforts e.g. Marketing, Compliance, etc.
+But other teams usually need a rough guide so they can coordinate, for example marketing or compliance.
 
 With the current team, think about how many stories the team could finish in a sprint (I personally like to work in 2 week sprints).
 
@@ -110,6 +107,4 @@ Your velocity will likely be variable at the beginning of a project and will smo
 | Favourite | User can remove a product from their favourites | 3      | 2      |
 | Favourite | User can view a product in their favourites     | 2      | 2      |
 
-This is a rough guide to how long it will take to complete the MVP, but it is not a guarantee.
-
-Although not perfect, but it is a good starting point for planning and estimating MVP projects.
+This gives you a rough guide to how long the MVP will take. It isn't a guarantee, and it won't be perfect, but it's a reasonable starting point.

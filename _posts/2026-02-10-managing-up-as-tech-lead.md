@@ -2,7 +2,7 @@
 title: Managing Up
 date: 2026-02-10 08:00:00
 tags: [tech-lead, leadership, career]
-description: "Your engineering manager needs information from you to do their job. Here's how to keep them informed, advocate for your team, and influence decisions without authority."
+description: "Your engineering manager needs information from you to do their job. What to tell them, how to advocate for your team, and how to influence decisions you don't control."
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
@@ -11,7 +11,7 @@ sitemap:
 
 > This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
 
-My first serious mistake as a tech lead came from not managing up. The team had been struggling with a legacy system for months. I mentioned it in passing to my engineering manager, assuming she knew how bad it was. She didn't. When the system finally caused a major incident, she was blindsided. Her question afterward stung: "Why didn't you tell me this was a problem?"
+My first serious mistake as a tech lead came from not managing up. The team had been struggling with a legacy system for months. I mentioned it in passing to my engineering manager, assuming she knew how bad it was. She didn't. When the system finally caused a major incident, she was blindsided. Her question afterwards stung: "Why didn't you tell me this was a problem?"
 
 I had told her. Once, briefly, buried in a longer conversation. I'd assumed that was enough. It wasn't.
 
@@ -21,17 +21,17 @@ Managing up isn't about politics or self-promotion. It's about giving your manag
 
 Your engineering manager has visibility problems you don't think about. They're responsible for multiple teams, attend meetings you never see, and make trade-offs across contexts you don't have. They depend on you for ground truth.
 
-Risks and blockers. What could go wrong? What's slowing the team down? What's the thing that keeps you up at night? Your manager needs to know these things before they become crises.
+Start with risks and blockers. What could go wrong? What's slowing the team down? What's the thing that keeps you up at night? Your manager needs to know these before they become crises.
 
-Team health. How are people doing? Is anyone struggling, burning out, or thinking about leaving? Your manager can't help with problems they don't know exist. This is information you gather in [your 1:1s](/running-effective-one-to-ones).
+They also need to know how the team is doing. Is anyone struggling, burning out, or thinking about leaving? Your manager can't help with problems they don't know exist. This is what you gather in [your 1:1s](/running-effective-one-to-ones).
 
-Progress and context. Not just what's done, but what it means. A shipped feature is more useful information when paired with customer reaction or remaining work.
+Progress needs context to be useful. Not just what's done, but what it means. A shipped feature tells them more when you pair it with the customer reaction or the work that remains.
 
-Your honest assessment. When asked how things are going, "fine" is not helpful. What's actually happening? Where are the gaps between reality and how things look?
+And they need your honest assessment. When asked how things are going, "fine" is not helpful. What's really happening? Where are the gaps between reality and how things look?
 
 ## How to communicate
 
-The failure mode isn't usually silence. It's the wrong type of communication at the wrong time.
+Most tech leads don't go silent. They communicate the wrong things at the wrong time.
 
 Regular updates beat irregular ones. A weekly written update, even just bullet points, builds trust better than occasional long conversations. Your manager knows what's happening without having to ask. I use [four questions I answer every week](/weekly-updates) to structure this.
 
@@ -45,7 +45,7 @@ Know what they'll get asked. Your manager gets questioned by their manager, by s
 
 ## Advocating for your team
 
-Part of managing up is making sure your team gets what they need. Resources, recognition, protection from unreasonable demands. Your manager can provide these things, but only if you make the case.
+Part of managing up is making sure your team gets what they need. Your manager can find resources, hand out recognition, and shield you from unreasonable demands. But only if you make the case.
 
 Be specific about needs. "We need more people" is a weak argument. "We need a senior backend engineer because the team has no one who can work on the payment system, and that's blocking three features on the roadmap" is a case your manager can take to their peers.
 
@@ -53,17 +53,17 @@ Connect to business outcomes. Leadership cares about business results. Frame you
 
 Pick your battles. You can't fight for everything. Decide what matters most and focus your energy there. Constant requests wear down your influence.
 
-Acknowledge constraints. Your manager operates within limits you don't always see. Budget, headcount, political realities. Acknowledge these when making requests. It shows you understand their position and makes you easier to work with.
+Acknowledge constraints. Your manager works within limits you don't always see: budget, headcount, and politics you never watch play out. Acknowledge these when making requests. It shows you understand their position and makes you easier to work with.
 
 ## Influencing without authority
 
-Tech leads often need to influence decisions they don't control. Architectural standards, team processes, resource allocation. You can't mandate these things, but you can shape them.
+Tech leads often need to influence decisions they don't control, like architectural standards or how another team runs its process. You can't mandate these things, but you can shape them.
 
-Build credibility first. Your influence comes from your track record. Deliver consistently, show good judgment, follow through on commitments. People listen to people they trust. This is especially true in remote companies where you need to [get in the room](/getting-in-the-room-at-remote-company) through consistent, visible contribution.
+Build credibility first. Your influence comes from your track record. Deliver consistently and follow through on what you commit to. People listen to people they trust. This is especially true in remote companies where you need to [get in the room](/getting-in-the-room-at-remote-company) through consistent, visible contribution.
 
 Understand the decision-maker. What does your manager care about? What pressures are they under? What would make them look good to their manager? Frame your proposals in terms of their priorities.
 
-Make it easy to say yes. Do the work upfront. Don't bring a vague idea; bring a proposal with options and trade-offs already thought through. The easier you make the decision, the more likely you get what you want.
+Make it easy to say yes. Do the work upfront. Don't bring a vague idea. Bring a proposal with the options and trade-offs already thought through. The easier you make the decision, the more likely you get what you want.
 
 Accept no gracefully. Sometimes the answer is no. Accept it without resentment, understand why, and move on. How you handle no affects whether you get yes next time.
 
@@ -73,7 +73,7 @@ Assuming they know. If you haven't explicitly told your manager something, assum
 
 Waiting too long. Bad news doesn't improve with age. Tell your manager about problems early, when they're still manageable. Surprising them with a crisis destroys trust.
 
-Only communicating when you need something. If your manager only hears from you when there's a problem or a request, the relationship becomes transactional. Share wins, interesting things you noticed, things you've learned.
+Only communicating when you need something. If your manager only hears from you when there's a problem or a request, the relationship becomes transactional. Share the wins and the things you've learned too.
 
 Complaining without solutions. Anyone can spot problems. What separates good tech leads is coming with options. Even if you don't know the answer, show that you've thought about it.
 
@@ -81,6 +81,6 @@ Going around your manager. If you disagree with a decision, escalating around yo
 
 ## The underlying principle
 
-Managing up isn't a separate activity from your job. It's how you make your job possible. Your manager controls resources, shields you from nonsense, and advocates for your team in rooms you're not in. They can only do these things if you give them what they need.
+Managing up is how you make the rest of your job possible. Your manager controls resources, shields you from nonsense, and advocates for your team in rooms you're not in. They can only do these things if you give them what they need.
 
 Think of it as a partnership. You bring ground-level reality. They bring organisational context. Together, you can navigate problems neither could handle alone.

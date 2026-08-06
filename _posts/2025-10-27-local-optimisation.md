@@ -13,9 +13,9 @@ A team implements API rate limiting to protect their service from overload. Sens
 
 This is Local Optimisation in action. Teams make rational decisions within their scope that create irrational outcomes for the company or other teams. Each decision makes perfect sense from the team's perspective, and the problems only become visible when you zoom out.
 
-## Why Teams Make Locally Optimal Decisions
+## Why teams make locally optimal decisions
 
-I don't believe teams do this on purpose; [they respond to their incentive structure](/culture-follows-incentives). Engineering teams normally get measured on what they can control:
+I don't believe teams do this on purpose. [They respond to their incentive structure](/culture-follows-incentives). Engineering teams normally get measured on what they can control:
 
 - Feature delivery against roadmap commitments
 - Code quality and test coverage
@@ -26,12 +26,12 @@ None of these metrics capture cross-team impact. A team can hit all their target
 
 As an Engineering leader, you're caught between a rock and a hard place. Your team needs clear goals and success criteria. But hitting those local targets can hurt everyone else.
 
-My current solution is not to abandon local metrics; teams need that focus. Instead, force global perspective into local decisions.
+My current answer isn't to abandon local metrics, because teams need that focus. It's to force a global perspective into local decisions.
 
 - Track what happens downstream when your team changes something. Make cross-team impact visible in your metrics.
 
 - Have engineers spend time embedded with their consumers. Nothing changes perspective faster than seeing your work from the other side.
 
-- Add cross-team satisfaction to your team's goals. Local optimisation that hurts other teams isn't success, it's debt.
+- Add cross-team satisfaction to your team's goals. A local win that hurts other teams is debt, not success.
 
-The hardest part is that local optimisation feels like good engineering. Clean code, proper abstractions, following best practices these are valuable. But they become dangerous when you ignore the wider impact. Instead of "what's the best solution for us?" reframe the question to be "what's the best solution for the customer journey flowing through us?"
+The hardest part is that it feels like good engineering. Clean code, proper abstractions and following best practice are all valuable, and they get dangerous only when you ignore the wider impact. So instead of asking what the best solution is for us, ask what the best solution is for the customer journey flowing through us.

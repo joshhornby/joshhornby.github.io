@@ -6,11 +6,12 @@ tags: [software-engineering, ai]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2026-01-05 T08:00:00+00:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
-I've just finished a side project built on top of AI APIs and in the main using Claude Code. [Lenny's Vault](https://lennysvault.com/) is an AI-powered search engine for [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/podcast). It transforms podcast episodes into searchable insights, letting users find specific advice on topics like growth strategies, product management, and leadership.
 
-## How It Works
+I've just finished a side project built on top of AI APIs, mostly using Claude Code. [Lenny's Vault](https://lennysvault.com/) is an AI-powered search engine for [Lenny Rachitsky's podcast](https://www.lennysnewsletter.com/podcast). It turns podcast episodes into searchable insights, so you can find specific advice on growth, product management or leadership.
+
+## How it works
 
 The system uses a multi-agent architecture built on AWS Lambda & Step Functions. When new podcast episodes are published:
 
@@ -22,9 +23,9 @@ The system uses a multi-agent architecture built on AWS Lambda & Step Functions.
 
 Each agent is a separate Lambda function, allowing independent scaling and easier debugging when things go wrong.
 
-## The Reality of Building with AI
+## The reality of building with AI
 
-### Non-Deterministic Outputs Are Your Biggest Enemy
+### Non-deterministic outputs are the biggest problem
 
 The same podcast transcript would produce different key insights on consecutive runs. Sometimes the AI would extract 8 actionable points, sometimes 15. Occasionally it would focus entirely on tactical advice whilst missing strategic frameworks.
 
@@ -45,13 +46,13 @@ I solved this through rigid prompt engineering and response formatting. Every ag
 }
 ```
 
-The trade-off? Less creative outputs, but predictable behaviour that users can rely on.
+The trade-off is less creative output in exchange for behaviour users can rely on.
 
-### Testing AI Is Still Unsolved
+### Testing AI is still unsolved
 
 There's no agreed approach for testing prompts in TypeScript. Traditional unit tests don't work when your "function" is a Large Language Model. I found [this resource from Incident.io](https://incident.io/building-with-ai/you-cant-vibe-code-a-prompt) particularly useful for thinking about AI testing strategies. I've since written about [eval testing LLMs in PHPUnit](/eval-testing-llms-in-phpunit) - different language, same patterns.
 
-### Log Everything (Seriously, Everything)
+### Log everything
 
 AI systems fail in ways you can't predict. A prompt that worked perfectly suddenly starts producing rubbish outputs because the underlying model behaviour changed.
 
@@ -59,24 +60,24 @@ I log every prompt and response pair, processing times for each agent and model 
 
 This verbose logging saved me when OpenAI's API behaviour changed unexpectedly, causing my Content Analysis Agent to misclassify strategic discussions as tactical advice.
 
-### Claude Code: Powerful but Requires Monitoring
+### Claude Code needs watching
 
-Claude Code accelerated development significantly, especially for wiring together AWS CDK infrastructure, writing simple Lambda functions, and testing.
+Claude Code sped up development a lot, especially wiring together AWS CDK infrastructure, writing simple Lambda functions and testing.
 
-But it also introduced subtle bugs I only caught in production. The AI would generate syntactically correct code that violated business logic assumptions. For example, it created error handling that silently continued processing when it should have failed fast.
+It also introduced subtle bugs I only caught in production. The code was syntactically correct but broke assumptions in the business logic. In one case it wrote error handling that silently continued processing when it should have failed fast.
 
-I'm convinced the future is engineers working with AI tools, not being replaced by them. The human judgment for business context remains irreplaceable.
+I'm convinced the future is engineers working with these tools rather than being replaced by them. Judgement about business context is still the part that's hard to replace.
 
-### AWS Step Functions Made Agent Chaining Simple
+### AWS Step Functions made agent chaining simple
 
 Orchestrating multiple AI agents could have been a nightmare of message queues and state management. Step Functions provided visual workflow management and built-in error handling.
 
 The visual editor made it easy to view how the system was working at a high level. When the Semantic Indexing Agent started timing out on longer episodes, I could show exactly where the bottleneck occurred and how it affected search functionality.
 
-### Using AI to Validate AI
+### Using AI to validate AI
 
 The "Evaluator-Optimizer" pattern from the [AI SDK documentation](https://ai-sdk.dev/docs/foundations/agents#evaluator-optimizer) proved essential. A separate Quality Control Agent evaluates each output, scoring it on relevance, completeness, and formatting.
 
 If the score falls below a threshold, the system re-runs the failed agent with additional context.
 
-Building Lenny's Vault taught me that AI development isn't just about prompt engineering and model selection. It's about building reliable systems that handle uncertainty and stay observable. Testing, monitoring, and gradual rollouts matter even more when your core logic is non-deterministic.
+Building Lenny's Vault taught me that AI development isn't mostly about prompt engineering and model selection. It's about building reliable systems that handle uncertainty and stay observable. Testing, monitoring and gradual rollouts matter more, not less, when your core logic is non-deterministic.

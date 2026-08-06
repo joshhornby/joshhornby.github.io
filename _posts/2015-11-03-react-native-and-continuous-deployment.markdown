@@ -9,7 +9,7 @@ sitemap:
     lastmod: "2015-11-03T22:12:10+00:00"
 ---
 
-Recently I have been exploring [React Native](https://facebook.github.io/react-native/), the tl;dr of React Native is pretty accurate.
+Recently I have been looking at [React Native](https://facebook.github.io/react-native/). The short summary of it is pretty accurate.
 
 > React Native enables you to build world-class application experiences on native platforms using a consistent developer experience based on JavaScript and React. The focus of React Native is on developer efficiency across all the platforms you care about
 

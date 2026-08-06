@@ -6,32 +6,30 @@ description: Staff and Principal Engineers find work that keeps paying off long 
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-10-26T08:00:00+00:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
-For Staff and Principal Engineers, the goal is to identify and deliver leveraged work, efforts that multiply both throughput and quality across the organisation.
+For Staff and Principal Engineers, the job is to find and deliver leveraged work, meaning work that raises both throughput and quality across the organisation.
 
 ![Two-axis graph plotting impact and longevity in relation to Leveraged work](/assets/images/leveraged-work-chart.png)
 
-Picture leverage as a chart: time on the x-axis, impact on the y. The goal is top-right: work that lasts years and touches everything. Not quick boosts or flashy results, but work that compounds. Work that becomes foundation, shifts how teams think, makes everyone better.
+Picture it as a chart, with time on the x-axis and impact on the y. You're aiming for the top right, where the work lasts years and touches everything. That work compounds. It becomes the thing other teams build on, and it changes how they approach the next problem.
 
 | If it...                                                  | ...then it probably belongs in that sweet-spot |
 |-----------------------------------------------------------|------------------------------------------------|
-| keeps paying dividends long after the launch              | Longevity is doing the heavy lifting           |
+| keeps paying back long after the launch                   | Longevity is doing the heavy lifting           |
 | turns one hour of effort into many hours saved for others | Non-linear impact is showing up                |
 | lets teams build *on* it rather than *around* it          | clear Enablement                               |
 | leaves a template, script, or doc that's easy to copy     | strong Teachability                            |
 
-Finding leveraged work is mostly detective work. Talk to teams, read between the lines, spot the patterns. 
+Finding leveraged work is mostly detective work. You talk to teams and look for the patterns nobody has named yet.
 
-- **Pain-point mapping**: Sit with on-call, read incident reviews, spot recurring toil
-- **Roadmap stress-tests**: "What single failure would torpedo next year?" Fix that first
-- **Glue-work synthesis**: Connect patterns across teams into shared libraries or services
+Map the pain points by sitting with on-call and reading incident reviews until the recurring toil becomes obvious. Stress-test the roadmap by asking which single failure would sink next year, then fix that first. And watch for glue work, where the same problem is being solved separately by three teams and could become one shared library.
 
-Below are some concrete examples of leveraged work:
+Some concrete examples of what this produces:
 
-- **Feature-flag platform**: Internal service and SDKs for fast, reversible releases
-- **Incident retrospective programme**: Lightweight 5-Whys process targeting systemic fixes
-- **Service bootstrap template**: Generator that creates production-ready apps in minutes
+- A feature-flag platform, with internal service and SDKs, for fast and reversible releases
+- An incident retrospective programme running a lightweight 5-Whys process aimed at systemic fixes
+- A service bootstrap template that generates production-ready apps in minutes
 
-Leveraged work is how Staff and Principal engineers multiply impact as it's durable, scales beyond the individual, and spreads by design. 
+This is how Staff and Principal engineers multiply their impact. The work outlasts them, and it spreads without them having to be in the room.

@@ -2,11 +2,11 @@
 title: Don't Improve Coordination, Eliminate It
 date: 2025-06-11 08:00:00
 tags: [architecture, systems-thinking, org-design]
-description: "If you want to know how healthy your engineering org is, count the meetings on your calendar. Or better yet, count the ones labelled 'cross-team sync'. As dependencies grow, so does the overhead required to keep them in sync. New shared Slack channels, sprawling Jira boards, a weekly check-in 'just to keep us aligned.' I've been part of rollouts where the answer to any missed hand-off was to add another layer of coordination, hoping that more meetings might compensate for too many moving parts. But lately, I've started asking: What if coordination isn't a sign of organisational maturity, but a sign the boundaries are broken?"
+description: "Every cross-team sync is a boundary that needs reinforcing. What if coordination isn't a sign of organisational maturity, but a sign the boundaries are broken?"
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-06-11T19:00:00+01:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
 If you want to know how healthy your engineering org is, count the meetings on your calendar. Or better yet, count the ones labelled "cross-team sync".
@@ -15,7 +15,7 @@ As dependencies grow, so does the overhead required to keep them in sync. New sh
 
 But lately, I've started asking: _What if coordination isn't a sign of organisational maturity, but a sign the boundaries are broken?_
 
-## A Better Question
+## A better question
 
 Jess Kerr, in her piece ["Better Coordination, or Better Software?"](https://jessitron.com/2021/08/02/better-coordination-or-better-software/){:target="_blank"} puts it simply:
 
@@ -25,22 +25,20 @@ We tell ourselves coordination is necessary to keep the system ticking over. But
 
 When you pay that cost up front by investing in clear APIs, real ownership, and solid contract tests, the system gives you back time. You replace five recurring meetings with one shared doc and a test suite. Teams stop unblocking each other and start unblocking themselves.
 
-## The Composability Dividend
+## The composability dividend
 
-The more composable our systems, the clearer our boundaries, the less coordination we need and the [more leverage we get](/doing-leveraged-work).
+The more composable the systems, the clearer the boundaries, and the less coordination you need to hold them together. That's [work that keeps paying back](/doing-leveraged-work).
 
-It's easy to reach for a process and meetings as a kind of organisational safety net. It's harder (and more valuable) to make your systems fit together so that you don't need the safety net in the first place.
+It's easy to reach for process and meetings as an organisational safety net. It's harder, and worth more, to make your systems fit together so you don't need the net.
 
-## Making Boundaries Work for You
+## Making boundaries work for you
 
-Rather than battling the same coordination issues week after week, change the underlying system that keeps creating them. Here's how I've learned to turn boundaries from a source of friction into a source of leverage:
+Rather than fighting the same coordination problems week after week, change the system that keeps producing them. Three things have worked for me.
 
-- **Code Your Boundaries, Don't Calendar Them** If two teams rely on a recurring hand-off, ask yourself: could a contract test or shared automation make that meeting unnecessary? Ship the boundary, not the calendar invite.
+Code your boundaries instead of putting them in the calendar. If two teams depend on a recurring hand-off, ask whether a contract test or some shared automation could make that meeting unnecessary. Ship the boundary rather than the invite.
 
-- **Prioritise Explicit Interfaces, Everywhere** Don't save good API design for the public edge. Every ambiguous, undocumented internal dependency is tomorrow's meeting in disguise. Make contracts explicit.
+Make interfaces explicit everywhere, not just at the public edge. Every undocumented internal dependency is next month's meeting in disguise.
 
-- **Track Your Coordination Overhead** Count every regular meeting, shared Slack, and cross-team Jira epic. This is your "boundary tax". Watch it. If it's trending up, your system's not scaling your calendar is.
+Track your coordination overhead. Count the regular meetings, the shared Slack channels and the cross-team Jira epics. That's your boundary tax. If it's going up, your calendar is scaling instead of your system.
 
-Next time you find yourself spinning up another coordination ritual, pause. Is the problem really about information flow, or is it the absence of a clear, trusted boundary?
-
-Maybe the highest leverage thing you can do isn't another meeting, but a better interface.
+Next time you find yourself spinning up another coordination ritual, pause. Is the problem really information flow, or is it the absence of a clear, trusted boundary? Often the answer is a better interface rather than another meeting.

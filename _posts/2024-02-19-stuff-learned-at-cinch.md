@@ -17,16 +17,16 @@ Today's my last day at cinch, where I was a Tech Lead across multiple teams for 
 - **[Engineering leadership frameworks](/four-pillars-of-engineering-leadership)**: Presented to me by Paul Ingham, I think these pillars succinctly describe the foundations of good engineering leadership:
 
   - **Engineering artisanship**
-    - Emphasises mastery in technical skills, innovation, and quality in engineering practices.
+    - Technical skill and the quality of the engineering practice itself.
   - **Engineering strategy**
-    - Involves planning and executing long-term technical goals, aligning engineering efforts with business goals.
+    - Setting long-term technical goals and making sure the engineering work serves the business.
   - **Culture**
-    - Building a collaborative, inclusive, and high-performing engineering team environment.
+    - Building a team environment people want to work in and can do their best work in.
   - **Stakeholder engagement**
-    - Entails effective communication, collaboration, and relationship-building with internal and external stakeholders to ensure alignment and support for engineering initiatives.
+    - Communicating with the people inside and outside the department who need to understand and back what engineering is doing.
 
-- **The fog of war**: On reflection, the situations that felt big and "earth-shattering" in reality weren't at all. This point is a personal reminder not to overthink situations and know the storm shall pass _(apologies to whoever is reading this for the metaphors)_.
-- **Observability as a first-class citizen**: Building observable systems was at the heart of cinch's engineering philosophy. Not only from a systems perspective, but the routine and practice of what it meant to build a well-observed system was embedded into the engineering department.
+- **The fog of war**: Looking back, the situations that felt earth-shattering at the time weren't. This one is a personal reminder not to overthink things and to know the storm will pass _(apologies to whoever is reading this for the metaphors)_.
+- **Observability as a first-class citizen**: Building observable systems was at the heart of cinch's engineering philosophy. That went beyond the systems themselves. The habit of asking what a well-observed system looked like was built into how the department worked.
 - Lots of other stuff, such as using working groups for cross-org initiatives, DevOps checkpoints, [DORA metrics](/cycle-time-not-north-star) & [Team Topologies](/shaping-team-boundaries).
 
 As a final thought, I just want to say how much I've appreciated the people I've got to work with at cinch. There are too many to name, but they were truly the best part of working at cinch.

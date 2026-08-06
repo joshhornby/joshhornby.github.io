@@ -39,7 +39,7 @@ You're responsible for the architecture decisions that shape how the team builds
 
 ### Team growth
 
-You help engineers get better at their jobs through code reviews, pairing sessions, and 1:1 conversations. The less visible work matters too: sharing context about why decisions were made, explaining the business problem behind the ticket, connecting people with the right opportunities.
+You help engineers get better at their jobs through code reviews, pairing sessions and 1:1 conversations. The less visible work matters just as much, like sharing why a decision was made or explaining the business problem behind the ticket.
 
 ### Delivery
 
@@ -51,7 +51,7 @@ These responsibilities pull against each other. Time spent on architecture is ti
 
 The title confuses people, including the people who hold it.
 
-A tech lead is not a senior developer with a new title. If you're still spending 80% of your time writing code, you're a senior developer. The tech lead role requires real time on the non-coding parts: mentoring, planning, communicating.
+A tech lead is not a senior developer with a new title. If you're still spending 80% of your time writing code, you're a senior developer. The role needs real time on the parts that aren't coding, like mentoring and planning.
 
 A tech lead is not a mini engineering manager. You probably have some people responsibilities, but you're not running performance reviews or handling compensation. Your focus is technical growth and day-to-day support of your team.
 

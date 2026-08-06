@@ -11,7 +11,7 @@ sitemap:
 
 *This blog post assumes you are using [Laravel](http://laravel.com) & [Dingo API](https://github.com/dingo/api).*
 
-The [JSON API spec](http://jsonapi.org/) is a set of rules which can increase productivity, take advantage of generalised tooling, and focus on what matters: your application.
+The [JSON API spec](http://jsonapi.org/) sets out how a JSON response should be shaped. Follow it and you can use off-the-shelf client tooling instead of writing your own.
 
 To add the JSON API spec to your API create a service provider called `JSONApiServiceProvider` and add the following in your register function:
 
@@ -47,7 +47,7 @@ public function index()
     return $this->response->collection($posts, new PostTransformer(), [ 'key' => "posts" ]);
 }
 ```
-The final step is to create a Transformer, in a nutshell a transformer takes the data in one format and outputs it to another. It provides an abstraction layer over the database which allows you to map the data to any output, in our case the JSON API Spec.
+The final step is to create a Transformer. A transformer takes data in one format and outputs it in another. It sits between your database and your response, so you can map the same records to any output format. Here, that format is the JSON API spec.
 
 > Transformers are classes, or anonymous functions, which are responsible for taking one instance of the resource data and converting it to a basic array. This process is done to obfuscate your data store, avoiding Object-relational impedance mismatch and allowing you to even glue various elements together from different data stores if you wish. The data is taken from these complex data store(s) and made into a format that is more manageable, and ready to be Serialized.
 
@@ -65,7 +65,7 @@ class PostTransformer extends \Fractal\TransformerAbstract
 }
 ```
 
-The code above will provide the JSON you can see below, perfectly formed JSON API spec valid JSON!
+The code above produces the JSON below, which is valid against the JSON API spec.
 
 ```json
 {

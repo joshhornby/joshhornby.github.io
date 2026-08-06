@@ -6,7 +6,7 @@ description: "As a tech lead, 1:1s are your most important meeting. Not status u
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: "2026-01-30T08:00:00+00:00"
+  lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
 > This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
@@ -25,21 +25,13 @@ This is harder than status updates. It requires you to care about people as peop
 
 ## The basics
 
-### Frequency
+Run them weekly or fortnightly. Monthly is too rare to build a real relationship. In your [first 90 days](/your-first-90-days-as-tech-lead), establishing this rhythm is one of the most important things you can do.
 
-Weekly or fortnightly is ideal for most teams. Monthly is too rare to build a real relationship. In your [first 90 days](/your-first-90-days-as-tech-lead), establishing this rhythm is one of the most important things you can do.
+Don't cancel. Cancelling a 1:1 tells someone they aren't a priority. If you have to move it, reschedule rather than cancel. The meeting should happen every week, even if it runs short.
 
-### Don't cancel
+Let them set the agenda. The 1:1 belongs to them. Ask what they want to discuss, and if they don't have anything, that's useful information too. Either things are going smoothly or they don't feel comfortable raising problems.
 
-Cancelling a 1:1 sends a message: you're not a priority. If you absolutely must reschedule, reschedule rather than cancel. The meeting should happen every week, even if it's shorter than usual.
-
-### Let them set the agenda
-
-The 1:1 belongs to them, not you. Ask what they want to discuss. If they don't have anything, that's useful information too. Either things are going smoothly or they don't feel comfortable raising issues.
-
-### Take notes
-
-Not during the meeting necessarily, but after. What did you discuss? What did you commit to? What should you follow up on? Without notes, you'll forget, and forgotten commitments wear away trust.
+Take notes, though not necessarily during the meeting. What did you discuss? What did you commit to? What needs a follow-up? Without notes you'll forget, and forgotten commitments wear away trust.
 
 ## Questions that work
 
@@ -87,45 +79,27 @@ The last point trips people up. When someone shares a problem, the instinct is t
 
 If you notice something concerning, address it early. Small issues discussed promptly are minor corrections. The same issues left for months become serious problems.
 
-Some principles for difficult conversations:
+A few principles help here.
 
-### Be specific
+Be specific. "Your code quality has been slipping" is vague and makes people defensive. "The last three PRs had bugs that made it to production" is specific and something they can act on.
 
-"Your code quality has been slipping" is vague and makes people defensive. "The last three PRs had bugs that made it to production" is specific and something they can act on.
+Focus on behaviour rather than character. You're addressing what someone did, not who they are. "You've been late to the last four standups" is about behaviour. "You're unreliable" is about character.
 
-### Focus on behaviour, not character
+Have a conversation rather than deliver a verdict. Share what you've seen, explain why it matters, then ask for their view. There might be context you don't have.
 
-You're addressing what someone did, not who they are. "You've been late to the last four standups" is about behaviour. "You're unreliable" is about character.
-
-### Have the conversation, not the verdict
-
-You're opening a dialogue, not delivering a judgment. Share what you've seen, explain why it matters, then ask for their view. There might be context you don't have.
-
-### Follow up
-
-A difficult conversation without follow-up is pointless. Check in on progress. Acknowledge improvement. Address continued problems.
+And follow up. A difficult conversation without follow-up is pointless. Check in on progress, acknowledge the improvement, and address anything that hasn't changed.
 
 ## Common mistakes
 
-### Making it about you
+Making it about you. If you're doing most of the talking, you're doing it wrong. The 1:1 is their time.
 
-If you're doing most of the talking, you're doing it wrong. The 1:1 is their time, not yours.
+Only discussing current work. Career growth and how someone is doing belong in a 1:1 too. If every conversation is about the current sprint, you're missing the point.
 
-### Only discussing current work
+Avoiding discomfort. If every 1:1 is pleasant and easy, you're probably steering around the hard topics. A bit of discomfort usually means you're addressing something real.
 
-Career growth and personal wellbeing belong in 1:1s too. If every conversation is about the current sprint, you're missing the point.
+Not following through. If you say you'll do something, do it. If you can't, explain why. Nothing destroys trust faster than a dropped commitment.
 
-### Avoiding discomfort
-
-If every 1:1 is pleasant and easy, you're probably avoiding the hard topics. Some discomfort is a sign you're addressing real issues.
-
-### Not following through
-
-If you say you'll do something, do it. If you can't do it, explain why. Nothing destroys trust faster than dropped commitments.
-
-### Treating everyone the same
-
-Different people need different things. Some want detailed career coaching. Some want to vent about frustrations. Some need help with technical growth. Adapt to the person.
+Treating everyone the same. Different people need different things. Some want detailed career coaching, some want to vent, and some need help with technical growth. Adapt to the person in front of you.
 
 ## Building the relationship
 

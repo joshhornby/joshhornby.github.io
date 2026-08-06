@@ -2,7 +2,7 @@
 title: Eval Testing LLMs in PHPUnit
 date: 2025-12-24 08:00:00
 tags: [ai, php, software-engineering]
-description: "Prompts break silently. Here's how to catch regressions with PHPUnit evals before your users do."
+description: "Prompts break silently. Catching the regressions with PHPUnit evals before your users do."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
@@ -13,7 +13,7 @@ I shipped a one-line prompt change and broke a feature I didn't know I needed to
 
 Prompts are code. They change behaviour, they have edge cases, and they regress. Without tests, the only feedback loop is noticing something feels off.
 
-This post covers the patterns I've found useful when attempting to test them:
+These are the patterns I've found useful for testing them:
 
 - [Multi-turn conversations](#testing-multi-turn-conversations) - testing behaviour over 10+ exchanges
 - [Negative tests](#testing-what-the-ai-should-never-do) - things the AI should never do

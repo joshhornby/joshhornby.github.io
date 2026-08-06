@@ -2,11 +2,11 @@
 title: Making Impossible States Impossible
 date: 2025-07-21 08:00:00
 tags: [software-engineering, developer-experience]
-description: "The idea of making impossible states impossible in simple terms, means designing your data types and APIs so that certain invalid or nonsensical program states simply can't happen, the compiler enforces it for you at build time."
+description: "Design your data types and APIs so that invalid program states can't be constructed at all. The compiler enforces it for you at build time."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-07-22 T19:00:00+01:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
 I first encountered this concept in Richard Feldman's talk _[Making Impossible States Impossible](https://www.youtube.com/watch?v=IcgmSRJHu_8)_. It changed how I design software. Years later, I still think it's one of the most underrated ideas in our industry.
@@ -73,12 +73,8 @@ function render(session: UserSession) {
 
 The shift comes when you stop treating impossible cases as runtime problems. Make them design problems. Instead of defensive checks hoping no one passes `{ isLoggedIn: false, username: 'alice' }`, encode the rules in your types. The compiler becomes your safety net.
 
-It's a small but powerful shift. Whole categories of bugs vanish. Reviewers stop asking, "What if a logged-out user has a username?" The code can't represent it. Fewer mental branches. No "should this be possible?" debates.
+It's a small shift that pays off quickly. Whole categories of bug vanish, and reviewers stop asking what happens if a logged-out user has a username, because the code can't represent it. There are fewer branches to hold in your head and no debates about whether a state should be possible.
 
-The more you lean into this approach, the more you see the benefit compound:
-
-- **Onboarding**: Types tell the story. What's allowed? What's forbidden? No tribal knowledge needed
-- **Refactoring**: Change a type, the compiler shows every affected spot. Evolve without fear
-- **Testing**: Stop testing "should never happen" scenarios. Focus on actual business logic
+The benefit compounds the further you take it. New joiners read the types and learn what's allowed and what isn't, without needing anyone to explain it. Refactoring gets easier, because changing a type shows you every affected line. And you stop writing tests for scenarios that can't happen, which leaves more room for the business logic that can go wrong.
 
 Most bugs aren't edge cases. They're "shouldn't be possible, but the code allowed it." Making impossible states impossible prevents entire bug categories from existing. The compiler won't thank you, but your future self will.

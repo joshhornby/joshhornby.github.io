@@ -2,11 +2,11 @@
 title: Your First 90 Days as Tech Lead
 date: 2026-01-23 08:00:00
 tags: [tech-lead, leadership, career]
-description: "The first three months as a tech lead set the tone for what follows. Here's what to focus on, what to ignore, and the mistakes most people make."
+description: "The first three months as a tech lead set the tone for what follows. What to focus on, what to ignore, and the mistakes most people make."
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
-  lastmod: "2026-01-23T08:00:00+00:00"
+  lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
 > This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
@@ -31,7 +31,7 @@ Resist the urge to solve things in month one. Write them down instead.
 
 Month two is about trust. You can't lead people who don't trust you, and trust isn't transferred with a title.
 
-Establish your 1:1 rhythm. Weekly or fortnightly, whatever works for your team size. These aren't status updates. They're conversations about how people are doing, what they're learning, where they're stuck. The relationship you build in 1:1s is the foundation for everything else.
+Set up your 1:1 rhythm. Weekly or fortnightly, whatever works for your team size. These aren't status updates. They're conversations about how people are doing, what they're learning, where they're stuck. The relationship you build in 1:1s is the foundation for everything else.
 
 Understand your manager's expectations. What does your engineering manager or director actually need from you? How do they want to be kept informed? What decisions can you make alone and which need their input? Misalignment here causes problems that build up over months.
 
@@ -41,11 +41,11 @@ Find your peers. Other tech leads, senior engineers in adjacent teams, people wh
 
 ## The third month: small wins
 
-By month three, you understand the landscape and you've built some trust. Now you can start making changes, but start small.
+By month three, you understand how things work and you've built some trust. Now you can start making changes, but start small.
 
 Pick one thing. Not three things, not a big transformation. One clear improvement that addresses a real problem the team feels. Something you can ship in weeks, not months.
 
-Maybe it's fixing that flaky test suite. Maybe it's simplifying the PR review process. Maybe it's cancelling a meeting everyone hates. Pick something visible, achievable, and genuinely valuable.
+Maybe it's fixing that flaky test suite. Maybe it's simplifying the PR review process. Maybe it's cancelling a meeting everyone hates. Pick something visible that you can actually finish.
 
 Make the change together. Don't announce your solution. Bring the problem to the team, share your thinking, ask for input. You're fixing the thing, yes, but you're also showing how you'll lead: openly, with input, focused on real problems.
 
@@ -53,25 +53,15 @@ Deliver and reflect. Ship the improvement. Talk about what worked and what didn'
 
 ## Common mistakes
 
-### Changing too much too fast
+Changing too much too fast. You don't have the context yet, and changes made without it create problems you can't predict.
 
-You don't have the context yet. Changes made in ignorance create problems you can't predict.
+Trying to stay an IC. You got promoted because you were a good engineer, so it's tempting to keep doing what made you successful. But the job has changed. If you're still writing most of the code, you're not doing the tech lead job. As I covered in [What is a Tech Lead?](/what-is-a-tech-lead), your goal is to be a multiplier rather than a bottleneck.
 
-### Trying to stay an IC
+Avoiding difficult conversations. There's probably something you've been putting off, whether that's a performance issue, a team dynamic or a stakeholder who needs pushback. The longer you wait, the harder it gets.
 
-You got promoted because you were a good engineer. It's tempting to keep doing what made you successful. But your job has changed. If you're still writing most of the code, you're not doing the tech lead job. As I covered in [What is a Tech Lead?](/what-is-a-tech-lead), your goal is to be a multiplier, not a bottleneck.
+Going dark on your manager. New tech leads often stop communicating upward, assuming their manager will reach out if they need something. They won't, or they'll reach out when it's already too late.
 
-### Avoiding difficult conversations
-
-There's probably something you need to address that you've been putting off. A performance issue, a team dynamic problem, a stakeholder who needs pushback. The longer you wait, the harder it gets.
-
-### Going dark on your manager
-
-New tech leads often stop communicating upward, assuming their manager will reach out if needed. They won't, or they'll reach out when it's too late. Proactive communication builds trust and catches problems early.
-
-### Solving problems for people instead of with them
-
-It's faster to just fix things yourself. But you're teaching people to wait for you. Help them solve problems so they can solve the next one alone.
+Solving problems for people instead of with them. It's faster to fix things yourself, but you're teaching people to wait for you. Help them solve the problem so they can solve the next one alone.
 
 ## What success looks like
 

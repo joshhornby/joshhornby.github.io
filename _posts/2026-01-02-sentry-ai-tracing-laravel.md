@@ -2,7 +2,7 @@
 title: Sentry AI Tracing for OpenAI in Laravel
 date: 2026-01-02 08:00:00
 tags: [ai, php, laravel]
-description: "Sentry has built-in AI tracing for Python and JavaScript. PHP developers get nothing. Here's how to build it yourself."
+description: "Sentry has built-in AI tracing for Python and JavaScript. PHP developers get nothing, so you have to build it yourself."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
@@ -134,7 +134,7 @@ public function gradeTranscript(string $transcript, string $roleContext): array
 }
 ```
 
-The callable pattern keeps the wrapper generic. Chat completions, embeddings, image generation and they all use the same tracing method.
+The callable pattern keeps the wrapper generic. Chat completions, embeddings and image generation all go through the same tracing method.
 
 ### Why these specific attributes
 

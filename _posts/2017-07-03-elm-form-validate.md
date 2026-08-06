@@ -6,26 +6,24 @@ tags: [elm]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2017-07-05T19:00:00+01:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
-The real pain in frontend engineering isn't writing another form. It's dealing with validation, user feedback, and keeping your codebase from turning into a spaghetti mess of conditionals.
+Writing another form is easy. The work is in the validation, the user feedback, and stopping the whole thing turning into a pile of nested conditionals.
 
-Elm, with its focus on making impossible states impossible, is a breath of fresh air. But vanilla form validation can get verbose, fast. That's where [`elm-form-validate`](https://package.elm-lang.org/packages/joshhornby/elm-form-validate/latest/) slots in: composable validation that lets you write forms the Elm way.
-
-Here's how I approach it.
+Elm helps, because it pushes you to make impossible states impossible. But plain Elm form validation gets verbose fast. I wrote [`elm-form-validate`](https://package.elm-lang.org/packages/joshhornby/elm-form-validate/latest/) to keep the validation composable.
 
 ## Why elm-form-validate?
 
-A lot of Elm form tutorials stop at "here's a simple input with `Maybe String` for an error". That doesn't scale. What happens when you want reusable rules, custom error messages, or need to add cross-field validation later? `elm-form-validate` leans into composability and lets you build up complex forms from simple, predictable pieces.
+A lot of Elm form tutorials stop at "here's a simple input with `Maybe String` for an error". That doesn't scale. What happens when you want reusable rules, custom error messages, or need to add cross-field validation later? `elm-form-validate` lets you build complex forms out of small, predictable pieces.
 
-The core philosophy: **compose small validators, push errors up the type system, and never repeat yourself**.
+The idea is to compose small validators and push the errors up into the type system.
 
-## Getting Started
+## Getting started
 
-Let's build a classic login form, email and password, both required, password needs to be at least 8 chars.
+Here's a login form with email and password. Both are required, and the password needs at least 8 characters.
 
-### The Model
+### The model
 
 You want your model to capture both the raw values and the validated form state:
 
@@ -37,9 +35,9 @@ type alias Model =
     }
 ```
 
-### Validation Rules as Composable Pieces
+### Validation rules as composable pieces
 
-`elm-form-validate` uses a composable API, define rules once and reuse everywhere:
+Define a rule once and reuse it everywhere:
 
 ```elm
 emailRules : Validator String
@@ -68,9 +66,9 @@ loginForm =
         ]
 ```
 
-The key: each field can be composed and tested in isolation, but you get the safety of validating the whole form in one go.
+Each field can be composed and tested on its own, and you still validate the whole form in one go.
 
-### Validating on Submit
+### Validating on submit
 
 Handle validation when the user submits:
 
@@ -109,9 +107,9 @@ update msg model =
 
 You can then render validation feedback in your view by pattern matching on `model.formState`.
 
-### Handling Validation Errors in the View
+### Handling validation errors in the view
 
-Don't just dump errors, be intentional about surfacing what matters:
+Show the errors for the field the user is looking at, rather than dumping the whole list:
 
 ```elm
 view : Model -> Html Msg
@@ -150,15 +148,10 @@ errorView field state =
             text ""
 ```
 
-This keeps the error wiring trivial, no copy-pasting, no ad-hoc checks. All errors are surfaced via the library, and the logic stays composable.
+The error wiring stays in one place. There's no copy-pasting and no one-off checks scattered through the view.
 
-## Takeaways
+## What you get
 
-- **elm-form-validate** reduces the "boilerplate tax" of classic Elm forms.  
-- Composable validators scale with your form, add rules without rewriting everything.  
-- Type-driven design means impossible states (half-validated, half-broken forms) just can't exist.  
-- Surfacing validation in the view is trivial, errors are a first-class citizen.  
+The library cuts most of the boilerplate out of Elm forms. Validators compose, so you add a rule without rewriting the ones around it. And because the form state is a type, a half-validated form can't be constructed at all.
 
-If you want to see the code in action, check out the [elm-form-validate-example repo](https://github.com/joshhornby/elm-form-validate-example).
-
-Elm is built for clarity and correctness. Good validation code should be too.
+If you want to see the code running, there's an [example repo](https://github.com/joshhornby/elm-form-validate-example).

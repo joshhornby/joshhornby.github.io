@@ -1,12 +1,12 @@
 ---
 title: Getting in the Room at a Remote Company
 date: 2025-08-11 08:00:00
-description: "If you want to influence decisions, steer strategy, or just be in the loop on the conversations that matter there's no shortcut: you need to get in the room. The challenge in a remote company is that 'the room' isn't always visible"
+description: "If you want to influence decisions, you need to get in the room. The challenge at a remote company is that the room isn't always visible."
 tags: [career]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2026-01-22 T19:00:00+01:00"
+    lastmod: "2026-01-22T19:00:00+01:00"
 ---
 
 If you want to influence decisions, you need to get in the room. At a remote company, the room isn't always visible.
@@ -25,7 +25,7 @@ Remote makes this harder. "The room" moves. Sometimes it's a Google Doc that tur
 
 The people already in the room don't have patience for spectators. Show up with something useful: a solution to something that's been stuck, data nobody else has looked at, context from the edges of the business. People forget who attended the meeting. They remember who unblocked it.
 
-At a remote company, written work is how you get noticed. Not by talking the most in meetings, but by leaving a trail of useful documents behind you. A summary that moves things forward gets you invited back. A hundred status updates don't.
+At a remote company, written work is how you get noticed. You do it by leaving a trail of useful documents behind you rather than by talking the most in meetings. A summary that moves things forward gets you invited back. A hundred status updates don't.
 
 The notes you write, the issues you close, the feedback you give: these stack up. They become a body of work. That body of work is your invitation.
 
@@ -43,6 +43,6 @@ If you feel on the outside, don't take it personally. Most people in the room st
 
 Time zones and overloaded calendars make inclusion expensive. Make yourself easy to invite. Work asynchronously by default. Keep things brief. Offer [flexible ways to collaborate](/boundaries-over-coordination). If you lighten the load instead of adding to it, more rooms open up.
 
-Once you're in, don't overstay. Make your points. Clarify next steps. Summarise decisions afterwards so things don't get lost. The goal isn't to be seen everywhere. It's to make your presence count when it matters.
+Once you're in, don't overstay. Make your points, clarify the next steps, and summarise decisions afterwards so nothing gets lost. You're not trying to be seen everywhere, only to count when you're there.
 
 Start with the work. Leave a clear trail. That's what gets you in.

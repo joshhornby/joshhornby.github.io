@@ -6,62 +6,62 @@ description: Camille Fournier's "A Manager's Path" is a guide for navigating the
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-07-27T12:00:00+01:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
-"The Manager's Path" maps out the technical management career ladder, from mentoring junior engineers to navigating the C-suite. Camille Fournier delivers on her promise: a practical guide through each stage of engineering leadership.
+"The Manager's Path" maps out the technical management career ladder, from mentoring junior engineers to sitting in the C-suite. Camille Fournier does what she sets out to do, which is give you a practical guide to each stage of engineering leadership.
 
-What makes this book valuable is that you can return to it at each career transition, not just its completeness. Think of it as a field guide that grows more relevant as you progress.
+The reason I keep it on the shelf is that you can come back to it at every career transition. It reads more like a field guide than a book you finish.
 
 ## "Feedback works best when you, as a manager, pair that feedback with coaching."
 
-Feedback is perhaps the most underutilised management tool. Done well, it improves performance, prevents problems from festering, and establishes clear standards. Fournier nails the psychology: "When they believe that their manager sees the good things they do, they'll be more open to hearing about the areas where they might improve."
+Feedback is the management tool most people use least. Done well, it improves performance and stops small problems growing. Fournier gets the psychology right: "When they believe that their manager sees the good things they do, they'll be more open to hearing about the areas where they might improve."
 
-The shift from individual contributor to leader requires a fundamental reorientation: your impact now flows through others. Feedback becomes your primary lever for multiplying that impact.
+Moving from individual contributor to leader changes where your impact comes from. It now arrives through other people, and feedback is the main way you affect it.
 
 ## "One-on-one meetings with your manager are an essential feature of a good working relationship."
 
-Fournier makes the case for one-on-ones early and often, and she's right to do so.
+Fournier argues for one-on-ones early and often, and she's right.
 
-She identifies two core purposes:
+She gives them two purposes:
 
 1. *Create a human connection between you and your manager*
 2. *Provide a regular opportunity for private discussion about whatever needs addressing*
 
-These aren't just nice-to-haves. Without regular one-on-ones, you lose your primary channel for coaching, feedback, challenging conversations, and understanding what's really happening with your team. The urgent always crowds out the important unless you protect this time.
+Without regular one-on-ones you lose your main channel for coaching, for hard conversations, and for finding out what's really going on with your team. Urgent work crowds out important work unless you protect the time.
 
-Fournier also shares a great piece of wisdom:
+She also makes a point I've seen play out more than once:
 
 "Skipping one-on-ones because you're too busy with other things is a great way to miss the warning signs of an employee who is going to quit."
 
 ## "It's unrealistic to think you can or should shield your team from everything."
 
-The conventional wisdom tells managers to shield their teams from organisational chaos. There's truth here, constantly dumping stress on your team destroys focus and morale.
+The usual advice is to shield your team from organisational chaos. There's something in that. Constantly dumping stress on people destroys focus and morale.
 
-But Fournier offers a more balanced view:
+Fournier takes a more balanced line:
 
 *"Sometimes it's appropriate to let some stress through to the team. The goal is not to stress them out but to help them get context into what they're dealing with."*
 
-People need to understand the **why** behind their work. Context drives better decisions, increases ownership, and helps teams navigate ambiguity independently.
+People need to understand the **why** behind their work. Context leads to better decisions and means the team can handle ambiguity without checking in first.
 
-The art lies in calibrating how much context to share. Too little, and your team makes decisions in a vacuum. Too much, and they're paralysed by organisational drama.
+The skill is working out how much to share. Too little and your team decides in a vacuum. Too much and they're stuck watching the drama instead of working.
 
-Fournier's reminder cuts through the paternalism: "You are not their parent." Treat your team like the professionals they are. Include them in challenges and decisions. They'll surprise you with their ability to handle complexity when given the chance.
+Her reminder is blunt: "You are not their parent." Treat your team as the professionals they are and include them in the difficult decisions. Most of the time they handle it better than you expect.
 
 ## "Starting new reporting relationships off right"
 
-For new hires, Fournier advocates for structured onboarding through 30/60/90 day plans:
+For new hires, Fournier makes the case for structured onboarding through 30/60/90 day plans:
 
 "This can include basic goals, like getting up to speed on the code, committing a bug fix, or performing a release. The more senior the hire, the more they should participate in creating this plan. You want them to have clear goals that will show whether they're learning the right things as they get up to speed."
 
-A good 90-day plan serves double duty: it speeds up productive contribution while surfacing hiring mistakes early. Clear milestones remove ambiguity about performance for both manager and new hire.
+A good 90-day plan does two jobs. It gets someone contributing sooner, and it surfaces a hiring mistake early, while you can still do something about it. Clear milestones take the guesswork out of the first review for both of you.
 
-The plan should reflect reality: your codebase complexity, your team's current projects, and the seniority of the role. Generic onboarding checklists miss the point. Tailor expectations to your actual environment, and you'll set people up for success.
+The plan has to match your situation, so your codebase, your team's current projects, and the seniority of the role. A generic onboarding checklist tells the new hire nothing about where they actually are.
 
-## The path forward
+## Coming back to it
 
-"The Manager's Path" succeeds because it resists the temptation to offer universal truths. Instead, Fournier provides frameworks and principles that adapt to your context. The book acknowledges what many management books ignore: that technical leadership is fundamentally different from general management, and that the path isn't linear.
+The book works because Fournier doesn't pretend there are universal answers. She gives you frameworks that adapt to your context, and she's honest that technical leadership is a different job from general management, and that the path through it isn't linear.
 
-Each chapter builds on the last, but you don't need to read them in order. Skip to what you need now. Return when you face new challenges. The book's structure mirrors the reality of management growth, sometimes you're thrust into situations before you feel ready, and you need guidance fast.
+Each chapter builds on the last, but you don't need to read them in order. Skip to what you need now and come back when you hit something new. That suits how management growth actually happens, because you usually get thrown into a situation before you feel ready and need an answer quickly.
 
-What stays consistent across all levels is the emphasis on human connection, clear communication, and deliberate practice. Whether you're mentoring your first junior engineer or navigating board meetings as a CTO, these fundamentals don't change. They just get applied at different scales and contexts.
+The parts that hold across every level are human connection, clear communication, and deliberate practice. Whether you're mentoring your first junior engineer or sitting in board meetings as a CTO, those stay the same. Only the scale changes.

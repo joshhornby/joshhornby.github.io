@@ -6,48 +6,50 @@ description: "LLMs work best when you treat them like a junior engineer, not a m
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-10-26T08:00:00+00:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
 _For context: most of my experiments are with Claude 3.7, OpenAI's GPT-4, o3 and o4-mini-high. The reflections here are based on hands-on use of those models in day-to-day coding._
 
-LLMs are changing how we write software, whether we like it or not. I started out sceptical of the productivity claims. But after months of daily use, I've found something surprising: LLMs work best when you treat them like a junior engineer, not a magic wand. Same standards, same discipline, same reviews.
+LLMs are changing how we write software, whether we like it or not. I was sceptical of the productivity claims. After months of daily use, I've landed somewhere I didn't expect: they work best when you treat them like a junior engineer. Same standards, same reviews.
 
 ## The path from doubt to discipline
 
-I started out sceptical, my first attempts at using LLMs to write code were laughable. The model would rewrite a framework source code, invent functions, and ignore naming conventions, all while introducing edge-case bugs. I changed tactics, and stopped giving orders and started having a dialogue instead. The model became a well-read but inexperienced pair programmer. That shift from seeing it as a shortcut to treating it as a disciplined partner changed everything.
+My first attempts at using LLMs to write code were laughable. The model would rewrite framework source code, invent functions, ignore naming conventions, and introduce edge-case bugs along the way. So I changed tactics. Instead of giving orders, I started having a conversation, and the model turned into a well-read but inexperienced pair programmer.
 
-The biggest gains come from working with the model as you would with a junior engineer, sharing intent, clarifying expectations, and reviewing the result together at each step. By making every interaction a conversation rather than a handoff, you surface hidden assumptions or confusion and keep quality high from the start. That process, in practice, looks like this:
+The gains come from treating it the way you'd treat a junior engineer. You share the intent, you say what you expect, and you review the result together at each step. Making every interaction a conversation rather than a hand-off surfaces the hidden assumptions early. In practice it looks like this:
 
 1. **State intent first**: Ask the model to summarise the problem and sketch a solution outline before it writes a single line. Misalignment surfaces early.
 2. **Write tests up front**: The generated code reveals gaps, I expand the edge cases. A failing test is a fast guard-rail.
 3. **Iterate with review**: I keep the review process identical to human PRs: style, complexity, and clarity all matter.
-4. **Capture rationale**: I ask for a short "why this design" note and save it beside the code. Future contributors, including the model inherit the context.
+4. **Capture rationale**: I ask for a short "why this design" note and save it beside the code. Future contributors, including the model, inherit the context.
 
-## Practices that compound value
+## Practices that compound
 
-There's no magic prompt that makes LLMs work like an expert out of the box. What matters is the small habits and routines you put in place, how you interact, how you review, and how you track what actually gets better. Over time, these practices compound, quietly raising the bar for everyone who works with the model.
+No prompt makes an LLM work like an expert out of the box. What matters is the habits around it: how you interact, how you review, and how you check whether anything is actually improving. Those habits compound.
 
 [Structured prompts make the biggest difference](/improve-llm-prompting). The more explicit and orderly the instructions, the better the output. I'll ask for a three-sentence summary of intent, then a function signature, then tests. That sort of scaffolding gives the model something to anchor to and keeps it from wandering off track.
 
-I treat each prompt as its own commit. Keeping changes granular shortens the feedback loop, one behaviour or refactor at a time means reviews are faster and any mistakes are easy to spot and unwind.
+I treat each prompt as its own commit. Keeping changes small shortens the feedback loop. One behaviour or refactor at a time means reviews are faster and mistakes are easy to spot and unwind.
 
-Consistency in vocabulary is another small but important action to focus on. I keep a glossary in CONTRIBUTING.md and reference it in prompts. When everyone (human or model) is using the same terms for the same things, there's less drift and less friction in hand-offs.
+Consistent vocabulary is another small thing worth doing. I keep a glossary in CONTRIBUTING.md and reference it in prompts. When everyone, human or model, uses the same term for the same thing, there's less drift at the hand-offs.
 
-Each week log model-authored lines of code, test coverage, and review comments. It shifts the conversation from "it feels quicker" to "here's what's actually changing", and keeps the process grounded in something you can measure, not just feel.
+Each week, log the model-authored lines of code, the test coverage and the review comments. It moves the conversation from "it feels quicker" to "here's what changed", which is harder to argue with.
 
 ## What LLMs change and what they don't
 
-Routine scaffolding and repetitive tasks now take a fraction of the time, what used to take hours is down to minutes. Investigating a new API is no longer an afternoon lost; it's a quick spin-up.
-But not everything changes. System design, trade-off decisions, and organisational alignment still demand human judgment. The model suggests patterns, but it's engineers who decide what fits.
-There's a new risk, though: vibe debt-code that appears fine on the surface, but quietly erodes readability and clarity. That's why tests, style checks, and code reviews are as important as ever.
+Routine scaffolding and repetitive tasks now take a fraction of the time. What took hours takes minutes. Investigating a new API is no longer an afternoon lost.
 
-An interesting observation is how sceptics often compare the current LLMs to perfect engineers, while enthusiasts compare them to no tool at all. Reality sits between those view points. The history of software shows that new abstractions seldom remove work, they reallocate it. Terminals displaced punch cards, IDEs displaced editors, and LLMs are displacing a slice of manual implementation while elevating the importance of precise review.
+Plenty doesn't change. System design, trade-off decisions and organisational alignment still need human judgement. The model suggests patterns. Engineers decide what fits.
 
-Prompting itself often feels like learning a brand-new programming language: you experiment with syntax, search for the right abstractions, and iterate to achieve clarity. In that sense, **the newest programming language is English.**
+There's a new risk too. Call it vibe debt: code that looks fine on the surface but quietly erodes readability. Tests, style checks and code reviews matter as much as they ever did.
+
+Sceptics tend to compare today's LLMs to a perfect engineer, and enthusiasts compare them to having no tool at all. Reality sits between the two. New abstractions rarely remove work, they move it. Terminals displaced punch cards, IDEs displaced editors, and LLMs are displacing a slice of manual implementation while making precise review more important.
+
+Prompting feels like learning a new programming language. You experiment with the syntax, look for the right abstractions, and iterate until it's clear. The newest programming language is English.
 
 ## Looking ahead
 
-Agent-style workflows will likely become more popular. The winning teams will not be the first to automate everything, they will be the first to build a repeatable practice that integrates LLMs without surrendering standards. That is a management problem, not a model problem.
+Agent-style workflows will get more popular. The teams that win won't be the first to automate everything. They'll be the first to build a repeatable practice that uses LLMs without dropping their standards. That's a management problem rather than a model problem.
 
 I no longer wonder if LLMs will improve engineering, only how fast we can adapt to turn probabilistic text into reliable systems.

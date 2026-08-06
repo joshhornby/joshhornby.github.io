@@ -13,6 +13,6 @@ I've been reflecting on the relationship between experience and judgement. Initi
 
 But for that to be true, you need to actively reflect on your experiences. Without reflection, experiences are just a series of events that happen without deeper understanding.
 
-I'm trying two things to improve my judgement, the first is keeping a decision log. After major choices, write down the reasoning and expected outcomes. Revisit these decisions later and compare the outcomes vs assumptions.
+I'm trying two things to improve my judgement. The first is keeping a decision log. After a major choice, I write down the reasoning and the expected outcome, then revisit it later to compare what happened against what I assumed.
 
 The second is to teach others. Explaining your reasoning to someone else forces you to clarify your own thinking. It also exposes gaps in your understanding.

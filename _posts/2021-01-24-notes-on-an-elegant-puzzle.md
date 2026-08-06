@@ -6,7 +6,7 @@ description: Will Larson's excellent "An Elegant Puzzle" deep dives into every a
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-07-25T11:00:00+01:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
 An Elegant Puzzle deep dives into pretty much every aspect of being a tech leader at modern software companies. The author, [Will Larson](https://lethain.com), has worked at Yahoo and Digg, moved on to engineering manager at Uber, then joined Stripe, and is now CTO at Calm. Quite the CV, and it shows.
@@ -31,13 +31,13 @@ The book is split into six chapters, all independent, and you can dip in whereve
 3. **Approaches**: Challenging situations engineering managers run into, with options on how to navigate them.
 4. **Culture**: Small, persistent actions that shift culture (or entrench it).
 5. **Careers**: The messy world of hiring, performance, promotions, and retention.
-6. **Appendix**: Useful templates, checklists, and reading lists and real tools you'll actually use.
+6. **Appendix**: Templates, checklists and reading lists that you'll actually use.
 
 ## Highlights
 
-If you've just started a new job, create a 90-day plan what you want to learn, ship, and understand in the first three months. Larson lays out why this matters and how you can use it to spot gaps early or steer yourself back if you drift. (If you've read [A Manager's Path](/notes-on-a-managers-path), this will sound familiar, but Larson brings more concrete guidance.)
+If you've just started a new job, write a 90-day plan covering what you want to learn, ship and understand in the first three months. Larson lays out why this matters and how to use it to spot gaps early or steer back if you drift. (If you've read [A Manager's Path](/notes-on-a-managers-path), this will sound familiar, but Larson gives more concrete guidance.)
 
-Another bit I keep returning to is the simple framework for presenting to senior management (Chapter 3). It's not just about "sounding smart", it's about building trust, showing that you understand the trade-offs, and making it easy for others to support your decisions. I'll probably do a deeper dive on this alone.
+Another bit I keep returning to is the framework for presenting to senior management in Chapter 3. The point isn't sounding smart. It's building enough trust that people can support your decision without having to re-derive it themselves.
 
 For engineers, build a real relationship with your manager. Larson lists the things your manager should know about you:
 
@@ -49,20 +49,14 @@ For engineers, build a real relationship with your manager. Larson lists the thi
 
 That list alone is worth checking in with your manager next 1:1. If they can't answer those about you, odds are you're not getting what you need, and neither are they.
 
-One idea I've stolen for my own toolkit is Larson's "four states of an engineering team":
-- **Falling behind**: Backlog growing weekly, always behind.
-- **Treading water**: Critical work gets done, but no space for tech debt.
-- **Repaying debt**: Starting to pay it back, making room for progress.
-- **Innovating**: Low tech debt, high morale, new features flying out.
+One idea I've stolen for my own toolkit is Larson's four states of an engineering team. A team that's falling behind watches its backlog grow every week. A team treading water gets the critical work done but has no room for anything else. A team repaying debt is starting to make space again. A team that's innovating has low debt, high morale, and features going out of the door. Larson doesn't stop at naming them. He sets out how to get unstuck from each one.
 
-The beauty is that Larson doesn't just name these, he maps out steps to get unstuck from each state.
-
-What makes *An Elegant Puzzle* different from most leadership books is its honesty about trade-offs. It's not about chasing perfection, or pretending every problem is solvable if you just "empower your team". It's about wrestling with constraints, making tough calls, and picking your battles.
+What makes *An Elegant Puzzle* different from most leadership books is its honesty about trade-offs. It doesn't pretend every problem dissolves if you just empower your team. It's about working within constraints and picking your battles.
 
 Larson reminds you that organisational design is never finished. Teams, structure, and incentives quietly shape every outcome. You can't out-process a bad structure, and you can't out-hire a broken culture. The work is ongoing.
 
-He's also refreshingly pragmatic about topics like tech debt. Not all debt is created equal, and sometimes the real work is surfacing which kind matters, and which you can safely ignore. There's a discipline to naming the pain, not just labelling everything as "debt".
+He's also pragmatic about tech debt. Not all debt is equal, and often the real work is separating the kind that matters from the kind you can safely ignore. Naming the specific pain takes more discipline than labelling everything "debt".
 
-The book is packed with frameworks and checklists, but the real value is in the stories and context. You'll find yourself coming back to it, especially after a rough week. It's the kind of book that gets better the more real-world experience you bring to it.
+The book is packed with frameworks and checklists, but the value is in the stories around them. It's the kind of book that gets better the more real-world experience you bring to it.
 
-If you're leading engineers (or just want to), *An Elegant Puzzle* is the book I keep reaching for when things get complicated. It won't solve your problems for you, but it will help you see them more clearly, and that's sometimes all you need to find a way through. You don't need to agree with everything, but you'll find yourself referring back to it when you hit a wall.
+If you're leading engineers, or want to, this is the one I keep reaching for when things get complicated. It won't solve your problems, but it will help you see them more clearly, and that's usually enough to find a way through.

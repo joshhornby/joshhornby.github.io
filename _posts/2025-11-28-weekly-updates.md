@@ -11,9 +11,9 @@ sitemap:
 
 Sending my manager weekly updates has become a key part of how I stay effective. There are three main reasons I do this:
 
-First, it provides visibility. My manager can quickly see what I'm up to in a given week and means we spend less time on status updates during 1-on-1s and more time on strategic issues.
+First, it provides visibility. My manager can see what I'm up to in a given week, so we spend less of our 1-on-1s on status updates and more on the things that need a decision.
 
-Second, it tracks how productive (or unproductive) I've been. Each week, I log the main pieces of work and outcomes. This includes blockers, bottlenecks, and any issues in general. Over time, patterns emerge on what's slowing me down most.
+Second, it tracks how productive (or unproductive) I've been. Each week I log the main pieces of work and the outcomes, along with any blockers. Over time you can see what slows me down most.
 
 Third, it earns trust. This could also be called managing up, but by sharing what I'm working on, I build confidence that I'm focused on the right things. It also opens the door for feedback before problems arise.
 

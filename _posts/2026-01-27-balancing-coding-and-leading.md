@@ -2,7 +2,7 @@
 title: Balancing Coding and Leading
 date: 2026-01-27 08:00:00
 tags: [tech-lead, leadership, software-engineering]
-description: "The hardest part of becoming a tech lead is figuring out how much code to write. Too much and you're not leading. Too little and you lose touch. Here's how to find the balance."
+description: "The hardest part of becoming a tech lead is working out how much code to write. Too much and you're not leading. Too little and you lose touch."
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
@@ -85,7 +85,7 @@ The right ratio isn't static. It changes based on circumstances.
 More coding when:
 - You're new to the team and need to build context
 - There's a critical deadline and all hands are needed
-- The team is small and there's genuinely more work than people
+- The team is small and there's more work than people
 - You're prototyping something that needs your specific skills
 
 Less coding when:
@@ -103,6 +103,6 @@ You will never feel like you're getting this right.
 
 When you're coding, you'll worry you're neglecting leadership. When you're leading, you'll feel guilty about not contributing code. There's no state where both halves of the job feel satisfied.
 
-This is normal. The discomfort is the job. You're not trying to eliminate the tension. You're trying to manage it, to make conscious choices about where your time goes rather than letting it happen to you.
+This is normal. The discomfort is the job. You're managing the tension rather than removing it, making conscious choices about where your time goes instead of letting it happen to you.
 
 Some weeks you'll code more. Some weeks you'll code less. What matters is that you're choosing based on what the team needs, not what feels comfortable.

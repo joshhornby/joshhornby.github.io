@@ -2,7 +2,7 @@
 title: The Tech Lead Trap
 date: 2026-03-03 08:00:00
 tags: [tech-lead, leadership, career]
-description: "The tech lead role can become a dead end if you're not careful. Here's how to recognise when you're trapped and how to keep growing."
+description: "The tech lead role can become a dead end if you're not careful. How to spot when you're trapped, and what to do about it."
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
@@ -51,29 +51,29 @@ And if you're waiting for something to change, hoping for a promotion or a new p
 
 Escaping the trap requires intentional action. Comfort is self-reinforcing, and you won't drift out of it.
 
-Volunteer for initiatives outside your usual scope. Cross-functional projects, new domains, problems nobody owns. Unfamiliar territory is where the learning happens.
+Volunteer for work outside your usual scope. Take on cross-functional projects, new domains, or the problems nobody owns. Unfamiliar territory is where the learning happens.
 
 Start contributing beyond your team. Help other tech leads, mentor engineers in other groups, take on org-wide technical initiatives. The skills you've built have broader applications than you think.
 
 Write about what you're learning. Present to your team or company. Teaching forces you to deepen your understanding and exposes gaps in your knowledge.
 
-Figure out what you're avoiding because it's uncomfortable. Public speaking? System design? Strategic thinking? Go toward it.
+Work out what you're avoiding because it's uncomfortable. Public speaking? System design? Go towards it.
 
 Ask people you trust where your blind spots are. What should you be better at? What's holding you back from the next level? Listen to the answers.
 
-And sometimes the trap is the role itself. If you've genuinely maxed out growth opportunities where you are, moving to a new team, new company, or new role might be the right answer.
+And sometimes the trap is the role itself. If you've maxed out growth opportunities where you are, moving to a new team, new company, or new role might be the right answer.
 
 ## The fork in the road
 
 Most tech leads eventually face a choice: engineering management or the technical track.
 
-Engineering management means moving toward people leadership. Less code, more 1:1s, more organisational thinking. You become responsible for teams, not systems. The tech lead role is partial preparation, but management requires new skills: hiring, performance management, navigating organisational politics.
+Engineering management moves you towards people leadership. You write less code, run more 1:1s, and spend more time on organisational problems. You become responsible for teams rather than systems. The tech lead role is partial preparation, but management needs new skills: hiring, performance management, and navigating organisational politics.
 
-The technical track means moving toward [Staff or Principal engineer roles](/doing-leveraged-work). Deeper technical influence, broader architectural scope, less direct people responsibility. You're still leading, but through technical contribution rather than team management.
+The technical track moves you towards [Staff or Principal engineer roles](/doing-leveraged-work). You get deeper technical influence and broader architectural scope, with less direct people responsibility. You're still leading, but through technical contribution rather than team management.
 
-Both are valid paths. Neither is a promotion from tech lead; they're different jobs. The trap often comes from not choosing either, staying in the middle ground where you're doing some of both but not progressing in either.
+Both are valid paths. Neither is a promotion from tech lead. They're different jobs. The trap often comes from choosing neither and staying in the middle ground, doing some of both but progressing in neither.
 
-Think honestly about which path fits you. Some tech leads love the people side and should go toward management. Some love the technical side and should grow into Staff roles. Some discover they want something else entirely.
+Be straight with yourself about which path fits you. Some tech leads love the people side and should go towards management. Some love the technical side and should grow into Staff roles. Some discover they want something else entirely.
 
 ## Staying sharp in the role
 
@@ -83,7 +83,7 @@ Different teams have different challenges. Rotating to a new team resets your le
 
 Volunteer for the struggling team, the complex domain, the critical project. Comfort comes from predictability, and the hardest teams teach you the most.
 
-Identify something you want to get better at and pursue it with intent. Take courses, find mentors, put in deliberate practice.
+Pick something you want to get better at and pursue it on purpose. Take a course or find a mentor, and practise deliberately.
 
 Set growth goals alongside your delivery goals. What skill will you have in a year that you don't have now? What will you understand that you don't understand today?
 
@@ -93,12 +93,12 @@ Don't wait for performance reviews to get feedback. Ask colleagues what you coul
 
 The question to ask yourself: am I still growing?
 
-Performance can continue long after growth stops. Comfort can coexist with stagnation. So the question isn't whether you're still good at your job. It's whether you're still getting better.
+Performance can continue long after growth stops. You can be comfortable and stuck at the same time. So the question isn't whether you're still good at your job. It's whether you're still getting better.
 
-Are you learning? Are you being challenged? Are you better this year than last year? Will you be better next year than this year?
+Are you being challenged? Are you better this year than you were last year?
 
-If the answer is no, you're in the trap. And the only way out is to acknowledge it and do something different.
+If the answer is no, you're in the trap. And the only way out is to admit it and do something different.
 
-My colleague who spent eight years at the same level eventually moved to a Staff engineer role at a different company. The transition was hard. He'd atrophied in ways he hadn't noticed. But within a year, he was learning again, challenged again, growing again.
+My colleague who spent eight years at the same level eventually moved to a Staff engineer role at a different company. The transition was hard. He'd gone rusty in ways he hadn't noticed. But within a year, he was learning again, challenged again, growing again.
 
 The trap isn't permanent. But escaping it requires you to notice you're in it.

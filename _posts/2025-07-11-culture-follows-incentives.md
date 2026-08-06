@@ -6,15 +6,15 @@ tags: [culture, leadership]
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-07-11 T13:00:00+01:00"
+    lastmod: "2025-07-11T13:00:00+01:00"
 ---
 
-Skip the motivational Slack posts. Skip the new processes. If you want to change how people act at work, change the incentives. We like to think we're guided by logic or team spirit, but behaviour follows rewards explicit or implicit.
+Skip the motivational Slack posts. Skip the new processes. If you want to change how people act at work, change the incentives. We like to think we're guided by logic or team spirit, but behaviour follows whatever gets rewarded, whether that's stated or not.
 
-Teams talk about "raising the bar" and "shifting culture." None of it sticks if incentives point elsewhere.
+Teams talk about "raising the bar" and "shifting culture." None of it sticks if the incentives point elsewhere.
 
-Want engineers to care about quality? Reward shipping stable code, not just shipping fast. Need more documentation? Make it visible and something leadership highlights in reviews. You get what you measure, but in reality you get what you reward.
+Want engineers to care about quality? Reward shipping stable code, not just shipping fast. Need more documentation? Make leadership highlight it in reviews. You get what you measure, but you really get what you reward.
 
-Changing incentives isn't about bonuses or review targets. The best shifts are subtle: redirecting recognition, creating slack for desired work, letting teams own wins. People read between the lines. If promotions go to last-minute heroes, you'll get heroics. If they go to mentors and collaborators, you'll get mentoring and collaboration.
+Changing incentives isn't about bonuses or review targets. The useful shifts are subtle, like redirecting recognition or making space for the work you say you want. People read between the lines. If promotions go to last-minute heroes, you'll get heroics. If they go to mentors, you'll get mentoring.
 
 To change behaviour, examine what you actually incentivise. Culture follows incentives, not the other way around.

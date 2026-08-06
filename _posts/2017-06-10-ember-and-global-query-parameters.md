@@ -31,7 +31,7 @@ export default Ember.Service.extend({
 });
 ```
 
-Then in any controller where you wish to consume the query parameters, you can inject the service and use the `alias` computed property. This will create a new property that is an alias for in this the `date.start` property.
+In any controller that needs the query parameters, inject the service and use the `alias` computed property. This creates a new property that points at `date.start`.
 
 ```js
 // app/controller/users.js

@@ -2,71 +2,61 @@
 title: Engineering Toil - Seeing the Unseen Work
 date: 2025-06-23 08:00:00
 tags: [management, developer-experience]
-description: "It's easy to admire the peak moments in engineering: shipping features, the incident recovery, the burst of innovation after months of foundational work. But beneath the visible achievements sits something far more ordinary and persistent - *toil*. Toil is the work that keeps systems humming, the low-grade friction that quietly erodes a team's time, energy, and, eventually, spirit."
+description: "Toil is the work that keeps systems running and never shows up in a sprint goal. Ignore it long enough and it becomes the defining experience of the team."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-06-24T19:00:00+01:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
-It's easy to celebrate the wins in product engineering teams: a product launch, pulling together to resolve a critical outage, or watching months of platform work quietly unlock a wave of customer growth. But beneath the visible achievements sits something far more ordinary and persistent - *toil*. Toil is the work that keeps systems humming, the low-grade friction that quietly erodes a team's time and energy.
+It's easy to celebrate the wins in a product engineering team. A launch, pulling together to resolve a critical outage, watching months of platform work unlock a wave of customer growth. Underneath all of that sits something more ordinary, which is *toil*. Toil is the work that keeps systems running and quietly eats a team's time and energy.
 
-In every system I've touched, toil is there silent, repetitive, rarely celebrated. It's the 2am manual restart of a stuck service, the weekly trawl through logs to clear false positives, the ritual of updating an expiring certificate. You won't see "reduce toil" in most sprint goals, but ignore it long enough, and it becomes the defining experience of the team.
+In every system I've worked on, toil is there. It's the 2am manual restart of a stuck service, the weekly trawl through logs to clear false positives, the ritual of updating an expiring certificate. You won't see "reduce toil" in a sprint goal, but ignore it long enough and it becomes the defining experience of the team.
 
-## What Is Toil?
+## What is toil?
 
-[Google SREs gave us a nice definition](https://sre.google/sre-book/eliminating-toil/): toil is manual, repetitive, and devoid of lasting value. It's distinct from necessary operational work. Rolling out a new service is fun once. Rolling out a new service is interesting the first time. Doing it by hand again and again is just routine. Debugging a tricky issue can be rewarding, but fixing the same alert every week quickly turns into busywork.
+[Google's SREs gave us a good definition](https://sre.google/sre-book/eliminating-toil/): toil is manual, repetitive and has no lasting value. That's different from necessary operational work. Rolling out a new service is interesting the first time. Doing it by hand for the twentieth time is not. Debugging a tricky issue can be satisfying, but fixing the same alert every week turns into busywork.
 
-A few common examples:
+Manual deployments are the obvious case, where engineers SSH into boxes, run bespoke scripts and work through a checklist, with every step a chance for human error. Then there are noisy alerts that page someone who doesn't need to act. Or the same class of bug fixed separately in six microservices because nobody built the shared solution. Or rotating secrets and updating dependencies by hand because the automation never landed.
 
-- **Manual Deployments:** Engineers SSH into boxes, run bespoke scripts, follow checklists. Each step is a chance for human error.
-- **Noisy Alerts:** Pager fatigue from alerts that don't need immediate human intervention.
-- **Repetitive Bug Fixes:** Squashing the same bug class across many microservices because there's no shared solution.
-- **Admin Tasks:** Rotating secrets, expiring tokens, or manually updating dependencies because automation never landed.
+Toil is the sort of work where, once you've finished, nothing is better except that you'll be doing it again soon.
 
-At its core, toil is the sort of work where, after you've done it, the world isn't really any better off except that you'll need to do it again soon.
+## What toil costs
 
-## The Impact of Toil
+The first cost is obvious. It uses engineering hours that could go on [work that keeps paying back](/doing-leveraged-work). Over time the costs get worse.
 
-Toil is a slow poison. The first cost is obvious: it takes up engineering hours that could be spent on [higher leverage work](/doing-leveraged-work), shipping features, fixing fundamental issues, or improving the system. Over time, the costs deepen:
+Good engineers joined to solve interesting problems, not to babysit pipelines, so toil drains motivation. When half a sprint disappears into repetitive admin, plans slip and the team spends more time holding the status quo in place than moving it. Manual steps mean more chances to make a mistake, and bored, tired people make more of them. Eventually the best engineers leave for somewhere their time counts for more.
 
-- **Demoralisation:** Talented engineers joined to solve interesting problems, not to babysit pipelines or chase routine tickets. Toil drains motivation.
-- **Reduced Velocity:** When half a sprint is lost to repetitive admin, progress stalls. Product plans slip. Teams spend more time maintaining the status quo than moving it forward.
-- **Operational Risk:** Manual steps mean more opportunities for error. Fatigue and boredom make mistakes more likely, compounding incidents.
-- **Attrition:** Eventually, the best engineers move on to places where their time and energy yield greater impact.
+This isn't only anecdotal. The [DORA "State of DevOps" report](https://dora.dev/research/2024/dora-report) tracks engineering performance across thousands of organisations, and it consistently finds that teams carrying high levels of toil ship more slowly, recover from failures less well, and burn out more often.
 
-The problem isn't just anecdotal. The [DORA "State of DevOps" report](https://dora.dev/research/2024/dora-report), which tracks engineering performance across thousands of organisations worldwide. Consistently finds that teams burdened by high levels of toil deliver features more slowly, recover from failures less effectively, and experience higher rates of burnout and attrition.
+High-performing teams tend to pick ["boring technologies"](/boring-tech), invest in automation and standardise their tooling. They end up with a fraction of the operational overhead their peers carry.
 
-By contrast, high-performing teams often pick ["boring technologies"](/boring-tech), invest in automation, standardised their tooling and platform improvements, leading to less than half the operational overhead and wasted work compared to their peers.
+## Leading teams through toil
 
-Ignore toil, and you invite a steady decline in team morale and system reliability. Address it, and you unlock time, attention, and satisfaction.
+Your job as a leader isn't to remove toil overnight. It's to make it visible and treat it as real engineering work.
 
-## Leading Teams Through Toil
+### Make toil visible
 
-Leadership's job isn't to remove toil overnight, it's to surface it, prioritise, and make it a first-class engineering concern.
+Start by naming and tracking it. Ask the team which tasks they repeat most often. A regular toil audit, meaning a short and candid conversation about recurring work, gets you most of the way there. Metrics help, but the anecdotes land harder. Ask how much of the week goes on work they'd rather never do again.
 
-### Make Toil Visible
+### Make automation count
 
-The first step is to name and track toil. Invite teams to surface the tasks they repeat most often. Regular "toil audits" a lightweight, candid team conversation about recurring work can change everything. Metrics help, but anecdotes are powerful: "How much of your week is spent on work you wish you never had to do again?"
+Put toil reduction into engineering priorities explicitly. Carve out time for automation as a commitment rather than a Friday afternoon hack. Treat removing a manual step as being worth as much as a feature launch, because every hour saved comes back as better work.
 
-### Incentivise Automation
+### Reduce at the source
 
-Make toil reduction an explicit part of engineering priorities. Carve out time for automation, not just as a Friday-afternoon hack, but as a core commitment. Celebrate the removal of manual steps as much as a feature launch because every hour saved is an hour reinvested in better work.
+Most toil has a cause upstream, whether that's a broken abstraction, a missing tool or a gap in the process. Fix it at the root by investing in better CI/CD, smarter alerting or shared infrastructure libraries. Sometimes the fix isn't technical at all, and the answer is saying no to a low-value operational request.
 
-### Reduce at the Source
+### Protect the team
 
-Most toil has a cause upstream, a broken abstraction, a missing tool, a gap in process. Leaders can sponsor efforts to fix these at the root, whether it's investing in better CI/CD, smarter alerting, or shared infrastructure libraries. Sometimes the fix is non-technical: saying "no" to low-value operational requests or renegotiating expectations with stakeholders.
+Left alone, toil crowds out everything else. Protect the time for work that moves the team forward, and push back on purely operational requests unless they come with a plan to automate them.
 
-### Protect the Team
+### Model it yourself
 
-Left unchecked, toil crowds out everything else. Protect time for projects that move the team up the value chain. Push back on work that's purely operational unless it comes with a plan to reduce or automate it.
+Leaders set the tone. If you automate something annoying, share it. When someone removes a manual process, highlight it in the demo or the retro. That's how the team learns toil reduction counts as progress.
 
-### Model and Celebrate Toil Reduction
+## The payoff
 
-Leaders set the tone, if you automate something annoying, share it. If you see someone on the team remove a manual process, highlight it in demos or retros. This normalises the idea that toil reduction isn't "nice to have" its real, valuable progress.
+The healthiest engineering cultures I've seen share a bias for automating away the boring parts. They build the tooling, refine the process, and watch for friction creeping back. Toil never disappears completely, but it stays in check because someone keeps looking at it.
 
-## The Payoff
-
-Great teams don't just build, they look after the systems they inherit, and they don't let repetitive work take over their days. Over the years, the healthiest engineering cultures I've seen share a bias for automating away the boring bits. They build tooling, refine the process, and keep an eye out for creeping friction. Toil is never eliminated entirely, but it's kept in check by an ongoing tax that's regularly audited.
-
-The real reward is leverage: engineers reclaim hours, teams move faster, systems become more reliable, and morale stays high. And, crucially, the team remembers why they joined in the first place.
+What you get back is hours. Teams move faster, systems get more reliable, and people remember why they joined in the first place.

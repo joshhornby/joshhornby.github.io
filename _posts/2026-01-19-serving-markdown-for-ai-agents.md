@@ -48,7 +48,7 @@ AI agents visiting a post can now fetch the HTML or find the link tag and grab c
 
 The `rel="alternate"` pattern is already common for RSS feeds. Same idea here.
 
-The Markdown files include front matter with title, date, and tags. A format built for reading, not rendering.
+The Markdown files include front matter with the title, date and tags. It's a format built for reading rather than rendering.
 
 ## Why bother
 

@@ -6,25 +6,25 @@ description: How you can use Terraform to deploy your Twilio TaskRouter config
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2020-05-13T15:00:00+01:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
-In order to manage an ever growing [Twilio TaskRouter](https://www.twilio.com/taskrouter)
-config I've created a [Terraform Plugin](https://github.com/joshhornby/terraform-provider-twiliotaskrouter) which allows
-developers to easily extend and edit their TaskRouter infrastructure.
+To manage a growing [Twilio TaskRouter](https://www.twilio.com/taskrouter)
+config, I've written a [Terraform plugin](https://github.com/joshhornby/terraform-provider-twiliotaskrouter) that lets
+developers extend and edit their TaskRouter infrastructure in code.
 
 ## What is Terraform?
 
-Terraform is an open source tool for building, changing, and versioning infrastructure safely and efficiently. 
+Terraform is an open source tool for creating and versioning infrastructure.
 
-If we didn't use Terraform we'd need to manually create and update our Twilio TaskQueues, Workflows, Phone numbers, and the list goes on. When infrastructure is created manually, knowledge ends up trapped in the heads of individuals, and future updates are scary, unrepeatable, challenging, and undocumented.
+Without it, you create and update your Twilio TaskQueues, Workflows and phone numbers by hand. Infrastructure built that way leaves the knowledge in one person's head, and nobody wants to touch it later because there's no record of how it got that way.
 
-But that's where infrastructure as code can help. By storing infrastructure configurations in code and not making changes manually, engineers can apply processes, such as code review to their infrastructure changes too. The code acts as documentation, and becomes a history of changes.
+Infrastructure as code fixes that. Once the config lives in code, changes go through code review like anything else, and the code doubles as documentation and a history of what changed.
 
 ## Benefits of using Terraform with Twilio
 
-By moving your TaskRouter infrastructure into code, I've found the following benefits:
+Moving TaskRouter config into code gave me a few things:
 
-- Easily spin up new environments e.g. Testing, Production.
-- All your infrastructure can now be added to Git.
-- Any updates to your TaskRouter config now have to go through the same Pull Request workflow as any other piece of code.
+- New environments, like testing and production, are quick to spin up
+- The infrastructure lives in Git
+- Config changes go through the same pull request workflow as any other code

@@ -2,20 +2,20 @@
 title: Improve LLM prompts using LLMs
 date: 2025-06-02 08:00:00
 tags: [ai, developer-experience]
-description: "Experimenting with ways to improve how I interact with large language models (LLMs) like ChatGPT. Prompting is a surprisingly high-leverage task, where small tweaks often lead to disproportionately better results. Recently, I've been using a simple but powerful workflow to improve the quality of my prompts, especially for more technical or complex tasks."
+description: "Small changes to a prompt often make a large difference to the output. This is the workflow I use to improve my own prompts, especially for technical tasks."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2025-06-02 T19:00:00+01:00"
+    lastmod: "2026-08-02T08:00:00+00:00"
 ---
 
-I've been experimenting with ways to improve how I interact with large language models (LLMs) like ChatGPT. Prompting is a surprisingly high-leverage task, where small tweaks often lead to disproportionately better results. Recently, I've been using a simple but powerful workflow to improve the quality of my prompts, especially for more technical or complex tasks.
+I've been experimenting with ways to improve how I interact with large language models (LLMs) like ChatGPT. Small changes to a prompt often make a large difference to the output. This is the workflow I've settled on for improving my prompts, especially for technical or complex tasks.
 
 ## Setting up a prompt engineering environment
 
-1. **Create a new "project" in ChatGPT** - Using this as a dedicated workspace as it gives you a clean context where the model can remember your interactions, which is important when iterating on prompt design.
-2. **Upload context** - I use [Google's Prompt Engineering whitepaper](https://www.kaggle.com/whitepaper-prompt-engineering) as the foundation. It contains concise principles and techniques that help shape effective prompts. Upload it directly as a file into the project, so the model can refer back to it
-3. **Set instructions** - Then, I define system instructions to steer the model's behaviour. Here's an example of the kind of instruction I'll set:
+1. **Create a new "project" in ChatGPT** - A dedicated workspace gives you a clean context where the model remembers your earlier interactions, which matters when you're iterating on a prompt.
+2. **Upload context** - I use [Google's Prompt Engineering whitepaper](https://www.kaggle.com/whitepaper-prompt-engineering) as the foundation. It sets out the principles and techniques concisely. Upload it as a file into the project so the model can refer back to it.
+3. **Set instructions** - Then define system instructions to steer the model's behaviour. Here's the kind of instruction I'll set:
 
     ```text
     You are a tool to generate excellent prompts that will greatly improve 
@@ -28,10 +28,10 @@ I've been experimenting with ways to improve how I interact with large language 
 
 Some actual examples of where I've used this recently:
 
-- Optimise prompts for summarising technical docs
+- Improve prompts for summarising technical docs
 - Debug poorly performing prompts by asking why they don't work
 
-In each case, having the model operate with the whitepaper's framing made responses noticeably clearer and more grounded in technique.
+In each case, having the model work from the whitepaper's framing made the responses clearer and more grounded in actual technique.
 
 Here's an actual example of this in action _(thankfully not a real situation)_. 
 
@@ -91,11 +91,6 @@ Use the variable block to drop in the real incident details, send the prompt, an
 <br />
 
 ## Why this works
-This method combines three useful ideas:
 
-- **Shared context** - By using the whitepaper, you align the model's responses with your reference point.
-
-- **Stable instruction** - Setting system instructions ensures that the model stays in a consistent expert role.
-
-- **Iterative improvement** - Using a project gives you memory over time, letting you refine prompts in multiple rounds.
+Three things are doing the work here. The whitepaper gives you and the model a shared reference point, so its suggestions come from a known set of techniques rather than whatever it guesses you want. The system instructions keep it in the same role between prompts. And because it's a project, the context persists, so you can refine the same prompt over several rounds instead of starting again each time.
 

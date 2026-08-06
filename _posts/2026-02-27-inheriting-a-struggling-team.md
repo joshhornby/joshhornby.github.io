@@ -2,7 +2,7 @@
 title: Inheriting a Struggling Team
 date: 2026-02-27 08:00:00
 tags: [tech-lead, leadership, management]
-description: "Low morale, technical debt, unclear direction. What to do when you inherit a team that's already struggling, and where to start."
+description: "You've taken on a team with low morale, deep technical debt and no clear direction. What to do first, and what takes longer than you'd like."
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
@@ -11,15 +11,15 @@ sitemap:
 
 > This post is part of my [Tech Lead Series](/tags/tech-lead), a collection of practical advice for engineers stepping into leadership roles.
 
-Inheriting a struggling team is one of the hardest things a tech lead can face. The problems run deep and the trust is gone. But it's also an opportunity. Teams in crisis have nowhere to go but up.
+Inheriting a struggling team is one of the hardest things a tech lead can face. The problems run deep and the trust is gone. But a team in crisis is also the easiest kind to improve, because almost anything you fix gets noticed.
 
 ## Understanding what you've inherited
 
-Before you can fix anything, you need to understand what's actually broken. The symptoms are visible; the causes are usually hidden.
+Before you can fix anything, you need to understand what's broken. The symptoms are visible. The causes are usually hidden.
 
 Talk to everyone. Schedule 1:1s with every team member in your first week. Ask open questions: What's working? What's not? What would they change? What do they wish leadership understood? Listen more than you talk. This is the same advice from [your first 90 days](/your-first-90-days-as-tech-lead), but compressed.
 
-Read the history. Old retrospectives, incident reports, architecture documents, Slack history. What patterns emerge? What keeps going wrong? What decisions led to this point?
+Read the history. Go through old retrospectives, incident reports, architecture documents and Slack. What patterns emerge? What keeps going wrong? What decisions led to this point?
 
 Understand the departures. If people left, find out why. Exit interviews if they exist, informal conversations if you can manage them. People leave struggling teams for reasons, and those reasons tell you what's wrong.
 
@@ -59,7 +59,7 @@ Struggling teams sometimes have performance issues that were never addressed. Th
 
 You need to address these, but carefully.
 
-Don't rush to judgment. People underperform in struggling teams because the environment enables it. Before concluding someone is a poor performer, give them a functioning team to perform in.
+Don't rush to judgement. People underperform in struggling teams because the environment enables it. Before concluding someone is a poor performer, give them a functioning team to perform in.
 
 Separate environment from individual. Is this person struggling because they're not capable, or because the context makes success impossible? Fix the context before judging the person.
 
@@ -69,11 +69,11 @@ Be fair. The team is watching how you handle this. If you're arbitrary or cruel,
 
 ## Fixing the technical mess
 
-Struggling teams usually have struggling codebases. Tech debt, architectural rot, unclear ownership. This can't be fixed quickly, but it can be managed.
+Struggling teams usually have struggling codebases, full of tech debt and architectural rot that nobody owns. You can't fix that quickly, but you can manage it.
 
-Stop the bleeding. Before improving anything, stop making it worse. Establish minimum quality standards. No more shortcuts that create debt.
+Stop the bleeding. Before improving anything, stop making it worse. Set minimum quality standards. No more shortcuts that create debt.
 
-Make debt visible. Track it. Name it. Talk about it in planning. When the team understands the cost of debt, they're more motivated to address it. I've written about [reconsidering how we talk about tech debt](/reconsidering-tech-debt) elsewhere.
+Make debt visible. Track it and talk about it in planning. When the team understands the cost of debt, they're more motivated to address it. I've written about [reconsidering how we talk about tech debt](/reconsidering-tech-debt) elsewhere.
 
 Carve out time. Protect some percentage of each sprint for debt reduction. It doesn't have to be a lot. Even 10% adds up.
 
@@ -89,16 +89,16 @@ Be honest about where things stand. Don't hide the mess. "We have significant te
 
 Set realistic expectations. Don't promise a quick turnaround to look good. Set timelines you can actually meet. Rebuilt trust comes from kept promises, not optimistic forecasts.
 
-Show progress. Regular updates on what's improving. Delivered features, but also fewer incidents and better velocity. Make the recovery visible.
+Show progress. Give regular updates on what's improving. Talk about delivered features, but also about fewer incidents and faster delivery. Make the recovery visible.
 
 Ask for what you need. If the team needs time, resources, or protection from demands, advocate for it. Stakeholders can be reasonable when they understand the situation.
 
 ## The long game
 
-Turning around a struggling team takes time. Not weeks, but months. Probably six months before things feel genuinely different. A year before the turnaround is clearly sustained.
+Turning around a struggling team takes months, not weeks. Probably six months before things feel different. A year before the turnaround is clearly holding.
 
 The early period is the hardest. You're fixing problems that aren't your fault and cleaning up messes you didn't make. It feels thankless.
 
-But teams that come through hard times together get strong. The engineers who stay through a turnaround are committed, and they don't take things for granted.
+But teams that come through hard times together get strong. The engineers who stay through a turnaround are committed, and they don't take a working team for granted.
 
-The way up is hard, but it's rewarding in ways that leading a comfortable team never is.
+The way up is hard. It's also rewarding in ways that leading a comfortable team never is.

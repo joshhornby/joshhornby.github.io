@@ -2,7 +2,7 @@
 title: Scope Creep and How to Fight It
 date: 2026-02-17 08:00:00
 tags: [tech-lead, leadership, project-management]
-description: "Scope creep kills projects slowly. One small addition at a time, until the original timeline is impossible. Here's how to recognise it early and have the conversation."
+description: "Scope creep kills projects slowly, one small addition at a time, until the original timeline is impossible. How to spot it early and have the conversation."
 sitemap:
   priority: 0.7
   changefreq: 'monthly'
@@ -21,7 +21,7 @@ Scope creep doesn't announce itself. It arrives as reasonable requests. Each add
 
 "The customer really needs this." Urgent requests from customers feel impossible to refuse. But customers will always want more. The question is whether this specific addition is worth delaying everything else.
 
-"We forgot to include..." Discovered requirements feel like corrections to an incomplete plan, not additions. But they're still additions. The plan was complete for what it covered; this is new scope.
+"We forgot to include..." Discovered requirements feel like corrections to an incomplete plan, not additions. But they're still additions. The plan was complete for what it covered. This is new scope.
 
 "Just a small tweak." Small is relative. Small compared to the original feature can still be real work. And small things ship with testing, documentation, edge cases.
 
@@ -35,7 +35,7 @@ When the initial scope isn't well-defined, people fill in the gaps with guesses.
 
 Different stakeholders have different expectations. Without clear agreement on what's in and what's out, each stakeholder adds their own version. This is why [working closely with your PM](/working-with-product-managers) on scope definition matters so much.
 
-PMs want to please stakeholders. Tech leads want to please PMs. Engineers want to solve problems. Everyone's drive is to say yes. Nobody's drive is to protect the timeline. Learning [when to say no](/when-to-say-no) is one of the most important skills for a tech lead.
+PMs want to please stakeholders. Tech leads want to please PMs. Engineers want to solve problems. Everyone is pulled towards yes, and nobody is pulled towards protecting the timeline. Learning [when to say no](/when-to-say-no) is one of the most important skills for a tech lead.
 
 "We've already built most of it, we might as well add this too." The logic feels right but ignores that adding more makes it even later.
 
@@ -79,11 +79,11 @@ Smaller releases mean less chance for creep. A two-week feature ships before sco
 
 Some teams require formal change requests for scope additions. The process itself discourages casual additions.
 
-Burn-down charts, task boards, regular demos. When everyone can see how much work remains, it's harder to pretend additions are free. [Hill charts](/hill-charts) are useful here because they show uncertainty, not just completion.
+Make the remaining work visible with burn-down charts, task boards or regular demos. When everyone can see how much is left, it's harder to pretend additions are free. [Hill charts](/hill-charts) are useful here because they show uncertainty, not just completion.
 
 ## When to accept changes
 
-Not all scope additions are creep. Sometimes requirements genuinely change. Sometimes you learn something that makes the original plan wrong.
+Not all scope additions are creep. Sometimes requirements do change. Sometimes you learn something that makes the original plan wrong.
 
 Changes driven by new information are legitimate: user research reveals the original approach won't work, a dependency changes, business conditions shift, or you discover a technical constraint that forces redesign.
 
