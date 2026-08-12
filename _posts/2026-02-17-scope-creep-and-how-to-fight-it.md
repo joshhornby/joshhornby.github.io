@@ -1,6 +1,7 @@
 ---
 title: Scope Creep and How to Fight It
 date: 2026-02-17 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, project-management]
 description: "Scope creep kills projects slowly, one small addition at a time, until the original timeline is impossible. How to spot it early and have the conversation."
 sitemap:

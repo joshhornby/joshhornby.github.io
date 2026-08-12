@@ -1,6 +1,7 @@
 ---
 title: Your First 90 Days as Tech Lead
 date: 2026-01-23 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, career]
 description: "The first three months as a tech lead set the tone for what follows. What to focus on, what to ignore, and the mistakes most people make."
 sitemap:

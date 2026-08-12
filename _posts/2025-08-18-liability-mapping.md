@@ -1,6 +1,7 @@
 ---
 title: Liability Mapping your Tech Debt
 date: 2025-08-18 08:00:00
+written_with_ai: true
 description: "Liability mapping splits tech debt into five categories so teams can work out what to fix and when, instead of arguing about the word 'debt'."
 tags: [architecture]
 sitemap:

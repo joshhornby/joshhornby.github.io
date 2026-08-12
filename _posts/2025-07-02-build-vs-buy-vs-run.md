@@ -1,6 +1,7 @@
 ---
 title: "Build vs Buy vs Run"
 date: 2025-07-02 08:00:00
+written_with_ai: true
 tags: [software-engineering, architecture]
 description: "Self-hosting open-source tools sits between building and buying. Sometimes it's the right call, if you respect the operational cost."
 sitemap:

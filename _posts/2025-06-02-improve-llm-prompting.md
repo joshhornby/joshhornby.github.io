@@ -1,6 +1,7 @@
 ---
 title: Improve LLM prompts using LLMs
 date: 2025-06-02 08:00:00
+written_with_ai: true
 tags: [ai, developer-experience]
 description: "Small changes to a prompt often make a large difference to the output. This is the workflow I use to improve my own prompts, especially for technical tasks."
 sitemap:

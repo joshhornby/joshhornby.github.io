@@ -1,6 +1,7 @@
 ---
 title: Sentry AI Tracing for OpenAI in Laravel
 date: 2026-01-02 08:00:00
+written_with_ai: true
 tags: [ai, php, laravel]
 description: "Sentry has built-in AI tracing for Python and JavaScript. PHP developers get nothing, so you have to build it yourself."
 sitemap:

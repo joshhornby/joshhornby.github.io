@@ -1,6 +1,7 @@
 ---
 title: Optimising teams through the Theory of Constraints
 date: 2025-06-09 08:00:00
+written_with_ai: true
 tags: [management, systems-thinking]
 description: "Using the Theory of Constraints to improve team delivery"
 sitemap:

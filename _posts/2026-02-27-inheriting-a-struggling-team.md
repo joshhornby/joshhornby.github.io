@@ -1,6 +1,7 @@
 ---
 title: Inheriting a Struggling Team
 date: 2026-02-27 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, management]
 description: "You've taken on a team with low morale, deep technical debt and no clear direction. What to do first, and what takes longer than you'd like."
 sitemap:

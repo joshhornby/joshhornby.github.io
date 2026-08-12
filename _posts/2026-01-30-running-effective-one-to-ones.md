@@ -1,6 +1,7 @@
 ---
 title: Running Effective 1:1s as a Tech Lead
 date: 2026-01-30 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, management]
 description: "As a tech lead, 1:1s are your most important meeting. Not status updates, not technical discussions. Real conversations about how people are doing and where they're going."
 sitemap:

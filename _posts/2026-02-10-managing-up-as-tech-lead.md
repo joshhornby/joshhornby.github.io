@@ -1,6 +1,7 @@
 ---
 title: Managing Up
 date: 2026-02-10 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, career]
 description: "Your engineering manager needs information from you to do their job. What to tell them, how to advocate for your team, and how to influence decisions you don't control."
 sitemap:

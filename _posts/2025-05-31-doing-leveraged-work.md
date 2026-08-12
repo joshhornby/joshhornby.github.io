@@ -1,6 +1,7 @@
 ---
 title: Doing Leveraged Work
 date: 2025-05-31 10:30:00
+written_with_ai: true
 tags: [software-engineering, career]
 description: Staff and Principal Engineers find work that keeps paying off long after they've moved on, multiplying what teams can achieve.
 sitemap:

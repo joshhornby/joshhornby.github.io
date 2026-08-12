@@ -1,6 +1,7 @@
 ---
 title: Eval Testing LLMs in PHPUnit
 date: 2025-12-24 08:00:00
+written_with_ai: true
 tags: [ai, php, software-engineering]
 description: "Prompts break silently. Catching the regressions with PHPUnit evals before your users do."
 sitemap:

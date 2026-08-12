@@ -28,6 +28,12 @@ layout: null
     <lastmod>{{ start_here_page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
   </url>
 
+  {% assign written_with_ai_page = site.pages | where: "url", "/written-with-ai" | first %}
+  <url>
+    <loc>{{ site.url }}/written-with-ai</loc>
+    <lastmod>{{ written_with_ai_page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+  </url>
+
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>

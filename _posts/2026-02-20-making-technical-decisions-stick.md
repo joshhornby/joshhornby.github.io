@@ -1,6 +1,7 @@
 ---
 title: Making Technical Decisions Stick
 date: 2026-02-20 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership]
 description: "Technical decisions get revisited, ignored, or forgotten unless you make them stick. ADRs, RFCs, or just conversations? Match the documentation to the decision's weight."
 sitemap:

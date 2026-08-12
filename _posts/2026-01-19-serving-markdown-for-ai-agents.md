@@ -1,6 +1,7 @@
 ---
 title: Serving Markdown for AI Agents
 date: 2026-01-19 08:00:00
+written_with_ai: true
 tags: [ai, software-engineering]
 description: "AI agents prefer clean markdown over HTML. Here's how to serve both from a Jekyll blog."
 sitemap:

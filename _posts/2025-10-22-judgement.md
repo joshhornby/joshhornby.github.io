@@ -1,6 +1,7 @@
 ---
 title: "Judgement"
 date: 2025-10-22 08:00:00
+written_with_ai: true
 description: "How I'm hoping to improve my judgement by reflecting on experience and teaching others."
 tags: [thoughts]
 sitemap:

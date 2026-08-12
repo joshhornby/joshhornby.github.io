@@ -1,6 +1,7 @@
 ---
 title: Giving Hard Feedback
 date: 2026-02-24 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, management]
 description: "How to raise a performance issue, an attitude problem or a skill gap in a way that's direct without being cruel, and that leads to change."
 sitemap:

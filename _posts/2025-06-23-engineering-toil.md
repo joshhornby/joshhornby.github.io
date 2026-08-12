@@ -1,6 +1,7 @@
 ---
 title: Engineering Toil - Seeing the Unseen Work
 date: 2025-06-23 08:00:00
+written_with_ai: true
 tags: [management, developer-experience]
 description: "Toil is the work that keeps systems running and never shows up in a sprint goal. Ignore it long enough and it becomes the defining experience of the team."
 sitemap:

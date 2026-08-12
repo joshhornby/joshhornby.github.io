@@ -1,6 +1,7 @@
 ---
 title: The Tech Lead Trap
 date: 2026-03-03 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, career]
 description: "The tech lead role can become a dead end if you're not careful. How to spot when you're trapped, and what to do about it."
 sitemap:

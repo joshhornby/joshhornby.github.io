@@ -1,6 +1,7 @@
 ---
 title: Shaping Team Boundaries for Flow
 date: 2025-09-01 08:00:00
+written_with_ai: true
 tags: [architecture, team-topologies, org-design]
 description: "How the team dependencies shapes delivery speed and what to do about it."
 sitemap:

@@ -1,0 +1,63 @@
+---
+layout: default
+title: Written with AI
+description: How I use AI to write the posts on this site, and where the line sits.
+sitemap:
+    lastmod: "2026-08-12T09:00:00+01:00"
+---
+<div class="container mt-2 mt-md-3">
+    <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-8">
+            <h1 class="h1 my-3">Written with AI</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-7">
+            <section class="post-content">
+                <p>Some posts here carry a note at the top saying they were co-authored with AI. This page explains
+                    what that means, so you can read them knowing how they were made.</p>
+
+                <p>Every post starts with something I have done. A decision I got wrong, a pattern I have seen at more
+                    than one company, an argument I had with someone at work. The model does not supply any of that.</p>
+
+                <p>What it supplies is the second draft. I write rough notes or a full first pass, then work through it
+                    with <a href="https://www.anthropic.com/claude-code" target="_blank">Claude Code</a>. This site has
+                    a style guide checked into the repository: short sentences, plain words, active voice, British
+                    spelling, no filler. The model edits against that guide. I push back when it flattens a line worth
+                    keeping.</p>
+
+                <p>It also argues with me before I write anything. I get questioned on the idea itself: which claim I
+                    cannot back up, where the argument is thin, what the obvious objection is. Most of the value sits
+                    here, before any prose exists. Plenty of what I planned to write has not survived it.</p>
+
+                <p>I read every sentence before it publishes. If a sentence claims something I have not seen, it goes.
+                    If it sounds clever and says nothing, it goes. My name is on the post, so the argument has to be one
+                    I will defend in a room.</p>
+
+                <p>I label it because I write a lot about using AI at work. It would be odd to argue for it and then
+                    hide that I use it. The note is not a disclaimer. The judgement is still mine, and so are the
+                    mistakes.</p>
+
+                <p>Read those posts the way you would read anything an editor worked on with me. Someone helped with the
+                    words. Nobody helped with the opinion.</p>
+            </section>
+        </div>
+
+        <aside class="col-12 col-lg-3">
+            <div class="bg-light px-3 py-3 rounded-xl">
+                <p class="mb-1"><strong>Recent</strong></p>
+                {% assign recent_posts = site.posts
+                | where_exp: "post", "post.url != page.url"
+                | slice: 0, 5 %}
+                <ul class="list-group">
+                    {% for post in recent_posts %}
+                    <li class="mb-2 list-no-style">
+                        <a class="small-link" href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </aside>
+    </div>
+</div>

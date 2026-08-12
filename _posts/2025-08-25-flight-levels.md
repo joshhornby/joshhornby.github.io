@@ -1,6 +1,7 @@
 ---
 title: Navigating Flight Levels
 date: 2025-08-25 08:00:00
+written_with_ai: true
 tags: [leadership, career, systems-thinking]
 description: "Why management isn't about climbing layers, it's about knowing when to zoom in and when to pull back."
 sitemap:

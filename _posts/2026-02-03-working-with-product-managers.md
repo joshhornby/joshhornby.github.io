@@ -1,6 +1,7 @@
 ---
 title: Working with Product Managers
 date: 2026-02-03 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, product]
 description: "The tech lead and PM relationship can be the most productive partnership in a team, or a source of constant friction. What separates the two."
 sitemap:

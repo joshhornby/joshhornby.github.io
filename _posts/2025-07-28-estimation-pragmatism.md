@@ -1,6 +1,7 @@
 ---
 title: Estimation, Pragmatism, and the Real World
 date: 2025-07-28 08:00:00
+written_with_ai: true
 description: "Why estimation isn't dead, and how to use it pragmatically to build trust and reduce surprise."
 tags: [management, career]
 sitemap:

@@ -1,6 +1,7 @@
 ---
 title: From Scepticism to Collaboration with LLMs
 date: 2025-06-17 08:00:00
+written_with_ai: true
 tags: [ai, software-engineering, developer-experience]
 description: "LLMs work best when you treat them like a junior engineer, not a magic wand. Same standards, same discipline, same reviews."
 sitemap:

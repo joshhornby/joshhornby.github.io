@@ -12,6 +12,7 @@ Written by Josh Hornby, an engineering leader based in the UK. Posts cover pract
 
 - [About]({{ site.url }}/about): Background on Josh Hornby
 - [Start Here]({{ site.url }}/start-here): Curated introduction to the best posts by topic
+- [Written with AI]({{ site.url }}/written-with-ai): How AI is used to write posts on this site
 
 ## Recent Posts
 {% assign recent_posts = site.posts | slice: 0, 10 %}

@@ -1,6 +1,7 @@
 ---
 title: "Why Less Is More"
 date: 2025-09-17 08:00:00
+written_with_ai: true
 tags: [architecture, software-engineering]
 description: "The teams that create the most value aren't the ones with the best tech. They're the ones with the clearest constraints."
 sitemap:

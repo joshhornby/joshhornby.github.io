@@ -1,6 +1,7 @@
 ---
 title: "Sentry AI Tracing with Laravel's AI SDK"
 date: 2026-02-14 08:00:00
+written_with_ai: true
 tags: [ai, php, laravel]
 description: "Laravel now has an official AI SDK with built-in events. Sentry tracing goes from manual wrapping to a single event listener."
 sitemap:

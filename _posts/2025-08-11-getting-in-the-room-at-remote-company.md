@@ -1,6 +1,7 @@
 ---
 title: Getting in the Room at a Remote Company
 date: 2025-08-11 08:00:00
+written_with_ai: true
 description: "If you want to influence decisions, you need to get in the room. The challenge at a remote company is that the room isn't always visible."
 tags: [career]
 sitemap:

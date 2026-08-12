@@ -1,6 +1,7 @@
 ---
 title: Building Production-Grade Real-Time AI Voice Conversations
 date: 2026-01-06 08:00:00
+written_with_ai: true
 tags: [ai, twilio, software-engineering]
 description: "Patterns for handling interruptions, chunking speech, and detecting call endings when building voice AI with Twilio and OpenAI."
 sitemap:

@@ -1,6 +1,7 @@
 ---
 title: "Vibe Coding vs Agentic Engineering"
 date: 2026-07-18 08:00:00
+written_with_ai: true
 tags: [ai, software-engineering, developer-experience]
 description: "Vibe coding and agentic engineering use the same tools but differ on one thing: whether you keep the specify-and-review discipline. The skill teams need is knowing which mode the work deserves."
 sitemap:

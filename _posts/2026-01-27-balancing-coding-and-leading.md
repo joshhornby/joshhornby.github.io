@@ -1,6 +1,7 @@
 ---
 title: Balancing Coding and Leading
 date: 2026-01-27 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, software-engineering]
 description: "The hardest part of becoming a tech lead is working out how much code to write. Too much and you're not leading. Too little and you lose touch."
 sitemap:

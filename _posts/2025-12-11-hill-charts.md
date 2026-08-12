@@ -1,6 +1,7 @@
 ---
 title: "Using Hill Charts for Progress Tracking"
 date: 2025-12-11 08:00:00
+written_with_ai: true
 tags: [project-management, product]
 description: "Why percentage complete lies about progress, and how Hill Charts separate uncertainty from execution."
 sitemap:

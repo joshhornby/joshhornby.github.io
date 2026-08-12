@@ -1,6 +1,7 @@
 ---
 title: When to Say No
 date: 2026-02-13 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership, project-management]
 description: "Saying no is one of the most important skills for a tech lead. When to do it, how to phrase it, and how to keep the credibility that makes it work."
 sitemap:

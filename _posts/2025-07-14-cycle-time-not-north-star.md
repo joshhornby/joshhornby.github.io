@@ -1,6 +1,7 @@
 ---
 title: Cycle Time Isn't Your North Star
 date: 2025-07-14 08:00:00
+written_with_ai: true
 tags: [management, systems-thinking, developer-experience]
 description: "Many teams obsess over DORA metrics, but speed alone isn't a strategy. DORA is a speedometer, not a compass, and here's how to anchor measurement in real outcomes."
 sitemap:

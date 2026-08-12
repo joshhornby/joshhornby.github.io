@@ -1,6 +1,7 @@
 ---
 title: Working with Designers
 date: 2026-02-06 08:00:00
+written_with_ai: true
 tags: [tech-lead, leadership]
 description: "The tech lead and designer relationship has its own friction points. When to push back on designs, how to collaborate early, and what to do about the 'pixel perfect' argument."
 sitemap:

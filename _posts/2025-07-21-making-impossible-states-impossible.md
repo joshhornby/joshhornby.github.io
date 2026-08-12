@@ -1,6 +1,7 @@
 ---
 title: Making Impossible States Impossible
 date: 2025-07-21 08:00:00
+written_with_ai: true
 tags: [software-engineering, developer-experience]
 description: "Design your data types and APIs so that invalid program states can't be constructed at all. The compiler enforces it for you at build time."
 sitemap:

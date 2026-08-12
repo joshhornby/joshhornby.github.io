@@ -1,6 +1,7 @@
 ---
 title: What is an AI Agent?
 date: 2026-01-08 08:00:00
+written_with_ai: true
 tags: [ai, software-engineering]
 description: "The term 'agent' gets used loosely. Here's a practical definition: tools, loops, and deciding when to stop."
 sitemap:

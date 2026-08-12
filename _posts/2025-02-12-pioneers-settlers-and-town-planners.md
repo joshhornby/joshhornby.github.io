@@ -1,6 +1,7 @@
 ---
 title: "Finding Your Place: Pioneers, Settlers, and Town Planners"
 date: 2025-02-12 08:00:00
+written_with_ai: true
 tags: [org-design, leadership]
 description: "Why engineering teams need different archetypes at different phases, and how mismatches quietly slow things down."
 sitemap:

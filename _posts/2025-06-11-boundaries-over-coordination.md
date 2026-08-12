@@ -1,6 +1,7 @@
 ---
 title: Don't Improve Coordination, Eliminate It
 date: 2025-06-11 08:00:00
+written_with_ai: true
 tags: [architecture, systems-thinking, org-design]
 description: "Every cross-team sync is a boundary that needs reinforcing. What if coordination isn't a sign of organisational maturity, but a sign the boundaries are broken?"
 sitemap:

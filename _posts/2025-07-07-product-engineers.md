@@ -1,6 +1,7 @@
 ---
 title: Product Engineers
 date: 2025-07-07 08:00:00
+written_with_ai: true
 description: "Product Engineers care more about whether something works for customers than whether it ships on time."
 tags: [software-engineering, culture, product]
 sitemap:

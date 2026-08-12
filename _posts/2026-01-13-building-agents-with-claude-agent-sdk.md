@@ -1,6 +1,7 @@
 ---
 title: Building AI Agents with the Claude Agent SDK
 date: 2026-01-13 08:00:00
+written_with_ai: true
 tags: [ai, software-engineering, typescript]
 description: "The same engine behind Claude Code, exposed as a library. Build agents that read files, run commands, and work through problems on their own."
 sitemap:

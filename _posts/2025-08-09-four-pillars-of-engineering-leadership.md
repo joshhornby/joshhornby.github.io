@@ -1,6 +1,7 @@
 ---
 title: Four Pillars of Engineering Leadership
 date: 2025-08-09 08:00:00
+written_with_ai: true
 tags: [leadership, career, culture]
 description: "The four pillars of engineering leadership: artisanship, strategy, culture and stakeholder engagement. Each one needs the one before it."
 sitemap:
