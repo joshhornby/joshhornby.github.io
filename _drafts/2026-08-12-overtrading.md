@@ -2,10 +2,11 @@
 title: "Overtrading"
 date: 2026-08-12 08:00:00
 tags: [org-design, management]
+description: "Building got cheap. The ability to settle decisions did not. Start more work at once and you fill a warehouse you cannot sell."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2026-08-12 T19:00:00+01:00"
+    lastmod: "2026-08-12T19:00:00+01:00"
 ---
 
 A company wins a big contract. Then another one. Sales are up forty percent on last year, the pipeline is full, and the board is delighted. Eight months later, it cannot pay its suppliers and goes under.
