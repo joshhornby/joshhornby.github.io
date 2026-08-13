@@ -2,18 +2,18 @@
 title: "Overtrading"
 date: 2026-08-12 08:00:00
 tags: [org-design, management]
-description: "Building got cheap. The ability to settle decisions did not. Start more work at once and you fill a warehouse you cannot sell."
+description: "Software teams can now build faster than they can settle decisions. Start more work at once and you fill a warehouse you cannot sell."
 sitemap:
     priority: 0.7
     changefreq: 'monthly'
-    lastmod: "2026-08-13T09:00:00+01:00"
+    lastmod: "2026-08-13T20:00:00+01:00"
 ---
 
 A company wins a big contract. Then another one. Sales are up forty percent on last year, the pipeline is full, and the board is delighted. Eight months later, it cannot pay its suppliers and goes under.
 
-Accountants call this overtrading. The business takes on more work than its working capital can carry. Every new order costs money before it earns money. You buy the stock, you pay the staff, you deliver, then you wait sixty days to get paid. Do that once and you are fine. Do it at twice the volume, and the money runs out somewhere in the middle. The orders were real. They were profitable. The company still died.
+Accountants call this overtrading. The business takes on more work than its working capital can carry. Every new order costs money before it earns money. You buy the stock, you pay the staff, you deliver, then you wait sixty days to get paid. Do that once and you are fine. Do it at twice the volume, and the money runs out somewhere in the middle. The orders were real and profitable. The company still died.
 
-Demand was never the constraint. Cash was, and specifically how long cash took to go out and come back. Winning more work made it worse.
+The constraint was cash, and specifically how long cash took to go out and come back. Demand had nothing to do with it, and more of it only made things worse.
 
 ## Building got cheap, deciding did not
 
@@ -45,9 +45,9 @@ The first is to settle decisions faster. Push authority down to the team doing t
 
 The second is to start fewer things at once. This is the one that gets skipped because it feels like throwing away the speed you just gained.
 
-A growing business does not fail because it grew. It fails because it grew without raising the money to carry the growth. Fund it properly, through an overdraft or invoice financing or better payment terms, and the same growth is safe.
+A growing business fails when it grows without raising the money to carry the growth. Fund it properly, through an overdraft or invoice financing or better payment terms, and the same growth is safe.
 
-The same test applies here. Running more projects at once is fine if you have first raised your capacity to settle decisions. Delegating authority is raising capital. Hiring more engineers is not. That only wins you more orders you cannot fund.
+The same test applies here. Running more projects at once is fine if you have first raised your capacity to settle decisions. Delegating authority is how you raise that capacity. Hiring more engineers only wins you more orders you cannot fund.
 
 ## Cap the work in progress
 
@@ -57,6 +57,6 @@ That is a different number from the one most teams track. If four projects all n
 
 Then finish something before you start the next thing. A project that is ninety percent built and waiting on one answer is worth more finished than two new projects are worth started.
 
-The obvious objection is that slack is waste, and that you only learn your true capacity by pushing past it. I have some sympathy with that. But it argues for funded growth, not unfunded growth. Push past the limit deliberately, having raised the capacity first, and you learn something useful. Push past it by accident because building got cheap and it all felt possible, and you end up with a warehouse full of stock.
+The obvious objection is that slack is waste, and that you only learn your true capacity by pushing past it. I have some sympathy with that, as long as you have raised the capacity before you go looking for the ceiling. Push past the limit deliberately and you learn something useful. Push past it by accident because building got cheap and it all felt possible, and you end up with a warehouse full of stock.
 
 When building gets cheaper, the question worth asking is what you were short of in the first place. Usually it was the decisions, and cheap code does nothing for those. Start more work at once, and you make them slower.
