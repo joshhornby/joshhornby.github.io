@@ -19,7 +19,7 @@ Demand was never the constraint. Cash was, and specifically how long cash took t
 
 I think something close to this now happens inside software organisations.
 
-Building got cheap. Not everywhere. If you work on payments infrastructure, or anything regulated, or a twenty-year-old codebase, the build is still slow and hard. But across a big slice of ordinary product work, writing the code is no longer the slowest part. A feature that would have taken a month of engineering takes a few days.
+Building got cheap, writing the code is no longer the slowest part. A feature that would have taken a month of engineering takes a few days.
 
 So what plays the role of cash? It is the organisation's ability to settle questions. Someone has to decide what the feature actually does. Someone has to agree the data model, clear the security review, set the price, confirm which customer this is for. Those calls sit with a small number of people, and they can only work through so many at a time. That number did not change when the building got faster.
 
